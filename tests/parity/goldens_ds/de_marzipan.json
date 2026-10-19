@@ -1,0 +1,1229 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiDiffSingerGermanMarzipanPhonemizerr",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "de-marzipan",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "hallo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "welt",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "singen",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "mit",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "mir",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "notes": [
+    {
+     "lyric": "hallo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "welt",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "singen",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "mit",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "mir",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "florbix",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "quandelmuh",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zeppetron",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "hallo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "welt",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "liebe",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "hallo",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "de/h de/a de/l de/oh"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "v eh l t"
+    },
+    {
+     "lyric": "mir",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "m i qq"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "hallo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "hallo",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "welt",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "singen",
+     "tone": "E4",
+     "duration": 120
+    },
+    {
+     "lyric": "mit",
+     "tone": "F4",
+     "duration": 120
+    },
+    {
+     "lyric": "mir",
+     "tone": "G4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "notes": [
+    {
+     "lyric": "Hallo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Welt",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "hallo",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "welt",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "notes": [
+    {
+     "lyric": "hallo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zzqx",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "welt",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "umlaut",
+   "notes": [
+    {
+     "lyric": "schön",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "über",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "Mädchen",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "Straße",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "common",
+   "lyrics": [
+    "hallo",
+    "welt",
+    "singen",
+    "mit",
+    "mir"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "de/h",
+     "position": -58,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 200,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/oh",
+     "position": 242,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/v",
+     "position": -29,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/e",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 187,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/t",
+     "position": 337,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/z",
+     "position": -93,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/i",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/ng",
+     "position": 172,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/ex",
+     "position": 256,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/n",
+     "position": 393,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/m",
+     "position": -47,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "de/i",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "de/t",
+     "position": 303,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "de/m",
+     "position": -76,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "de/ih",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "de/er",
+     "position": 245,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "lyrics": [
+    "hallo",
+    "welt",
+    "singen",
+    "mit",
+    "mir"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "de/h",
+     "position": -56,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 208,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/oh",
+     "position": 241,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/v",
+     "position": -27,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/e",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 214,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/t",
+     "position": 405,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/z",
+     "position": -109,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/i",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/ng",
+     "position": 175,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/ex",
+     "position": 245,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/n",
+     "position": 401,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/m",
+     "position": -44,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "de/i",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "de/t",
+     "position": 292,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "de/m",
+     "position": -90,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "de/ih",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "de/er",
+     "position": 245,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "lyrics": [
+    "florbix",
+    "quandelmuh",
+    "zeppetron"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "de/f",
+     "position": -72,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/o",
+     "position": 17,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/er",
+     "position": 197,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/b",
+     "position": 311,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/i",
+     "position": 329,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/ch",
+     "position": 414,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/k",
+     "position": -42,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/v",
+     "position": -18,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/n",
+     "position": 120,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/d",
+     "position": 152,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/ex",
+     "position": 162,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 252,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/m",
+     "position": 290,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/uh",
+     "position": 308,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/ts",
+     "position": -50,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/e",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/p",
+     "position": 145,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/p",
+     "position": 168,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/ex",
+     "position": 186,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/t",
+     "position": 245,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/r",
+     "position": 261,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/oh",
+     "position": 277,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/n",
+     "position": 446,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "lyrics": [
+    "hallo",
+    "welt",
+    "liebe"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "de/h",
+     "position": -63,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 423,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/oh",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/v",
+     "position": -56,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/e",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 1035,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/t",
+     "position": 1248,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": -86,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/ih",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/b",
+     "position": 192,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/ex",
+     "position": 227,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "lyrics": [
+    "hallo",
+    "x",
+    "mir"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "de/h",
+     "position": -55,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 206,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/oh",
+     "position": 241,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/v",
+     "position": -29,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/eh",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 174,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/t",
+     "position": 361,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"qq\""
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "lyrics": [
+    "hallo"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "de/h",
+     "position": -57,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 214,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/oh",
+     "position": 247,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "lyrics": [
+    "hallo",
+    "welt",
+    "singen",
+    "mit",
+    "mir"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "de/h",
+     "position": -45,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 42,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/oh",
+     "position": 64,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/v",
+     "position": -28,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/e",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 34,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/t",
+     "position": 53,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/z",
+     "position": -37,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/i",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/ng",
+     "position": 36,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/ex",
+     "position": 64,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/n",
+     "position": 79,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/m",
+     "position": -25,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "de/i",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "de/t",
+     "position": 42,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "de/m",
+     "position": -40,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "de/ih",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "de/er",
+     "position": 86,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "lyrics": [
+    "Hallo",
+    "Welt"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "de/h",
+     "position": -54,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 201,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/o",
+     "position": 237,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/v",
+     "position": -32,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/e",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 223,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/t",
+     "position": 396,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "lyrics": [
+    "-",
+    "hallo",
+    "br",
+    "welt"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "SP",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/h",
+     "position": -68,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 222,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/oh",
+     "position": 251,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "AP",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/v",
+     "position": -67,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "de/e",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 216,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "de/t",
+     "position": 393,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "lyrics": [
+    "hallo",
+    "zzqx",
+    "welt"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "de/h",
+     "position": -57,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 212,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/oh",
+     "position": 244,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "de/ts",
+     "position": -68,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/uh",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/k",
+     "position": 346,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "de/v",
+     "position": -64,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/e",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/l",
+     "position": 244,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "de/t",
+     "position": 391,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "umlaut",
+   "lyrics": [
+    "schön",
+    "über",
+    "Mädchen",
+    "Straße"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "[ErrorCode:InvalidArgument] Non-zero status code returned while running Gather node. Name:'/encoder/emb/Gather' Status Message: indices element out of data bounds, idx=34 must be within the inclusive range [-34,33]"
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "[ErrorCode:InvalidArgument] Non-zero status code returned while running Gather node. Name:'/encoder/emb/Gather' Status Message: indices element out of data bounds, idx=34 must be within the inclusive range [-34,33]"
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "[ErrorCode:InvalidArgument] Non-zero status code returned while running Gather node. Name:'/encoder/emb/Gather' Status Message: indices element out of data bounds, idx=34 must be within the inclusive range [-34,33]"
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 3,
+     "error": "[ErrorCode:InvalidArgument] Non-zero status code returned while running Gather node. Name:'/encoder/emb/Gather' Status Message: indices element out of data bounds, idx=34 must be within the inclusive range [-34,33]"
+    }
+   ]
+  }
+ ]
+}

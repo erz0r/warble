@@ -1,0 +1,247 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerRuleBasedFilipinoPhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "fil-rule",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "kumusta",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mahal",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "kita",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "ng",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "mga",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "notes": [
+    {
+     "lyric": "kumusta",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mahal",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "kita",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "ng",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "mga",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "florbiks",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "kwandelmu",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zepetron",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "mahal",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "kita",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "puso",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "mahal",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "m a h a l"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "SP"
+    },
+    {
+     "lyric": "kita",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "k i qq"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "kumusta",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "kumusta",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "mahal",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "kita",
+     "tone": "E4",
+     "duration": 120
+    },
+    {
+     "lyric": "ng",
+     "tone": "F4",
+     "duration": 120
+    },
+    {
+     "lyric": "mga",
+     "tone": "G4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "notes": [
+    {
+     "lyric": "Kumusta",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Mahal",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "kumusta",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "mahal",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "notes": [
+    {
+     "lyric": "kumusta",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zzqx",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "mahal",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

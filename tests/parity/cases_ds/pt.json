@@ -1,0 +1,277 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerPortuguesePhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "pt",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "olá",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mundo",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "cantar",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "com",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "você",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "notes": [
+    {
+     "lyric": "olá",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mundo",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "cantar",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "com",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "você",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "florbizo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "quandelmu",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zepetron",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "olá",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "mundo",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "amor",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "ola",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "pt/o pt/l pt/a"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "m u n d u"
+    },
+    {
+     "lyric": "com",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "k o qq"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "olá",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "olá",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "mundo",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "cantar",
+     "tone": "E4",
+     "duration": 120
+    },
+    {
+     "lyric": "com",
+     "tone": "F4",
+     "duration": 120
+    },
+    {
+     "lyric": "você",
+     "tone": "G4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "notes": [
+    {
+     "lyric": "Olá",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Mundo",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "olá",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "mundo",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "notes": [
+    {
+     "lyric": "olá",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zzqx",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "mundo",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "nasal",
+   "notes": [
+    {
+     "lyric": "coração",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mãe",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "bem",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "filho",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "nhoque",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

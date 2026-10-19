@@ -1,0 +1,1385 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerRussianPhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "ru",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "мир",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "петь",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "со",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "мной",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "мир",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "петь",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "со",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "мной",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "флорбикс",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "квандельму",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "зепетрон",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "мир",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "любовь",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ru/p ru/r ru/i ru/v ru/e ru/t"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "m i r"
+    },
+    {
+     "lyric": "со",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "s o qq"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "мир",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "петь",
+     "tone": "E4",
+     "duration": 120
+    },
+    {
+     "lyric": "со",
+     "tone": "F4",
+     "duration": 120
+    },
+    {
+     "lyric": "мной",
+     "tone": "G4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "notes": [
+    {
+     "lyric": "Привет",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Мир",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "привет",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "мир",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zzqx",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "мир",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dict_entries",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ch",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zh",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "cl",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "soft",
+   "notes": [
+    {
+     "lyric": "юла",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ёлка",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "щука",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "съел",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "common",
+   "lyrics": [
+    "привет",
+    "мир",
+    "петь",
+    "со",
+    "мной"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ru/p",
+     "position": -79,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/rj",
+     "position": -34,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/E",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/vj",
+     "position": 218,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/e",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/t",
+     "position": 411,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/mj",
+     "position": -26,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/r",
+     "position": 349,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/pj",
+     "position": -74,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/e",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/tj",
+     "position": 316,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/s",
+     "position": -101,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ru/o",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ru/m",
+     "position": -149,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ru/n",
+     "position": -58,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ru/o",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ru/j",
+     "position": 365,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "lyrics": [
+    "привет",
+    "мир",
+    "петь",
+    "со",
+    "мной"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ru/p",
+     "position": -85,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/rj",
+     "position": -39,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/E",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/vj",
+     "position": 220,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/e",
+     "position": 241,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/t",
+     "position": 400,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/mj",
+     "position": -32,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/r",
+     "position": 435,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/pj",
+     "position": -32,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/e",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/tj",
+     "position": 326,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/s",
+     "position": -97,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ru/o",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ru/m",
+     "position": -140,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ru/n",
+     "position": -61,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ru/o",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ru/j",
+     "position": 366,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "lyrics": [
+    "флорбикс",
+    "квандельму",
+    "зепетрон"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ru/f",
+     "position": -96,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/l",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/o",
+     "position": 29,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/r",
+     "position": 172,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/bj",
+     "position": 196,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/E",
+     "position": 231,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/k",
+     "position": 316,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/s",
+     "position": 369,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/k",
+     "position": -57,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/v",
+     "position": -24,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/n",
+     "position": 94,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/dj",
+     "position": 140,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/E",
+     "position": 163,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/lj",
+     "position": 252,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/m",
+     "position": 298,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/u",
+     "position": 316,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/zj",
+     "position": -28,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/E",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/pj",
+     "position": 126,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/E",
+     "position": 153,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/t",
+     "position": 226,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/r",
+     "position": 259,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/A",
+     "position": 274,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/n",
+     "position": 431,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "lyrics": [
+    "привет",
+    "мир",
+    "любовь"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ru/p",
+     "position": -83,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/rj",
+     "position": -38,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/E",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/vj",
+     "position": 432,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/e",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/t",
+     "position": 779,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/mj",
+     "position": -47,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/r",
+     "position": 1287,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/lj",
+     "position": -73,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/u",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/b",
+     "position": 192,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/o",
+     "position": 227,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/fj",
+     "position": 386,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "lyrics": [
+    "привет",
+    "x",
+    "со"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ru/p",
+     "position": -81,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/r",
+     "position": -39,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/i",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/v",
+     "position": 227,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/e",
+     "position": 260,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/t",
+     "position": 402,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/m",
+     "position": -35,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/r",
+     "position": 298,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"qq\""
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "lyrics": [
+    "привет"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ru/p",
+     "position": -87,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/rj",
+     "position": -42,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/E",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/vj",
+     "position": 211,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/e",
+     "position": 237,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/t",
+     "position": 418,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "lyrics": [
+    "привет",
+    "мир",
+    "петь",
+    "со",
+    "мной"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ru/p",
+     "position": -69,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/rj",
+     "position": -29,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/E",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/vj",
+     "position": 39,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/e",
+     "position": 61,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/t",
+     "position": 84,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/mj",
+     "position": -17,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/r",
+     "position": 41,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/pj",
+     "position": -52,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/e",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/tj",
+     "position": 56,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/s",
+     "position": -35,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ru/o",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ru/m",
+     "position": -58,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ru/n",
+     "position": -31,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ru/o",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ru/j",
+     "position": 78,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "lyrics": [
+    "Привет",
+    "Мир"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ru/p",
+     "position": -86,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/rj",
+     "position": -41,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/E",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/vj",
+     "position": 218,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/e",
+     "position": 241,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/t",
+     "position": 402,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/mj",
+     "position": -32,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/E",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/r",
+     "position": 436,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "lyrics": [
+    "-",
+    "привет",
+    "br",
+    "мир"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "SP",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/p",
+     "position": -91,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/rj",
+     "position": -40,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/E",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/vj",
+     "position": 220,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/e",
+     "position": 245,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/t",
+     "position": 450,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "AP",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/mj",
+     "position": -59,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ru/i",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ru/r",
+     "position": 437,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "lyrics": [
+    "привет",
+    "zzqx",
+    "мир"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ru/p",
+     "position": -84,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/rj",
+     "position": -39,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/E",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/vj",
+     "position": 218,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/e",
+     "position": 242,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/t",
+     "position": 446,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"zzqx\""
+    },
+    {
+     "phoneme": "ru/mj",
+     "position": -57,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/i",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/r",
+     "position": 438,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "dict_entries",
+   "lyrics": [
+    "a",
+    "ch",
+    "zh",
+    "cl"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ru/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/ch",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/zh",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "cl",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "soft",
+   "lyrics": [
+    "юла",
+    "ёлка",
+    "щука",
+    "съел"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ru/j",
+     "position": -73,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/u",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/l",
+     "position": 207,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/a",
+     "position": 242,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ru/j",
+     "position": -43,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/o",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/l",
+     "position": 135,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/k",
+     "position": 185,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/a",
+     "position": 242,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ru/shj",
+     "position": -96,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/u",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/k",
+     "position": 202,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/a",
+     "position": 238,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ru/s",
+     "position": -85,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ru/j",
+     "position": -23,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ru/e",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ru/l",
+     "position": 378,
+     "group": 3,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

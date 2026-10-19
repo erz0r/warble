@@ -29,3 +29,7 @@ Apache License 2.0, Copyright (c) wolfgitpr. warble/utau/pz/_pinyin.py ports its
 library openutau uses to romanize hanzi), and warble/utau/pz/data/chinese/ holds its dictionaries.
 those dictionaries derive from CC-CEDICT and CC-Canto, licensed CC BY-SA; their own license files
 are kept next to them.
+
+csharp-kana — https://github.com/wolfgitpr/csharp-kana
+Apache License 2.0, Copyright (c) wolfgitpr. warble/ds/_kana.py ports its kana -> romaji table and
+logic (the library openutau's diffsinger japanese phonemizer uses).

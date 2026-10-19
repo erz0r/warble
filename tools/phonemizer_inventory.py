@@ -26,6 +26,8 @@ NOT_PORTED_REASONS = {
     "OpenUtau.Plugin.Builtin.EnunuOnnx.EnunuOnnxPhonemizer": "enunu/nnsvs renderer is out of scope (spec section 9)",
     "OpenUtau.Core.Vogen.VogenMandarinPhonemizer": "vogen renderer is out of scope (spec section 9)",
     "OpenUtau.Core.Vogen.VogenYuePhonemizer": "vogen renderer is out of scope (spec section 9)",
+    "OpenUtau.Core.DiffSinger.DiffSingerRhythmizerPhonemizer": "legacy: needs a separately installed rhythmizer "
+    "package (dsrhythmizer.yaml, for old banks without dsdur); none is available to test against",
 }
 
 
@@ -37,8 +39,9 @@ def scan():
         if not os.path.isfile(f):
             continue
         src = open(f, encoding="utf-8-sig").read()
-        ns = re.search(r"namespace\s+([\w.]+)", src)
-        for m in re.finditer(r"(\[Phonemizer\(([^\]]*)\)\]\s*)?public\s+(?:abstract\s+)?class\s+(\w+Phonemizer)\s*:\s*(\w+)", src):
+        for m in re.finditer(r"(\[Phonemizer\(([^\]]*)\)\]\s*)?public\s+(?:abstract\s+)?class\s+(\w+Phonemizerr?)\s*:\s*(\w+)", src):
+            nss = list(re.finditer(r"namespace\s+([\w.]+)", src[:m.start()]))  # the namespace the class sits in
+            ns = nss[-1] if nss else None
             attr, args, cls, base = m.group(1), m.group(2), m.group(3), m.group(4)
             strings = re.findall(r'"([^"]*)"', args or "")
             lang = re.search(r'language\s*:\s*"([^"]*)"', args or "")
@@ -68,6 +71,16 @@ def status(rows):
     for g in glob.glob(os.path.join(ROOT, "tests", "parity", "goldens", "*.json")):
         r = compare(g, os.path.join(ROOT, "tests", "parity", "banks"))
         goldens.setdefault(r["phonemizer"], []).append(r)
+    ds_goldens = glob.glob(os.path.join(ROOT, "tests", "parity", "goldens_ds", "*.json"))
+    if ds_goldens:
+        sys.path.insert(0, os.path.join(ROOT, "tests"))
+        from test_parity_ds import compare as compare_ds
+
+        for g in ds_goldens:
+            r = compare_ds(g)
+            if r is not None:
+                goldens.setdefault(r["phonemizer"], []).append({"golden": r["golden"], "passed": not r["mismatches"],
+                                                                "mismatches": r["mismatches"]})
     for r in rows:
         gs = goldens.get(r["class"], [])
         r["goldens"] = [g["golden"] for g in gs]

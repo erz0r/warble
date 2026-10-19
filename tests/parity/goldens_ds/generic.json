@@ -1,0 +1,263 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerPhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "dict",
+   "notes": [
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "phonemes",
+   "notes": [
+    {
+     "lyric": "ja/k ja/a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "en/hh en/ah",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "ja/a",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ja/s ja/a"
+    },
+    {
+     "lyric": "y",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "ja/i qq"
+    }
+   ]
+  },
+  {
+   "id": "unknown",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ja/a",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "zz",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi",
+   "notes": [
+    {
+     "lyric": "ja/k ja/a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "ja/i",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "dict",
+   "lyrics": [
+    "R",
+    "-",
+    "br"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "SP",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "SP",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "AP",
+     "position": 0,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "phonemes",
+   "lyrics": [
+    "ja/k ja/a",
+    "en/hh en/ah",
+    "ja/a"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ja/k",
+     "position": -47,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/hh",
+     "position": -62,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/ah",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "lyrics": [
+    "x",
+    "y"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ja/s",
+     "position": -93,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"qq\""
+    }
+   ]
+  },
+  {
+   "id": "unknown",
+   "lyrics": [
+    "hello",
+    "ja/a",
+    "zz"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"hello\""
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"zz\""
+    }
+   ]
+  },
+  {
+   "id": "multi",
+   "lyrics": [
+    "ja/k ja/a",
+    "ja/i"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ja/k",
+     "position": -58,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

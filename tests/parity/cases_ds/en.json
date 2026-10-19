@@ -1,0 +1,302 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerEnglishPhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "en",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "world",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "sing",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "with",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "me",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "world",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "sing",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "with",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "me",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "florbix",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "quandlemoo",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zeppetron",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "world",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "love",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "en/hh en/ah en/l en/ow"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "w er l d"
+    },
+    {
+     "lyric": "me",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "m iy qq"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "world",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "sing",
+     "tone": "E4",
+     "duration": 120
+    },
+    {
+     "lyric": "with",
+     "tone": "F4",
+     "duration": 120
+    },
+    {
+     "lyric": "me",
+     "tone": "G4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "notes": [
+    {
+     "lyric": "Hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "World",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "hello",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "world",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zzqx",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "world",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "concrete",
+   "notes": [
+    {
+     "lyric": "concrete",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "jungle",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "phonemes_as_lyric",
+   "notes": [
+    {
+     "lyric": "hh ah",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "en/l en/ow",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "glottal",
+   "notes": [
+    {
+     "lyric": "'",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "cl",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "vf",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "uh",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

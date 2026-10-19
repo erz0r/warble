@@ -1,0 +1,415 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerJyutpingPhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "yue",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "我",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "愛",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "你",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "香",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "港",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "poly_hang",
+   "notes": [
+    {
+     "lyric": "銀",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "行",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "行",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "路",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "poly_lok",
+   "notes": [
+    {
+     "lyric": "音",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "樂",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "快",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "樂",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "jyutping_lyrics",
+   "notes": [
+    {
+     "lyric": "nei",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "hou",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "ngo",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "愛",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "你",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "我",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "zh/w zh/o"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "n i"
+    },
+    {
+     "lyric": "好",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "h ao qq"
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "我",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "你",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "common",
+   "lyrics": [
+    "ngo",
+    "oi",
+    "nei",
+    "hoeng",
+    "gong"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"ngo\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"oi\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"nei\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 3,
+     "error": "Unrecognized phoneme \"hoeng\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 4,
+     "error": "Unrecognized phoneme \"gong\""
+    }
+   ]
+  },
+  {
+   "id": "poly_hang",
+   "lyrics": [
+    "ngan",
+    "hong",
+    "hang",
+    "lou"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"ngan\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"hong\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"hang\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 3,
+     "error": "Unrecognized phoneme \"lou\""
+    }
+   ]
+  },
+  {
+   "id": "poly_lok",
+   "lyrics": [
+    "jam",
+    "ngok",
+    "faai",
+    "lok"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"jam\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"ngok\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"faai\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 3,
+     "error": "Unrecognized phoneme \"lok\""
+    }
+   ]
+  },
+  {
+   "id": "jyutping_lyrics",
+   "lyrics": [
+    "nei",
+    "hou",
+    "ngo"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"nei\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"hou\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"ngo\""
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "lyrics": [
+    "oi",
+    "nei"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"oi\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"nei\""
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "lyrics": [
+    "ngo",
+    "x",
+    "hou"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "zh/w",
+     "position": -57,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "zh/o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"n i\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"h ao qq\""
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "lyrics": [
+    "-",
+    "ngo",
+    "br",
+    "nei"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "SP",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"ngo\""
+    },
+    {
+     "phoneme": "AP",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 3,
+     "error": "Unrecognized phoneme \"nei\""
+    }
+   ]
+  }
+ ]
+}

@@ -9,8 +9,12 @@ def catalog(dirs):
     items = []
     for name, cls in sorted(up.names().items()):
         items.append({"name": name, "engine": "utau", "language": cls.language, "openutau": cls.openutau_class, "title": cls.name})
-    items.append({"name": "diffsinger", "engine": "diffsinger", "language": "any (per dsdict-<lang>.yaml)",
-                  "openutau": "OpenUtau.Core.DiffSinger.DiffSingerPhonemizer (+ per-language variants)"})
+    from .ds import g2p_phonemizers as gp
+
+    for cls in gp.CLASSES:
+        items.append({"name": cls.openutau_class.rsplit(".", 1)[-1], "engine": "diffsinger",
+                      "language": cls.language or "any (dsdict.yaml; with lang <x>: dsdict-<x>.yaml)",
+                      "lang": list(cls.lang_keys), "openutau": cls.openutau_class, "title": cls.name})
     banks = list_banks(dirs)
     fits = []
     for b in banks:

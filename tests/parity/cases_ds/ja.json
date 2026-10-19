@@ -1,0 +1,357 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerJapanesePhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "ja",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "く",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "ら",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "さ",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "く",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "ら",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "katakana",
+   "notes": [
+    {
+     "lyric": "カ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ラ",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "オ",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "ケ",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "small_kana",
+   "notes": [
+    {
+     "lyric": "きゃ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "しゅ",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "ちょ",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "ふぁ",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "てぃ",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "n_and_cl",
+   "notes": [
+    {
+     "lyric": "ほ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ん",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "と",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "っ",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "て",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "choonpu",
+   "notes": [
+    {
+     "lyric": "ら",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ー",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "め",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "ん",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "romaji",
+   "notes": [
+    {
+     "lyric": "sa",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ku",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "ra",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "N",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "い",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "う",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ja/k ja/a"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "s a"
+    },
+    {
+     "lyric": "な",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "n a qq"
+    }
+   ]
+  },
+  {
+   "id": "rest",
+   "notes": [
+    {
+     "lyric": "う",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "た",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "う",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "た",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "あ",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "い",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "き",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "ら",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "り",
+     "tone": "E4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "not_in_dict",
+   "notes": [
+    {
+     "lyric": "かな",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ゐ",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zz",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "ゔぁ",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dict_specials",
+   "notes": [
+    {
+     "lyric": "か゜",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "すぃ",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "ヴ",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

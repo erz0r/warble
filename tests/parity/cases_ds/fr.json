@@ -1,0 +1,272 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerFrenchMillfeuillePhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "fr",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "le",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "monde",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "chanter",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "avec",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "le",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "monde",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "chanter",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "avec",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "florbix",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "quandelmou",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zeppetron",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "monde",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "amour",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "fr/b fr/on fr/j fr/ou fr/r"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "m on d"
+    },
+    {
+     "lyric": "le",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "l oe qq"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "le",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "monde",
+     "tone": "E4",
+     "duration": 120
+    },
+    {
+     "lyric": "chanter",
+     "tone": "F4",
+     "duration": 120
+    },
+    {
+     "lyric": "avec",
+     "tone": "G4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "notes": [
+    {
+     "lyric": "Bonjour",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Le",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "bonjour",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "le",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zzqx",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "le",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "accents",
+   "notes": [
+    {
+     "lyric": "été",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "garçon",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "où",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "cœur",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

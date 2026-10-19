@@ -1,0 +1,111 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerPhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "dict",
+   "notes": [
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "phonemes",
+   "notes": [
+    {
+     "lyric": "ja/k ja/a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "en/hh en/ah",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "ja/a",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ja/s ja/a"
+    },
+    {
+     "lyric": "y",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "ja/i qq"
+    }
+   ]
+  },
+  {
+   "id": "unknown",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ja/a",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "zz",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi",
+   "notes": [
+    {
+     "lyric": "ja/k ja/a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "ja/i",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

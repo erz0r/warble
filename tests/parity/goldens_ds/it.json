@@ -1,0 +1,1337 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerItalianPhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "it",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mondo",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "cantare",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "con",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "me",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mondo",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "cantare",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "con",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "me",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "florbizzo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "quandelmu",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zeppetrone",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "mondo",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "amore",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "it/ch it/a it/o"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "m o n d o"
+    },
+    {
+     "lyric": "me",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "m e qq"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "mondo",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "cantare",
+     "tone": "E4",
+     "duration": 120
+    },
+    {
+     "lyric": "con",
+     "tone": "F4",
+     "duration": 120
+    },
+    {
+     "lyric": "me",
+     "tone": "G4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "notes": [
+    {
+     "lyric": "Ciao",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Mondo",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ciao",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "mondo",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zzqx",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "mondo",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "accents",
+   "notes": [
+    {
+     "lyric": "perché",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "città",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "gli",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "sciarpa",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "common",
+   "lyrics": [
+    "ciao",
+    "mondo",
+    "cantare",
+    "con",
+    "me"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "it/ch",
+     "position": -80,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 271,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/m",
+     "position": -26,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 166,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/d",
+     "position": 224,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 245,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/k",
+     "position": -39,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 115,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/t",
+     "position": 147,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 163,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/r",
+     "position": 313,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/e",
+     "position": 322,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/k",
+     "position": -28,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 363,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/m",
+     "position": -58,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "it/e",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "lyrics": [
+    "ciao",
+    "mondo",
+    "cantare",
+    "con",
+    "me"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "it/ch",
+     "position": -86,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 278,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/m",
+     "position": -24,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 176,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/d",
+     "position": 222,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 244,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/k",
+     "position": -44,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 113,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/t",
+     "position": 149,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 163,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/r",
+     "position": 314,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/e",
+     "position": 323,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/k",
+     "position": -27,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 366,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/m",
+     "position": -60,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "it/e",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "lyrics": [
+    "florbizzo",
+    "quandelmu",
+    "zeppetrone"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "it/f",
+     "position": -83,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/l",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 15,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/r",
+     "position": 125,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/b",
+     "position": 151,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/i",
+     "position": 173,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/t",
+     "position": 270,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/ts",
+     "position": 293,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 331,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/k",
+     "position": -19,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/w",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 14,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 133,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/d",
+     "position": 160,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/e",
+     "position": 171,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/l",
+     "position": 275,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/m",
+     "position": 306,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/u",
+     "position": 322,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/ts",
+     "position": -42,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/e",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/p",
+     "position": 86,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/p",
+     "position": 108,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/e",
+     "position": 120,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/t",
+     "position": 210,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/r",
+     "position": 231,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 242,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 347,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/e",
+     "position": 362,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "lyrics": [
+    "ciao",
+    "mondo",
+    "amore"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "it/ch",
+     "position": -90,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/m",
+     "position": -68,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 809,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/d",
+     "position": 905,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 960,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/m",
+     "position": 143,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 160,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/r",
+     "position": 315,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/e",
+     "position": 325,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "lyrics": [
+    "ciao",
+    "x",
+    "me"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "it/ch",
+     "position": -81,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 271,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/m",
+     "position": -27,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 172,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/d",
+     "position": 230,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 249,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"qq\""
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "lyrics": [
+    "ciao"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "it/ch",
+     "position": -76,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 251,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "lyrics": [
+    "ciao",
+    "mondo",
+    "cantare",
+    "con",
+    "me"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "it/ch",
+     "position": -56,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 55,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/m",
+     "position": -38,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 23,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/d",
+     "position": 53,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 68,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/k",
+     "position": -32,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 17,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/t",
+     "position": 32,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 47,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/r",
+     "position": 67,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/e",
+     "position": 82,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/k",
+     "position": -22,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 38,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/m",
+     "position": -49,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "it/e",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "lyrics": [
+    "Ciao",
+    "Mondo"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "it/ch",
+     "position": -86,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 278,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/m",
+     "position": -24,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 176,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/d",
+     "position": 222,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 244,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "lyrics": [
+    "-",
+    "ciao",
+    "br",
+    "mondo"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "SP",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/ch",
+     "position": -86,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 339,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "AP",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/m",
+     "position": -53,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 178,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/d",
+     "position": 217,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 243,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "lyrics": [
+    "ciao",
+    "zzqx",
+    "mondo"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "it/ch",
+     "position": -89,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 318,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/t",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/s",
+     "position": 159,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/m",
+     "position": -102,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/n",
+     "position": 173,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/d",
+     "position": 218,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/o",
+     "position": 243,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "accents",
+   "lyrics": [
+    "perché",
+    "città",
+    "gli",
+    "sciarpa"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "it/p",
+     "position": -40,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/e",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/r",
+     "position": 159,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/k",
+     "position": 200,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/e",
+     "position": 238,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "it/ch",
+     "position": -69,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/t",
+     "position": 166,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/t",
+     "position": 221,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 244,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "it/gl",
+     "position": -44,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/i",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "it/sh",
+     "position": -116,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/r",
+     "position": 166,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/p",
+     "position": 201,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "it/a",
+     "position": 242,
+     "group": 3,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1361 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerSpanishPhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "es",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mundo",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "cantar",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "con",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "migo",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mundo",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "cantar",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "con",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "migo",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "florbizo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "quandelmu",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zepetron",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "mundo",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "amor",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "es/o es/l es/a"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "m u n d o"
+    },
+    {
+     "lyric": "con",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "k o n qq"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "mundo",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "cantar",
+     "tone": "E4",
+     "duration": 120
+    },
+    {
+     "lyric": "con",
+     "tone": "F4",
+     "duration": 120
+    },
+    {
+     "lyric": "migo",
+     "tone": "G4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "notes": [
+    {
+     "lyric": "Hola",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Mundo",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "hola",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "mundo",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zzqx",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "mundo",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "accents",
+   "notes": [
+    {
+     "lyric": "niño",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "corazón",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "llamar",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "yo",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "jardín",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "common",
+   "lyrics": [
+    "hola",
+    "mundo",
+    "cantar",
+    "con",
+    "migo"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "es/o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/l",
+     "position": 226,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 269,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/m",
+     "position": -30,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/u",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 211,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/d",
+     "position": 311,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 348,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/k",
+     "position": -60,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 211,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/t",
+     "position": 263,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 291,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/r",
+     "position": 382,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/k",
+     "position": -60,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 344,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "es/m",
+     "position": -45,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "es/i",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "es/G",
+     "position": 203,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 245,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "lyrics": [
+    "hola",
+    "mundo",
+    "cantar",
+    "con",
+    "migo"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "es/o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/l",
+     "position": 221,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 259,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/m",
+     "position": -30,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/u",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 130,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/d",
+     "position": 179,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 197,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/k",
+     "position": -46,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 175,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/t",
+     "position": 223,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 244,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/r",
+     "position": 397,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/k",
+     "position": -49,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 347,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "es/m",
+     "position": -47,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "es/i",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "es/G",
+     "position": 180,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 212,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "lyrics": [
+    "florbizo",
+    "quandelmu",
+    "zepetron"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "es/f",
+     "position": -85,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/l",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 31,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/r",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/B",
+     "position": 189,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/i",
+     "position": 261,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/z",
+     "position": 320,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 379,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/k",
+     "position": -54,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/w",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 22,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 137,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/d",
+     "position": 188,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/e",
+     "position": 198,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/l",
+     "position": 293,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/m",
+     "position": 348,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/u",
+     "position": 379,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/z",
+     "position": -34,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/e",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/p",
+     "position": 92,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/e",
+     "position": 131,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/t",
+     "position": 183,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/r",
+     "position": 224,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 245,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 440,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "lyrics": [
+    "hola",
+    "mundo",
+    "amor"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "es/o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/l",
+     "position": 420,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/m",
+     "position": -59,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/u",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 828,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/d",
+     "position": 914,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 960,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/m",
+     "position": 260,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 317,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/r",
+     "position": 457,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "lyrics": [
+    "hola",
+    "x",
+    "con"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "es/o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/l",
+     "position": 228,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 269,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/m",
+     "position": -30,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/u",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 205,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/d",
+     "position": 301,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 337,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"qq\""
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "lyrics": [
+    "hola"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "es/o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/l",
+     "position": 191,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 236,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "lyrics": [
+    "hola",
+    "mundo",
+    "cantar",
+    "con",
+    "migo"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "es/o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/l",
+     "position": 36,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 60,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/m",
+     "position": -32,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/u",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 32,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/d",
+     "position": 56,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 73,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/k",
+     "position": -29,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 36,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/t",
+     "position": 56,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 66,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/r",
+     "position": 80,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/k",
+     "position": -23,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 58,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "es/m",
+     "position": -30,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "es/i",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "es/G",
+     "position": 55,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 102,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "lyrics": [
+    "Hola",
+    "Mundo"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "es/o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/l",
+     "position": 221,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 259,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/m",
+     "position": -30,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/u",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 130,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/d",
+     "position": 179,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 197,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "lyrics": [
+    "-",
+    "hola",
+    "br",
+    "mundo"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "SP",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/l",
+     "position": 304,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 355,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "AP",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/m",
+     "position": -59,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "es/u",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 136,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "es/d",
+     "position": 172,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 190,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "lyrics": [
+    "hola",
+    "zzqx",
+    "mundo"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "es/o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/l",
+     "position": 202,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 242,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "es/z",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/z",
+     "position": 175,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/m",
+     "position": -140,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/u",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 128,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/d",
+     "position": 173,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 191,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "accents",
+   "lyrics": [
+    "niño",
+    "corazón",
+    "llamar",
+    "yo",
+    "jardín"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"es/gn\""
+    },
+    {
+     "phoneme": "es/k",
+     "position": -95,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/r",
+     "position": 209,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 224,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/z",
+     "position": 370,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 398,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 431,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "es/y",
+     "position": -18,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/m",
+     "position": 192,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 253,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/r",
+     "position": 395,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "es/y",
+     "position": -56,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "es/o",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "es/h",
+     "position": -93,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "es/a",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "es/r",
+     "position": 222,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "es/D",
+     "position": 277,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "es/i",
+     "position": 344,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "es/n",
+     "position": 417,
+     "group": 4,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

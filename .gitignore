@@ -1,14 +1,16 @@
-ref/
-banks/*
-!banks/README.md
-vocoders/
-resamplers/
+# local-only: the openutau checkout, voicebanks, downloaded tools and renders
+/ref/
+/banks/*
+!/banks/README.md
+/vocoders/
+/resamplers/
+/downloads/
+/out/
+/*.zip
 .venv/
 __pycache__/
 *.egg-info/
 .cache/
-out/
 .DS_Store
-downloads/
-*.zip
 tests/fixtures/
+.pytest_cache/

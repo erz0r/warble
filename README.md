@@ -55,9 +55,10 @@ master preset=pop lufs=-14 ceiling=-1 room=1.6 chain=OTT(depth=15)
 backing ./instrumental.wav @ bar 1 gain=-6        # or @ 2.5s
 track lead                    # named tracks; each has its own bank/lang/voice/fx
 bank ./banks/adachi_rei/足立レイ_DS_v111.1         # or: bank rei ds
-lang ja                       # picks dsdict-<lang>.yaml and the lyric front-end
+lang ja                       # diffsinger: picks openutau's phonemizer for the language (en en-plus de de-marzipan fr
+                              # it es pt ru fil fil-rule ko ko-dict zh yue ja); others read dsdict-<lang>.yaml
 voice default                 # voice mode, or a mix like soft:0.7,power:0.3
-phonemizer ja_vcv             # utau: override the phonemizer
+phonemizer ja_vcv             # utau: override the phonemizer; diffsinger: an openutau class, e.g. DiffSingerARPAPlusEnglishPhonemizer
 resampler straycat-rs         # utau: per track (or per note: resampler=...)
 volume -3                     # dB
 pan 0.2                       # -1..1
@@ -121,8 +122,10 @@ drafts the curve for any bank). presets: `gentle`, `pop`, `ballad`, `robot`, plu
 
 ## how it works
 
-- **diffsinger** (ported from openutau): lyric → dictionary (`dsdict-<lang>.yaml`, language
-  front-end fallbacks) → `dsdur` durations aligned so leading consonants end on the note and each
+- **diffsinger** (ported from openutau): lyric → romanization (hanzi → pinyin / jyutping, kana → romaji,
+  hangul batchim) → the bank's `dsdict-<lang>.yaml`, then openutau's builtin g2p for the language remapped
+  onto the bank's symbols (`warble/ds/g2p_phonemizers.py`, parity-tested with `ref/harness_ds`), then
+  warble's language front-end fallbacks → `dsdur` durations aligned so leading consonants end on the note and each
   note's phonemes fill it → `dspitch` (or a rule curve) → `dsvariance` when the acoustic model
   needs it → acoustic → vocoder. every model is fed from its real onnx signature, so dsconfig flags
   that disagree with the graph are reported instead of crashing.

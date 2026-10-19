@@ -1,0 +1,297 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerRussianPhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "ru",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "мир",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "петь",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "со",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "мной",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "мир",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "петь",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "со",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "мной",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "флорбикс",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "квандельму",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "зепетрон",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "мир",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "любовь",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ru/p ru/r ru/i ru/v ru/e ru/t"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "m i r"
+    },
+    {
+     "lyric": "со",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "s o qq"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "мир",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "петь",
+     "tone": "E4",
+     "duration": 120
+    },
+    {
+     "lyric": "со",
+     "tone": "F4",
+     "duration": 120
+    },
+    {
+     "lyric": "мной",
+     "tone": "G4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "notes": [
+    {
+     "lyric": "Привет",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Мир",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "привет",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "мир",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zzqx",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "мир",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dict_entries",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ch",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zh",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "cl",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "soft",
+   "notes": [
+    {
+     "lyric": "юла",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ёлка",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "щука",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "съел",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

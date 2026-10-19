@@ -1,0 +1,315 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerChinesePhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "zh",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "我",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "爱",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "你",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "中",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "国",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "poly_zhang",
+   "notes": [
+    {
+     "lyric": "长",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "大",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "了",
+     "tone": "E4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "很",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "长",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "poly_hang",
+   "notes": [
+    {
+     "lyric": "银",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "行",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "行",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "走",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "poly_yue",
+   "notes": [
+    {
+     "lyric": "音",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "乐",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "快",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "乐",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "poly_across_rest",
+   "notes": [
+    {
+     "lyric": "长",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "大",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "pinyin_lyrics",
+   "notes": [
+    {
+     "lyric": "ni",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "hao",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "ma",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "zhong",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "爱",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "你",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "们",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "我",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "zh/w zh/o"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "n i"
+    },
+    {
+     "lyric": "好",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "h ao qq"
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "我",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "你",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "一",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "二",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "三",
+     "tone": "E4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "我",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zz",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "喵",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "trad",
+   "notes": [
+    {
+     "lyric": "愛",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "國",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "說",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

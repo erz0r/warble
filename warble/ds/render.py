@@ -28,6 +28,15 @@ DELTA = {
 }
 
 
+def _context(track):
+    """every note group of the track: openutau romanizes lyrics and finds neighbours across the whole part."""
+    if track is None or not getattr(track, "notes", None):
+        return None
+    from ..score import note_groups
+
+    return note_groups(track.notes)
+
+
 # note control -> openutau track curve that adds to it
 CURVE_OF = {"gender": "genc", "brec": "brec", "tenc": "tenc", "voic": "voic", "ene": "ene", "vel": "velc"}
 
@@ -47,13 +56,15 @@ class DsEngine:
         self.vocoder = voc
         self._phonemizers = {}
 
-    def phonemizer(self, lang):
-        if lang not in self._phonemizers:
-            self._phonemizers[lang] = Phonemizer(self.bank, self.models, lang)
-        return self._phonemizers[lang]
+    def phonemizer(self, lang, name=None):
+        """the phonemizer for a language (and an optional openutau diffsinger phonemizer class name)."""
+        key = (lang or "", name or "")
+        if key not in self._phonemizers:
+            self._phonemizers[key] = Phonemizer(self.bank, self.models, lang, phonemizer=name)
+        return self._phonemizers[key]
 
-    def phonemize_phrase(self, words, tm, lang, voice_of, seed=None, **_):
-        return self.phonemizer(lang).phonemize_phrase(words, tm, voice_of, seed=seed)
+    def phonemize_phrase(self, words, tm, lang, voice_of, seed=None, phonemizer=None, track=None, **_):
+        return self.phonemizer(lang, phonemizer).phonemize_phrase(words, tm, voice_of, seed=seed, context=_context(track))
 
     def depth(self, depth=None):
         cfg = self.bank.config
@@ -65,11 +76,11 @@ class DsEngine:
         return min(1.0 if depth is None else float(depth), md)
 
     def render_phrase(self, words, tm, lang, voice_of, steps=None, depth=None, seed=None, pitch_steps=None, timings=None, allow_unknown=False,
-                      track=None, **_):
+                      track=None, phonemizer=None, **_):
         timings = timings if timings is not None else {}
         t0 = time.time()
-        ph = self.phonemizer(lang)
-        res = ph.phonemize_phrase(words, tm, voice_of, seed=seed)
+        ph = self.phonemizer(lang, phonemizer)
+        res = ph.phonemize_phrase(words, tm, voice_of, seed=seed, context=_context(track))
         timings["phonemize"] = timings.get("phonemize", 0) + time.time() - t0
         if res["unknown"] and not allow_unknown:
             # unknown words were replaced by SP; rendering them silent is only done on request

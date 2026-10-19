@@ -239,6 +239,9 @@ def _phrase_key(eng, words, tm, lang, track, steps, depth, seed, prev_end_ms, al
         "resampler": getattr(eng, "resampler_name", None), "wavtool": getattr(eng, "wavtool_name", None),
         "lang": lang, "voice": track.voice, "phonemizer": track.phonemizer, "steps": steps, "depth": depth, "seed": seed,
         "curves": track.curves,
+        # chinese romanization reads the whole track for context (polyphones like 长 / 行), so a
+        # neighbour's lyric can change this phrase's phonemes
+        "track_lyrics": [n.lyric for n in track.notes] if str(lang or "").lower() in ("zh", "zh-cn", "cmn", "yue", "zh-yue", "zh-hk") else None,
         "prev_end": round(prev_end_ms, 3) if prev_end_ms is not None else None, "allow_unknown": allow_unknown,
         "notes": [(n.lyric, n.hint, n.tone, round(tm.tick_to_ms(n.position), 3), round(tm.tick_to_ms(n.end), 3),
                    sorted((k, str(v)) for k, v in n.controls.items()), json.dumps(n.extra, sort_keys=True, default=str)) for n in notes],

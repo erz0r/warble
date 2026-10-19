@@ -1,0 +1,247 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerGermanPhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "de",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "hallo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "welt",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "singen",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "mit",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "mir",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "notes": [
+    {
+     "lyric": "hallo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "welt",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "singen",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "mit",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "mir",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "florbix",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "quandelmuh",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zeppetron",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "hallo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "welt",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "liebe",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "hallo",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "de/h de/a de/l de/o"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "v e l t"
+    },
+    {
+     "lyric": "mir",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "m i qq"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "hallo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "hallo",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "welt",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "singen",
+     "tone": "E4",
+     "duration": 120
+    },
+    {
+     "lyric": "mit",
+     "tone": "F4",
+     "duration": 120
+    },
+    {
+     "lyric": "mir",
+     "tone": "G4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "notes": [
+    {
+     "lyric": "Hallo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Welt",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "hallo",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "welt",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "notes": [
+    {
+     "lyric": "hallo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zzqx",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "welt",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,304 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerKoreanG2PPhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "ko",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "안",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "녕",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "하",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "세",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "요",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "batchim_link",
+   "notes": [
+    {
+     "lyric": "먹",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "어",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "요",
+     "tone": "E4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "같",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "이",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "batchim",
+   "notes": [
+    {
+     "lyric": "있",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "꽃",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "이",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "한",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "국",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "어",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "batchim_rest",
+   "notes": [
+    {
+     "lyric": "꽃",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "이",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "닭",
+     "tone": "E4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "앞",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dict_vowels",
+   "notes": [
+    {
+     "lyric": "아",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "이",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "우",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "에",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "오",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "으",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "어",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "사",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "랑",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "해",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "사",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ko/s ko/a"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "r a ng"
+    },
+    {
+     "lyric": "해",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "h e qq"
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "아",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "cl",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "라",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "노",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "래",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "를",
+     "tone": "E4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "oov_latin",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "사",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zz",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

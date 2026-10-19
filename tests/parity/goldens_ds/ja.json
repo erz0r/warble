@@ -1,0 +1,1001 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerJapanesePhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "ja",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "く",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "ら",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "さ",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "く",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "ら",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "katakana",
+   "notes": [
+    {
+     "lyric": "カ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ラ",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "オ",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "ケ",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "small_kana",
+   "notes": [
+    {
+     "lyric": "きゃ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "しゅ",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "ちょ",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "ふぁ",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "てぃ",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "n_and_cl",
+   "notes": [
+    {
+     "lyric": "ほ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ん",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "と",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "っ",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "て",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "choonpu",
+   "notes": [
+    {
+     "lyric": "ら",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ー",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "め",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "ん",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "romaji",
+   "notes": [
+    {
+     "lyric": "sa",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ku",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "ra",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "N",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "い",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "う",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ja/k ja/a"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "s a"
+    },
+    {
+     "lyric": "な",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "n a qq"
+    }
+   ]
+  },
+  {
+   "id": "rest",
+   "notes": [
+    {
+     "lyric": "う",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "た",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "う",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "た",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "あ",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "い",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "き",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "ら",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "り",
+     "tone": "E4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "not_in_dict",
+   "notes": [
+    {
+     "lyric": "かな",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ゐ",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zz",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "ゔぁ",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dict_specials",
+   "notes": [
+    {
+     "lyric": "か゜",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "すぃ",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "ヴ",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "common",
+   "lyrics": [
+    "sa",
+    "ku",
+    "ra",
+    "sa",
+    "ku",
+    "ra"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ja/s",
+     "position": -106,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/k",
+     "position": -101,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/u",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/r",
+     "position": -40,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ja/s",
+     "position": -107,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ja/k",
+     "position": -91,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ja/u",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ja/r",
+     "position": -40,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "katakana",
+   "lyrics": [
+    "ka",
+    "ra",
+    "o",
+    "ke"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ja/k",
+     "position": -48,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/r",
+     "position": -35,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/o",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ja/k",
+     "position": -118,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ja/e",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "small_kana",
+   "lyrics": [
+    "kya",
+    "shu",
+    "cho",
+    "fa",
+    "ti"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ja/ky",
+     "position": -66,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/sh",
+     "position": -91,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/u",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/ch",
+     "position": -91,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ja/o",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ja/f",
+     "position": -74,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ja/t",
+     "position": -83,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ja/i",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "n_and_cl",
+   "lyrics": [
+    "ho",
+    "N",
+    "to",
+    "cl",
+    "te"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ja/h",
+     "position": -63,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/N",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/t",
+     "position": -135,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ja/o",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "cl",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ja/t",
+     "position": -98,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ja/e",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "choonpu",
+   "lyrics": [
+    "ra",
+    "ー",
+    "me",
+    "N"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ja/r",
+     "position": -49,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"ー\""
+    },
+    {
+     "phoneme": "ja/m",
+     "position": -62,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ja/e",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ja/N",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "romaji",
+   "lyrics": [
+    "sa",
+    "ku",
+    "ra",
+    "N"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ja/s",
+     "position": -109,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/k",
+     "position": -108,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/u",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/r",
+     "position": -36,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ja/N",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "lyrics": [
+    "a",
+    "i",
+    "u"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/u",
+     "position": 0,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "lyrics": [
+    "ka",
+    "x",
+    "na"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ja/k",
+     "position": -45,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/s",
+     "position": -101,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"qq\""
+    }
+   ]
+  },
+  {
+   "id": "rest",
+   "lyrics": [
+    "u",
+    "ta",
+    "u",
+    "ta"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ja/u",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/t",
+     "position": -98,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/u",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ja/t",
+     "position": -101,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "lyrics": [
+    "-",
+    "a",
+    "br",
+    "R",
+    "i"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "SP",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "AP",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "SP",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ja/i",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "lyrics": [
+    "ki",
+    "ra",
+    "ri"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ja/k",
+     "position": -55,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/i",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/r",
+     "position": -37,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ja/r",
+     "position": -27,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ja/i",
+     "position": 0,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "not_in_dict",
+   "lyrics": [
+    "かな",
+    "ゐ",
+    "zz",
+    "va"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"かな\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"ゐ\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"zz\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 3,
+     "error": "Unrecognized phoneme \"va\""
+    }
+   ]
+  },
+  {
+   "id": "dict_specials",
+   "lyrics": [
+    "か゜",
+    "swi",
+    "vu"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "ja/ng",
+     "position": -48,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ja/a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"swi\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"vu\""
+    }
+   ]
+  }
+ ]
+}

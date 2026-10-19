@@ -1,0 +1,1500 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerARPAPlusEnglishPhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "en-plus",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "winner",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "sing",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "button",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "me",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "winner",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "sing",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "button",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "me",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "florbix",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "quandlemoo",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zeppetron",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "winner",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "dinner",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "love",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "en/hh en/ax en/l en/ow"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "w er l d"
+    },
+    {
+     "lyric": "me",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "m iy qq"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "winner",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "sing",
+     "tone": "E4",
+     "duration": 120
+    },
+    {
+     "lyric": "button",
+     "tone": "F4",
+     "duration": 120
+    },
+    {
+     "lyric": "me",
+     "tone": "G4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "notes": [
+    {
+     "lyric": "Hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Winner",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "hello",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "winner",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zzqx",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "winner",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "glottal",
+   "notes": [
+    {
+     "lyric": "'",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "cl",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "vf",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "uh",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "oh",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "glottal_start",
+   "notes": [
+    {
+     "lyric": "'",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "uh",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "cl",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "oh",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ax",
+   "notes": [
+    {
+     "lyric": "about",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "sofa",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "the",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "n_dx",
+   "notes": [
+    {
+     "lyric": "winner",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "center",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "twenty",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "common",
+   "lyrics": [
+    "hello",
+    "winner",
+    "sing",
+    "button",
+    "me"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "en/hh",
+     "position": -52,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ax",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/l",
+     "position": 116,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ow",
+     "position": 194,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/w",
+     "position": -49,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/ih",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 264,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/er",
+     "position": 319,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/s",
+     "position": -113,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/ih",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/ng",
+     "position": 302,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/b",
+     "position": -50,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/ah",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/dx",
+     "position": 197,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/ax",
+     "position": 212,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 401,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/m",
+     "position": -35,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "en/iy",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "lyrics": [
+    "hello",
+    "winner",
+    "sing",
+    "button",
+    "me"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "en/hh",
+     "position": -49,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ax",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/l",
+     "position": 112,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ow",
+     "position": 195,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/w",
+     "position": -50,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/ih",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 285,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/er",
+     "position": 343,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/s",
+     "position": -154,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/ih",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/ng",
+     "position": 243,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/b",
+     "position": -51,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/ah",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/dx",
+     "position": 194,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/ax",
+     "position": 209,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 403,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/m",
+     "position": -31,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "en/iy",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "lyrics": [
+    "florbix",
+    "quandlemoo",
+    "zeppetron"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "en/f",
+     "position": -76,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/l",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ao",
+     "position": 37,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/r",
+     "position": 178,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/b",
+     "position": 210,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ih",
+     "position": 233,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/k",
+     "position": 286,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/s",
+     "position": 330,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/k",
+     "position": -66,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/w",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/aa",
+     "position": 15,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 117,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/d",
+     "position": 142,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/ax",
+     "position": 150,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/l",
+     "position": 258,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/m",
+     "position": 285,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/uw",
+     "position": 315,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/z",
+     "position": -20,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/eh",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/p",
+     "position": 171,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/ax",
+     "position": 208,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/tr",
+     "position": 234,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/aa",
+     "position": 285,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 456,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "lyrics": [
+    "winner",
+    "dinner",
+    "love"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "en/w",
+     "position": -82,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ih",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 438,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/er",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/d",
+     "position": -57,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/ih",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 911,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/er",
+     "position": 960,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/l",
+     "position": -48,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/ah",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/v",
+     "position": 413,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "lyrics": [
+    "hello",
+    "x",
+    "me"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "en/hh",
+     "position": -48,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ax",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/l",
+     "position": 67,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ow",
+     "position": 171,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/w",
+     "position": -53,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/er",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/l",
+     "position": 246,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/d",
+     "position": 357,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/m",
+     "position": -76,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/iy",
+     "position": 0,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "lyrics": [
+    "hello"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "en/hh",
+     "position": -52,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ax",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/l",
+     "position": 97,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ow",
+     "position": 183,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "lyrics": [
+    "hello",
+    "winner",
+    "sing",
+    "button",
+    "me"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "en/hh",
+     "position": -41,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ax",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/l",
+     "position": 39,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ow",
+     "position": 60,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/w",
+     "position": -22,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/ih",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 29,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/er",
+     "position": 63,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/s",
+     "position": -38,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/ih",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/ng",
+     "position": 56,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/b",
+     "position": -24,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/ah",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/dx",
+     "position": 40,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/ax",
+     "position": 62,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 77,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/m",
+     "position": -16,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "en/iy",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "lyrics": [
+    "Hello",
+    "Winner"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "en/hh",
+     "position": -58,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/eh",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/l",
+     "position": 124,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ow",
+     "position": 214,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/w",
+     "position": -37,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/ih",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 282,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/er",
+     "position": 340,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "lyrics": [
+    "-",
+    "hello",
+    "br",
+    "winner"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "SP",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/hh",
+     "position": -52,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/ax",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/l",
+     "position": 247,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/ow",
+     "position": 323,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "AP",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/w",
+     "position": -73,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/ih",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 289,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/er",
+     "position": 335,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "lyrics": [
+    "hello",
+    "zzqx",
+    "winner"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "en/hh",
+     "position": -47,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ax",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/l",
+     "position": 159,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ow",
+     "position": 212,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/z",
+     "position": -129,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/k",
+     "position": -77,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/iy",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/k",
+     "position": 303,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/s",
+     "position": 363,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/w",
+     "position": -56,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/ih",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 281,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/er",
+     "position": 330,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "glottal",
+   "lyrics": [
+    "'",
+    "cl",
+    "vf",
+    "uh",
+    "oh"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "vf",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "cl",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "vf",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/ah",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "en/ow",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "glottal_start",
+   "lyrics": [
+    "'",
+    "uh",
+    "cl",
+    "oh"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "vf",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ah",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "vf",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/ow",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "ax",
+   "lyrics": [
+    "about",
+    "sofa",
+    "the"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "en/ax",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/b",
+     "position": 176,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/aw",
+     "position": 211,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/t",
+     "position": 386,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/s",
+     "position": -61,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/ow",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/f",
+     "position": 289,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/ax",
+     "position": 359,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/dh",
+     "position": -40,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/ax",
+     "position": 0,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "n_dx",
+   "lyrics": [
+    "winner",
+    "center",
+    "twenty"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "en/w",
+     "position": -68,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/ih",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 204,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/er",
+     "position": 280,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "en/s",
+     "position": -153,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/eh",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 200,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/t",
+     "position": 279,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/er",
+     "position": 321,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "en/t",
+     "position": -63,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/w",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/eh",
+     "position": 49,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/n",
+     "position": 235,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/t",
+     "position": 288,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "en/iy",
+     "position": 319,
+     "group": 2,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

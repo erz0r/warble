@@ -1,0 +1,1217 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerFrenchMillfeuillePhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "fr",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "le",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "monde",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "chanter",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "avec",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "le",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "monde",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "chanter",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "avec",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "florbix",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "quandelmou",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zeppetron",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "monde",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "amour",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "fr/b fr/on fr/j fr/ou fr/r"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "m on d"
+    },
+    {
+     "lyric": "le",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "l oe qq"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "le",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "monde",
+     "tone": "E4",
+     "duration": 120
+    },
+    {
+     "lyric": "chanter",
+     "tone": "F4",
+     "duration": 120
+    },
+    {
+     "lyric": "avec",
+     "tone": "G4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "notes": [
+    {
+     "lyric": "Bonjour",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Le",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "bonjour",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "le",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zzqx",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "le",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "accents",
+   "notes": [
+    {
+     "lyric": "été",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "garçon",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "où",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "cœur",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "common",
+   "lyrics": [
+    "bonjour",
+    "le",
+    "monde",
+    "chanter",
+    "avec"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "fr/b",
+     "position": -65,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/j",
+     "position": 191,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ou",
+     "position": 227,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/r",
+     "position": 442,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/l",
+     "position": -21,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ee",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/m",
+     "position": -85,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/d",
+     "position": 323,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/sh",
+     "position": -103,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "fr/en",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "fr/t",
+     "position": 197,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "fr/eh",
+     "position": 250,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ah",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "fr/v",
+     "position": 196,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ae",
+     "position": 231,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "fr/k",
+     "position": 392,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "lyrics": [
+    "bonjour",
+    "le",
+    "monde",
+    "chanter",
+    "avec"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "fr/b",
+     "position": -61,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/j",
+     "position": 192,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ou",
+     "position": 227,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/r",
+     "position": 432,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/l",
+     "position": -28,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ee",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/m",
+     "position": -47,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/d",
+     "position": 313,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/sh",
+     "position": -118,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "fr/en",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "fr/t",
+     "position": 204,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "fr/eh",
+     "position": 253,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ah",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "fr/v",
+     "position": 202,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ae",
+     "position": 234,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "fr/k",
+     "position": 402,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "lyrics": [
+    "florbix",
+    "quandelmou",
+    "zeppetron"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "fr/f",
+     "position": -92,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/l",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/oo",
+     "position": 22,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/r",
+     "position": 182,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/b",
+     "position": 210,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ih",
+     "position": 241,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/k",
+     "position": 391,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/s",
+     "position": 415,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/k",
+     "position": -32,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/en",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/d",
+     "position": 156,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/l",
+     "position": 186,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/m",
+     "position": 215,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ou",
+     "position": 238,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/z",
+     "position": -42,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ae",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/p",
+     "position": 117,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ee",
+     "position": 162,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/t",
+     "position": 276,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/r",
+     "position": 301,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 328,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "lyrics": [
+    "bonjour",
+    "monde",
+    "amour"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "fr/b",
+     "position": -63,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/j",
+     "position": 407,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ou",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/r",
+     "position": 847,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/m",
+     "position": -59,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/d",
+     "position": 1372,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ah",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/m",
+     "position": 209,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ou",
+     "position": 239,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/r",
+     "position": 457,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "lyrics": [
+    "bonjour",
+    "x",
+    "le"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "fr/b",
+     "position": -57,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/j",
+     "position": 194,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ou",
+     "position": 230,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/r",
+     "position": 425,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/m",
+     "position": -34,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/d",
+     "position": 340,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"qq\""
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "lyrics": [
+    "bonjour"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "fr/b",
+     "position": -54,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/j",
+     "position": 200,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ou",
+     "position": 234,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/r",
+     "position": 458,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "lyrics": [
+    "bonjour",
+    "le",
+    "monde",
+    "chanter",
+    "avec"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "fr/b",
+     "position": -45,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/j",
+     "position": 28,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ou",
+     "position": 63,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/r",
+     "position": 85,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/l",
+     "position": -17,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ee",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/m",
+     "position": -66,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/d",
+     "position": 45,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/sh",
+     "position": -47,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "fr/en",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "fr/t",
+     "position": 39,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "fr/eh",
+     "position": 70,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ah",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "fr/v",
+     "position": 33,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ae",
+     "position": 75,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "fr/k",
+     "position": 87,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "lyrics": [
+    "Bonjour",
+    "Le"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "fr/b",
+     "position": -61,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/j",
+     "position": 192,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ou",
+     "position": 227,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/r",
+     "position": 432,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/l",
+     "position": -28,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ee",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "lyrics": [
+    "-",
+    "bonjour",
+    "br",
+    "le"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "SP",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/b",
+     "position": -75,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/j",
+     "position": 202,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ou",
+     "position": 241,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/r",
+     "position": 447,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "AP",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/l",
+     "position": -68,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ee",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "lyrics": [
+    "bonjour",
+    "zzqx",
+    "le"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "fr/b",
+     "position": -59,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/j",
+     "position": 226,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ou",
+     "position": 267,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/r",
+     "position": 460,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/z",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/s",
+     "position": 219,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/l",
+     "position": -114,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ee",
+     "position": 0,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "accents",
+   "lyrics": [
+    "été",
+    "garçon",
+    "où",
+    "cœur"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "fr/eh",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/t",
+     "position": 183,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/eh",
+     "position": 234,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "fr/g",
+     "position": -32,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ah",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/r",
+     "position": 164,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/s",
+     "position": 190,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/on",
+     "position": 244,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "fr/ou",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "fr/k",
+     "position": -119,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "fr/oe",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "fr/r",
+     "position": 397,
+     "group": 3,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

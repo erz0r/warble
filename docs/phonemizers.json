@@ -1,5 +1,22 @@
 [
  {
+  "class": "OpenUtau.Core.DiffSinger.DiDiffSingerGermanMarzipanPhonemizerr",
+  "name": "DiffSinger German Marzipan Phonemizer",
+  "tag": "DIFFS DE MARZ",
+  "language": "DE",
+  "base": "DiffSingerG2pPhonemizer",
+  "abstract": false,
+  "file": "OpenUtau.Core/DiffSinger/Phonemizers/DiffSingerGermanMarzipanPhonemizer.cs",
+  "engine": "diffsinger",
+  "reads": [
+   "dsdict-de-marzipan.yaml"
+  ],
+  "goldens": [
+   "de_marzipan.json"
+  ],
+  "status": "ported (parity)"
+ },
+ {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerARPAPlusEnglishPhonemizer",
   "name": "DiffSinger English+ Phonemizer",
   "tag": "DIFFS EN+",
@@ -11,8 +28,10 @@
   "reads": [
    "dsdict-en.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "en_plus.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerChinesePhonemizer",
@@ -26,8 +45,10 @@
   "reads": [
    "dsdict-zh.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "zh.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerEnglishPhonemizer",
@@ -41,8 +62,10 @@
   "reads": [
    "dsdict-en.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "en.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerFilipinoPhonemizer",
@@ -56,8 +79,10 @@
   "reads": [
    "dsdict-fil.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "fil.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerFrenchMillfeuillePhonemizer",
@@ -71,8 +96,10 @@
   "reads": [
    "dsdict-fr-millefeuille.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "fr.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerGermanPhonemizer",
@@ -86,8 +113,10 @@
   "reads": [
    "dsdict-de.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "de.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerItalianPhonemizer",
@@ -101,8 +130,10 @@
   "reads": [
    "dsdict-it.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "it.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerJapanesePhonemizer",
@@ -116,8 +147,10 @@
   "reads": [
    "dsdict-ja.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "ja.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerJyutpingPhonemizer",
@@ -131,8 +164,10 @@
   "reads": [
    "dsdict-zh-yue.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "yue.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerKoreanG2PPhonemizer",
@@ -146,8 +181,10 @@
   "reads": [
    "dsdict-ko.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "ko.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerKoreanPhonemizer",
@@ -161,8 +198,10 @@
   "reads": [
    "dsdict-ko.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "ko_dict.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerPhonemizer",
@@ -174,8 +213,10 @@
   "file": "OpenUtau.Core/DiffSinger/Phonemizers/DiffSingerPhonemizer.cs",
   "engine": "diffsinger",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "generic.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerPortuguesePhonemizer",
@@ -189,8 +230,10 @@
   "reads": [
    "dsdict-pt.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "pt.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerRhythmizerPhonemizer",
@@ -205,7 +248,25 @@
    "dsrhythmizer.yaml"
   ],
   "goldens": [],
-  "status": "not ported"
+  "status": "not ported",
+  "note": "legacy: needs a separately installed rhythmizer package (dsrhythmizer.yaml, for old banks without dsdur); none is available to test against"
+ },
+ {
+  "class": "OpenUtau.Core.DiffSinger.DiffSingerRuleBasedFilipinoPhonemizer",
+  "name": "DiffSinger Rule-based Filipino Phonemizer",
+  "tag": "DIFFS FIL",
+  "language": "FIL",
+  "base": "DiffSingerG2pPhonemizer",
+  "abstract": false,
+  "file": "OpenUtau.Core/DiffSinger/Phonemizers/DiffSingerRuleBasedFilipinoPhonemizer.cs",
+  "engine": "diffsinger",
+  "reads": [
+   "dsdict-fil.yaml"
+  ],
+  "goldens": [
+   "fil_rule.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerRussianPhonemizer",
@@ -219,8 +280,10 @@
   "reads": [
    "dsdict-ru.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "ru.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerSpanishPhonemizer",
@@ -234,23 +297,10 @@
   "reads": [
    "dsdict-es.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
- },
- {
-  "class": "OpenUtau.Core.G2p.DiffSingerRuleBasedFilipinoPhonemizer",
-  "name": "DiffSinger Rule-based Filipino Phonemizer",
-  "tag": "DIFFS FIL",
-  "language": "FIL",
-  "base": "DiffSingerG2pPhonemizer",
-  "abstract": false,
-  "file": "OpenUtau.Core/DiffSinger/Phonemizers/DiffSingerRuleBasedFilipinoPhonemizer.cs",
-  "engine": "diffsinger",
-  "reads": [
-   "dsdict-fil.yaml"
+  "goldens": [
+   "es.json"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.DiffSinger.DiffSingerBasePhonemizer",
@@ -415,8 +465,12 @@
   "reads": [
    "arpasing.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "en_arpasing_dict.json",
+   "en_arpasing.json",
+   "g2p_sweep_en.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.BrazilianPortugueseCVCPhonemizer",
@@ -443,8 +497,10 @@
   "file": "OpenUtau.Plugin.Builtin/CantoneseCVVCPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "yue_cvvc.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.CantoneseSyoPhonemizer",
@@ -456,8 +512,10 @@
   "file": "OpenUtau.Plugin.Builtin/CantoneseSyoPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "yue_syo.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.ChineseCVVCPhonemizer",
@@ -471,8 +529,11 @@
   "reads": [
    "presamp.ini"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "zh_cvvc.json",
+   "zh_cvvc_nopresamp.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.ChineseCVVMonophonePhonemizer",
@@ -486,8 +547,10 @@
   "reads": [
    "zhcvv.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "zh_cvv.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.ChineseCVVPlusPhonemizer",
@@ -501,8 +564,12 @@
   "reads": [
    "zhcvvplus.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "zh_cvvplus.json",
+   "zh_cvvplus_dup.json",
+   "zh_cvvplus_custom.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.ChineseVCVPhonemizer",
@@ -514,8 +581,10 @@
   "file": "OpenUtau.Plugin.Builtin/ChineseVCVPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "zh_vcv.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.EStoJAPhonemizer",
@@ -559,8 +628,11 @@
   "reads": [
    "filipino.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "fil_vcv_bpm150.json",
+   "fil_cvvc.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.FrenchCMUSphinxPhonemizer",
@@ -574,8 +646,11 @@
   "reads": [
    "french.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "g2p_sweep_fr.json",
+   "fr_sphinx.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.FrenchVCCVPhonemizer",
@@ -604,8 +679,11 @@
   "reads": [
    "german.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "de_diphone.json",
+   "g2p_sweep_de.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.GermanVCCVPhonemizer",
@@ -633,8 +711,10 @@
   "file": "OpenUtau.Plugin.Builtin/ItalianCVVCPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "it_cvvc.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.ItalianSyllableBasedPhonemizer",
@@ -677,8 +757,24 @@
   "file": "OpenUtau.Plugin.Builtin/JapanesePresampPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "ja_presamp_cvvc_integration.json",
+   "ja_presamp_vcv_integration.json",
+   "ja_presamp_ini_tricky.json",
+   "ja_presamp_bpm233.json",
+   "ja_presamp_ini_sjis.json",
+   "ja_presamp_ini_empty.json",
+   "ja_presamp_vcv.json",
+   "ja_presamp_cv.json",
+   "ja_presamp_cv_integration.json",
+   "ja_presamp_cvvc.json",
+   "ja_presamp_xsampa.json",
+   "ja_presamp_ini_custom2.json",
+   "ja_presamp_ini_blank.json",
+   "ja_presamp_ini_custom.json",
+   "ja_presamp_bpm87.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.JapaneseVCVPhonemizer",
@@ -705,8 +801,12 @@
   "file": "OpenUtau.Plugin.Builtin/KOtoJAPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "kotoja_ja_cvvc.json",
+   "kotoja_ja_cv.json",
+   "kotoja_ja_vcv.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.KoreanCBNNPhonemizer",
@@ -718,8 +818,10 @@
   "file": "OpenUtau.Plugin.Builtin/KoreanCBNNPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "ko_cbnn.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.KoreanCVCCVPhonemizer",
@@ -731,8 +833,10 @@
   "file": "OpenUtau.Plugin.Builtin/KoreanCVCCVPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "ko_cvccv.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.KoreanCVCPhonemizer",
@@ -744,8 +848,10 @@
   "file": "OpenUtau.Plugin.Builtin/KoreanCVCPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "ko_cvc.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.KoreanCVPhonemizer",
@@ -760,8 +866,11 @@
    "ko-CV.ini",
    "kocv.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "ko_cv.json",
+   "ko_cv_alt.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.KoreanCVVCPhonemizer",
@@ -773,8 +882,10 @@
   "file": "OpenUtau.Plugin.Builtin/KoreanCVVCStandardPronunciationPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "ko_cvvc.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.KoreanVCVPhonemizer",
@@ -786,8 +897,10 @@
   "file": "OpenUtau.Plugin.Builtin/KoreanVCVPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "ko_vcv.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.PolishCVCPhonemizer",
@@ -902,8 +1015,10 @@
   "file": "OpenUtau.Plugin.Builtin/ThaiVCCVPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "th_vccv.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.VietnameseCVVCPhonemizer",
@@ -915,8 +1030,10 @@
   "file": "OpenUtau.Plugin.Builtin/VietnameseCVVCPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "vi_cvvc.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.VietnameseVCVPhonemizer",
@@ -928,8 +1045,10 @@
   "file": "OpenUtau.Plugin.Builtin/VietnameseVCVPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "vi_vcv.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.VietnameseVINAPhonemizer",
@@ -941,8 +1060,10 @@
   "file": "OpenUtau.Plugin.Builtin/VietnameseVINAPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "vi_vina.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "Voicevox.SimpleVoicevoxPhonemizer",
@@ -968,7 +1089,7 @@
   "engine": "utau",
   "reads": [],
   "goldens": [],
-  "status": "base class"
+  "status": "base class (ported)"
  },
  {
   "class": "OpenUtau.Core.MachineLearningPhonemizer",
@@ -995,8 +1116,13 @@
   "reads": [
    "arpasing.yaml"
   ],
-  "goldens": [],
-  "status": "base class"
+  "goldens": [
+   "en_arpa_plus_bpm75.json",
+   "en_arpa_plus.json",
+   "en_arpa_plus_arpa_bank.json",
+   "en_arpa_plus_main_bpm180.json"
+  ],
+  "status": "base class (ported)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.BaseKoreanPhonemizer",
@@ -1009,7 +1135,7 @@
   "engine": "utau",
   "reads": [],
   "goldens": [],
-  "status": "base class"
+  "status": "base class (ported)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.ENtoJAPhonemizer",
@@ -1097,7 +1223,7 @@
   "engine": "utau",
   "reads": [],
   "goldens": [],
-  "status": "base class"
+  "status": "base class (ported)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.MonophonePhonemizer",
@@ -1110,7 +1236,7 @@
   "engine": "utau",
   "reads": [],
   "goldens": [],
-  "status": "base class"
+  "status": "base class (ported)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.PhonemeBasedPhonemizer",
@@ -1123,7 +1249,7 @@
   "engine": "utau",
   "reads": [],
   "goldens": [],
-  "status": "base class"
+  "status": "base class (ported)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.SyllableBasedPhonemizer",
@@ -1136,7 +1262,7 @@
   "engine": "utau",
   "reads": [],
   "goldens": [],
-  "status": "base class"
+  "status": "base class (ported)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.TurkishCVVCPhonemizer",
@@ -1148,8 +1274,10 @@
   "file": "OpenUtau.Plugin.Builtin/TurkishCVVCPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "base class"
+  "goldens": [
+   "tr_cvvc.json"
+  ],
+  "status": "base class (ported)"
  },
  {
   "class": "OpenUtau.Core.Vogen.VogenMandarinPhonemizer",

@@ -1,0 +1,277 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerSpanishPhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "es",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mundo",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "cantar",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "con",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "migo",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mundo",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "cantar",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "con",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "migo",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "florbizo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "quandelmu",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zepetron",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "mundo",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "amor",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "es/o es/l es/a"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "m u n d o"
+    },
+    {
+     "lyric": "con",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "k o n qq"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "mundo",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "cantar",
+     "tone": "E4",
+     "duration": 120
+    },
+    {
+     "lyric": "con",
+     "tone": "F4",
+     "duration": 120
+    },
+    {
+     "lyric": "migo",
+     "tone": "G4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "notes": [
+    {
+     "lyric": "Hola",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Mundo",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "hola",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "mundo",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zzqx",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "mundo",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "accents",
+   "notes": [
+    {
+     "lyric": "niño",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "corazón",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "llamar",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "yo",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "jardín",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

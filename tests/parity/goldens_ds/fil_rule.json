@@ -1,0 +1,557 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerRuleBasedFilipinoPhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "fil-rule",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "kumusta",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mahal",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "kita",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "ng",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "mga",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "notes": [
+    {
+     "lyric": "kumusta",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mahal",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "kita",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "ng",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "mga",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "florbiks",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "kwandelmu",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zepetron",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "mahal",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "kita",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "puso",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "mahal",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "m a h a l"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "SP"
+    },
+    {
+     "lyric": "kita",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "k i qq"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "kumusta",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "kumusta",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "mahal",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "kita",
+     "tone": "E4",
+     "duration": 120
+    },
+    {
+     "lyric": "ng",
+     "tone": "F4",
+     "duration": 120
+    },
+    {
+     "lyric": "mga",
+     "tone": "G4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "notes": [
+    {
+     "lyric": "Kumusta",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Mahal",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "kumusta",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "mahal",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "notes": [
+    {
+     "lyric": "kumusta",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zzqx",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "mahal",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "common",
+   "lyrics": [
+    "kumusta",
+    "mahal",
+    "kita",
+    "ng",
+    "mga"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"fil/k fil/u fil/m fil/u fil/s fil/t fil/a\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"fil/m fil/a fil/h fil/a fil/l\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"fil/k fil/i fil/t fil/a\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 3,
+     "error": "Unrecognized phoneme \"fil/n fil/a fil/ng\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 4,
+     "error": "Unrecognized phoneme \"fil/m fil/a fil/ng fil/a\""
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "lyrics": [
+    "kumusta",
+    "mahal",
+    "kita",
+    "ng",
+    "mga"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"fil/k fil/u fil/m fil/u fil/s fil/t fil/a\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"fil/m fil/a fil/h fil/a fil/l\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"fil/k fil/i fil/t fil/a\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 3,
+     "error": "Unrecognized phoneme \"fil/n fil/a fil/ng\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 4,
+     "error": "Unrecognized phoneme \"fil/m fil/a fil/ng fil/a\""
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "lyrics": [
+    "florbiks",
+    "kwandelmu",
+    "zepetron"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"fil/p fil/l fil/o fil/r fil/b fil/i fil/k fil/s\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"fil/k fil/w fil/a fil/n fil/d fil/e fil/l fil/m fil/u\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"fil/s fil/e fil/p fil/e fil/t fil/r fil/o fil/n\""
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "lyrics": [
+    "mahal",
+    "kita",
+    "puso"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"fil/m fil/a fil/h fil/a fil/l\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"fil/k fil/i fil/t fil/a\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"fil/p fil/u fil/s fil/o\""
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "lyrics": [
+    "mahal",
+    "x",
+    "kita"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"m a h a l\""
+    },
+    {
+     "phoneme": "SP",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"k i qq\""
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "lyrics": [
+    "kumusta"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"fil/k fil/u fil/m fil/u fil/s fil/t fil/a\""
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "lyrics": [
+    "kumusta",
+    "mahal",
+    "kita",
+    "ng",
+    "mga"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"fil/k fil/u fil/m fil/u fil/s fil/t fil/a\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"fil/m fil/a fil/h fil/a fil/l\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"fil/k fil/i fil/t fil/a\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 3,
+     "error": "Unrecognized phoneme \"fil/n fil/a fil/ng\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 4,
+     "error": "Unrecognized phoneme \"fil/m fil/a fil/ng fil/a\""
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "lyrics": [
+    "Kumusta",
+    "Mahal"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"fil/k fil/u fil/m fil/u fil/s fil/t fil/a\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"fil/m fil/a fil/h fil/a fil/l\""
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "lyrics": [
+    "-",
+    "kumusta",
+    "br",
+    "mahal"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "SP",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"fil/k fil/u fil/m fil/u fil/s fil/t fil/a\""
+    },
+    {
+     "phoneme": "AP",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 3,
+     "error": "Unrecognized phoneme \"fil/m fil/a fil/h fil/a fil/l\""
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "lyrics": [
+    "kumusta",
+    "zzqx",
+    "mahal"
+   ],
+   "phonemes": [
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 0,
+     "error": "Unrecognized phoneme \"fil/k fil/u fil/m fil/u fil/s fil/t fil/a\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Unrecognized phoneme \"fil/s fil/s fil/q\""
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Unrecognized phoneme \"fil/m fil/a fil/h fil/a fil/l\""
+    }
+   ]
+  }
+ ]
+}

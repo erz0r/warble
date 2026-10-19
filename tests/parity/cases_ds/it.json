@@ -1,0 +1,272 @@
+{
+ "phonemizer": "OpenUtau.Core.DiffSinger.DiffSingerItalianPhonemizer",
+ "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+ "lang": "it",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "common",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mondo",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "cantare",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "con",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "me",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "common_rest",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mondo",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "cantare",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "con",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "me",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov",
+   "notes": [
+    {
+     "lyric": "florbizzo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "quandelmu",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zeppetrone",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "multi_note",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "mondo",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "amore",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "it/ch it/a it/o"
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "m o n d o"
+    },
+    {
+     "lyric": "me",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "m e qq"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "mondo",
+     "tone": "D4",
+     "duration": 120
+    },
+    {
+     "lyric": "cantare",
+     "tone": "E4",
+     "duration": 120
+    },
+    {
+     "lyric": "con",
+     "tone": "F4",
+     "duration": 120
+    },
+    {
+     "lyric": "me",
+     "tone": "G4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "caps",
+   "notes": [
+    {
+     "lyric": "Ciao",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Mondo",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_symbols",
+   "notes": [
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ciao",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "br",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "mondo",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown_symbol",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zzqx",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "mondo",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "accents",
+   "notes": [
+    {
+     "lyric": "perché",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "città",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "gli",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "sciarpa",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}
