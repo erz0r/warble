@@ -54,7 +54,9 @@ def _syllables(text, lang):
 
     if lang == "ja" or any("぀" <= c <= "ヿ" for c in text):
         return ja.split_mora(_norm_ja(text))
-    return [w for w in text.lower().replace("'", "").split() if w]
+    import re
+
+    return [w for w in re.findall(r"[a-z0-9]+", text.lower().replace("'", ""))]
 
 
 def _align_score(ref, hyp):
@@ -102,7 +104,10 @@ def check(a, intent, note_filter=None):
         s, e = ns[0]["start_ms"] - 150, ns[-1]["end_ms"] + 150
         seg = a.x[int(max(0, s) / 1000 * a.sr): int(e / 1000 * a.sr)]
         y = resample_poly(seg, 16000, a.sr).astype(np.float32)
-        lyric = "".join(n["lyric"] for n in ns if not n["lyric"].startswith("+"))
+        words = [n["lyric"] for n in ns if not n["lyric"].startswith("+")]
+        cjk = any("぀" <= c <= "ヿ" or "一" <= c <= "鿿" or "가" <= c <= "힣" for w in words for c in w)
+        # kana/hanzi/hangul lyrics are syllables to join; anything else is words to keep apart
+        lyric = "".join(words) if cjk else " ".join(words)
         lang = "ja" if any("぀" <= c <= "ヿ" for c in lyric) else None
         if kind == "faster":
             segs, _ = m.transcribe(y, language=lang, beam_size=1)
