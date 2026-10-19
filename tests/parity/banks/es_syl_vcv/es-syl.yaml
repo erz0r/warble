@@ -1,0 +1,15 @@
+symbols:
+  - {symbol: a, type: vowel}
+  - {symbol: e, type: vowel}
+  - {symbol: o, type: vowel}
+  - {symbol: w, type: semivowel}
+  - {symbol: r, type: liquid}
+  - {symbol: b, type: stop}
+  - {symbol: l, type: liquid}
+  - {symbol: n, type: nasal}
+  - {symbol: s, type: fricative}
+entries:
+  - grapheme: warble
+    phonemes: [w, a, r, b, l, e]
+  - grapheme: hola
+    phonemes: [o, l, a, s]

@@ -1,0 +1,1002 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.ItalianSyllableBasedPhonemizer",
+ "bank": "it_syl",
+ "bpm": 150,
+ "cases": [
+  {
+   "id": "w_ciao",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_cuore",
+   "notes": [
+    {
+     "lyric": "cuore",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_openutau",
+   "notes": [
+    {
+     "lyric": "openutau",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_amore",
+   "notes": [
+    {
+     "lyric": "amore",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_aereo",
+   "notes": [
+    {
+     "lyric": "aereo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_bravo",
+   "notes": [
+    {
+     "lyric": "bravo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_strada",
+   "notes": [
+    {
+     "lyric": "strada",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_sgabello",
+   "notes": [
+    {
+     "lyric": "sgabello",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_pizza",
+   "notes": [
+    {
+     "lyric": "pizza",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_zero",
+   "notes": [
+    {
+     "lyric": "zero",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_figlio",
+   "notes": [
+    {
+     "lyric": "figlio",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_gnocchi",
+   "notes": [
+    {
+     "lyric": "gnocchi",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_scherzo",
+   "notes": [
+    {
+     "lyric": "scherzo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_spaghetti",
+   "notes": [
+    {
+     "lyric": "spaghetti",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_andare",
+   "notes": [
+    {
+     "lyric": "andare",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_gatto",
+   "notes": [
+    {
+     "lyric": "gatto",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_perché",
+   "notes": [
+    {
+     "lyric": "perché",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_città",
+   "notes": [
+    {
+     "lyric": "città",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_mangiare",
+   "notes": [
+    {
+     "lyric": "mangiare",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_sbrigare",
+   "notes": [
+    {
+     "lyric": "sbrigare",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_ombra",
+   "notes": [
+    {
+     "lyric": "ombra",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_anno",
+   "notes": [
+    {
+     "lyric": "anno",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_io",
+   "notes": [
+    {
+     "lyric": "io",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_a",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_sempre",
+   "notes": [
+    {
+     "lyric": "sempre",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_molto",
+   "notes": [
+    {
+     "lyric": "molto",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_sprezzo",
+   "notes": [
+    {
+     "lyric": "sprezzo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_estro",
+   "notes": [
+    {
+     "lyric": "estro",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_inglese",
+   "notes": [
+    {
+     "lyric": "inglese",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_aiuto",
+   "notes": [
+    {
+     "lyric": "aiuto",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_mostro",
+   "notes": [
+    {
+     "lyric": "mostro",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_grande",
+   "notes": [
+    {
+     "lyric": "grande",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_pianto",
+   "notes": [
+    {
+     "lyric": "pianto",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_nostro",
+   "notes": [
+    {
+     "lyric": "nostro",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_parks",
+   "notes": [
+    {
+     "lyric": "parks",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_ciao_amore",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "amore",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_io_sono",
+   "notes": [
+    {
+     "lyric": "io",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "sono",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_la_strada",
+   "notes": [
+    {
+     "lyric": "la",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "strada",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_il_gatto",
+   "notes": [
+    {
+     "lyric": "il",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "gatto",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_una_ombra",
+   "notes": [
+    {
+     "lyric": "una",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ombra",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_per_sempre",
+   "notes": [
+    {
+     "lyric": "per",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "sempre",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_e_andare",
+   "notes": [
+    {
+     "lyric": "e",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "andare",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_con_brio",
+   "notes": [
+    {
+     "lyric": "con",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "brio",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_blorptastico",
+   "notes": [
+    {
+     "lyric": "blorptastico",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_zuzzurellone",
+   "notes": [
+    {
+     "lyric": "zuzzurellone",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_kroidroi",
+   "notes": [
+    {
+     "lyric": "kroidroi",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_amore",
+   "notes": [
+    {
+     "lyric": "amore",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_spaghetti",
+   "notes": [
+    {
+     "lyric": "spaghetti",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C5",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_tilde",
+   "notes": [
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "C5",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_star",
+   "notes": [
+    {
+     "lyric": "aereo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+*",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_extra",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_short",
+   "notes": [
+    {
+     "lyric": "mangiare",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint_basic",
+   "notes": [
+    {
+     "lyric": "xx",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "k a z a"
+    }
+   ]
+  },
+  {
+   "id": "hint_spanish",
+   "notes": [
+    {
+     "lyric": "xx",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "B a T o"
+    }
+   ]
+  },
+  {
+   "id": "hint_ccc",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "s t r a"
+    }
+   ]
+  },
+  {
+   "id": "hint_ccc2",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a s p r a"
+    }
+   ]
+  },
+  {
+   "id": "hint_ccc3",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "o n g r a"
+    }
+   ]
+  },
+  {
+   "id": "hint_rcc_bre",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "b r e"
+    }
+   ]
+  },
+  {
+   "id": "hint_ending_cc",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a r k s"
+    }
+   ]
+  },
+  {
+   "id": "hint_ending_c",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a l"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "o t"
+    }
+   ]
+  },
+  {
+   "id": "hint_vv",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a"
+    },
+    {
+     "lyric": "z",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "3"
+    }
+   ]
+  },
+  {
+   "id": "hint_ts_fallback",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a m tS a"
+    }
+   ]
+  },
+  {
+   "id": "hint_ts_nofallback",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a n tS a"
+    }
+   ]
+  },
+  {
+   "id": "hint_rcv_missing",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "tS a"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "gn o"
+    }
+   ]
+  },
+  {
+   "id": "rest_between",
+   "notes": [
+    {
+     "lyric": "amore",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "ciao",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_short",
+   "notes": [
+    {
+     "lyric": "molto",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 30
+    },
+    {
+     "lyric": "anno",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 480
+    },
+    {
+     "lyric": "io",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "tail_dash",
+   "notes": [
+    {
+     "lyric": "io",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "tail_R",
+   "notes": [
+    {
+     "lyric": "parks",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "tail_mid",
+   "notes": [
+    {
+     "lyric": "molto",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "andare",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dur_30",
+   "notes": [
+    {
+     "lyric": "strada",
+     "tone": "C4",
+     "duration": 30
+    },
+    {
+     "lyric": "sempre",
+     "tone": "C4",
+     "duration": 30
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 30
+    }
+   ]
+  },
+  {
+   "id": "dur_60",
+   "notes": [
+    {
+     "lyric": "strada",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "sempre",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 60
+    }
+   ]
+  },
+  {
+   "id": "dur_120",
+   "notes": [
+    {
+     "lyric": "strada",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "sempre",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "dur_240",
+   "notes": [
+    {
+     "lyric": "strada",
+     "tone": "C4",
+     "duration": 240
+    },
+    {
+     "lyric": "sempre",
+     "tone": "C4",
+     "duration": 240
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 240
+    }
+   ]
+  },
+  {
+   "id": "dur_960",
+   "notes": [
+    {
+     "lyric": "strada",
+     "tone": "C4",
+     "duration": 960
+    },
+    {
+     "lyric": "sempre",
+     "tone": "C4",
+     "duration": 960
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 960
+    }
+   ]
+  },
+  {
+   "id": "dur_1920",
+   "notes": [
+    {
+     "lyric": "strada",
+     "tone": "C4",
+     "duration": 1920
+    },
+    {
+     "lyric": "sempre",
+     "tone": "C4",
+     "duration": 1920
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 1920
+    }
+   ]
+  },
+  {
+   "id": "tone_change",
+   "notes": [
+    {
+     "lyric": "strada",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "grande",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "io",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

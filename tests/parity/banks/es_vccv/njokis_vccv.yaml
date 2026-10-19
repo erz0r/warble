@@ -1,0 +1,12 @@
+version: 1.0
+replacements:
+  - {from: [s, t], to: [s, t], where: all}
+  - {from: k, to: [k], where: inside}
+fallbacks:
+  - {from: z, to: [s]}
+  - {from: (h), to: (h)}
+entries:
+  - grapheme: warble
+    phonemes: [w, a, r, b, l, e]
+  - grapheme: zz
+    phonemes: [s, a, s, a]

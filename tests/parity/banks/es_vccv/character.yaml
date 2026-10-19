@@ -1,0 +1,12 @@
+text_file_encoding: utf-8
+subbanks:
+- color: ''
+  prefix: ''
+  suffix: ''
+  tone_ranges:
+  - C1-B5
+- color: ''
+  prefix: ''
+  suffix: '_H'
+  tone_ranges:
+  - C6-B7

@@ -1,0 +1,22 @@
+symbols:
+  - {symbol: a, type: vowel}
+  - {symbol: e, type: vowel}
+  - {symbol: i, type: vowel}
+  - {symbol: o, type: vowel}
+  - {symbol: u, type: vowel}
+  - {symbol: EE, type: vowel}
+  - {symbol: OO, type: vowel}
+  - {symbol: k, type: stop}
+  - {symbol: w, type: semivowel}
+  - {symbol: r, type: liquid}
+  - {symbol: tSS, type: affricate}
+  - {symbol: p, type: stop}
+  - {symbol: n, type: nasal}
+  - {symbol: t, type: stop}
+entries:
+  - grapheme: ciao
+    phonemes: [tSS, EE, o]
+  - grapheme: cuore
+    phonemes: [k, w, OO, r, e]
+  - grapheme: openutau
+    phonemes: [o, p, e, n, u, t, a, u]

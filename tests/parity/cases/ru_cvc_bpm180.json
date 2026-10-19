@@ -1,0 +1,1151 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.RussianCVCPhonemizer",
+ "bank": "ru_cvc",
+ "bpm": 180,
+ "cases": [
+  {
+   "id": "w_привет",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_мама",
+   "notes": [
+    {
+     "lyric": "мама",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_здравствуйте",
+   "notes": [
+    {
+     "lyric": "здравствуйте",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_встреча",
+   "notes": [
+    {
+     "lyric": "встреча",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_щука",
+   "notes": [
+    {
+     "lyric": "щука",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_жизнь",
+   "notes": [
+    {
+     "lyric": "жизнь",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_ель",
+   "notes": [
+    {
+     "lyric": "ель",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_любовь",
+   "notes": [
+    {
+     "lyric": "любовь",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_сердце",
+   "notes": [
+    {
+     "lyric": "сердце",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_дождь",
+   "notes": [
+    {
+     "lyric": "дождь",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_объём",
+   "notes": [
+    {
+     "lyric": "объём",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_юла",
+   "notes": [
+    {
+     "lyric": "юла",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_яблоко",
+   "notes": [
+    {
+     "lyric": "яблоко",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_ёж",
+   "notes": [
+    {
+     "lyric": "ёж",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_хлеб",
+   "notes": [
+    {
+     "lyric": "хлеб",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_чай",
+   "notes": [
+    {
+     "lyric": "чай",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_шоколад",
+   "notes": [
+    {
+     "lyric": "шоколад",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_солнце",
+   "notes": [
+    {
+     "lyric": "солнце",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_небо",
+   "notes": [
+    {
+     "lyric": "небо",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_ветер",
+   "notes": [
+    {
+     "lyric": "ветер",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_мир",
+   "notes": [
+    {
+     "lyric": "мир",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_друг",
+   "notes": [
+    {
+     "lyric": "друг",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_песня",
+   "notes": [
+    {
+     "lyric": "песня",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_звезда",
+   "notes": [
+    {
+     "lyric": "звезда",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_сестра",
+   "notes": [
+    {
+     "lyric": "сестра",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_один",
+   "notes": [
+    {
+     "lyric": "один",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_я",
+   "notes": [
+    {
+     "lyric": "я",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_и",
+   "notes": [
+    {
+     "lyric": "и",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_о",
+   "notes": [
+    {
+     "lyric": "о",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_мы",
+   "notes": [
+    {
+     "lyric": "мы",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_ты",
+   "notes": [
+    {
+     "lyric": "ты",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_сон",
+   "notes": [
+    {
+     "lyric": "сон",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_рыба",
+   "notes": [
+    {
+     "lyric": "рыба",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_жить",
+   "notes": [
+    {
+     "lyric": "жить",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_честь",
+   "notes": [
+    {
+     "lyric": "честь",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_цирк",
+   "notes": [
+    {
+     "lyric": "цирк",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_тишина",
+   "notes": [
+    {
+     "lyric": "тишина",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_взгляд",
+   "notes": [
+    {
+     "lyric": "взгляд",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_страсть",
+   "notes": [
+    {
+     "lyric": "страсть",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_кровь",
+   "notes": [
+    {
+     "lyric": "кровь",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_абракадабрище",
+   "notes": [
+    {
+     "lyric": "абракадабрище",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_зверюшкость",
+   "notes": [
+    {
+     "lyric": "зверюшкость",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_кряквобор",
+   "notes": [
+    {
+     "lyric": "кряквобор",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_блымс",
+   "notes": [
+    {
+     "lyric": "блымс",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_Привет",
+   "notes": [
+    {
+     "lyric": "Привет",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_я_тебя_люблю",
+   "notes": [
+    {
+     "lyric": "я",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "тебя",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "люблю",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_добрый_вечер",
+   "notes": [
+    {
+     "lyric": "добрый",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "вечер",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_мы_идём",
+   "notes": [
+    {
+     "lyric": "мы",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "идём",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_она_и_он",
+   "notes": [
+    {
+     "lyric": "она",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "и",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "он",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_спой_мне",
+   "notes": [
+    {
+     "lyric": "спой",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "мне",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_ах_о",
+   "notes": [
+    {
+     "lyric": "ах",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "о",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_стоп_стоп",
+   "notes": [
+    {
+     "lyric": "стоп",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "стоп",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_в_лес",
+   "notes": [
+    {
+     "lyric": "в",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "лес",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_иди_сюда",
+   "notes": [
+    {
+     "lyric": "иди",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "сюда",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_тёмная_ночь",
+   "notes": [
+    {
+     "lyric": "тёмная",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ночь",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_mama",
+   "notes": [
+    {
+     "lyric": "мама",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_zdravstvuyte",
+   "notes": [
+    {
+     "lyric": "здравствуйте",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_short",
+   "notes": [
+    {
+     "lyric": "яблоко",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_tilde",
+   "notes": [
+    {
+     "lyric": "мир",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_star",
+   "notes": [
+    {
+     "lyric": "тишина",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+*",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C5",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_extra",
+   "notes": [
+    {
+     "lyric": "я",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_phrase",
+   "notes": [
+    {
+     "lyric": "добрый",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "вечер",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint_cvc",
+   "notes": [
+    {
+     "lyric": "xyz",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "p r i v e t"
+    }
+   ]
+  },
+  {
+   "id": "hint_raw",
+   "notes": [
+    {
+     "lyric": "abc",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "pp rr i vv je t"
+    }
+   ]
+  },
+  {
+   "id": "hint_vv",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a i o"
+    }
+   ]
+  },
+  {
+   "id": "hint_cl",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "s t r a s t"
+    }
+   ]
+  },
+  {
+   "id": "hint_empty_lyric",
+   "notes": [
+    {
+     "lyric": "",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "m a"
+    }
+   ]
+  },
+  {
+   "id": "hint_cons_only",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "s t"
+    }
+   ]
+  },
+  {
+   "id": "rest",
+   "notes": [
+    {
+     "lyric": "мама",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "папа",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_short",
+   "notes": [
+    {
+     "lyric": "стоп",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 30
+    },
+    {
+     "lyric": "а",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 480
+    },
+    {
+     "lyric": "но",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "tail_dash",
+   "notes": [
+    {
+     "lyric": "мир",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "tail_R",
+   "notes": [
+    {
+     "lyric": "хлеб",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "да",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "forced",
+   "notes": [
+    {
+     "lyric": "?xx",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "да",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "high",
+   "notes": [
+    {
+     "lyric": "сестра",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "брат",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "и",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "tone_mix",
+   "notes": [
+    {
+     "lyric": "ветер",
+     "tone": "B4",
+     "duration": 480
+    },
+    {
+     "lyric": "звезда",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "мы",
+     "tone": "B4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "attr_shift",
+   "notes": [
+    {
+     "lyric": "привет",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0
+      },
+      {
+       "index": 1,
+       "shift": 12
+      },
+      {
+       "index": 2,
+       "shift": 12
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "attr_shift_all",
+   "notes": [
+    {
+     "lyric": "страсть",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 12
+      },
+      {
+       "index": 1,
+       "shift": 12
+      },
+      {
+       "index": 2,
+       "shift": 12
+      },
+      {
+       "index": 3,
+       "shift": 12
+      },
+      {
+       "index": 4,
+       "shift": 12
+      },
+      {
+       "index": 5,
+       "shift": 12
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dur_30",
+   "notes": [
+    {
+     "lyric": "страсть",
+     "tone": "C4",
+     "duration": 30
+    },
+    {
+     "lyric": "взгляд",
+     "tone": "C4",
+     "duration": 30
+    },
+    {
+     "lyric": "а",
+     "tone": "C4",
+     "duration": 30
+    }
+   ]
+  },
+  {
+   "id": "dur_60",
+   "notes": [
+    {
+     "lyric": "страсть",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "взгляд",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "а",
+     "tone": "C4",
+     "duration": 60
+    }
+   ]
+  },
+  {
+   "id": "dur_120",
+   "notes": [
+    {
+     "lyric": "страсть",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "взгляд",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "а",
+     "tone": "C4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "dur_240",
+   "notes": [
+    {
+     "lyric": "страсть",
+     "tone": "C4",
+     "duration": 240
+    },
+    {
+     "lyric": "взгляд",
+     "tone": "C4",
+     "duration": 240
+    },
+    {
+     "lyric": "а",
+     "tone": "C4",
+     "duration": 240
+    }
+   ]
+  },
+  {
+   "id": "dur_960",
+   "notes": [
+    {
+     "lyric": "страсть",
+     "tone": "C4",
+     "duration": 960
+    },
+    {
+     "lyric": "взгляд",
+     "tone": "C4",
+     "duration": 960
+    },
+    {
+     "lyric": "а",
+     "tone": "C4",
+     "duration": 960
+    }
+   ]
+  },
+  {
+   "id": "dur_1920",
+   "notes": [
+    {
+     "lyric": "страсть",
+     "tone": "C4",
+     "duration": 1920
+    },
+    {
+     "lyric": "взгляд",
+     "tone": "C4",
+     "duration": 1920
+    },
+    {
+     "lyric": "а",
+     "tone": "C4",
+     "duration": 1920
+    }
+   ]
+  },
+  {
+   "id": "dur_mixed",
+   "notes": [
+    {
+     "lyric": "встреча",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "звезда",
+     "tone": "C4",
+     "duration": 1920
+    },
+    {
+     "lyric": "кровь",
+     "tone": "C4",
+     "duration": 90
+    }
+   ]
+  }
+ ]
+}

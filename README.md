@@ -24,7 +24,7 @@ voicebanks from a plain-text score, a midi file, musicxml, ust or openutau proje
   rests), runs a speech recognizer to check the words, and writes plots plus a plain-text summary.
 - **tuning tools.** bend points, vibrato, drift, dynamics and timing as small, versioned edits with
   undo, presets and auto-tuners, and only the changed phrases re-render.
-- **faithful to openutau.** 60+ of openutau's phonemizers are ported and checked against openutau
+- **faithful to openutau.** every openutau phonemizer except the enunu and voicevox-engine ones (69 classes) is ported and checked against openutau
   itself, case by case (see [phonemizer status](docs/phonemizers.md)).
 - **finishing.** harmonies, multi-track mixing, effects (including your installed vst3 / au
   plugins), backing tracks, loudness targets and stems.

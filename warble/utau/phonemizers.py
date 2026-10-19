@@ -47,6 +47,10 @@ FILE_HINTS = [
     ("kocv.yaml", "ko_cv"),
     ("zhcvvplus.yaml", "zh_cvv+"),
     ("filipino.yaml", "fil_vcv_&_cvvc"),
+    ("de_vccv.yaml", "de_vccv"),
+    ("njokis_vccv.yaml", "es_vccv"),
+    ("es-syl.yaml", "es_syl"),
+    ("it-syl.yaml", "it_syl"),
 ]
 
 

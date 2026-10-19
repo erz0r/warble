@@ -1,0 +1,674 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.FrenchVCCVPhonemizer",
+ "bank": "fr_vccv",
+ "bpm": 75,
+ "cases": [
+  {
+   "id": "h_bonjour",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "b 0 Z u R"
+    }
+   ]
+  },
+  {
+   "id": "h_merci",
+   "notes": [
+    {
+     "lyric": "merci",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "m E R s i"
+    }
+   ]
+  },
+  {
+   "id": "h_salut",
+   "notes": [
+    {
+     "lyric": "salut",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "s a l y"
+    }
+   ]
+  },
+  {
+   "id": "h_france",
+   "notes": [
+    {
+     "lyric": "france",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "f R a s"
+    }
+   ]
+  },
+  {
+   "id": "h_arbre",
+   "notes": [
+    {
+     "lyric": "arbre",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "A R b R"
+    }
+   ]
+  },
+  {
+   "id": "h_strict",
+   "notes": [
+    {
+     "lyric": "strict",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "s t R i k t"
+    }
+   ]
+  },
+  {
+   "id": "h_eau",
+   "notes": [
+    {
+     "lyric": "eau",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "o"
+    }
+   ]
+  },
+  {
+   "id": "h_oui",
+   "notes": [
+    {
+     "lyric": "oui",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "w i"
+    }
+   ]
+  },
+  {
+   "id": "h_aie",
+   "notes": [
+    {
+     "lyric": "aie",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "A i"
+    }
+   ]
+  },
+  {
+   "id": "h_klA",
+   "notes": [
+    {
+     "lyric": "klA",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "k l A"
+    }
+   ]
+  },
+  {
+   "id": "h_plA",
+   "notes": [
+    {
+     "lyric": "plA",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "p l A"
+    }
+   ]
+  },
+  {
+   "id": "h_stRA",
+   "notes": [
+    {
+     "lyric": "stRA",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "s t R A"
+    }
+   ]
+  },
+  {
+   "id": "h_spA",
+   "notes": [
+    {
+     "lyric": "spA",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "s p A"
+    }
+   ]
+  },
+  {
+   "id": "h_ext",
+   "notes": [
+    {
+     "lyric": "ext",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "E k s t"
+    }
+   ]
+  },
+  {
+   "id": "h_arpa",
+   "notes": [
+    {
+     "lyric": "arpa",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "aa ch ii gn ou"
+    }
+   ]
+  },
+  {
+   "id": "h_fry",
+   "notes": [
+    {
+     "lyric": "fry",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "A' m i'"
+    }
+   ]
+  },
+  {
+   "id": "h_fry2",
+   "notes": [
+    {
+     "lyric": "fry2",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a' a"
+    }
+   ]
+  },
+  {
+   "id": "h_nj",
+   "notes": [
+    {
+     "lyric": "nj",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "A n j A"
+    }
+   ]
+  },
+  {
+   "id": "h_vcc",
+   "notes": [
+    {
+     "lyric": "vcc",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "A k l A"
+    }
+   ]
+  },
+  {
+   "id": "h_vcc2",
+   "notes": [
+    {
+     "lyric": "vcc2",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "o s t R A"
+    }
+   ]
+  },
+  {
+   "id": "h_vcc3",
+   "notes": [
+    {
+     "lyric": "vcc3",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "A s p A"
+    }
+   ]
+  },
+  {
+   "id": "h_vcc4",
+   "notes": [
+    {
+     "lyric": "vcc4",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "u R b A"
+    }
+   ]
+  },
+  {
+   "id": "h_end1",
+   "notes": [
+    {
+     "lyric": "end1",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "A k"
+    }
+   ]
+  },
+  {
+   "id": "h_end2",
+   "notes": [
+    {
+     "lyric": "end2",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "A k s"
+    }
+   ]
+  },
+  {
+   "id": "h_end3",
+   "notes": [
+    {
+     "lyric": "end3",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "o b R"
+    }
+   ]
+  },
+  {
+   "id": "h_end4",
+   "notes": [
+    {
+     "lyric": "end4",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "i s t"
+    }
+   ]
+  },
+  {
+   "id": "h_end5",
+   "notes": [
+    {
+     "lyric": "end5",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "A n j"
+    }
+   ]
+  },
+  {
+   "id": "h_cons",
+   "notes": [
+    {
+     "lyric": "cons",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "k s"
+    }
+   ]
+  },
+  {
+   "id": "h_tkl",
+   "notes": [
+    {
+     "lyric": "tkl",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "t k l A"
+    }
+   ]
+  },
+  {
+   "id": "h_missing",
+   "notes": [
+    {
+     "lyric": "missing",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "x A"
+    }
+   ]
+  },
+  {
+   "id": "h_uy",
+   "notes": [
+    {
+     "lyric": "uy",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "uy A"
+    }
+   ]
+  },
+  {
+   "id": "lyric_word",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "lyric_alias",
+   "notes": [
+    {
+     "lyric": "kA",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "phr1",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "b 0"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "Z u R"
+    }
+   ]
+  },
+  {
+   "id": "phr2",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "A"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "i"
+    },
+    {
+     "lyric": "z",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "u A"
+    }
+   ]
+  },
+  {
+   "id": "phr3",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "E s t"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "k l A"
+    }
+   ]
+  },
+  {
+   "id": "ext1",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "A m i"
+    },
+    {
+     "lyric": "+",
+     "tone": "C5",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext2",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "p i A n o"
+    },
+    {
+     "lyric": "+",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext3",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "A"
+    },
+    {
+     "lyric": "+~",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "+*",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext4",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "s t R i k t"
+    },
+    {
+     "lyric": "+",
+     "tone": "C5",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "b 0",
+     "gap_after": 240
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "s a l y"
+    }
+   ]
+  },
+  {
+   "id": "tail",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "A"
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "t E k s t"
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "high",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C5",
+     "duration": 480,
+     "hint": "s a l y t"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "A R b R"
+    }
+   ]
+  },
+  {
+   "id": "toneshift",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "k u",
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0
+      },
+      {
+       "index": 1,
+       "shift": 12
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dur30",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 30,
+     "hint": "s t R i k t"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 30,
+     "hint": "A"
+    },
+    {
+     "lyric": "z",
+     "tone": "C4",
+     "duration": 30,
+     "hint": "p l A Z"
+    }
+   ]
+  },
+  {
+   "id": "dur90",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 90,
+     "hint": "s t R i k t"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 90,
+     "hint": "A"
+    },
+    {
+     "lyric": "z",
+     "tone": "C4",
+     "duration": 90,
+     "hint": "p l A Z"
+    }
+   ]
+  },
+  {
+   "id": "dur240",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 240,
+     "hint": "s t R i k t"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 240,
+     "hint": "A"
+    },
+    {
+     "lyric": "z",
+     "tone": "C4",
+     "duration": 240,
+     "hint": "p l A Z"
+    }
+   ]
+  },
+  {
+   "id": "dur1920",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 1920,
+     "hint": "s t R i k t"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 1920,
+     "hint": "A"
+    },
+    {
+     "lyric": "z",
+     "tone": "C4",
+     "duration": 1920,
+     "hint": "p l A Z"
+    }
+   ]
+  }
+ ]
+}

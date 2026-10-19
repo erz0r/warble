@@ -1,0 +1,509 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.PolishCVCPhonemizer",
+ "bank": "pl_cvc",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "w0",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w1",
+   "notes": [
+    {
+     "lyric": "ma",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w2",
+   "notes": [
+    {
+     "lyric": "k a",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w3",
+   "notes": [
+    {
+     "lyric": "s t a",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w4",
+   "notes": [
+    {
+     "lyric": "s t r a",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w5",
+   "notes": [
+    {
+     "lyric": "a k",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w6",
+   "notes": [
+    {
+     "lyric": "a s t",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w7",
+   "notes": [
+    {
+     "lyric": "a r z",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w8",
+   "notes": [
+    {
+     "lyric": "t a h",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w9",
+   "notes": [
+    {
+     "lyric": "o ts",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w10",
+   "notes": [
+    {
+     "lyric": "u r z t",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p1",
+   "notes": [
+    {
+     "lyric": "m a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "m a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p2",
+   "notes": [
+    {
+     "lyric": "k o t",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "s t a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "e",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p3",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "e r z",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext1",
+   "notes": [
+    {
+     "lyric": "m a m a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext2",
+   "notes": [
+    {
+     "lyric": "a a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext3",
+   "notes": [
+    {
+     "lyric": "k o t e k",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_ts",
+   "notes": [
+    {
+     "lyric": "o ts a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+*",
+     "tone": "C5",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "xyz",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "k a s"
+    }
+   ]
+  },
+  {
+   "id": "rest",
+   "notes": [
+    {
+     "lyric": "t a k",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "n i e",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "tail",
+   "notes": [
+    {
+     "lyric": "t a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "p a s",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "high",
+   "notes": [
+    {
+     "lyric": "s t a",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "o",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dur30",
+   "notes": [
+    {
+     "lyric": "s t r a",
+     "tone": "C4",
+     "duration": 30
+    },
+    {
+     "lyric": "k o t",
+     "tone": "C4",
+     "duration": 30
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 30
+    }
+   ]
+  },
+  {
+   "id": "dur90",
+   "notes": [
+    {
+     "lyric": "s t r a",
+     "tone": "C4",
+     "duration": 90
+    },
+    {
+     "lyric": "k o t",
+     "tone": "C4",
+     "duration": 90
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 90
+    }
+   ]
+  },
+  {
+   "id": "dur240",
+   "notes": [
+    {
+     "lyric": "s t r a",
+     "tone": "C4",
+     "duration": 240
+    },
+    {
+     "lyric": "k o t",
+     "tone": "C4",
+     "duration": 240
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 240
+    }
+   ]
+  },
+  {
+   "id": "dur1920",
+   "notes": [
+    {
+     "lyric": "s t r a",
+     "tone": "C4",
+     "duration": 1920
+    },
+    {
+     "lyric": "k o t",
+     "tone": "C4",
+     "duration": 1920
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 1920
+    }
+   ]
+  },
+  {
+   "id": "missing",
+   "notes": [
+    {
+     "lyric": "h a h",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "rz a rz",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "w0",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "w1",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "w2",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "w3",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "w4",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "w5",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "w6",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "w7",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "w8",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "w9",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "w10",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "p1",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "p2",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "p3",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "ext1",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "ext2",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "ext3",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "ext_ts",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "hint",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "rest",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "tail",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "high",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "dur30",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "dur90",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "dur240",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "dur1920",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  },
+  {
+   "id": "missing",
+   "error": "NotImplementedException: The method or operation is not implemented."
+  }
+ ]
+}

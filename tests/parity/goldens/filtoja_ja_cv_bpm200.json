@@ -1,0 +1,1671 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.FILtoJAPhonemizer",
+ "bank": "ja_cv",
+ "bpm": 200,
+ "cases": [
+  {
+   "id": "w0_kumusta_p_p",
+   "notes": [
+    {
+     "lyric": "kumusta",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w1_mahal_kita",
+   "notes": [
+    {
+     "lyric": "mahal",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "kita",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w2_ng",
+   "notes": [
+    {
+     "lyric": "ng",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w3_mga",
+   "notes": [
+    {
+     "lyric": "mga",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w4_qako",
+   "notes": [
+    {
+     "lyric": "'ako",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w5_bataq",
+   "notes": [
+    {
+     "lyric": "bata'",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w6_salamat_p_p",
+   "notes": [
+    {
+     "lyric": "salamat",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w7_puso",
+   "notes": [
+    {
+     "lyric": "puso",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w8_ngayon_p",
+   "notes": [
+    {
+     "lyric": "ngayon",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w9_siya",
+   "notes": [
+    {
+     "lyric": "siya",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w10_araw",
+   "notes": [
+    {
+     "lyric": "araw",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w11_ikaw_at_ako",
+   "notes": [
+    {
+     "lyric": "ikaw",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "at",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ako",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w12_sayang",
+   "notes": [
+    {
+     "lyric": "sayang",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w13_bakit",
+   "notes": [
+    {
+     "lyric": "bakit",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w14_tao",
+   "notes": [
+    {
+     "lyric": "tao",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w15_isda",
+   "notes": [
+    {
+     "lyric": "isda",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w16_trabaho_p_p",
+   "notes": [
+    {
+     "lyric": "trabaho",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w17_dyan",
+   "notes": [
+    {
+     "lyric": "dyan",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w18_syempre_p",
+   "notes": [
+    {
+     "lyric": "syempre",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w19_kaibigan_p_p_p",
+   "notes": [
+    {
+     "lyric": "kaibigan",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w20_pag-ibig_p_p",
+   "notes": [
+    {
+     "lyric": "pag-ibig",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w21_sa_qyo",
+   "notes": [
+    {
+     "lyric": "sa",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "'yo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w22_dalawa_p_p",
+   "notes": [
+    {
+     "lyric": "dalawa",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w23_tsinelas_p_p",
+   "notes": [
+    {
+     "lyric": "tsinelas",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w24_opo",
+   "notes": [
+    {
+     "lyric": "opo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w25_hindi",
+   "notes": [
+    {
+     "lyric": "hindi",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w26_walang",
+   "notes": [
+    {
+     "lyric": "walang",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w27_langit",
+   "notes": [
+    {
+     "lyric": "langit",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w28_bituin_p_p",
+   "notes": [
+    {
+     "lyric": "bituin",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w29_la_R",
+   "notes": [
+    {
+     "lyric": "la",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w30_mm",
+   "notes": [
+    {
+     "lyric": "mm",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w31_xyz",
+   "notes": [
+    {
+     "lyric": "xyz",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w32_shh",
+   "notes": [
+    {
+     "lyric": "shh",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w33_laot",
+   "notes": [
+    {
+     "lyric": "laot",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w34_aaa",
+   "notes": [
+    {
+     "lyric": "aaa",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w35_jeep",
+   "notes": [
+    {
+     "lyric": "jeep",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w36_vlog",
+   "notes": [
+    {
+     "lyric": "vlog",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "m a h a l"
+    }
+   ]
+  },
+  {
+   "id": "hint_nospace",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "mahal"
+    }
+   ]
+  },
+  {
+   "id": "hint_ng",
+   "notes": [
+    {
+     "lyric": "ng",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "k a"
+    }
+   ]
+  },
+  {
+   "id": "rest_between",
+   "notes": [
+    {
+     "lyric": "mahal",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 480
+    },
+    {
+     "lyric": "kita",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "salamat",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 60
+    }
+   ]
+  },
+  {
+   "id": "long_notes",
+   "notes": [
+    {
+     "lyric": "mahal",
+     "tone": "C4",
+     "duration": 1920
+    },
+    {
+     "lyric": "kita",
+     "tone": "C4",
+     "duration": 1920
+    }
+   ]
+  },
+  {
+   "id": "multipitch",
+   "notes": [
+    {
+     "lyric": "puso",
+     "tone": "C3",
+     "duration": 480
+    },
+    {
+     "lyric": "ko",
+     "tone": "C5",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "not_enough_notes",
+   "notes": [
+    {
+     "lyric": "kaibigan",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "plus_tilde",
+   "notes": [
+    {
+     "lyric": "tao",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ako",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "w0_kumusta_p_p",
+   "phonemes": [
+    {
+     "phoneme": "く",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "む",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "す",
+     "position": 960,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "た",
+     "position": 960,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w1_mahal_kita",
+   "phonemes": [
+    {
+     "phoneme": "ま",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "は",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "う",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "き",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "た",
+     "position": 240,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w2_ng",
+   "phonemes": [
+    {
+     "phoneme": "な",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ん",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w3_mga",
+   "phonemes": [
+    {
+     "phoneme": "ま",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "な",
+     "position": 240,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w4_qako",
+   "phonemes": [
+    {
+     "phoneme": "こ",
+     "position": 240,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w5_bataq",
+   "phonemes": [
+    {
+     "phoneme": "ば",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "た",
+     "position": 240,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w6_salamat_p_p",
+   "phonemes": [
+    {
+     "phoneme": "さ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ら",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ま",
+     "position": 960,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "と",
+     "position": 1390,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w7_puso",
+   "phonemes": [
+    {
+     "phoneme": "ぷ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "そ",
+     "position": 240,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w8_ngayon_p",
+   "phonemes": [
+    {
+     "phoneme": "な",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "よ",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ん",
+     "position": 910,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w9_siya",
+   "phonemes": [
+    {
+     "phoneme": "しゃ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w10_araw",
+   "phonemes": [
+    {
+     "phoneme": "あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ら",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "う",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w11_ikaw_at_ako",
+   "phonemes": [
+    {
+     "phoneme": "い",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "か",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "わ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "た",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "こ",
+     "position": 240,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w12_sayang",
+   "phonemes": [
+    {
+     "phoneme": "さ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "や",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ん",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w13_bakit",
+   "phonemes": [
+    {
+     "phoneme": "ば",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "き",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "と",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w14_tao",
+   "phonemes": [
+    {
+     "phoneme": "た",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "お",
+     "position": 240,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w15_isda",
+   "phonemes": [
+    {
+     "phoneme": "い",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "す",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "だ",
+     "position": 240,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w16_trabaho_p_p",
+   "phonemes": [
+    {
+     "phoneme": "ば",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ほ",
+     "position": 960,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w17_dyan",
+   "phonemes": [
+    {
+     "phoneme": "じゃ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ん",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w18_syempre_p",
+   "phonemes": [
+    {
+     "phoneme": "すい",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "え",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "む",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ぷ",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "れ",
+     "position": 480,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w19_kaibigan_p_p_p",
+   "phonemes": [
+    {
+     "phoneme": "か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "い",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "び",
+     "position": 960,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "が",
+     "position": 1440,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ん",
+     "position": 1870,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w20_pag-ibig_p_p",
+   "phonemes": [
+    {
+     "phoneme": "ぱ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ぐ",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "び",
+     "position": 960,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ぐ",
+     "position": 1390,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w21_sa_qyo",
+   "phonemes": [
+    {
+     "phoneme": "さ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "よ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w22_dalawa_p_p",
+   "phonemes": [
+    {
+     "phoneme": "だ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ら",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "わ",
+     "position": 960,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w23_tsinelas_p_p",
+   "phonemes": [
+    {
+     "phoneme": "つ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "い",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ね",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ら",
+     "position": 960,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "す",
+     "position": 1390,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w24_opo",
+   "phonemes": [
+    {
+     "phoneme": "お",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ぽ",
+     "position": 240,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w25_hindi",
+   "phonemes": [
+    {
+     "phoneme": "ひ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ん",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "で",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "い",
+     "position": 240,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w26_walang",
+   "phonemes": [
+    {
+     "phoneme": "わ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ら",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ん",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w27_langit",
+   "phonemes": [
+    {
+     "phoneme": "ら",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "に",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "と",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w28_bituin_p_p",
+   "phonemes": [
+    {
+     "phoneme": "び",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "と",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "う",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "い",
+     "position": 960,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ん",
+     "position": 1390,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w29_la_R",
+   "phonemes": [
+    {
+     "phoneme": "ら",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "う",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w30_mm",
+   "phonemes": []
+  },
+  {
+   "id": "w31_xyz",
+   "phonemes": []
+  },
+  {
+   "id": "w32_shh",
+   "phonemes": []
+  },
+  {
+   "id": "w33_laot",
+   "phonemes": [
+    {
+     "phoneme": "ら",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "お",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "と",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w34_aaa",
+   "phonemes": [
+    {
+     "phoneme": "あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w35_jeep",
+   "phonemes": [
+    {
+     "phoneme": "じ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "え",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ぷ",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w36_vlog",
+   "phonemes": [
+    {
+     "phoneme": "ふ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ろ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ぐ",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "phonemes": [
+    {
+     "phoneme": "ま",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "は",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "う",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_nospace",
+   "phonemes": [
+    {
+     "phoneme": "ま",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "は",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "う",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_ng",
+   "phonemes": [
+    {
+     "phoneme": "な",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ん",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "rest_between",
+   "phonemes": [
+    {
+     "phoneme": "ま",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "は",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "う",
+     "position": 430,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "き",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "た",
+     "position": 240,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "phonemes": [
+    {
+     "phoneme": "さ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ら",
+     "position": 60,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ま",
+     "position": 120,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "と",
+     "position": 160,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "long_notes",
+   "phonemes": [
+    {
+     "phoneme": "ま",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "は",
+     "position": 960,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "う",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "き",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "た",
+     "position": 960,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "multipitch",
+   "phonemes": [
+    {
+     "phoneme": "ぷ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "そ",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "こ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "not_enough_notes",
+   "phonemes": [
+    {
+     "phoneme": "か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "い",
+     "position": 120,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "び",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "が",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ん",
+     "position": 440,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "plus_tilde",
+   "phonemes": [
+    {
+     "phoneme": "た",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "お",
+     "position": 720,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "あ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "こ",
+     "position": 240,
+     "group": 1,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

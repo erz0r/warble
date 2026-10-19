@@ -33,3 +33,7 @@ are kept next to them.
 csharp-kana — https://github.com/wolfgitpr/csharp-kana
 Apache License 2.0, Copyright (c) wolfgitpr. warble/ds/_kana.py ports its kana -> romaji table and
 logic (the library openutau's diffsinger japanese phonemizer uses).
+
+WanaKana — https://github.com/WaniKani/WanaKana (and its .NET port WanaKanaNet, used by openutau)
+The MIT License. warble/utau/pz/kotoja.py and warble/utau/pz/entoja.py port its kana/romaji
+conversion so that the ported phonemizers convert exactly as openutau does.

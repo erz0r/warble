@@ -437,8 +437,19 @@
   "reads": [
    "cmudict-0_7b.txt"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "vventoja_ja_cv_integration.json",
+   "vventoja_ja_cvvc.json",
+   "vventoja_ja_cv_bpm200.json",
+   "vventoja_ja_presamp.json",
+   "vventoja_ja_cvvc_bpm75.json",
+   "vventoja_ja_vcv_bpm180.json",
+   "vventoja_ja_cvvc_integration_bpm140.json",
+   "vventoja_ja_vcv_integration_bpm100.json",
+   "vventoja_ja_cv.json",
+   "vventoja_ja_vcv.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Core.Voicevox.VoicevoxPhonemizer",
@@ -484,8 +495,12 @@
   "reads": [
    "cmudict_ptbr.txt"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "pt_cvc_bpm200.json",
+   "pt_cvc.json",
+   "pt_cvc_bpm75.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.CantoneseCVVCPhonemizer",
@@ -598,8 +613,19 @@
   "reads": [
    "cmudict_es.txt"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "estoja_ja_cvvc.json",
+   "estoja_ja_cv.json",
+   "estoja_ja_vcv_integration_bpm100.json",
+   "estoja_ja_cvvc_bpm75.json",
+   "estoja_ja_vcv_bpm180.json",
+   "estoja_ja_cv_bpm200.json",
+   "estoja_ja_cvvc_integration_bpm140.json",
+   "estoja_ja_cv_integration.json",
+   "estoja_ja_vcv.json",
+   "estoja_ja_presamp.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.EnXSampaPhonemizer",
@@ -613,8 +639,12 @@
   "reads": [
    "en-xsampa.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "en_xsampa_delta0_high.json",
+   "en_xsampa_delta0.json",
+   "en_xsampa_delta7_bpm100.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.FilipinoPhonemizer",
@@ -664,8 +694,11 @@
   "reads": [
    "cmudict_fr.txt"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "fr_vccv.json",
+   "fr_vccv_bpm75.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.GermanDiphonePhonemizer",
@@ -698,8 +731,12 @@
    "cmudict_de.txt",
    "de_vccv.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "de_vccv_bpm75.json",
+   "de_vccv_bpm180.json",
+   "de_vccv.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.ItalianCVVCPhonemizer",
@@ -729,8 +766,12 @@
    "cmudict_it.txt",
    "it-syl.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "it_syl_bpm150.json",
+   "it_syl.json",
+   "it_syl_bpm80.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.JapaneseCVVCPhonemizer",
@@ -912,8 +953,10 @@
   "file": "OpenUtau.Plugin.Builtin/PolishCVCPhonemizer.cs",
   "engine": "utau",
   "reads": [],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "pl_cvc.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.PresampSamplePhonemizer",
@@ -940,8 +983,11 @@
   "reads": [
    "cmudict_ru.txt"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "ru_cvc.json",
+   "ru_cvc_bpm180.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.RussianVCCVPhonemizer",
@@ -955,8 +1001,11 @@
   "reads": [
    "cmudict_ru.txt"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "ru_vccv.json",
+   "ru_vccv_bpm180.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.SpanishMakkusanPhonemizer",
@@ -970,8 +1019,11 @@
   "reads": [
    "cmudict_es.txt"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "es_makku_bpm150.json",
+   "es_makku.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.SpanishSyllableBasedPhonemizer",
@@ -986,8 +1038,13 @@
    "cmudict_es.txt",
    "es-syl.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "es_syl_vcv.json",
+   "es_syl_bpm180.json",
+   "es_syl_vcv_bpm90.json",
+   "es_syl.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.SpanishVCCVPhonemizer",
@@ -1002,8 +1059,12 @@
    "cmudict_es.txt",
    "njokis_vccv.yaml"
   ],
-  "goldens": [],
-  "status": "not ported"
+  "goldens": [
+   "es_vccv_noyaml.json",
+   "es_vccv.json",
+   "es_vccv_bpm200.json"
+  ],
+  "status": "ported (parity)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.ThaiVCCVPhonemizer",
@@ -1149,8 +1210,19 @@
   "reads": [
    "en2ja.yaml"
   ],
-  "goldens": [],
-  "status": "base class"
+  "goldens": [
+   "entoja_ja_vcv_integration_bpm100.json",
+   "entoja_ja_presamp.json",
+   "entoja_ja_cvvc.json",
+   "entoja_ja_cv_integration.json",
+   "entoja_ja_cv_bpm200.json",
+   "entoja_ja_cv.json",
+   "entoja_ja_cvvc_bpm75.json",
+   "entoja_ja_vcv.json",
+   "entoja_ja_cvvc_integration_bpm140.json",
+   "entoja_ja_vcv_bpm180.json"
+  ],
+  "status": "base class (ported)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.EnglishCpVPhonemizer",
@@ -1164,8 +1236,12 @@
   "reads": [
    "en-cPv.yaml"
   ],
-  "goldens": [],
-  "status": "base class"
+  "goldens": [
+   "en_cpv_full.json",
+   "en_cpv_5vowel.json",
+   "en_cpv_novc_bpm140.json"
+  ],
+  "status": "base class (ported)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.EnglishVCCVPhonemizer",
@@ -1179,8 +1255,13 @@
   "reads": [
    "envccv.yaml"
   ],
-  "goldens": [],
-  "status": "base class"
+  "goldens": [
+   "en_vccv_bpm200.json",
+   "en_vccv.json",
+   "en_vccv_yaml_bpm90.json",
+   "en_vccv_migrated_yaml.json"
+  ],
+  "status": "base class (ported)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.FILtoJAPhonemizer",
@@ -1194,8 +1275,19 @@
   "reads": [
    "fil2ja.yaml"
   ],
-  "goldens": [],
-  "status": "base class"
+  "goldens": [
+   "filtoja_ja_cvvc.json",
+   "filtoja_ja_cvvc_integration_bpm140.json",
+   "filtoja_ja_cv_integration.json",
+   "filtoja_ja_vcv.json",
+   "filtoja_ja_cv.json",
+   "filtoja_ja_presamp.json",
+   "filtoja_ja_cv_bpm200.json",
+   "filtoja_ja_vcv_integration_bpm100.json",
+   "filtoja_ja_vcv_bpm180.json",
+   "filtoja_ja_cvvc_bpm75.json"
+  ],
+  "status": "base class (ported)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.FrenchCVVCPhonemizer",
@@ -1209,8 +1301,13 @@
   "reads": [
    "cmudict_fr.txt"
   ],
-  "goldens": [],
-  "status": "base class"
+  "goldens": [
+   "fr_cvvc_bpm180.json",
+   "fr_cvvc_fraloids.json",
+   "fr_cvvc.json",
+   "fr_cvvc_fraloids_bpm90.json"
+  ],
+  "status": "base class (ported)"
  },
  {
   "class": "OpenUtau.Plugin.Builtin.LatinDiphonePhonemizer",

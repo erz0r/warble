@@ -1,0 +1,5878 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.SpanishSyllableBasedPhonemizer",
+ "bank": "es_syl",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "w_hola",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_amigo",
+   "notes": [
+    {
+     "lyric": "amigo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_perro",
+   "notes": [
+    {
+     "lyric": "perro",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_gracias",
+   "notes": [
+    {
+     "lyric": "gracias",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_cantar",
+   "notes": [
+    {
+     "lyric": "cantar",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_extra",
+   "notes": [
+    {
+     "lyric": "extra",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_blanco",
+   "notes": [
+    {
+     "lyric": "blanco",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_niño",
+   "notes": [
+    {
+     "lyric": "niño",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_calle",
+   "notes": [
+    {
+     "lyric": "calle",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_zapato",
+   "notes": [
+    {
+     "lyric": "zapato",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_luz",
+   "notes": [
+    {
+     "lyric": "luz",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_agua",
+   "notes": [
+    {
+     "lyric": "agua",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_muy",
+   "notes": [
+    {
+     "lyric": "muy",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_hoy",
+   "notes": [
+    {
+     "lyric": "hoy",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_tres",
+   "notes": [
+    {
+     "lyric": "tres",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_nuestro",
+   "notes": [
+    {
+     "lyric": "nuestro",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_instante",
+   "notes": [
+    {
+     "lyric": "instante",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_construir",
+   "notes": [
+    {
+     "lyric": "construir",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_fuego",
+   "notes": [
+    {
+     "lyric": "fuego",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_ciudad",
+   "notes": [
+    {
+     "lyric": "ciudad",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_examen",
+   "notes": [
+    {
+     "lyric": "examen",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_pez",
+   "notes": [
+    {
+     "lyric": "pez",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_sol",
+   "notes": [
+    {
+     "lyric": "sol",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_abrazo",
+   "notes": [
+    {
+     "lyric": "abrazo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_globo",
+   "notes": [
+    {
+     "lyric": "globo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_dragón",
+   "notes": [
+    {
+     "lyric": "dragón",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_ojo",
+   "notes": [
+    {
+     "lyric": "ojo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_chico",
+   "notes": [
+    {
+     "lyric": "chico",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_yo",
+   "notes": [
+    {
+     "lyric": "yo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_bien",
+   "notes": [
+    {
+     "lyric": "bien",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_openutau",
+   "notes": [
+    {
+     "lyric": "openutau",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_vccv",
+   "notes": [
+    {
+     "lyric": "vccv",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_a",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_y",
+   "notes": [
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_el",
+   "notes": [
+    {
+     "lyric": "el",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_en",
+   "notes": [
+    {
+     "lyric": "en",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_mañana",
+   "notes": [
+    {
+     "lyric": "mañana",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_corazón",
+   "notes": [
+    {
+     "lyric": "corazón",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_cielo",
+   "notes": [
+    {
+     "lyric": "cielo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_llorar",
+   "notes": [
+    {
+     "lyric": "llorar",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_guerra",
+   "notes": [
+    {
+     "lyric": "guerra",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_pingüino",
+   "notes": [
+    {
+     "lyric": "pingüino",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_transporte",
+   "notes": [
+    {
+     "lyric": "transporte",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_obstáculo",
+   "notes": [
+    {
+     "lyric": "obstáculo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_mexico",
+   "notes": [
+    {
+     "lyric": "mexico",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_kiwi",
+   "notes": [
+    {
+     "lyric": "kiwi",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_whisky",
+   "notes": [
+    {
+     "lyric": "whisky",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_año",
+   "notes": [
+    {
+     "lyric": "año",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_rey",
+   "notes": [
+    {
+     "lyric": "rey",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_ley",
+   "notes": [
+    {
+     "lyric": "ley",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_aire",
+   "notes": [
+    {
+     "lyric": "aire",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_europa",
+   "notes": [
+    {
+     "lyric": "europa",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_inspirar",
+   "notes": [
+    {
+     "lyric": "inspirar",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_atlas",
+   "notes": [
+    {
+     "lyric": "atlas",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_hola_amigo",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "amigo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_el_perro",
+   "notes": [
+    {
+     "lyric": "el",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "perro",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_mi_amor",
+   "notes": [
+    {
+     "lyric": "mi",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "amor",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_tu_eres",
+   "notes": [
+    {
+     "lyric": "tu",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "eres",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_la_luz",
+   "notes": [
+    {
+     "lyric": "la",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "luz",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_sol_y_luna",
+   "notes": [
+    {
+     "lyric": "sol",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "luna",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_en_el_agua",
+   "notes": [
+    {
+     "lyric": "en",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "el",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "agua",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_los_tres",
+   "notes": [
+    {
+     "lyric": "los",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "tres",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_con_brazos",
+   "notes": [
+    {
+     "lyric": "con",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "brazos",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_voy_a_ir",
+   "notes": [
+    {
+     "lyric": "voy",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ir",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_pez_azul",
+   "notes": [
+    {
+     "lyric": "pez",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "azul",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_más_extra",
+   "notes": [
+    {
+     "lyric": "más",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "extra",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_un_ángel",
+   "notes": [
+    {
+     "lyric": "un",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ángel",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_es_tren",
+   "notes": [
+    {
+     "lyric": "es",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "tren",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_flurbo",
+   "notes": [
+    {
+     "lyric": "flurbo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_tlaxcala",
+   "notes": [
+    {
+     "lyric": "tlaxcala",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_krumpis",
+   "notes": [
+    {
+     "lyric": "krumpis",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_sprent",
+   "notes": [
+    {
+     "lyric": "sprent",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_zzyzx",
+   "notes": [
+    {
+     "lyric": "zzyzx",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_brindlequest",
+   "notes": [
+    {
+     "lyric": "brindlequest",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_ñuñoa",
+   "notes": [
+    {
+     "lyric": "ñuñoa",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_amigo",
+   "notes": [
+    {
+     "lyric": "amigo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_amigo_short",
+   "notes": [
+    {
+     "lyric": "amigo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_construir",
+   "notes": [
+    {
+     "lyric": "construir",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_tilde",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_star",
+   "notes": [
+    {
+     "lyric": "aire",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+*",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_extra_notes",
+   "notes": [
+    {
+     "lyric": "yo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_phrase",
+   "notes": [
+    {
+     "lyric": "el",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "instante",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "sol",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_aa",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint_perro",
+   "notes": [
+    {
+     "lyric": "perro",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "p e rr o"
+    }
+   ]
+  },
+  {
+   "id": "hint_junk",
+   "notes": [
+    {
+     "lyric": "asdf",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "t r e s"
+    }
+   ]
+  },
+  {
+   "id": "hint_empty",
+   "notes": [
+    {
+     "lyric": "",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "k a n t a r"
+    }
+   ]
+  },
+  {
+   "id": "hint_ny",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "nh a"
+    }
+   ]
+  },
+  {
+   "id": "hint_cluster",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "e k s t r a"
+    }
+   ]
+  },
+  {
+   "id": "hint_semi",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "b y e n"
+    }
+   ]
+  },
+  {
+   "id": "hint_z",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "z a p a t o"
+    }
+   ]
+  },
+  {
+   "id": "hint_vv",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a e i o u"
+    }
+   ]
+  },
+  {
+   "id": "hint_cons_only",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "s t"
+    }
+   ]
+  },
+  {
+   "id": "hint_ch",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ch"
+    }
+   ]
+  },
+  {
+   "id": "hint_r_only",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "r"
+    }
+   ]
+  },
+  {
+   "id": "hint_ks",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a k s"
+    }
+   ]
+  },
+  {
+   "id": "hint_long_end",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a n s t r"
+    }
+   ]
+  },
+  {
+   "id": "rest_between",
+   "notes": [
+    {
+     "lyric": "cantar",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "amigo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_short_gap",
+   "notes": [
+    {
+     "lyric": "tres",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 30
+    },
+    {
+     "lyric": "sol",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 480
+    },
+    {
+     "lyric": "ojo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "tail_dash",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "tail_R",
+   "notes": [
+    {
+     "lyric": "pez",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "tail_mid",
+   "notes": [
+    {
+     "lyric": "extra",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "agua",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "forced",
+   "notes": [
+    {
+     "lyric": "?- a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dur_30",
+   "notes": [
+    {
+     "lyric": "nuestro",
+     "tone": "C4",
+     "duration": 30
+    },
+    {
+     "lyric": "instante",
+     "tone": "C4",
+     "duration": 30
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 30
+    },
+    {
+     "lyric": "extra",
+     "tone": "C4",
+     "duration": 30
+    }
+   ]
+  },
+  {
+   "id": "dur_60",
+   "notes": [
+    {
+     "lyric": "nuestro",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "instante",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "extra",
+     "tone": "C4",
+     "duration": 60
+    }
+   ]
+  },
+  {
+   "id": "dur_120",
+   "notes": [
+    {
+     "lyric": "nuestro",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "instante",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "extra",
+     "tone": "C4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "dur_240",
+   "notes": [
+    {
+     "lyric": "nuestro",
+     "tone": "C4",
+     "duration": 240
+    },
+    {
+     "lyric": "instante",
+     "tone": "C4",
+     "duration": 240
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 240
+    },
+    {
+     "lyric": "extra",
+     "tone": "C4",
+     "duration": 240
+    }
+   ]
+  },
+  {
+   "id": "dur_960",
+   "notes": [
+    {
+     "lyric": "nuestro",
+     "tone": "C4",
+     "duration": 960
+    },
+    {
+     "lyric": "instante",
+     "tone": "C4",
+     "duration": 960
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 960
+    },
+    {
+     "lyric": "extra",
+     "tone": "C4",
+     "duration": 960
+    }
+   ]
+  },
+  {
+   "id": "dur_1920",
+   "notes": [
+    {
+     "lyric": "nuestro",
+     "tone": "C4",
+     "duration": 1920
+    },
+    {
+     "lyric": "instante",
+     "tone": "C4",
+     "duration": 1920
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 1920
+    },
+    {
+     "lyric": "extra",
+     "tone": "C4",
+     "duration": 1920
+    }
+   ]
+  },
+  {
+   "id": "tone_change",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "amigo",
+     "tone": "C6",
+     "duration": 480
+    },
+    {
+     "lyric": "tres",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "tone_high",
+   "notes": [
+    {
+     "lyric": "blanco",
+     "tone": "C6",
+     "duration": 480
+    },
+    {
+     "lyric": "agua",
+     "tone": "C6",
+     "duration": 480
+    },
+    {
+     "lyric": "perro",
+     "tone": "C6",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "attr_shift",
+   "notes": [
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0
+      },
+      {
+       "index": 1,
+       "shift": 24
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "attr_color",
+   "notes": [
+    {
+     "lyric": "cantar",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "color": "Soft"
+      },
+      {
+       "index": 1,
+       "color": "Soft"
+      },
+      {
+       "index": 2,
+       "color": "Soft"
+      },
+      {
+       "index": 3,
+       "color": "Soft"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "warble_dict",
+   "notes": [
+    {
+     "lyric": "warble",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "hola",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "w_hola",
+   "phonemes": [
+    {
+     "phoneme": "- o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o l",
+     "position": 130,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "la",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_amigo",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a m",
+     "position": 44,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "mi",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i g",
+     "position": 180,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "go",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_perro",
+   "phonemes": [
+    {
+     "phoneme": "pe",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e rr",
+     "position": 175,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "rro",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_gracias",
+   "phonemes": [
+    {
+     "phoneme": "gra",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a s",
+     "position": 49,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "s",
+     "position": 124,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ya",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a s-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_cantar",
+   "phonemes": [
+    {
+     "phoneme": "- ka",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 49,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "nt",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ta",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a r-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_extra",
+   "phonemes": [
+    {
+     "phoneme": "- e",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e ks",
+     "position": 49,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 110,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "tra",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_blanco",
+   "phonemes": [
+    {
+     "phoneme": "- bl",
+     "position": -110,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "la",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 97,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ko",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_niño",
+   "phonemes": [
+    {
+     "phoneme": "- ni",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "nyo",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_calle",
+   "phonemes": [
+    {
+     "phoneme": "- ka",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a j",
+     "position": 181,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "j e",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_zapato",
+   "phonemes": [
+    {
+     "phoneme": "sa",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a p",
+     "position": 30,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "pa",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a t",
+     "position": 212,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "to",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_luz",
+   "phonemes": [
+    {
+     "phoneme": "- lu",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "u s",
+     "position": 356,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "s -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_agua",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a g",
+     "position": 116,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "gwa",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_muy",
+   "phonemes": [
+    {
+     "phoneme": "- mu",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ui",
+     "position": 358,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_hoy",
+   "phonemes": [
+    {
+     "phoneme": "- o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o i",
+     "position": 358,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_tres",
+   "phonemes": [
+    {
+     "phoneme": "- tre",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e s-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_nuestro",
+   "phonemes": [
+    {
+     "phoneme": "we",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e st",
+     "position": 158,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "tro",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_instante",
+   "phonemes": [
+    {
+     "phoneme": "- i",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ins",
+     "position": 31,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 76,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ta",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 181,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "nt",
+     "position": 237,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "te",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_construir",
+   "phonemes": [
+    {
+     "phoneme": "- ko",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ons",
+     "position": 51,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 79,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "t",
+     "position": 135,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "r",
+     "position": 192,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "wi",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i r-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_fuego",
+   "phonemes": [
+    {
+     "phoneme": "f",
+     "position": -96,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "we",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "go",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_ciudad",
+   "phonemes": [
+    {
+     "phoneme": "- s",
+     "position": -199,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "s",
+     "position": -118,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "yu",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "u d",
+     "position": 157,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "da",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a d",
+     "position": 320,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "d-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_examen",
+   "phonemes": [
+    {
+     "phoneme": "- e",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e ks",
+     "position": 30,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "sa",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a m",
+     "position": 215,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "me",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e n-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_pez",
+   "phonemes": [
+    {
+     "phoneme": "pe",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e s-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_sol",
+   "phonemes": [
+    {
+     "phoneme": "so",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o l",
+     "position": 305,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "l -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_abrazo",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a b",
+     "position": 88,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "bra",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a s",
+     "position": 180,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "so",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_globo",
+   "phonemes": [
+    {
+     "phoneme": "- g",
+     "position": -184,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "g",
+     "position": -91,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "lo",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "bo",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_dragón",
+   "phonemes": [
+    {
+     "phoneme": "- dra",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a g",
+     "position": 114,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "go",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o n-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_ojo",
+   "phonemes": [
+    {
+     "phoneme": "- o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o h",
+     "position": 181,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "h o",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_chico",
+   "phonemes": [
+    {
+     "phoneme": "- chi",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i k",
+     "position": 97,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ko",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_yo",
+   "phonemes": [
+    {
+     "phoneme": "- io",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_bien",
+   "phonemes": [
+    {
+     "phoneme": "- bye",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e n-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_openutau",
+   "phonemes": [
+    {
+     "phoneme": "- o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o p",
+     "position": 45,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "pe",
+     "position": 120,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e n",
+     "position": 144,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "nu",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "u t",
+     "position": 264,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ta",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a u",
+     "position": 385,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "u -",
+     "position": 450,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_vccv",
+   "phonemes": [
+    {
+     "phoneme": "- b",
+     "position": -235,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "b",
+     "position": -121,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "k b",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "b -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_a",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_y",
+   "phonemes": [
+    {
+     "phoneme": "- i",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_el",
+   "phonemes": [
+    {
+     "phoneme": "- e",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e l-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_en",
+   "phonemes": [
+    {
+     "phoneme": "- e",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e n-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_mañana",
+   "phonemes": [
+    {
+     "phoneme": "- ma",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 39,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "nya",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 241,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "n a",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_corazón",
+   "phonemes": [
+    {
+     "phoneme": "- ko",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o r",
+     "position": 91,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "r a",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a s",
+     "position": 180,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "so",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o n-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_cielo",
+   "phonemes": [
+    {
+     "phoneme": "- s",
+     "position": -145,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "s",
+     "position": -64,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ye",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e l",
+     "position": 149,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "lo",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_llorar",
+   "phonemes": [
+    {
+     "phoneme": "jo",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o r",
+     "position": 181,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "r a",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a r-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_guerra",
+   "phonemes": [
+    {
+     "phoneme": "- ge",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e rr",
+     "position": 169,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "rra",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_pingüino",
+   "phonemes": [
+    {
+     "phoneme": "- pi",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "n g",
+     "position": 31,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "g",
+     "position": 84,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "wi",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "no",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_transporte",
+   "phonemes": [
+    {
+     "phoneme": "- tra",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ans",
+     "position": 31,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "s",
+     "position": 78,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "po",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o r",
+     "position": 181,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "r",
+     "position": 241,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "te",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_obstáculo",
+   "phonemes": [
+    {
+     "phoneme": "- o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "b",
+     "position": 25,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 61,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ta",
+     "position": 120,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a k",
+     "position": 163,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ku",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "u l",
+     "position": 269,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "lo",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 440,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_mexico",
+   "phonemes": [
+    {
+     "phoneme": "- me",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "hi",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i k",
+     "position": 180,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ko",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_kiwi",
+   "phonemes": [
+    {
+     "phoneme": "- kyi",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_whisky",
+   "phonemes": [
+    {
+     "phoneme": "- wi",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i s",
+     "position": 100,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "s",
+     "position": 181,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "k i",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_año",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 181,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "nyo",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_rey",
+   "phonemes": [
+    {
+     "phoneme": "- rre",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e i",
+     "position": 358,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_ley",
+   "phonemes": [
+    {
+     "phoneme": "- le",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e i",
+     "position": 358,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_aire",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a i",
+     "position": 49,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i r",
+     "position": 157,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "re",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_europa",
+   "phonemes": [
+    {
+     "phoneme": "- e",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e u",
+     "position": 120,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "u r",
+     "position": 163,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ro",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o p",
+     "position": 264,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "pa",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 440,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_inspirar",
+   "phonemes": [
+    {
+     "phoneme": "- i",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ins",
+     "position": 31,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "s",
+     "position": 86,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "pi",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i r",
+     "position": 241,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "r a",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a r-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_atlas",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a t",
+     "position": 49,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "t",
+     "position": 154,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "la",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a s-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "p_hola_amigo",
+   "phonemes": [
+    {
+     "phoneme": "- o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o l",
+     "position": 130,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "la",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a m",
+     "position": 44,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "mi",
+     "position": 150,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "i g",
+     "position": 180,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "go",
+     "position": 300,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "p_el_perro",
+   "phonemes": [
+    {
+     "phoneme": "- e",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e l",
+     "position": -207,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "l",
+     "position": -75,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "pe",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e rr",
+     "position": 175,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "rro",
+     "position": 240,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "p_mi_amor",
+   "phonemes": [
+    {
+     "phoneme": "- mi",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a m",
+     "position": 114,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "mo",
+     "position": 240,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o r-",
+     "position": 430,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "p_tu_eres",
+   "phonemes": [
+    {
+     "phoneme": "tu",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "u e",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e r",
+     "position": 131,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "re",
+     "position": 240,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e s-",
+     "position": 430,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "p_la_luz",
+   "phonemes": [
+    {
+     "phoneme": "- la",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "lu",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "u s",
+     "position": 356,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "s -",
+     "position": 430,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "p_sol_y_luna",
+   "phonemes": [
+    {
+     "phoneme": "so",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o l",
+     "position": -59,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "l i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "i l",
+     "position": -111,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "lu",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "u n",
+     "position": 181,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "n a",
+     "position": 240,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "p_en_el_agua",
+   "phonemes": [
+    {
+     "phoneme": "- e",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e n",
+     "position": -127,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ne",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e l",
+     "position": -110,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "la",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a g",
+     "position": 116,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "gwa",
+     "position": 240,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "p_los_tres",
+   "phonemes": [
+    {
+     "phoneme": "- lo",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o st",
+     "position": -244,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "t",
+     "position": -109,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "re",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e s-",
+     "position": 430,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "p_con_brazos",
+   "phonemes": [
+    {
+     "phoneme": "- ko",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o n",
+     "position": -62,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "bra",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a s",
+     "position": 120,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "so",
+     "position": 240,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o s-",
+     "position": 430,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "p_voy_a_ir",
+   "phonemes": [
+    {
+     "phoneme": "- bo",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o i",
+     "position": -130,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ia",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a i",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "i r-",
+     "position": 430,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "p_pez_azul",
+   "phonemes": [
+    {
+     "phoneme": "pe",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "sa",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a s",
+     "position": 181,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "z u",
+     "position": 240,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "u l",
+     "position": 305,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "l -",
+     "position": 430,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "p_más_extra",
+   "phonemes": [
+    {
+     "phoneme": "- ma",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a s",
+     "position": -80,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "se",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e ks",
+     "position": 49,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 110,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "tra",
+     "position": 240,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "p_un_ángel",
+   "phonemes": [
+    {
+     "phoneme": "- u",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "u n",
+     "position": -59,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "n a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 100,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "he",
+     "position": 240,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e l-",
+     "position": 430,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "p_es_tren",
+   "phonemes": [
+    {
+     "phoneme": "- e",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e st",
+     "position": -244,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "t",
+     "position": -109,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "re",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e n-",
+     "position": 430,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "oov_flurbo",
+   "phonemes": [
+    {
+     "phoneme": "- flu",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "u r",
+     "position": 105,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "r b",
+     "position": 173,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "bo",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "oov_tlaxcala",
+   "phonemes": [
+    {
+     "phoneme": "t",
+     "position": -110,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "la",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a ks",
+     "position": 31,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "s",
+     "position": 92,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ka",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "la",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "oov_krumpis",
+   "phonemes": [
+    {
+     "phoneme": "- kru",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "m p",
+     "position": 145,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "pi",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i s-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "oov_sprent",
+   "phonemes": [
+    {
+     "phoneme": "- e",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "s",
+     "position": 153,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "pre",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e n",
+     "position": 289,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "nt",
+     "position": 366,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "t -",
+     "position": 448,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "oov_zzyzx",
+   "phonemes": [
+    {
+     "phoneme": "- si",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i s",
+     "position": 181,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "z u",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "u x-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "oov_brindlequest",
+   "phonemes": [
+    {
+     "phoneme": "- bri",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "n d",
+     "position": 30,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "le",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e k",
+     "position": 204,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ke",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e st",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "oov_ñuñoa",
+   "phonemes": [
+    {
+     "phoneme": "- nyu",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "u n",
+     "position": 91,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "nyo",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o a",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "ext_amigo",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a m",
+     "position": 374,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "mi",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i g",
+     "position": 834,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "go",
+     "position": 960,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 1390,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "ext_amigo_short",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a m",
+     "position": 374,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "mi",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i g",
+     "position": 594,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "go",
+     "position": 720,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 910,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "ext_construir",
+   "phonemes": [
+    {
+     "phoneme": "- ko",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ons",
+     "position": 99,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 155,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "t",
+     "position": 268,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "r",
+     "position": 383,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "wi",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i r-",
+     "position": 1390,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "ext_tilde",
+   "phonemes": [
+    {
+     "phoneme": "- o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o l",
+     "position": 610,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "la",
+     "position": 720,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 910,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "ext_star",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a i",
+     "position": 708,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "i r",
+     "position": 851,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "re",
+     "position": 960,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e -",
+     "position": 1390,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "ext_extra_notes",
+   "phonemes": [
+    {
+     "phoneme": "- io",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 1390,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "ext_phrase",
+   "phonemes": [
+    {
+     "phoneme": "- e",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e l",
+     "position": -59,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "l i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ins",
+     "position": 305,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 372,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ta",
+     "position": 480,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 706,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "nt",
+     "position": 826,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "te",
+     "position": 960,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "so",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "o l",
+     "position": 305,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "l -",
+     "position": 430,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "ext_aa",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_perro",
+   "phonemes": [
+    {
+     "phoneme": "pe",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e rr",
+     "position": 175,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "rro",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_junk",
+   "phonemes": [
+    {
+     "phoneme": "- tre",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e s-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_empty",
+   "phonemes": [
+    {
+     "phoneme": "- ka",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 49,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "nt",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ta",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a r-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_ny",
+   "phonemes": [
+    {
+     "phoneme": "- nya",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_cluster",
+   "phonemes": [
+    {
+     "phoneme": "- e",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e ks",
+     "position": 49,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 110,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "tra",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_semi",
+   "phonemes": [
+    {
+     "phoneme": "- bye",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e n-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_z",
+   "phonemes": [
+    {
+     "phoneme": "sa",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a p",
+     "position": 30,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "pa",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a t",
+     "position": 212,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "to",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_vv",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e",
+     "position": 90,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e i",
+     "position": 180,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "io",
+     "position": 270,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ou",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "u -",
+     "position": 440,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_cons_only",
+   "phonemes": [
+    {
+     "phoneme": "st",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "t -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_ch",
+   "phonemes": [
+    {
+     "phoneme": "- ch",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ch -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_r_only",
+   "phonemes": [
+    {
+     "phoneme": "- r",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "r -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_ks",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a x-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_long_end",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ans",
+     "position": 98,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "s",
+     "position": 176,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "t",
+     "position": 306,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "r -",
+     "position": 432,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "rest_between",
+   "phonemes": [
+    {
+     "phoneme": "- ka",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 49,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "nt",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ta",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a r-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a m",
+     "position": 44,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "mi",
+     "position": 150,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "i g",
+     "position": 180,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "go",
+     "position": 300,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "rest_short_gap",
+   "phonemes": [
+    {
+     "phoneme": "- tre",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e s-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "so",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o l",
+     "position": 305,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "l -",
+     "position": 430,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- o",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "o h",
+     "position": 181,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "h o",
+     "position": 240,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 430,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "tail_dash",
+   "phonemes": [
+    {
+     "phoneme": "- o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o l",
+     "position": 130,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "la",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "tail_R",
+   "phonemes": [
+    {
+     "phoneme": "pe",
+     "position": 0,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "tail_mid",
+   "phonemes": [
+    {
+     "phoneme": "- e",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e ks",
+     "position": 49,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 110,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "tra",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a g",
+     "position": 116,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "gwa",
+     "position": 240,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "forced",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- o",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o l",
+     "position": 130,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "la",
+     "position": 240,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "dur_30",
+   "phonemes": [
+    {
+     "phoneme": "we",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e st",
+     "position": 3,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "tro",
+     "position": 15,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ins",
+     "position": -175,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": -108,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ta",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": -254,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "nt",
+     "position": -134,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "te",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "e",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "e ks",
+     "position": 4,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 7,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "tra",
+     "position": 15,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 25,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "dur_60",
+   "phonemes": [
+    {
+     "phoneme": "we",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e st",
+     "position": 6,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "tro",
+     "position": 30,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ins",
+     "position": 4,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 8,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ta",
+     "position": 15,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 19,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "nt",
+     "position": 24,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "te",
+     "position": 30,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "e",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "e ks",
+     "position": 7,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 14,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "tra",
+     "position": 30,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 50,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "dur_120",
+   "phonemes": [
+    {
+     "phoneme": "we",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e st",
+     "position": 12,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "tro",
+     "position": 60,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ins",
+     "position": 7,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 16,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ta",
+     "position": 30,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 37,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "nt",
+     "position": 48,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "te",
+     "position": 60,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "e",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "e ks",
+     "position": 13,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 28,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "tra",
+     "position": 60,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 100,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "dur_240",
+   "phonemes": [
+    {
+     "phoneme": "we",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e st",
+     "position": 38,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "tro",
+     "position": 120,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ins",
+     "position": 16,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 38,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ta",
+     "position": 75,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 91,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "nt",
+     "position": 119,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "te",
+     "position": 150,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "e",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "e ks",
+     "position": 25,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 55,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "tra",
+     "position": 120,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 200,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "dur_960",
+   "phonemes": [
+    {
+     "phoneme": "we",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e st",
+     "position": 398,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "tro",
+     "position": 480,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ins",
+     "position": 140,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 207,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ta",
+     "position": 315,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 379,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "nt",
+     "position": 498,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "te",
+     "position": 630,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "e",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "e ks",
+     "position": 272,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 339,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "tra",
+     "position": 480,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 910,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "dur_1920",
+   "phonemes": [
+    {
+     "phoneme": "we",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "e st",
+     "position": 878,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "tro",
+     "position": 960,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ins",
+     "position": 455,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 522,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ta",
+     "position": 630,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 1006,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "nt",
+     "position": 1126,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "te",
+     "position": 1260,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e a",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "e",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "e ks",
+     "position": 752,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "st",
+     "position": 819,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "tra",
+     "position": 960,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 1870,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "tone_change",
+   "phonemes": [
+    {
+     "phoneme": "- o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o l",
+     "position": 130,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "la",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a_H",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a m_H",
+     "position": 21,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "mi_H",
+     "position": 105,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "i g_H",
+     "position": 126,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "go_H",
+     "position": 210,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o t_H",
+     "position": -143,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "t_H",
+     "position": -64,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "re",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "e s-",
+     "position": 430,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "tone_high",
+   "phonemes": [
+    {
+     "phoneme": "- bl_H",
+     "position": -112,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "la_H",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n_H",
+     "position": 181,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ko_H",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o a_H",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a g_H",
+     "position": 69,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "gwa_H",
+     "position": 195,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a p_H",
+     "position": -77,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "pe_H",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "e rr_H",
+     "position": 173,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "rro_H",
+     "position": 240,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "o -_H",
+     "position": 430,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "attr_shift",
+   "phonemes": [
+    {
+     "phoneme": "- o",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o l_H",
+     "position": 130,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "la",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "attr_color",
+   "phonemes": [
+    {
+     "phoneme": "- ka_S",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n_S",
+     "position": 49,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "nt_S",
+     "position": 150,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ta_S",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a r-",
+     "position": 430,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "warble_dict",
+   "phonemes": [
+    {
+     "phoneme": "- ua",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "r b",
+     "position": 49,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "b l",
+     "position": 119,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "le",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "eo",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o l",
+     "position": 130,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "la",
+     "position": 240,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 430,
+     "group": 1,
+     "error": null
+    }
+   ]
+  }
+ ]
+}
