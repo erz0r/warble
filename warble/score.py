@@ -1,0 +1,536 @@
+"""the score: tracks of notes on a tick grid (480 per beat, like openutau and ust), plus a tempo map.
+
+text format, one item per line, '#' starts a comment:
+
+    bank ./banks/some_singer        # directives apply to the following notes
+    bpm 120                         # or: bpm 140 @ bar 17   /   bpm 90 @ beat 32
+    time 3/4                        # time signature from here (or: time 3/4 @ bar 9)
+    key C
+    lang ja
+    voice default
+    track lead                      # starts or switches to a named track
+    volume -3                       # track gain in db; pan -1..1 with 'pan'
+    ら C4 1                          # lyric, pitch, length (beats: 1, 1/2, 1.5, or ms: 350ms)
+    + E4 1/2                        # continuation (melisma) of the previous syllable; +~ / +* too
+    r 1                             # rest
+    [k a] G4 1                      # explicit phonemes (diffsinger) or [alias] (utau)
+    か A4 1 @ 5:1                    # place at bar 5 beat 1 instead of after the previous note
+    さ B4 1 vel=120 expr=0.8         # per-note controls as key=value
+"""
+
+import json
+import math
+import os
+import re
+from dataclasses import dataclass, field
+
+from .errors import WarbleError
+
+TPQ = 480  # ticks per quarter note / beat
+COMMENT_RE = re.compile(r"(^|\s)#.*$")
+NOTE_RE = re.compile(r"^([A-Ga-g])([#b]?)(-?\d+)([+-]\d+c?)?$")
+STEPS = {"C": 0, "D": 2, "E": 4, "F": 5, "G": 7, "A": 9, "B": 11}
+NAMES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
+
+# controls a note may carry; the value is parsed as a float unless listed as text
+TEXT_CONTROLS = {"vib", "voice", "flags", "resampler", "phonemizer", "lang", "alt", "color"}
+
+
+def parse_pitch(text, where=""):
+    """'C4' -> 60, 'C#4' / 'Db4' -> 61, '60' -> 60, 'A4+20c' -> 69.2."""
+    t = text.strip()
+    if re.fullmatch(r"-?\d+(\.\d+)?", t):
+        return float(t)
+    m = NOTE_RE.match(t)
+    if not m:
+        raise WarbleError("bad_pitch", f"cannot read pitch '{text}'{where}", hint="use a note name like C4, F#3, Bb4, or a midi number like 60")
+    tone = (int(m.group(3)) + 1) * 12 + STEPS[m.group(1).upper()] + {"#": 1, "b": -1, "": 0}[m.group(2)]
+    if m.group(4):
+        tone += float(m.group(4).rstrip("c")) / 100.0
+    return float(tone)
+
+
+def pitch_name(tone):
+    t = int(round(tone))
+    cents = round((tone - t) * 100)
+    base = f"{NAMES[t % 12]}{t // 12 - 1}"
+    return base + (f"{cents:+d}c" if cents else "")
+
+
+@dataclass
+class Note:
+    lyric: str
+    tone: float  # midi, may be fractional
+    position: int  # ticks
+    duration: int  # ticks
+    hint: str = None  # explicit phonemes / alias from [ ... ]
+    controls: dict = field(default_factory=dict)
+    line: int = None  # source line for error messages
+
+    @property
+    def end(self):
+        return self.position + self.duration
+
+    @property
+    def is_continuation(self):
+        return self.lyric.startswith("+")
+
+    def to_json(self):
+        out = {"lyric": self.lyric, "pitch": pitch_name(self.tone), "tone": self.tone, "position": self.position, "duration": self.duration}
+        if self.hint:
+            out["hint"] = self.hint
+        if self.controls:
+            out["controls"] = self.controls
+        return out
+
+
+@dataclass
+class Track:
+    name: str
+    bank: str = None
+    lang: str = None
+    voice: str = None
+    phonemizer: str = None
+    engine: str = None
+    volume_db: float = 0.0
+    pan: float = 0.0
+    notes: list = field(default_factory=list)
+
+    def to_json(self):
+        return {
+            "name": self.name, "bank": self.bank, "lang": self.lang, "voice": self.voice,
+            "phonemizer": self.phonemizer, "engine": self.engine, "volume_db": self.volume_db, "pan": self.pan,
+            "notes": [n.to_json() for n in self.notes],
+        }
+
+
+class TempoMap:
+    """piecewise-constant tempo over ticks."""
+
+    def __init__(self, changes=None):
+        self.changes = sorted(changes or [(0, 120.0)])
+        if self.changes[0][0] != 0:
+            self.changes.insert(0, (0, self.changes[0][1]))
+        # dedupe positions, later entry wins
+        d = {}
+        for t, b in self.changes:
+            d[t] = b
+        self.changes = sorted(d.items())
+        self._ms = [0.0]
+        for (t0, b0), (t1, _) in zip(self.changes, self.changes[1:]):
+            self._ms.append(self._ms[-1] + (t1 - t0) * 60000.0 / (b0 * TPQ))
+
+    def tick_to_ms(self, tick):
+        i = self._seg_by_tick(tick)
+        t0, bpm = self.changes[i]
+        return self._ms[i] + (tick - t0) * 60000.0 / (bpm * TPQ)
+
+    def ms_to_tick(self, ms):
+        i = 0
+        for j in range(len(self._ms)):
+            if self._ms[j] <= ms:
+                i = j
+        t0, bpm = self.changes[i]
+        return t0 + (ms - self._ms[i]) * bpm * TPQ / 60000.0
+
+    def _seg_by_tick(self, tick):
+        i = 0
+        for j, (t, _) in enumerate(self.changes):
+            if t <= tick:
+                i = j
+        return i
+
+    def bpm_at(self, tick):
+        return self.changes[self._seg_by_tick(tick)][1]
+
+
+@dataclass
+class Score:
+    tracks: list = field(default_factory=list)
+    tempos: list = field(default_factory=lambda: [(0, 120.0)])
+    time_signatures: list = field(default_factory=lambda: [(0, 4, 4)])  # (tick, num, den)
+    key: str = None
+    base_dir: str = "."
+
+    @property
+    def tempo_map(self):
+        return TempoMap(self.tempos)
+
+    def track(self, name):
+        for t in self.tracks:
+            if t.name == name:
+                return t
+        return None
+
+    def bar_to_tick(self, bar, beat=1.0):
+        """1-based bar and beat (in the bar's own beat unit) to ticks, honoring time signature changes."""
+        sigs = sorted(self.time_signatures)
+        tick, cur_bar = 0, 1
+        num, den = sigs[0][1], sigs[0][2]
+        idx = 1
+        while cur_bar < bar:
+            # apply a signature change that starts at this bar's tick
+            while idx < len(sigs) and sigs[idx][0] <= tick:
+                num, den = sigs[idx][1], sigs[idx][2]
+                idx += 1
+            tick += int(num * TPQ * 4 / den)
+            cur_bar += 1
+        while idx < len(sigs) and sigs[idx][0] <= tick:
+            num, den = sigs[idx][1], sigs[idx][2]
+            idx += 1
+        return tick + int(round((beat - 1) * TPQ * 4 / den))
+
+    def tick_to_bar(self, tick):
+        sigs = sorted(self.time_signatures)
+        t, bar = 0, 1
+        num, den = sigs[0][1], sigs[0][2]
+        idx = 1
+        while True:
+            while idx < len(sigs) and sigs[idx][0] <= t:
+                num, den = sigs[idx][1], sigs[idx][2]
+                idx += 1
+            bar_len = int(num * TPQ * 4 / den)
+            if tick < t + bar_len:
+                return bar, 1 + (tick - t) / (TPQ * 4 / den)
+            t += bar_len
+            bar += 1
+
+    @property
+    def end_tick(self):
+        return max((n.end for t in self.tracks for n in t.notes), default=0)
+
+    def to_json(self):
+        return {
+            "tempos": [{"tick": t, "bpm": b} for t, b in self.tempos],
+            "time_signatures": [{"tick": t, "num": n, "den": d} for t, n, d in self.time_signatures],
+            "key": self.key,
+            "tracks": [t.to_json() for t in self.tracks],
+        }
+
+
+# ---- parsing --------------------------------------------------------------------------
+
+def _parse_length(text, tempo_map, at_tick, where):
+    """beats ('1', '1/2', '1.5', '3/8') or milliseconds ('350ms'). returns ticks."""
+    t = text.strip().lower()
+    try:
+        if t.endswith("ms"):
+            ms = float(t[:-2])
+            start_ms = tempo_map.tick_to_ms(at_tick)
+            return int(round(tempo_map.ms_to_tick(start_ms + ms) - at_tick))
+        if "/" in t:
+            a, b = t.split("/", 1)
+            beats = float(a) / float(b)
+        else:
+            beats = float(t)
+    except ValueError:
+        raise WarbleError("bad_length", f"cannot read length '{text}'{where}", hint="use beats (1, 1/2, 1.5) or ms (350ms)")
+    if beats <= 0:
+        raise WarbleError("bad_length", f"length must be positive, got '{text}'{where}")
+    return int(round(beats * TPQ))
+
+
+def _parse_controls(tokens, where):
+    controls = {}
+    for tok in tokens:
+        if "=" not in tok:
+            raise WarbleError("bad_control", f"expected key=value, got '{tok}'{where}")
+        k, v = tok.split("=", 1)
+        k = k.strip().lower()
+        if k in TEXT_CONTROLS:
+            controls[k] = v
+            continue
+        try:
+            controls[k] = float(v.rstrip("c%"))
+        except ValueError:
+            controls[k] = v
+    return controls
+
+
+def _split_note_line(line):
+    """split on whitespace but keep [ ... ] hints together."""
+    out, buf, depth = [], "", 0
+    for ch in line:
+        if ch == "[":
+            depth += 1
+        if ch == "]":
+            depth -= 1
+        if ch.isspace() and depth == 0:
+            if buf:
+                out.append(buf)
+                buf = ""
+        else:
+            buf += ch
+    if buf:
+        out.append(buf)
+    return out
+
+
+def parse_text(text, base_dir=".", source="<score>"):
+    score = Score(base_dir=base_dir)
+    pending_tempos = []
+    # first pass for tempo/time so ms lengths and '@ bar' resolve against the final map
+    lines = text.splitlines()
+    state = {"bank": None, "lang": None, "voice": None, "phonemizer": None, "engine": None}
+    cursor = {}  # track name -> tick
+    current = None
+
+    def ensure_track(name="main"):
+        nonlocal current
+        t = score.track(name)
+        if t is None:
+            t = Track(name=name, **{k: v for k, v in state.items()})
+            score.tracks.append(t)
+            cursor[name] = 0
+        current = t
+        return t
+
+    for lineno, raw in enumerate(lines, start=1):
+        # '#' starts a comment only at line start or after whitespace, so C#4 survives
+        line = COMMENT_RE.sub("", raw).strip()
+        if not line:
+            continue
+        where = f" ({source} line {lineno})"
+        parts = _split_note_line(line)
+        head = parts[0].lower()
+        if head == "track":
+            if len(parts) < 2:
+                raise WarbleError("bad_directive", f"'track' needs a name{where}")
+            ensure_track(parts[1])
+            continue
+        if head in ("bank", "lang", "voice", "phonemizer", "engine"):
+            if len(parts) < 2:
+                raise WarbleError("bad_directive", f"'{head}' needs a value{where}")
+            value = line.split(None, 1)[1].strip()
+            if head == "bank":
+                value = value if os.path.isabs(value) else os.path.normpath(os.path.join(base_dir, value))
+            state[head] = value
+            t = current or ensure_track()
+            # a directive before any note on the track sets the track default; later it's a per-note change
+            if not t.notes:
+                setattr(t, head, value)
+            continue
+        if head in ("volume", "pan"):
+            t = current or ensure_track()
+            try:
+                val = float(parts[1].replace("db", ""))
+            except (IndexError, ValueError):
+                raise WarbleError("bad_directive", f"'{head}' needs a number{where}")
+            if head == "volume":
+                t.volume_db = val
+            else:
+                t.pan = max(-1.0, min(1.0, val))
+            continue
+        if head in ("bpm", "tempo"):
+            bpm = float(parts[1])
+            at = _parse_at(parts[2:], score, cursor.get(current.name, 0) if current else 0, where)
+            pending_tempos.append((at, bpm))
+            score.tempos = sorted({t: b for t, b in score.tempos + [(at, bpm)]}.items())
+            continue
+        if head == "time":
+            m = re.fullmatch(r"(\d+)/(\d+)", parts[1]) if len(parts) > 1 else None
+            if not m:
+                raise WarbleError("bad_directive", f"'time' needs a signature like 3/4{where}")
+            at = _parse_at(parts[2:], score, cursor.get(current.name, 0) if current else 0, where)
+            sigs = [s for s in score.time_signatures if s[0] != at]
+            score.time_signatures = sorted(sigs + [(at, int(m.group(1)), int(m.group(2)))])
+            continue
+        if head == "key":
+            score.key = parts[1] if len(parts) > 1 else None
+            continue
+
+        # a note or a rest
+        t = current or ensure_track()
+        tm = score.tempo_map
+        pos = cursor[t.name]
+        if "@" in parts:
+            i = parts.index("@")
+            pos = _parse_at(parts[i:], score, pos, where)
+            used = 3 if len(parts) > i + 1 and parts[i + 1] in ("bar", "beat", "tick") else 2
+            parts = parts[:i] + parts[i + used :]
+        if head in ("r", "rest", "-"):
+            if len(parts) < 2:
+                raise WarbleError("bad_rest", f"rest needs a length{where}")
+            cursor[t.name] = pos + _parse_length(parts[1], tm, pos, where)
+            continue
+        if len(parts) < 3:
+            raise WarbleError("bad_note", f"a note needs lyric, pitch and length: '{line}'{where}")
+        lyric, pitch_txt, length_txt = parts[0], parts[1], parts[2]
+        hint = None
+        if lyric.startswith("[") and lyric.endswith("]"):
+            hint = lyric[1:-1].strip()
+            lyric = hint
+        dur = _parse_length(length_txt, tm, pos, where)
+        controls = _parse_controls(parts[3:], where)
+        for k in ("voice", "lang"):
+            if state[k] and state[k] != getattr(t, k):
+                controls.setdefault(k, state[k])
+        if state["bank"] and state["bank"] != t.bank:
+            controls.setdefault("bank", state["bank"])
+        note = Note(lyric=lyric, tone=parse_pitch(pitch_txt, where), position=pos, duration=dur, hint=hint, controls=controls, line=lineno)
+        t.notes.append(note)
+        cursor[t.name] = pos + dur
+    for t in score.tracks:
+        t.notes.sort(key=lambda n: n.position)
+        _check_overlaps(t)
+    return score
+
+
+def _parse_at(parts, score, default, where):
+    """'@ bar 17', '@ beat 32', '@ 5:2' (bar:beat), '@ 5' (bar). returns ticks."""
+    if not parts:
+        return default
+    if parts[0] != "@":
+        raise WarbleError("bad_position", f"expected '@ ...' but got {' '.join(parts)}{where}")
+    rest = parts[1:]
+    if not rest:
+        raise WarbleError("bad_position", f"'@' needs a position{where}")
+    if rest[0] == "bar" and len(rest) > 1:
+        return score.bar_to_tick(int(rest[1]))
+    if rest[0] == "beat" and len(rest) > 1:
+        return int(round(float(rest[1]) * TPQ))
+    if rest[0] == "tick" and len(rest) > 1:
+        return int(rest[1])
+    m = re.fullmatch(r"(\d+)(?::(\d+(?:\.\d+)?))?", rest[0])
+    if m:
+        return score.bar_to_tick(int(m.group(1)), float(m.group(2) or 1))
+    raise WarbleError("bad_position", f"cannot read position '{' '.join(rest)}'{where}", hint="use @ bar 17, @ beat 32, or @ 5:2")
+
+
+def _check_overlaps(track):
+    for a, b in zip(track.notes, track.notes[1:]):
+        if b.position < a.end:
+            raise WarbleError(
+                "overlapping_notes",
+                f"track '{track.name}': note '{b.lyric}' at tick {b.position} starts before '{a.lyric}' ends at {a.end}",
+                hint="notes on one track are monophonic; put the second voice on its own track",
+                lines=[a.line, b.line],
+            )
+
+
+def parse_inline(expr, defaults=None):
+    """'ら:C4:1 ら:D4:1/2 r:1 +:E4:1/2' -> score. defaults can carry bank/lang/bpm."""
+    lines = []
+    for k in ("bank", "lang", "voice", "bpm"):
+        if defaults and defaults.get(k) is not None:
+            lines.append(f"{k} {defaults[k]}")
+    for tok in expr.split():
+        bits = tok.split(":")
+        if bits[0] in ("r", "rest"):
+            lines.append(f"r {bits[1] if len(bits) > 1 else 1}")
+        elif len(bits) >= 3:
+            lines.append(" ".join(bits[:3] + [b for b in bits[3:]]))
+        else:
+            raise WarbleError("bad_inline", f"inline note '{tok}' should be lyric:pitch:length")
+    return parse_text("\n".join(lines), base_dir=os.getcwd(), source="-e")
+
+
+def parse_json(data, base_dir="."):
+    """{"bpm": 120, "tracks": [{"name", "bank", "lang", "notes": [{"lyric","pitch","length"|"duration","position"?}]}]}"""
+    score = Score(base_dir=base_dir)
+    if "tempos" in data:
+        score.tempos = [(int(t["tick"]), float(t["bpm"])) for t in data["tempos"]]
+    elif "bpm" in data:
+        score.tempos = [(0, float(data["bpm"]))]
+    if "time_signatures" in data:
+        score.time_signatures = [(int(s["tick"]), int(s["num"]), int(s["den"])) for s in data["time_signatures"]]
+    score.key = data.get("key")
+    tm = score.tempo_map
+    for ti, td in enumerate(data.get("tracks") or [{"notes": data.get("notes", [])}]):
+        bank = td.get("bank") or data.get("bank")
+        if bank and not os.path.isabs(bank):
+            bank = os.path.normpath(os.path.join(base_dir, bank))
+        t = Track(name=td.get("name", f"track{ti + 1}"), bank=bank, lang=td.get("lang") or data.get("lang"),
+                  voice=td.get("voice"), phonemizer=td.get("phonemizer"), engine=td.get("engine"),
+                  volume_db=float(td.get("volume_db", 0)), pan=float(td.get("pan", 0)))
+        pos = 0
+        for i, nd in enumerate(td.get("notes", [])):
+            where = f" (track {t.name} note {i})"
+            if "position" in nd:
+                pos = int(nd["position"])
+            if nd.get("rest") or nd.get("lyric") in ("r", None) and "pitch" not in nd:
+                pos += int(nd["duration"]) if "duration" in nd else _parse_length(str(nd.get("length", 1)), tm, pos, where)
+                continue
+            dur = int(nd["duration"]) if "duration" in nd else _parse_length(str(nd.get("length", 1)), tm, pos, where)
+            tone = float(nd["tone"]) if "tone" in nd else parse_pitch(str(nd["pitch"]), where)
+            lyric = str(nd.get("lyric", "a"))
+            hint = nd.get("hint")
+            t.notes.append(Note(lyric=lyric, tone=tone, position=pos, duration=dur, hint=hint, controls=dict(nd.get("controls", {}))))
+            pos += dur
+        _check_overlaps(t)
+        score.tracks.append(t)
+    return score
+
+
+def load(path_or_text, inline=False, defaults=None):
+    """load a score from a path (.txt/.score, .json, .ust, .ustx, .mid, .musicxml) or inline text."""
+    if inline:
+        return parse_inline(path_or_text, defaults)
+    path = path_or_text
+    if not os.path.isfile(path):
+        raise WarbleError("score_missing", f"score file not found: {path}")
+    ext = os.path.splitext(path)[1].lower()
+    base = os.path.dirname(os.path.abspath(path))
+    if ext == ".json":
+        with open(path, encoding="utf-8") as f:
+            return parse_json(json.load(f), base)
+    if ext == ".ust":
+        from .formats import ust
+
+        return ust.load(path)
+    if ext == ".ustx":
+        from .formats import ustx
+
+        return ustx.load(path)
+    if ext in (".mid", ".midi"):
+        from .formats import midi
+
+        return midi.load(path, **(defaults or {}))
+    if ext in (".musicxml", ".xml", ".mxl"):
+        from .formats import musicxml
+
+        return musicxml.load(path)
+    with open(path, encoding="utf-8-sig") as f:
+        return parse_text(f.read(), base_dir=base, source=os.path.basename(path))
+
+
+def apply_defaults(score, bank=None, lang=None, voice=None):
+    for t in score.tracks:
+        if bank and not t.bank:
+            t.bank = os.path.abspath(bank)
+        if lang and not t.lang:
+            t.lang = lang
+        if voice and not t.voice:
+            t.voice = voice
+    return score
+
+
+def note_groups(notes):
+    """group a track's notes into words: a lyric note plus its following '+' continuations."""
+    groups = []
+    for n in notes:
+        if n.is_continuation and groups and groups[-1][-1].end == n.position:
+            groups[-1].append(n)
+        else:
+            groups.append([n])
+    return groups
+
+
+def phrases(notes):
+    """split note groups into phrases at rests, as openutau's MachineLearningPhonemizer does:
+    a group joins the phrase only when it starts exactly where the previous one ended."""
+    out = []
+    for g in note_groups(notes):
+        if out and out[-1][-1][-1].end == g[0].position:
+            out[-1].append(g)
+        else:
+            out.append([g])
+    return out
+
+
+def ms_of(tm, tick):
+    return tm.tick_to_ms(tick)
+
+
+def isclose(a, b):
+    return math.isclose(a, b, abs_tol=1e-6)
