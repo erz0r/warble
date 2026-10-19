@@ -185,13 +185,15 @@ def _mel_centers(cfg):
     return (700 * (10 ** (m / 2595) - 1)).astype(np.float32)
 
 
-def acoustic(path, cfg):
-    """mel[t,k] = log-ish comb of harmonics of f0 (in the bank's mel_base)."""
+def acoustic(path, cfg, silent_ids=(0, 1, 2)):
+    """mel[t,k] = log-ish comb of harmonics of f0 (in the bank's mel_base), silent on SP/AP/PAD
+    frames like a real acoustic model."""
     g = G("acoustic")
-    sinks = [(g.inp("tokens", TensorProto.INT64, [1, "n_tokens"]), TensorProto.INT64)]
+    tokens = g.inp("tokens", TensorProto.INT64, [1, "n_tokens"])
+    sinks = []
     if cfg.get("use_lang_id"):
         sinks.append((g.inp("languages", TensorProto.INT64, [1, "n_tokens"]), TensorProto.INT64))
-    sinks.append((g.inp("durations", TensorProto.INT64, [1, "n_tokens"]), TensorProto.INT64))
+    durations = g.inp("durations", TensorProto.INT64, [1, "n_tokens"])
     f0 = g.inp("f0", TensorProto.FLOAT, [1, "n_frames"])
     for flag, name in (("use_key_shift_embed", "gender"), ("use_speed_embed", "velocity"), ("use_energy_embed", "energy"), ("use_breathiness_embed", "breathiness"), ("use_voicing_embed", "voicing"), ("use_tension_embed", "tension")):
         if cfg.get(flag):
@@ -207,6 +209,14 @@ def acoustic(path, cfg):
     bump = g.op("Exp", [g.op("Mul", [g.op("Mul", [diff, diff]), g.const(np.float32(-200.0))])])
     amp = np.float32(1.0) / np.arange(1, 13, dtype=np.float32).reshape(1, 1, 1, -1)
     comb = g.op("ReduceSum", [g.op("Mul", [bump, g.const(amp)]), g.const(np.array([3], np.int64))], keepdims=0)  # [1,T,K]
+    # per-frame gate: 0 on SP/AP/PAD tokens, 1 on phonemes
+    sounding = g.op("Cast", [tokens], to=TensorProto.FLOAT)
+    for sid in silent_ids:
+        sounding = g.op("Mul", [sounding, g.op("Cast", [g.op("Not", [g.op("Equal", [tokens, g.const(np.int64(sid))])])], to=TensorProto.FLOAT)])
+    gate_tok = g.op("Min", [sounding, g.const(np.float32(1.0))])
+    total = g.op("Gather", [g.op("Shape", [f0]), g.const(np.int64(1))])
+    gate = _frames_from_counts(g, durations, gate_tok, total)  # [1,T]
+    comb = g.op("Mul", [comb, g.op("Unsqueeze", [gate, g.const(np.array([2], np.int64))])])
     ln = g.op("Log", [g.op("Add", [comb, g.const(np.float32(1e-3))])])
     if str(cfg.get("mel_base", "10")) == "10":
         ln = g.op("Mul", [ln, g.const(np.float32(0.434294))])
@@ -239,7 +249,12 @@ def vocoder(path, cfg):
     amp = g.op("Pow", [g.const(base), energy])  # back to linear comb height (~0..1.2)
     amp = g.op("Min", [g.op("Mul", [amp, g.const(np.float32(0.25))]), g.const(np.float32(0.3))])
     voiced = g.op("Cast", [g.op("Greater", [f0, g.const(np.float32(1.0))])], to=TensorProto.FLOAT)
-    amp = upsample(g.op("Mul", [amp, voiced]))
+    amp = g.op("Mul", [amp, voiced])
+    # linear interpolation between frames so level changes ramp instead of stepping (no clicks)
+    amp3 = g.op("Unsqueeze", [amp, g.const(np.array([1], np.int64))])  # [1,1,T]
+    amp3 = g.op("Resize", [amp3, "", g.const(np.array([1.0, 1.0, float(hop)], np.float32))], mode="linear",
+                coordinate_transformation_mode="half_pixel")
+    amp = g.op("Reshape", [amp3, shape])
     g.op("Mul", [wave, amp], out="waveform")
     g.out("waveform", TensorProto.FLOAT, [1, "n_samples"])
     g.save(path)

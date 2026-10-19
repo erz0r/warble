@@ -183,6 +183,7 @@ class Phonemizer:
         for k, ph in enumerate(phones):
             nxt = phones[k + 1]["position_ms"] if k + 1 < len(phones) else end_ms
             ph["duration_ms"] = max(0.0, nxt - ph["position_ms"])
+            ph["vowel"] = bool(self.is_vowel(ph["phoneme"])) and ph["phoneme"] not in ("SP", "AP")
         # tone per phone: the note sounding at the phone's start (leading consonants take the next note)
         notes = [n for w in words for n in w]
         for ph in phones:

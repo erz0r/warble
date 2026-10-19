@@ -468,9 +468,18 @@ def parse_inline(expr, defaults=None):
         if bits[0] in ("r", "rest"):
             lines.append(f"r {bits[1] if len(bits) > 1 else 1}")
         elif len(bits) >= 3:
-            lines.append(" ".join(bits[:3] + [b for b in bits[3:]]))
+            # extra fields are controls: か:A4:1:vib=pop:vel=120 (a voice mix keeps its own colons)
+            ctl, cur = [], None
+            for b in bits[3:]:
+                if "=" in b or cur is None:
+                    cur = b
+                    ctl.append(cur)
+                else:
+                    ctl[-1] += ":" + b
+            lines.append(" ".join(bits[:3] + ctl))
         else:
-            raise WarbleError("bad_inline", f"inline note '{tok}' should be lyric:pitch:length")
+            raise WarbleError("bad_inline", f"inline note '{tok}' should be lyric:pitch:length[:key=value...]",
+                              hint="controls attach with colons, e.g. か:A4:1:vib=pop")
     return parse_text("\n".join(lines), base_dir=os.getcwd(), source="-e")
 
 

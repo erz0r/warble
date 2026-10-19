@@ -17,10 +17,12 @@ dependencies = [
     "scipy",
     "pyworld",
     "matplotlib",
+    "pyloudnorm",
 ]
 
 [project.optional-dependencies]
 dev = ["pytest"]
+asr = ["faster-whisper"]
 
 [project.scripts]
 warble = "warble.cli:main"

@@ -201,6 +201,64 @@ def cmd_phonemize(a):
     return phonemize(load_score(a), engine=a.engine, seed=a.seed, vocoder_dirs=a.vocoders)
 
 
+def _notes_arg(text):
+    return sorted(_ranges(text)) if text else None
+
+
+@command(
+    "inspect",
+    "images plus a json report describing a render: pitch vs intent per note, transitions, vibrato, loudness, timbre, artifacts, listening notes.",
+    [
+        arg("wav"),
+        arg("--score", help="score or .render.json for intent (default: <wav>.render.json written by sing)"),
+        arg("--notes", help="only these notes, e.g. 12-20"),
+        arg("--ref", help="another wav to compare against (a/b images and numeric diff)"),
+        arg("-o", "--out-dir", help="where to write images and report.json (default: <wav>_inspect/)"),
+        arg("--no-images", action="store_true"),
+        arg("--no-asr", action="store_true", help="skip the speech-recognition intelligibility check"),
+        arg("--extractors", default="harvest,dio", help="comma-separated f0 extractors"),
+    ],
+)
+def cmd_inspect(a):
+    from .perception.inspect import inspect
+
+    return inspect(a.wav, score=a.score, notes=_notes_arg(a.notes), ref=a.ref, out_dir=a.out_dir, images=not a.no_images,
+                   extractors=tuple(a.extractors.split(",")), asr=not a.no_asr)
+
+
+@command(
+    "analyze",
+    "run the inspect pipeline on any audio (a real singer too): notes are segmented from the pitch when there is no score.",
+    [arg("wav"), arg("--score"), arg("-o", "--out-dir"), arg("--no-images", action="store_true")],
+)
+def cmd_analyze(a):
+    from .perception.inspect import analyze
+
+    return analyze(a.wav, score=a.score, out_dir=a.out_dir, images=not a.no_images)
+
+
+@command(
+    "compare",
+    "a/b two renders: images, global diff (dtw-aligned mel distance, pitch, timing, loudness), per-note metric deltas and a verdict.",
+    [arg("a"), arg("b"), arg("-o", "--out-dir"), arg("--no-images", action="store_true")],
+)
+def cmd_compare(a):
+    from .perception.inspect import compare
+
+    return compare(a.a, a.b, out_dir=a.out_dir, images=not a.no_images)
+
+
+@command(
+    "pitch",
+    "pitch tools. `pitch extract <wav>`: f0 from every available extractor, where they disagree, and a curves file.",
+    [arg("action", choices=["extract"]), arg("wav"), arg("--extractors", help="comma-separated (default: all available)"), arg("-o", "--out")],
+)
+def cmd_pitch(a):
+    from .perception.inspect import pitch_extract
+
+    return pitch_extract(a.wav, a.extractors.split(",") if a.extractors else None, a.out)
+
+
 def build_parser():
     p = argparse.ArgumentParser(prog="warble", description=__doc__.splitlines()[0])
     p.add_argument("--pretty", action="store_true", help="indent json output")

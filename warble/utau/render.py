@@ -95,6 +95,7 @@ class UtauEngine:
             })
         for p in phones:
             p["duration_ms"] = p["end_ms"] - p["position_ms"]
+            p["vowel"] = _alias_is_voiced(p["alias"])
         _fit_overlaps(phones, prev_end_ms)
         return {
             "phones": phones,
@@ -192,6 +193,17 @@ class UtauEngine:
             "warnings": sorted(warn) + res["warnings"],
             "resampler": self.resampler_name,
         }
+
+
+UNVOICED_TAILS = {"R", "-", "br", "息", "吸", "k", "s", "t", "p", "h", "f", "sh", "ch", "ts", "ky", "py", "hy", "q", "cl", "・"}
+
+
+def _alias_is_voiced(alias):
+    """whether an alias is expected to end voiced, judged from its last token. vc parts ('a k'),
+    endings ('a R') and breaths are not; cv, vcv and vowels are."""
+    tok = alias.split(" ")[-1] if alias else ""
+    tok = tok.rstrip("0123456789↑↓_")
+    return bool(tok) and tok not in UNVOICED_TAILS and tok not in ("息", "吸")
 
 
 def _closest_aliases(alias, alias_map, n=8):
