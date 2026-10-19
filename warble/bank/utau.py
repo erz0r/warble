@@ -152,11 +152,11 @@ def find_oto_files(root):
     return out
 
 
-def parse_prefix_map(path, declared_encoding=None):
+def parse_prefix_map(path, declared_encoding=None, preferred=None):
     """prefix.map lines are 'NOTE<tab>prefix<tab>suffix'. returns {(prefix, suffix): sorted tones}
     plus the raw per-tone table."""
     with open(path, "rb") as f:
-        text, enc, how = decode_bytes(f.read(), declared_encoding)
+        text, enc, how = decode_bytes(f.read(), declared_encoding, preferred)
     groups, per_tone = {}, {}
     for line in text.splitlines():
         parts = line.split("\t")
@@ -198,13 +198,23 @@ class UtauBank:
         self.prefix_map_encoding = None
         pm = os.path.join(self.root, "prefix.map")
         if os.path.isfile(pm):
-            self.prefix_map, self.prefix_map_per_tone, self.prefix_map_encoding = parse_prefix_map(pm, self.declared_encoding)
+            self.prefix_map, self.prefix_map_per_tone, self.prefix_map_encoding = parse_prefix_map(pm, self.declared_encoding, self.bank_encoding())
         self.subbanks = self._subbanks()
         self._alias_map = None
 
     @property
     def name(self):
         return self.character.get("name") or (self.character_txt or {}).get("name") or os.path.basename(self.root)
+
+    def bank_encoding(self):
+        """the non-ascii encoding the bank's own text files settled on, used to decode files too
+        short or symbol-only to detect on their own (prefix.map is often just ↑ and note names)."""
+        if self.declared_encoding:
+            return self.declared_encoding
+        for enc in [s.encoding for s in self.oto_sets] + [(self.character_txt or {}).get("encoding")]:
+            if enc and enc not in ("ascii", "utf-8", "utf-8-sig"):
+                return enc
+        return None
 
     def _subbanks(self):
         """character.yaml subbanks win; otherwise prefix.map (and prefix/*.map) become subbanks,
@@ -230,7 +240,7 @@ class UtauBank:
             for fn in sorted(os.listdir(mapdir)):
                 if fn.endswith(".map"):
                     color = os.path.splitext(fn)[0]
-                    groups, _, _ = parse_prefix_map(os.path.join(mapdir, fn), self.declared_encoding)
+                    groups, _, _ = parse_prefix_map(os.path.join(mapdir, fn), self.declared_encoding, self.bank_encoding())
                     for (pre, suf), tones in groups.items():
                         out.append({"color": color, "prefix": pre, "suffix": color + suf, "tone_ranges": tone_ranges(tones)})
         return out or [{"color": "", "prefix": "", "suffix": "", "tone_ranges": []}]

@@ -56,11 +56,12 @@ def _weird_ratio(text):
     return bad / len(non_ascii)
 
 
-def decode_bytes(data, declared=None):
+def decode_bytes(data, declared=None, preferred=None):
     """decode bytes, returning (text, encoding, how).
 
     order: a declared encoding (#Charset or character.yaml) wins, then a utf-8 bom, then
-    strict utf-8, then the cjk codecs scored by how plausible their output looks.
+    strict utf-8, then `preferred` (the encoding the rest of the bank already uses), then the
+    cjk codecs scored by how plausible their output looks.
     """
     if declared:
         codec = normalize_encoding_name(declared)
@@ -82,6 +83,12 @@ def decode_bytes(data, declared=None):
         return data.decode("utf-8"), "utf-8", "valid-utf-8"
     except UnicodeDecodeError:
         pass
+    pref = normalize_encoding_name(preferred) if preferred else None
+    if pref and pref not in ("utf-8", "ascii"):
+        try:
+            return data.decode(pref), pref, "same as rest of bank"
+        except UnicodeDecodeError:
+            pass
     scored = []
     for codec in CANDIDATES[1:]:
         try:
@@ -108,10 +115,10 @@ def decode_bytes(data, declared=None):
     return data.decode("cp932", errors="replace"), "cp932", "fallback-with-replacement"
 
 
-def read_text(path, declared=None):
+def read_text(path, declared=None, preferred=None):
     with open(path, "rb") as f:
         data = f.read()
-    return decode_bytes(data, declared)
+    return decode_bytes(data, declared, preferred)
 
 
 def oto_declared_charset(data):
