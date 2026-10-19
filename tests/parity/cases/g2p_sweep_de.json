@@ -1,0 +1,3007 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.GermanDiphonePhonemizer",
+ "bank": "de_diphone",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "w0_straftäter",
+   "notes": [
+    {
+     "lyric": "straftäter",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w1_skandal",
+   "notes": [
+    {
+     "lyric": "skandal",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w2_einfältig",
+   "notes": [
+    {
+     "lyric": "einfältig",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w3_neural",
+   "notes": [
+    {
+     "lyric": "neural",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w4_zurückkehrte",
+   "notes": [
+    {
+     "lyric": "zurückkehrte",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w5_falsch",
+   "notes": [
+    {
+     "lyric": "falsch",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w6_grübeleien",
+   "notes": [
+    {
+     "lyric": "grübeleien",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w7_handtuch",
+   "notes": [
+    {
+     "lyric": "handtuch",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w8_genannte",
+   "notes": [
+    {
+     "lyric": "genannte",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w9_büffel",
+   "notes": [
+    {
+     "lyric": "büffel",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w10_literaturlandschaft",
+   "notes": [
+    {
+     "lyric": "literaturlandschaft",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w11_feiertag",
+   "notes": [
+    {
+     "lyric": "feiertag",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w12_rechtmäßigkeit",
+   "notes": [
+    {
+     "lyric": "rechtmäßigkeit",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w13_abstraktes",
+   "notes": [
+    {
+     "lyric": "abstraktes",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w14_stammbucheinträge",
+   "notes": [
+    {
+     "lyric": "stammbucheinträge",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w15_digitalen",
+   "notes": [
+    {
+     "lyric": "digitalen",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w16_geschrieben",
+   "notes": [
+    {
+     "lyric": "geschrieben",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w17_sechshundertfünfzig",
+   "notes": [
+    {
+     "lyric": "sechshundertfünfzig",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w18_havanna",
+   "notes": [
+    {
+     "lyric": "havanna",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w19_werden",
+   "notes": [
+    {
+     "lyric": "werden",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w20_dunkelviolettem",
+   "notes": [
+    {
+     "lyric": "dunkelviolettem",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w21_ohnmächtige",
+   "notes": [
+    {
+     "lyric": "ohnmächtige",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w22_widersprüchlichen",
+   "notes": [
+    {
+     "lyric": "widersprüchlichen",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w23_tiefschlafmodus",
+   "notes": [
+    {
+     "lyric": "tiefschlafmodus",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w24_ausfiele",
+   "notes": [
+    {
+     "lyric": "ausfiele",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w25_ostblock",
+   "notes": [
+    {
+     "lyric": "ostblock",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w26_begrüßungen",
+   "notes": [
+    {
+     "lyric": "begrüßungen",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w27_verändert",
+   "notes": [
+    {
+     "lyric": "verändert",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w28_einzelunternehmer",
+   "notes": [
+    {
+     "lyric": "einzelunternehmer",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w29_miteinander",
+   "notes": [
+    {
+     "lyric": "miteinander",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w30_kolourpaint",
+   "notes": [
+    {
+     "lyric": "kolourpaint",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w31_lieblingseis",
+   "notes": [
+    {
+     "lyric": "lieblingseis",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w32_lohrbachs",
+   "notes": [
+    {
+     "lyric": "lohrbachs",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w33_reiseroute",
+   "notes": [
+    {
+     "lyric": "reiseroute",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w34_überhängen",
+   "notes": [
+    {
+     "lyric": "überhängen",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w35_widersprüchlich",
+   "notes": [
+    {
+     "lyric": "widersprüchlich",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w36_karrierten",
+   "notes": [
+    {
+     "lyric": "karrierten",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w37_bodenkammern",
+   "notes": [
+    {
+     "lyric": "bodenkammern",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w38_zahnarzt",
+   "notes": [
+    {
+     "lyric": "zahnarzt",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w39_unglaublich",
+   "notes": [
+    {
+     "lyric": "unglaublich",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w40_ruheloser",
+   "notes": [
+    {
+     "lyric": "ruheloser",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w41_summt",
+   "notes": [
+    {
+     "lyric": "summt",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w42_weitläufiger",
+   "notes": [
+    {
+     "lyric": "weitläufiger",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w43_ausläufer",
+   "notes": [
+    {
+     "lyric": "ausläufer",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w44_antat",
+   "notes": [
+    {
+     "lyric": "antat",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w45_vvd",
+   "notes": [
+    {
+     "lyric": "vvd",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w46_unhierarchischer",
+   "notes": [
+    {
+     "lyric": "unhierarchischer",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w47_eg",
+   "notes": [
+    {
+     "lyric": "eg",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w48_funktionierte",
+   "notes": [
+    {
+     "lyric": "funktionierte",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w49_sehend",
+   "notes": [
+    {
+     "lyric": "sehend",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w50_pluralisierung",
+   "notes": [
+    {
+     "lyric": "pluralisierung",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w51_blutete",
+   "notes": [
+    {
+     "lyric": "blutete",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w52_hinaustragen",
+   "notes": [
+    {
+     "lyric": "hinaustragen",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w53_ehrenamtlichen",
+   "notes": [
+    {
+     "lyric": "ehrenamtlichen",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w54_geflohen",
+   "notes": [
+    {
+     "lyric": "geflohen",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w55_holder",
+   "notes": [
+    {
+     "lyric": "holder",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w56_kammerjungfern",
+   "notes": [
+    {
+     "lyric": "kammerjungfern",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w57_fürchterlicher",
+   "notes": [
+    {
+     "lyric": "fürchterlicher",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w58_liebst",
+   "notes": [
+    {
+     "lyric": "liebst",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w59_york",
+   "notes": [
+    {
+     "lyric": "york",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w60_vermischt",
+   "notes": [
+    {
+     "lyric": "vermischt",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w61_kümmern",
+   "notes": [
+    {
+     "lyric": "kümmern",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w62_einzelner",
+   "notes": [
+    {
+     "lyric": "einzelner",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w63_hätten",
+   "notes": [
+    {
+     "lyric": "hätten",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w64_bausteinkomplex",
+   "notes": [
+    {
+     "lyric": "bausteinkomplex",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w65_kalk",
+   "notes": [
+    {
+     "lyric": "kalk",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w66_euch",
+   "notes": [
+    {
+     "lyric": "euch",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w67_hechnersche",
+   "notes": [
+    {
+     "lyric": "hechnersche",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w68_gelb",
+   "notes": [
+    {
+     "lyric": "gelb",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w69_bekämpfung",
+   "notes": [
+    {
+     "lyric": "bekämpfung",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w70_metager",
+   "notes": [
+    {
+     "lyric": "metager",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w71_cnc",
+   "notes": [
+    {
+     "lyric": "cnc",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w72_fixbetrag",
+   "notes": [
+    {
+     "lyric": "fixbetrag",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w73_mittag",
+   "notes": [
+    {
+     "lyric": "mittag",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w74_synonym",
+   "notes": [
+    {
+     "lyric": "synonym",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w75_beigestimmt",
+   "notes": [
+    {
+     "lyric": "beigestimmt",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w76_millionen",
+   "notes": [
+    {
+     "lyric": "millionen",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w77_großartigen",
+   "notes": [
+    {
+     "lyric": "großartigen",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w78_bürsten",
+   "notes": [
+    {
+     "lyric": "bürsten",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w79_beschloss",
+   "notes": [
+    {
+     "lyric": "beschloss",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w80_freigehalten",
+   "notes": [
+    {
+     "lyric": "freigehalten",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w81_schmiede",
+   "notes": [
+    {
+     "lyric": "schmiede",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w82_wählten",
+   "notes": [
+    {
+     "lyric": "wählten",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w83_torheiten",
+   "notes": [
+    {
+     "lyric": "torheiten",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w84_schließung",
+   "notes": [
+    {
+     "lyric": "schließung",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w85_ältliche",
+   "notes": [
+    {
+     "lyric": "ältliche",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w86_einschnitte",
+   "notes": [
+    {
+     "lyric": "einschnitte",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w87_kräften",
+   "notes": [
+    {
+     "lyric": "kräften",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w88_ange",
+   "notes": [
+    {
+     "lyric": "ange",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w89_unerwähnt",
+   "notes": [
+    {
+     "lyric": "unerwähnt",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w90_lernt",
+   "notes": [
+    {
+     "lyric": "lernt",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w91_zeitversetzte",
+   "notes": [
+    {
+     "lyric": "zeitversetzte",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w92_jane",
+   "notes": [
+    {
+     "lyric": "jane",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w93_erhält",
+   "notes": [
+    {
+     "lyric": "erhält",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w94_landesmedienanstalt",
+   "notes": [
+    {
+     "lyric": "landesmedienanstalt",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w95_verhassten",
+   "notes": [
+    {
+     "lyric": "verhassten",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w96_unscheinbar",
+   "notes": [
+    {
+     "lyric": "unscheinbar",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w97_vertragsschluss",
+   "notes": [
+    {
+     "lyric": "vertragsschluss",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w98_befände",
+   "notes": [
+    {
+     "lyric": "befände",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w99_gesprächsweise",
+   "notes": [
+    {
+     "lyric": "gesprächsweise",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w100_obskuren",
+   "notes": [
+    {
+     "lyric": "obskuren",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w101_überwältigt",
+   "notes": [
+    {
+     "lyric": "überwältigt",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w102_welche",
+   "notes": [
+    {
+     "lyric": "welche",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w103_schwerpunktthema",
+   "notes": [
+    {
+     "lyric": "schwerpunktthema",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w104_gleichwertig",
+   "notes": [
+    {
+     "lyric": "gleichwertig",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w105_reed",
+   "notes": [
+    {
+     "lyric": "reed",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w106_geklappt",
+   "notes": [
+    {
+     "lyric": "geklappt",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w107_wüsst",
+   "notes": [
+    {
+     "lyric": "wüsst",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w108_kollisionsrecht",
+   "notes": [
+    {
+     "lyric": "kollisionsrecht",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w109_verunglimpft",
+   "notes": [
+    {
+     "lyric": "verunglimpft",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w110_brahms",
+   "notes": [
+    {
+     "lyric": "brahms",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w111_hineinarbeitend",
+   "notes": [
+    {
+     "lyric": "hineinarbeitend",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w112_rauchorgien",
+   "notes": [
+    {
+     "lyric": "rauchorgien",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w113_walter",
+   "notes": [
+    {
+     "lyric": "walter",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w114_rätselhafte",
+   "notes": [
+    {
+     "lyric": "rätselhafte",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w115_leckte",
+   "notes": [
+    {
+     "lyric": "leckte",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w116_übersetzer",
+   "notes": [
+    {
+     "lyric": "übersetzer",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w117_wohinauf",
+   "notes": [
+    {
+     "lyric": "wohinauf",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w118_hinauftragen",
+   "notes": [
+    {
+     "lyric": "hinauftragen",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w119_einwegfunktion",
+   "notes": [
+    {
+     "lyric": "einwegfunktion",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w120_befestigungsanlagen",
+   "notes": [
+    {
+     "lyric": "befestigungsanlagen",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w121_nähme",
+   "notes": [
+    {
+     "lyric": "nähme",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w122_thornfield",
+   "notes": [
+    {
+     "lyric": "thornfield",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w123_geformt",
+   "notes": [
+    {
+     "lyric": "geformt",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w124_forschungsaspekt",
+   "notes": [
+    {
+     "lyric": "forschungsaspekt",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w125_geringschätzig",
+   "notes": [
+    {
+     "lyric": "geringschätzig",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w126_linnen",
+   "notes": [
+    {
+     "lyric": "linnen",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w127_terminator(1)",
+   "notes": [
+    {
+     "lyric": "terminator(1)",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w128_befehlen",
+   "notes": [
+    {
+     "lyric": "befehlen",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w129_reichte",
+   "notes": [
+    {
+     "lyric": "reichte",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w130_russland",
+   "notes": [
+    {
+     "lyric": "russland",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w131_befriedigten",
+   "notes": [
+    {
+     "lyric": "befriedigten",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w132_partei",
+   "notes": [
+    {
+     "lyric": "partei",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w133_durchzusehen",
+   "notes": [
+    {
+     "lyric": "durchzusehen",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w134_dreister",
+   "notes": [
+    {
+     "lyric": "dreister",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w135_unwillkürlich",
+   "notes": [
+    {
+     "lyric": "unwillkürlich",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w136_pferdegetrappel",
+   "notes": [
+    {
+     "lyric": "pferdegetrappel",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w137_arbeitsämter",
+   "notes": [
+    {
+     "lyric": "arbeitsämter",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w138_impuls",
+   "notes": [
+    {
+     "lyric": "impuls",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w139_widerspruchsrecht",
+   "notes": [
+    {
+     "lyric": "widerspruchsrecht",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w140_wolf",
+   "notes": [
+    {
+     "lyric": "wolf",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w141_grellen",
+   "notes": [
+    {
+     "lyric": "grellen",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w142_telegrafiert",
+   "notes": [
+    {
+     "lyric": "telegrafiert",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w143_wartete",
+   "notes": [
+    {
+     "lyric": "wartete",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w144_metal",
+   "notes": [
+    {
+     "lyric": "metal",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w145_sagtest",
+   "notes": [
+    {
+     "lyric": "sagtest",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w146_frauengesellschaft",
+   "notes": [
+    {
+     "lyric": "frauengesellschaft",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w147_dot",
+   "notes": [
+    {
+     "lyric": "dot",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w148_faule",
+   "notes": [
+    {
+     "lyric": "faule",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w149_strafanzeige",
+   "notes": [
+    {
+     "lyric": "strafanzeige",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w150_adhyxoqora",
+   "notes": [
+    {
+     "lyric": "adhyxoqora",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w151_aofeügaüzy",
+   "notes": [
+    {
+     "lyric": "aofeügaüzy",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w152_baqibyxui",
+   "notes": [
+    {
+     "lyric": "baqibyxui",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w153_baüssyt",
+   "notes": [
+    {
+     "lyric": "baüssyt",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w154_beoejuvi",
+   "notes": [
+    {
+     "lyric": "beoejuvi",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w155_bujvöaui",
+   "notes": [
+    {
+     "lyric": "bujvöaui",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w156_bäx",
+   "notes": [
+    {
+     "lyric": "bäx",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w157_böxueeäouf",
+   "notes": [
+    {
+     "lyric": "böxueeäouf",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w158_ci",
+   "notes": [
+    {
+     "lyric": "ci",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w159_ciüe",
+   "notes": [
+    {
+     "lyric": "ciüe",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w160_crüuheäea",
+   "notes": [
+    {
+     "lyric": "crüuheäea",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w161_cuwabasfree",
+   "notes": [
+    {
+     "lyric": "cuwabasfree",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w162_dadaqkvye",
+   "notes": [
+    {
+     "lyric": "dadaqkvye",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w163_dawemi",
+   "notes": [
+    {
+     "lyric": "dawemi",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w164_dizffuzawe",
+   "notes": [
+    {
+     "lyric": "dizffuzawe",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w165_dißokvncäi",
+   "notes": [
+    {
+     "lyric": "dißokvncäi",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w166_djäuooü",
+   "notes": [
+    {
+     "lyric": "djäuooü",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w167_dlmynztiril",
+   "notes": [
+    {
+     "lyric": "dlmynztiril",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w168_douixgmu",
+   "notes": [
+    {
+     "lyric": "douixgmu",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w169_dow",
+   "notes": [
+    {
+     "lyric": "dow",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w170_doüubaninpy",
+   "notes": [
+    {
+     "lyric": "doüubaninpy",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w171_dvuixxf",
+   "notes": [
+    {
+     "lyric": "dvuixxf",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w172_dydamvßii",
+   "notes": [
+    {
+     "lyric": "dydamvßii",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w173_dymy",
+   "notes": [
+    {
+     "lyric": "dymy",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w174_eaähl",
+   "notes": [
+    {
+     "lyric": "eaähl",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w175_eecöbäz",
+   "notes": [
+    {
+     "lyric": "eecöbäz",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w176_eezekudsöi",
+   "notes": [
+    {
+     "lyric": "eezekudsöi",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w177_eeßsbögo",
+   "notes": [
+    {
+     "lyric": "eeßsbögo",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w178_ejr",
+   "notes": [
+    {
+     "lyric": "ejr",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w179_ekß",
+   "notes": [
+    {
+     "lyric": "ekß",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w180_epk",
+   "notes": [
+    {
+     "lyric": "epk",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w181_euliäopoc",
+   "notes": [
+    {
+     "lyric": "euliäopoc",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w182_fa",
+   "notes": [
+    {
+     "lyric": "fa",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w183_fecxroogj",
+   "notes": [
+    {
+     "lyric": "fecxroogj",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w184_feqi",
+   "notes": [
+    {
+     "lyric": "feqi",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w185_feqo",
+   "notes": [
+    {
+     "lyric": "feqo",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w186_fyöavtqez",
+   "notes": [
+    {
+     "lyric": "fyöavtqez",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w187_ge",
+   "notes": [
+    {
+     "lyric": "ge",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w188_gi",
+   "notes": [
+    {
+     "lyric": "gi",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w189_giz",
+   "notes": [
+    {
+     "lyric": "giz",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w190_gwßxcuri",
+   "notes": [
+    {
+     "lyric": "gwßxcuri",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w191_gx",
+   "notes": [
+    {
+     "lyric": "gx",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w192_havay",
+   "notes": [
+    {
+     "lyric": "havay",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w193_heb",
+   "notes": [
+    {
+     "lyric": "heb",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w194_heyeöaphrrv",
+   "notes": [
+    {
+     "lyric": "heyeöaphrrv",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w195_hytuuy",
+   "notes": [
+    {
+     "lyric": "hytuuy",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w196_iabineca",
+   "notes": [
+    {
+     "lyric": "iabineca",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w197_iaoeiapeßi",
+   "notes": [
+    {
+     "lyric": "iaoeiapeßi",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w198_iiaetycv",
+   "notes": [
+    {
+     "lyric": "iiaetycv",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w199_iifupff",
+   "notes": [
+    {
+     "lyric": "iifupff",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w200_iiqbßoä",
+   "notes": [
+    {
+     "lyric": "iiqbßoä",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w201_ikss",
+   "notes": [
+    {
+     "lyric": "ikss",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w202_iobuqv",
+   "notes": [
+    {
+     "lyric": "iobuqv",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w203_irlß",
+   "notes": [
+    {
+     "lyric": "irlß",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w204_iyqipbjeoy",
+   "notes": [
+    {
+     "lyric": "iyqipbjeoy",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w205_jawqqudlu",
+   "notes": [
+    {
+     "lyric": "jawqqudlu",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w206_jezyöoy",
+   "notes": [
+    {
+     "lyric": "jezyöoy",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w207_jjf",
+   "notes": [
+    {
+     "lyric": "jjf",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w208_joj",
+   "notes": [
+    {
+     "lyric": "joj",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w209_joyo",
+   "notes": [
+    {
+     "lyric": "joyo",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w210_juhyqnä",
+   "notes": [
+    {
+     "lyric": "juhyqnä",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w211_jxmtaex",
+   "notes": [
+    {
+     "lyric": "jxmtaex",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w212_jyc",
+   "notes": [
+    {
+     "lyric": "jyc",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w213_kami",
+   "notes": [
+    {
+     "lyric": "kami",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w214_kedapa",
+   "notes": [
+    {
+     "lyric": "kedapa",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w215_kojd",
+   "notes": [
+    {
+     "lyric": "kojd",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w216_koyytixyra",
+   "notes": [
+    {
+     "lyric": "koyytixyra",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w217_kqry",
+   "notes": [
+    {
+     "lyric": "kqry",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w218_kuv",
+   "notes": [
+    {
+     "lyric": "kuv",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w219_kyqy",
+   "notes": [
+    {
+     "lyric": "kyqy",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w220_lekunam",
+   "notes": [
+    {
+     "lyric": "lekunam",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w221_lfrj",
+   "notes": [
+    {
+     "lyric": "lfrj",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w222_lst",
+   "notes": [
+    {
+     "lyric": "lst",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w223_lw",
+   "notes": [
+    {
+     "lyric": "lw",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w224_lßtöhpöy",
+   "notes": [
+    {
+     "lyric": "lßtöhpöy",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w225_lödfee",
+   "notes": [
+    {
+     "lyric": "lödfee",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w226_mahiöecih",
+   "notes": [
+    {
+     "lyric": "mahiöecih",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w227_maoye",
+   "notes": [
+    {
+     "lyric": "maoye",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w228_merimycuhuj",
+   "notes": [
+    {
+     "lyric": "merimycuhuj",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w229_mfrae",
+   "notes": [
+    {
+     "lyric": "mfrae",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w230_mhö",
+   "notes": [
+    {
+     "lyric": "mhö",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w231_naqeiuh",
+   "notes": [
+    {
+     "lyric": "naqeiuh",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w232_nar",
+   "notes": [
+    {
+     "lyric": "nar",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w233_negaviiuqef",
+   "notes": [
+    {
+     "lyric": "negaviiuqef",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w234_noqafßäoy",
+   "notes": [
+    {
+     "lyric": "noqafßäoy",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w235_oaßuz",
+   "notes": [
+    {
+     "lyric": "oaßuz",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w236_oezu",
+   "notes": [
+    {
+     "lyric": "oezu",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w237_omtecjd",
+   "notes": [
+    {
+     "lyric": "omtecjd",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w238_oum",
+   "notes": [
+    {
+     "lyric": "oum",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w239_poikvu",
+   "notes": [
+    {
+     "lyric": "poikvu",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w240_pöüu",
+   "notes": [
+    {
+     "lyric": "pöüu",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w241_qasuaiüy",
+   "notes": [
+    {
+     "lyric": "qasuaiüy",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w242_qi",
+   "notes": [
+    {
+     "lyric": "qi",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w243_qocobim",
+   "notes": [
+    {
+     "lyric": "qocobim",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w244_qyjuß",
+   "notes": [
+    {
+     "lyric": "qyjuß",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w245_qywaofdoüae",
+   "notes": [
+    {
+     "lyric": "qywaofdoüae",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w246_rii",
+   "notes": [
+    {
+     "lyric": "rii",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w247_robygojuefn",
+   "notes": [
+    {
+     "lyric": "robygojuefn",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w248_safa",
+   "notes": [
+    {
+     "lyric": "safa",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w249_seßan",
+   "notes": [
+    {
+     "lyric": "seßan",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w250_suzhyohöjyv",
+   "notes": [
+    {
+     "lyric": "suzhyohöjyv",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w251_sötiiuy",
+   "notes": [
+    {
+     "lyric": "sötiiuy",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w252_teoyhae",
+   "notes": [
+    {
+     "lyric": "teoyhae",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w253_tjxäueda",
+   "notes": [
+    {
+     "lyric": "tjxäueda",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w254_ttyibiy",
+   "notes": [
+    {
+     "lyric": "ttyibiy",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w255_typßuujuvr",
+   "notes": [
+    {
+     "lyric": "typßuujuvr",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w256_täpylyö",
+   "notes": [
+    {
+     "lyric": "täpylyö",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w257_ufhofypg",
+   "notes": [
+    {
+     "lyric": "ufhofypg",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w258_uioezyg",
+   "notes": [
+    {
+     "lyric": "uioezyg",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w259_ujdgmuäs",
+   "notes": [
+    {
+     "lyric": "ujdgmuäs",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w260_vayusy",
+   "notes": [
+    {
+     "lyric": "vayusy",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w261_vebuöoqsmae",
+   "notes": [
+    {
+     "lyric": "vebuöoqsmae",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w262_vißoh",
+   "notes": [
+    {
+     "lyric": "vißoh",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w263_vuhp",
+   "notes": [
+    {
+     "lyric": "vuhp",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w264_vußuügmit",
+   "notes": [
+    {
+     "lyric": "vußuügmit",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w265_vyi",
+   "notes": [
+    {
+     "lyric": "vyi",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w266_whwus",
+   "notes": [
+    {
+     "lyric": "whwus",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w267_wi",
+   "notes": [
+    {
+     "lyric": "wi",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w268_wvabüq",
+   "notes": [
+    {
+     "lyric": "wvabüq",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w269_wyaowaß",
+   "notes": [
+    {
+     "lyric": "wyaowaß",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w270_wßhag",
+   "notes": [
+    {
+     "lyric": "wßhag",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w271_xeäameeas",
+   "notes": [
+    {
+     "lyric": "xeäameeas",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w272_yacäs",
+   "notes": [
+    {
+     "lyric": "yacäs",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w273_yihuiuauzul",
+   "notes": [
+    {
+     "lyric": "yihuiuauzul",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w274_yohipuki",
+   "notes": [
+    {
+     "lyric": "yohipuki",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w275_yooöbrle",
+   "notes": [
+    {
+     "lyric": "yooöbrle",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w276_zadvenwet",
+   "notes": [
+    {
+     "lyric": "zadvenwet",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w277_zivujoneü",
+   "notes": [
+    {
+     "lyric": "zivujoneü",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w278_zobaxzsus",
+   "notes": [
+    {
+     "lyric": "zobaxzsus",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w279_zusexem",
+   "notes": [
+    {
+     "lyric": "zusexem",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w280_zuullafe",
+   "notes": [
+    {
+     "lyric": "zuullafe",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w281_zy",
+   "notes": [
+    {
+     "lyric": "zy",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w282_zö",
+   "notes": [
+    {
+     "lyric": "zö",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w283_ßi",
+   "notes": [
+    {
+     "lyric": "ßi",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w284_ßohai",
+   "notes": [
+    {
+     "lyric": "ßohai",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w285_ßulcvdrem",
+   "notes": [
+    {
+     "lyric": "ßulcvdrem",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w286_ägkwliöyz",
+   "notes": [
+    {
+     "lyric": "ägkwliöyz",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w287_äi",
+   "notes": [
+    {
+     "lyric": "äi",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w288_äoa",
+   "notes": [
+    {
+     "lyric": "äoa",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w289_äpkec",
+   "notes": [
+    {
+     "lyric": "äpkec",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w290_öaquüeptj",
+   "notes": [
+    {
+     "lyric": "öaquüeptj",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w291_öeedylry",
+   "notes": [
+    {
+     "lyric": "öeedylry",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w292_öißyg",
+   "notes": [
+    {
+     "lyric": "öißyg",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w293_öojueioyhyd",
+   "notes": [
+    {
+     "lyric": "öojueioyhyd",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w294_örx",
+   "notes": [
+    {
+     "lyric": "örx",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w295_üibwwurivyh",
+   "notes": [
+    {
+     "lyric": "üibwwurivyh",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w296_üivi",
+   "notes": [
+    {
+     "lyric": "üivi",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w297_üoru",
+   "notes": [
+    {
+     "lyric": "üoru",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w298_üqpyßizic",
+   "notes": [
+    {
+     "lyric": "üqpyßizic",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w299_üxwl",
+   "notes": [
+    {
+     "lyric": "üxwl",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

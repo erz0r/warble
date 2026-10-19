@@ -1,0 +1,928 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.FrenchCMUSphinxPhonemizer",
+ "bank": "fr_sphinx",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "dict_0",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "monde",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "chanter",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "amour",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "appeler",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dict_5",
+   "notes": [
+    {
+     "lyric": "oui",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "nuit",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "lumière",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "coeur",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ciel",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dict_10",
+   "notes": [
+    {
+     "lyric": "étoile",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "rêve",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "un",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "vin",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "pain",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dict_15",
+   "notes": [
+    {
+     "lyric": "gagner",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "agneau",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "huit",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "lui",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "fille",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dict_20",
+   "notes": [
+    {
+     "lyric": "travail",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "jaune",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "pourquoi",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "être",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "noël",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dict_25",
+   "notes": [
+    {
+     "lyric": "garçon",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "mélodie",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "chanson",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "printemps",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "aujourd'hui",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_bonjour",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_monde",
+   "notes": [
+    {
+     "lyric": "monde",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_chanter",
+   "notes": [
+    {
+     "lyric": "chanter",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_amour",
+   "notes": [
+    {
+     "lyric": "amour",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_appeler",
+   "notes": [
+    {
+     "lyric": "appeler",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_oui",
+   "notes": [
+    {
+     "lyric": "oui",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_nuit",
+   "notes": [
+    {
+     "lyric": "nuit",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_lumière",
+   "notes": [
+    {
+     "lyric": "lumière",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_coeur",
+   "notes": [
+    {
+     "lyric": "coeur",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_ciel",
+   "notes": [
+    {
+     "lyric": "ciel",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_étoile",
+   "notes": [
+    {
+     "lyric": "étoile",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_rêve",
+   "notes": [
+    {
+     "lyric": "rêve",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_un",
+   "notes": [
+    {
+     "lyric": "un",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_vin",
+   "notes": [
+    {
+     "lyric": "vin",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_pain",
+   "notes": [
+    {
+     "lyric": "pain",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_gagner",
+   "notes": [
+    {
+     "lyric": "gagner",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_agneau",
+   "notes": [
+    {
+     "lyric": "agneau",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_huit",
+   "notes": [
+    {
+     "lyric": "huit",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_lui",
+   "notes": [
+    {
+     "lyric": "lui",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_fille",
+   "notes": [
+    {
+     "lyric": "fille",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_travail",
+   "notes": [
+    {
+     "lyric": "travail",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_jaune",
+   "notes": [
+    {
+     "lyric": "jaune",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_pourquoi",
+   "notes": [
+    {
+     "lyric": "pourquoi",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_être",
+   "notes": [
+    {
+     "lyric": "être",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_noël",
+   "notes": [
+    {
+     "lyric": "noël",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_garçon",
+   "notes": [
+    {
+     "lyric": "garçon",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_mélodie",
+   "notes": [
+    {
+     "lyric": "mélodie",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_chanson",
+   "notes": [
+    {
+     "lyric": "chanson",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_printemps",
+   "notes": [
+    {
+     "lyric": "printemps",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_aujourd'hui",
+   "notes": [
+    {
+     "lyric": "aujourd'hui",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_0",
+   "notes": [
+    {
+     "lyric": "warblette",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "zorglubesque",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "flimpouf",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_3",
+   "notes": [
+    {
+     "lyric": "chantouillerait",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "openutau",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "xyzt",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_6",
+   "notes": [
+    {
+     "lyric": "brrrr",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "pschitt",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "gnagnagna",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_9",
+   "notes": [
+    {
+     "lyric": "ouistitiouille",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "oov_solo_warblette",
+   "notes": [
+    {
+     "lyric": "warblette",
+     "tone": "E4",
+     "duration": 360
+    }
+   ]
+  },
+  {
+   "id": "oov_solo_zorglubesque",
+   "notes": [
+    {
+     "lyric": "zorglubesque",
+     "tone": "E4",
+     "duration": 360
+    }
+   ]
+  },
+  {
+   "id": "oov_solo_flimpouf",
+   "notes": [
+    {
+     "lyric": "flimpouf",
+     "tone": "E4",
+     "duration": 360
+    }
+   ]
+  },
+  {
+   "id": "oov_solo_chantouillerait",
+   "notes": [
+    {
+     "lyric": "chantouillerait",
+     "tone": "E4",
+     "duration": 360
+    }
+   ]
+  },
+  {
+   "id": "oov_solo_openutau",
+   "notes": [
+    {
+     "lyric": "openutau",
+     "tone": "E4",
+     "duration": 360
+    }
+   ]
+  },
+  {
+   "id": "oov_solo_xyzt",
+   "notes": [
+    {
+     "lyric": "xyzt",
+     "tone": "E4",
+     "duration": 360
+    }
+   ]
+  },
+  {
+   "id": "oov_solo_brrrr",
+   "notes": [
+    {
+     "lyric": "brrrr",
+     "tone": "E4",
+     "duration": 360
+    }
+   ]
+  },
+  {
+   "id": "oov_solo_pschitt",
+   "notes": [
+    {
+     "lyric": "pschitt",
+     "tone": "E4",
+     "duration": 360
+    }
+   ]
+  },
+  {
+   "id": "oov_solo_gnagnagna",
+   "notes": [
+    {
+     "lyric": "gnagnagna",
+     "tone": "E4",
+     "duration": 360
+    }
+   ]
+  },
+  {
+   "id": "oov_solo_ouistitiouille",
+   "notes": [
+    {
+     "lyric": "ouistitiouille",
+     "tone": "E4",
+     "duration": 360
+    }
+   ]
+  },
+  {
+   "id": "upper",
+   "notes": [
+    {
+     "lyric": "BONJOUR",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Monde",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "bb on jj ou rr"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "uy ii"
+    },
+    {
+     "lyric": "z",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "gn aa"
+    }
+   ]
+  },
+  {
+   "id": "hint_alt",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "aa rr aa",
+     "attrs": [
+      {
+       "index": 1,
+       "alt": 1
+      },
+      {
+       "index": 2,
+       "alt": 1
+      }
+     ]
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "bb aa",
+     "attrs": [
+      {
+       "index": 0,
+       "alt": 1
+      },
+      {
+       "index": 1,
+       "alt": 3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "high",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "amour",
+     "tone": "E5",
+     "duration": 480
+    },
+    {
+     "lyric": "rêve",
+     "tone": "G5",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "high_shift",
+   "notes": [
+    {
+     "lyric": "amour",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 12
+      },
+      {
+       "index": 1,
+       "shift": 12
+      },
+      {
+       "index": 2,
+       "shift": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tone_cross",
+   "notes": [
+    {
+     "lyric": "chanter",
+     "tone": "B4",
+     "duration": 480
+    },
+    {
+     "lyric": "amour",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "monde",
+     "tone": "B4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext",
+   "notes": [
+    {
+     "lyric": "chanter",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "lumière",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "F4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_num",
+   "notes": [
+    {
+     "lyric": "aujourd'hui",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+3",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest",
+   "notes": [
+    {
+     "lyric": "bonjour",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 480
+    },
+    {
+     "lyric": "monde",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "oui",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 120
+    }
+   ]
+  },
+  {
+   "id": "forced",
+   "notes": [
+    {
+     "lyric": "?aa rr1",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "oui",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short",
+   "notes": [
+    {
+     "lyric": "printemps",
+     "tone": "C4",
+     "duration": 45
+    },
+    {
+     "lyric": "travail",
+     "tone": "C4",
+     "duration": 45
+    },
+    {
+     "lyric": "chanson",
+     "tone": "C4",
+     "duration": 45
+    }
+   ]
+  },
+  {
+   "id": "punct",
+   "notes": [
+    {
+     "lyric": "oui",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "?",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

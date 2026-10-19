@@ -1,0 +1,677 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.ArpasingPhonemizer",
+ "bank": "en_arpa_dict",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "singer_dict",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "warble",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "buzz",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "openutau",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "singer_dict_empty",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "yes",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "world",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "singer_dict_empty_end",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "yes",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "singer_vowel",
+   "notes": [
+    {
+     "lyric": "buzz",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "yaw",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "singer_hint",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "b zz s"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "zz"
+    }
+   ]
+  },
+  {
+   "id": "singer_glide_type",
+   "notes": [
+    {
+     "lyric": "yaw",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "on",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "world",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "fallback_cmudict",
+   "notes": [
+    {
+     "lyric": "world",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "sing",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "flurbix",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "vowel_fallbacks",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "p aa"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ae ah"
+    },
+    {
+     "lyric": "z",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "uh uw aw ao"
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "singer_dict",
+   "phonemes": [
+    {
+     "phoneme": "- hh",
+     "position": -60,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "hh eh",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "eh l",
+     "position": 180,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "l ow",
+     "position": 240,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ow w",
+     "position": -60,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "w ao",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ao r",
+     "position": 120,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "r b",
+     "position": 180,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "b ah",
+     "position": 240,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ah l",
+     "position": 360,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- b",
+     "position": -60,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "b zz",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- s",
+     "position": 420,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "s ow",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ow p",
+     "position": 48,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "p eh",
+     "position": 88,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "eh n",
+     "position": 136,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "n w",
+     "position": 176,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "w uw",
+     "position": 216,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "uw t",
+     "position": 264,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "t ah",
+     "position": 304,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ah w",
+     "position": 352,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "w uw",
+     "position": 392,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "uw -",
+     "position": 440,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "singer_dict_empty",
+   "phonemes": [
+    {
+     "phoneme": "- hh",
+     "position": -60,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "hh eh",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "eh l",
+     "position": 210,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "l ow",
+     "position": 270,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "yes",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 2,
+     "error": "Sequence contains no elements"
+    }
+   ]
+  },
+  {
+   "id": "singer_dict_empty_end",
+   "phonemes": [
+    {
+     "phoneme": "- hh",
+     "position": -60,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "hh eh",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "eh l",
+     "position": 210,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "l ow",
+     "position": 270,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ow -",
+     "position": 60,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "singer_vowel",
+   "phonemes": [
+    {
+     "phoneme": "- b",
+     "position": -60,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "b zz",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- s",
+     "position": 840,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "s y",
+     "position": -60,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "y ao",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ao -",
+     "position": 420,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "singer_hint",
+   "phonemes": [
+    {
+     "phoneme": "- b",
+     "position": -60,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "b zz",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- s",
+     "position": 420,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "s zz",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "zz -",
+     "position": 420,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "singer_glide_type",
+   "phonemes": [
+    {
+     "phoneme": "- y",
+     "position": -60,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "y ao",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- ao",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- w",
+     "position": -60,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "w er",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "er l",
+     "position": 300,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "l d",
+     "position": 360,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "d -",
+     "position": 420,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "fallback_cmudict",
+   "phonemes": [
+    {
+     "phoneme": "- w",
+     "position": -60,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "w er",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "er l",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "l d",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "d s",
+     "position": -60,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "s ih",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ih ng",
+     "position": 300,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ng f",
+     "position": -120,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "f l",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "l er",
+     "position": 48,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "er b",
+     "position": 168,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "b ih",
+     "position": 216,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ih k",
+     "position": 336,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "k s",
+     "position": 384,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "s -",
+     "position": 432,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "vowel_fallbacks",
+   "phonemes": [
+    {
+     "phoneme": "- p",
+     "position": -60,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "p aa",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "aa ae",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- ah",
+     "position": 240,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ah uw",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- uw",
+     "position": 105,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "uw aw",
+     "position": 210,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- ao",
+     "position": 315,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ao -",
+     "position": 420,
+     "group": 2,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

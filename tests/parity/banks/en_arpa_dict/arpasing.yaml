@@ -1,0 +1,29 @@
+# a singer-side arpasing dictionary (synthetic, for warble's parity tests)
+symbols:
+  - {symbol: hh, type: aspirate}
+  - {symbol: eh, type: vowel}
+  - {symbol: l, type: liquid}
+  - {symbol: ow, type: vowel}
+  - {symbol: w, type: semivowel}
+  - {symbol: ao, type: vowel}
+  - {symbol: r, type: liquid}
+  - {symbol: b, type: stop}
+  - {symbol: ah, type: vowel}
+  - {symbol: zz, type: vowel}
+  - {symbol: s, type: fricative}
+  - {symbol: y, type: stop}
+entries:
+  - grapheme: hello
+    phonemes: [hh, eh, l, ow]
+  - grapheme: warble
+    phonemes: [w, ao, r, b, ah, l]
+  - grapheme: yes
+    phonemes: [no]
+  - grapheme: buzz
+    phonemes: [b, zz, s]
+  - grapheme: openutau
+    phonemes: [ow]
+  - grapheme: yaw
+    phonemes: [y, ao]
+  - grapheme: 'on'
+    phonemes: [ao, n]

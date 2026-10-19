@@ -35,3 +35,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 include = ["warble*"]
+
+[tool.setuptools.package-data]
+"warble.g2p" = ["data/*"]
+"warble.utau.pz" = ["data/**/*"]
