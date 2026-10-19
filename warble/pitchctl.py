@@ -3,5 +3,5 @@
 from .tuning.curve import VIBRATO_STYLES, compose  # noqa: F401 - VIBRATO_STYLES re-exported for docs
 
 
-def apply_note_controls(midi, frame_t, notes, spans=None, tm=None):
-    return compose(frame_t, notes, tm, midi)
+def apply_note_controls(midi, frame_t, notes, spans=None, tm=None, track=None):
+    return compose(frame_t, notes, tm, midi, track)

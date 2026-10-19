@@ -27,6 +27,7 @@ _DTYPES = {
 PROVIDER = os.environ.get("WARBLE_PROVIDER", "cpu")
 CACHE_DIR = os.environ.get("WARBLE_CACHE", os.path.join(os.path.expanduser("~"), ".cache", "warble", "tensors"))
 STATS = {"session_loads": [], "runs": [], "cache_hits": 0}
+CACHE_ENABLED = os.environ.get("WARBLE_NO_CACHE") is None
 
 
 def set_provider(name):
@@ -103,6 +104,7 @@ def run(path, feeds, role, cache=True, seed=None, outputs=None):
                 raise WarbleError("model_input_rank", f"{role} input '{name}' has shape {arr.shape} but the graph wants rank {rank} {meta.shape}")
         ready[name] = arr
     key = None
+    cache = cache and CACHE_ENABLED
     if cache:
         key = _hash_feeds(path, ready, f"seed={seed}")
         cpath = os.path.join(CACHE_DIR, f"{role}-{key}.npz")

@@ -28,6 +28,10 @@ DELTA = {
 }
 
 
+# note control -> openutau track curve that adds to it
+CURVE_OF = {"gender": "genc", "brec": "brec", "tenc": "tenc", "voic": "voic", "ene": "ene", "vel": "velc"}
+
+
 class DsEngine:
     """per-bank state kept warm between renders."""
 
@@ -60,7 +64,8 @@ class DsEngine:
             raise WarbleError("max_depth_unset", f"{self.bank.name}: variable depth is on but max_depth is unset or negative")
         return min(1.0 if depth is None else float(depth), md)
 
-    def render_phrase(self, words, tm, lang, voice_of, steps=None, depth=None, seed=None, pitch_steps=None, timings=None, allow_unknown=False, **_):
+    def render_phrase(self, words, tm, lang, voice_of, steps=None, depth=None, seed=None, pitch_steps=None, timings=None, allow_unknown=False,
+                      track=None, **_):
         timings = timings if timings is not None else {}
         t0 = time.time()
         ph = self.phonemizer(lang)
@@ -82,8 +87,17 @@ class DsEngine:
         spans = dspitch.note_spans(notes, tm)
         nidx = util.frame_note_index(frame_t, spans)
 
+        frame_ticks = None
+
         def ctl(name, default):
-            return np.array([float(notes[i].controls.get(name, default)) for i in nidx], np.float64)
+            nonlocal frame_ticks
+            v = np.array([float(notes[i].controls.get(name, default)) for i in nidx], np.float64)
+            abbr = CURVE_OF.get(name)
+            if track is not None and abbr and track.curves.get(abbr):
+                if frame_ticks is None:
+                    frame_ticks = np.array([tm.ms_to_tick(x) for x in frame_t])
+                v = v + track.curve_at(abbr, frame_ticks, default) - default
+            return v
 
         def mixes_by_frame(s_ms, f_ms, n):
             t = s_ms + np.arange(n) * f_ms
@@ -95,10 +109,14 @@ class DsEngine:
         pmd = self.models.get("dspitch")
         if pmd is not None:
             expr_t = None
-            if any("expr" in n.controls for n in notes):
+            has_curve = track is not None and track.curves.get("pexp")
+            if any("expr" in n.controls for n in notes) or has_curve:
                 pt = start_ms + np.arange(T) * pmd.frame_ms
                 pix = util.frame_note_index(pt, spans)
                 expr_t = np.array([float(notes[i].controls.get("expr", 1.0)) for i in pix])
+                if has_curve:
+                    # openutau's pexp curve is 0..100 and replaces the default of 100
+                    expr_t = expr_t * track.curve_at("pexp", np.array([tm.ms_to_tick(x) for x in pt]), 100.0) / 100.0
             midi_p, pfm, pstart = dspitch.model_pitch(pmd, phones, notes, tm, mixes_by_frame, expr_t, steps=pitch_steps or dspitch.PITCH_STEPS, seed=seed)
             midi = np.interp(frame_t, pstart + np.arange(len(midi_p)) * pfm, midi_p)
             pitch_source = "model"
@@ -106,7 +124,7 @@ class DsEngine:
             midi = dspitch.rule_pitch(notes, tm, start_ms, fm, T)
             pitch_source = "rule"
         base_midi = midi.copy()
-        midi = pitchctl.apply_note_controls(midi, frame_t, notes, spans, tm)
+        midi = pitchctl.apply_note_controls(midi, frame_t, notes, spans, tm, track)
         timings["pitch"] = timings.get("pitch", 0) + time.time() - t0
         f0 = util.tone_to_freq(midi).astype(np.float32)
 

@@ -56,3 +56,15 @@ def test_pitchbend_encoding_matches_openutau():
     vals = [0, -400, -400, 12, 2047, -2048, 7, 7, 7]
     assert decode_pitchbend(encode_pitchbend(vals)) == vals
     assert fmt(12.0) == "12" and fmt(846.574) == "846.574" and fmt(5) == "5"
+
+
+def test_musicxml_round_trip(tmp_path):
+    from warble.formats import musicxml
+    from warble.score import load
+
+    s = parse_text("bpm 100\ntime 3/4\nさ C4 1\nく D4 1/2\n+ E4 1/2\nら F#4 2\nr 1\nか G4 4\nbpm 130 @ bar 4\nき A4 1\n")
+    p = str(tmp_path / "t.musicxml")
+    musicxml.save(s, p)
+    s2 = load(p)
+    assert [(n.lyric, n.tone, n.position, n.duration) for n in s2.tracks[0].notes] == [(n.lyric, n.tone, n.position, n.duration) for n in s.tracks[0].notes]
+    assert s2.tempos == [(0, 100.0), (4320, 130.0)] and s2.time_signatures == [(0, 3, 4)]

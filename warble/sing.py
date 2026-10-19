@@ -73,9 +73,11 @@ def split_phrases(track):
 
 
 def sing(score, out_path, steps=None, depth=None, seed=None, sample_rate=44100, engine=None, phrase_filter=None,
-         note_range=None, vocoder_dirs=None, allow_unknown=False, resampler=None, normalize_db=None, wavtool=None):
+         note_range=None, vocoder_dirs=None, allow_unknown=False, resampler=None, normalize_db=None, wavtool=None,
+         use_cache=True):
     t_start = time.time()
     onnxrun.reset_stats()
+    cached_phrases = 0
     tm = score.tempo_map
     timings = {}
     warnings = []
@@ -110,9 +112,15 @@ def sing(score, out_path, steps=None, depth=None, seed=None, sample_rate=44100, 
             def voice_of(n, track=track):
                 return n.controls.get("voice") or track.voice
 
-            res = eng.render_phrase(words, tm, lang, voice_of, steps=steps, depth=depth, seed=seed, timings=timings, prev_end_ms=prev_end_ms,
-                                    phonemizer=_note_attr(first, track, "phonemizer"),
-                                    allow_unknown=allow_unknown)
+            pkey = _phrase_key(eng, words, tm, lang, track, steps, depth, seed, prev_end_ms, allow_unknown) if use_cache else None
+            res = _phrase_cache_get(pkey)
+            if res is not None:
+                cached_phrases += 1
+            else:
+                res = eng.render_phrase(words, tm, lang, voice_of, steps=steps, depth=depth, seed=seed, timings=timings, prev_end_ms=prev_end_ms,
+                                        phonemizer=_note_attr(first, track, "phonemizer"), track=track,
+                                        allow_unknown=allow_unknown)
+                _phrase_cache_put(pkey, res)
             prev_end_ms = tm.tick_to_ms(notes[-1].end)
             ph = res["phonemes"]
             if ph.get("unknown"):
@@ -128,6 +136,11 @@ def sing(score, out_path, steps=None, depth=None, seed=None, sample_rate=44100, 
             samples = res["samples"]
             if res["sample_rate"] != sample_rate:
                 samples = _resample(samples, res["sample_rate"], sample_rate)
+            if track.curves.get("dyn"):
+                # openutau dynamics curve, in dB
+                t_ms = res["start_ms"] + np.arange(len(samples)) * 1000.0 / sample_rate
+                ticks = np.interp(t_ms, [tm.tick_to_ms(0), tm.tick_to_ms(score.end_tick + 4 * 480)], [0, score.end_tick + 4 * 480])
+                samples = samples * (10 ** (track.curve_at("dyn", ticks) / 20)).astype(np.float32)
             rendered.append((track, res["start_ms"], samples))
             phrase_reports.append({
                 "index": pidx,
@@ -185,6 +198,7 @@ def sing(score, out_path, steps=None, depth=None, seed=None, sample_rate=44100, 
         "peak_dbfs": round(20 * np.log10(max(peak, 1e-9)), 2),
         "rms_dbfs": round(20 * np.log10(max(rms, 1e-9)), 2),
         "timing_s": stage,
+        "phrases_from_cache": cached_phrases,
         "model_runs": len(onnxrun.STATS["runs"]),
         "cache_hits": onnxrun.STATS["cache_hits"],
         "session_loads": onnxrun.STATS["session_loads"],
@@ -195,6 +209,71 @@ def sing(score, out_path, steps=None, depth=None, seed=None, sample_rate=44100, 
     if rms < 1e-4:
         report["warnings"].append("render is silent (rms below -80 dBFS)")
     return report
+
+
+PHRASE_CACHE = os.environ.get("WARBLE_PHRASE_CACHE", os.path.join(os.path.expanduser("~"), ".cache", "warble", "phrases"))
+CACHE_VERSION = 3
+
+
+def _phrase_key(eng, words, tm, lang, track, steps, depth, seed, prev_end_ms, allow_unknown):
+    """everything a phrase's audio depends on. editing one phrase changes only its key."""
+    import hashlib
+
+    bank = eng.bank.root
+    notes = [n for w in words for n in w]
+    payload = {
+        "v": CACHE_VERSION, "engine": type(eng).__name__, "bank": bank, "bank_files": _bank_fingerprint(eng),
+        "resampler": getattr(eng, "resampler_name", None), "wavtool": getattr(eng, "wavtool_name", None),
+        "lang": lang, "voice": track.voice, "phonemizer": track.phonemizer, "steps": steps, "depth": depth, "seed": seed,
+        "curves": track.curves,
+        "prev_end": round(prev_end_ms, 3) if prev_end_ms is not None else None, "allow_unknown": allow_unknown,
+        "notes": [(n.lyric, n.hint, n.tone, round(tm.tick_to_ms(n.position), 3), round(tm.tick_to_ms(n.end), 3),
+                   sorted((k, str(v)) for k, v in n.controls.items()), json.dumps(n.extra, sort_keys=True, default=str)) for n in notes],
+    }
+    return hashlib.sha256(json.dumps(payload, sort_keys=True, default=str, ensure_ascii=False).encode()).hexdigest()[:32]
+
+
+def _bank_fingerprint(eng):
+    """mtimes of the bank files a render depends on (oto.ini, prefix.map, character files, dsconfigs)."""
+    fp = getattr(eng, "_fingerprint", None)
+    if fp is None:
+        root = eng.bank.root
+        stamps = []
+        for dirpath, _, files in os.walk(root):
+            for f in files:
+                if f.lower() in ("oto.ini", "prefix.map", "character.txt", "character.yaml", "dsconfig.yaml", "vocoder.yaml") or f.endswith((".onnx", ".emb")) or f.startswith("dsdict"):
+                    p = os.path.join(dirpath, f)
+                    stamps.append((os.path.relpath(p, root), os.path.getmtime(p)))
+        fp = sorted(stamps)
+        eng._fingerprint = fp
+    return fp
+
+
+def _phrase_cache_get(key):
+    if not key:
+        return None
+    import pickle
+
+    p = os.path.join(PHRASE_CACHE, key + ".pkl")
+    if not os.path.isfile(p):
+        return None
+    try:
+        with open(p, "rb") as f:
+            return pickle.load(f)
+    except Exception:  # noqa: BLE001 - a broken entry is simply re-rendered
+        return None
+
+
+def _phrase_cache_put(key, res):
+    if not key or "samples" not in res:
+        return
+    import pickle
+
+    os.makedirs(PHRASE_CACHE, exist_ok=True)
+    tmp = os.path.join(PHRASE_CACHE, f".{key}.{os.getpid()}")
+    with open(tmp, "wb") as f:
+        pickle.dump(res, f, protocol=pickle.HIGHEST_PROTOCOL)
+    os.replace(tmp, os.path.join(PHRASE_CACHE, key + ".pkl"))
 
 
 def _resample(x, sr_in, sr_out):

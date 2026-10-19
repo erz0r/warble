@@ -99,12 +99,25 @@ class Track:
     volume_db: float = 0.0
     pan: float = 0.0
     notes: list = field(default_factory=list)
+    # track curves in openutau abbreviations: {"pitd": [(tick, cents), ...], "dyn": [(tick, db)], ...}
+    curves: dict = field(default_factory=dict)
+
+    def curve_at(self, abbr, ticks, default=0.0):
+        import numpy as np
+
+        pts = self.curves.get(abbr)
+        if not pts:
+            return np.full(np.shape(ticks), default, float)
+        xs = np.array([p[0] for p in pts], float)
+        ys = np.array([p[1] for p in pts], float)
+        return np.interp(ticks, xs, ys)
 
     def to_json(self):
         return {
             "name": self.name, "bank": self.bank, "lang": self.lang, "voice": self.voice,
             "phonemizer": self.phonemizer, "engine": self.engine, "volume_db": self.volume_db, "pan": self.pan,
             "notes": [n.to_json() for n in self.notes],
+            **({"curves": {k: [list(p) for p in v] for k, v in self.curves.items()}} if self.curves else {}),
         }
 
 
@@ -221,6 +234,8 @@ class Score:
                 lines.append(f"volume {fmt_num(tr.volume_db)}")
             if tr.pan:
                 lines.append(f"pan {fmt_num(tr.pan)}")
+            for abbr, pts in sorted(tr.curves.items()):
+                lines.append(f"curve {abbr} " + ",".join(f"{int(t)}:{fmt_num(v)}" for t, v in pts))
             pos = 0
             for n in tr.notes:
                 if n.position > pos:
@@ -386,6 +401,16 @@ def parse_text(text, base_dir=".", source="<score>"):
             continue
         if head == "key":
             score.key = parts[1] if len(parts) > 1 else None
+            continue
+        if head == "curve":
+            if len(parts) < 3:
+                raise WarbleError("bad_directive", f"'curve' needs a name and tick:value points{where}", hint="curve pitd 0:0,480:-20,960:0")
+            t = current or ensure_track()
+            pts = []
+            for item in parts[2].split(","):
+                a, b = item.split(":")
+                pts.append((int(float(a)), float(b)))
+            t.curves[parts[1].lower()] = sorted(pts)
             continue
 
         # a note or a rest

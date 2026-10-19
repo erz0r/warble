@@ -15,6 +15,7 @@ per note, in the score:
     snap=0                   don't pin the first point to the previous note's pitch
     raw=start_ms:step_ms:c0;c1;...  per-frame cents layer (ust mode1 PitchBend lands here)
     cents=n                  constant offset
+    drift=depth:rate[:seed]  slow random wander: depth cents, rate hz, reproducible with the seed
 """
 
 import math
@@ -177,7 +178,7 @@ def note_raw(n):
 
 # ---- composition ------------------------------------------------------------------------------
 
-def compose(frame_t, notes, tm, base_midi=None):
+def compose(frame_t, notes, tm, base_midi=None, track=None):
     """the pitch an engine should sing, in midi per frame.
 
     base_midi is the engine's own idea (pitch model or rule curve). notes that carry explicit
@@ -249,7 +250,32 @@ def compose(frame_t, notes, tm, base_midi=None):
         if "cents" in n.controls:
             m = (t >= s) & (t < e)
             out[m] += float(n.controls["cents"]) / 100.0
+        if n.controls.get("drift"):
+            m = (t >= s) & (t < e)
+            if m.any():
+                out[m] += drift_cents(t[m] - s, e - s, str(n.controls["drift"])) / 100.0
+    if track is not None and track.curves.get("pitd"):
+        # openutau's pitch deviation curve: cents added everywhere
+        ticks = np.array([tm.ms_to_tick(x) for x in t])
+        out += track.curve_at("pitd", ticks) / 100.0
     return out
+
+
+def drift_cents(t_rel, length, spec):
+    """smooth random wander: a few low-frequency sines with seeded phases, faded at both ends so
+    transitions stay clean."""
+    bits = spec.split(":")
+    depth = float(bits[0])
+    rate = float(bits[1]) if len(bits) > 1 else 0.7
+    seed = int(float(bits[2])) if len(bits) > 2 else 0
+    rng = np.random.default_rng(seed)
+    y = np.zeros(len(t_rel))
+    for k in range(3):
+        f = rate * (0.6 + 0.8 * rng.random())
+        y += np.sin(2 * np.pi * f * t_rel / 1000.0 + rng.random() * 2 * np.pi) / (k + 1)
+    y = y / 1.83 * depth
+    fade = np.clip(np.minimum(t_rel, length - t_rel) / max(1.0, min(80.0, length / 4)), 0, 1)
+    return y * fade
 
 
 def _catmull(pm, p0, p1, p2, x):

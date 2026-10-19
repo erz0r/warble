@@ -107,6 +107,7 @@ def _ranges(text):
         arg("--resampler", help="utau: resampler name from resamplers/ (default: built-in)"),
         arg("--wavtool", help="utau: wavtool name from resamplers/ (default: built-in)"),
         arg("--provider", choices=["cpu", "coreml", "cuda"], help="onnxruntime execution provider"),
+        arg("--no-cache", action="store_true", help="re-render everything (phrase and tensor caches off)"),
         VOCODER_ARG,
     ],
 )
@@ -116,6 +117,8 @@ def cmd_sing(a):
 
     if a.provider:
         onnxrun.set_provider(a.provider)
+    if a.no_cache:
+        onnxrun.CACHE_ENABLED = False
     score = load_score(a)
     rng = None
     if a.range:
@@ -123,7 +126,7 @@ def cmd_sing(a):
         rng = (r[0], r[-1])
     report = sing(score, a.out, steps=a.steps, depth=a.depth, seed=a.seed, sample_rate=a.sample_rate, engine=a.engine,
                   phrase_filter=_ranges(a.phrase) if a.phrase else None, note_range=rng, vocoder_dirs=a.vocoders,
-                  allow_unknown=a.allow_unknown, resampler=a.resampler, wavtool=a.wavtool)
+                  allow_unknown=a.allow_unknown, resampler=a.resampler, wavtool=a.wavtool, use_cache=not a.no_cache)
     if getattr(score, "import_report", None):
         report["import"] = score.import_report
     return report
@@ -170,7 +173,7 @@ def cmd_lyrics(a):
 
 @command(
     "export",
-    "convert a score to another format: .txt (score text), .json, .mid, .ust.",
+    "convert a score to another format: .txt (score text), .json, .mid, .ust, .ustx, .musicxml.",
     SCORE_ARGS + [arg("-o", "--out", required=True)],
 )
 def cmd_export(a):
@@ -186,6 +189,14 @@ def cmd_export(a):
         from .formats import ust as ustfmt
 
         ustfmt.save(score, a.out)
+    elif ext == "ustx":
+        from .formats import ustx as ustxfmt
+
+        ustxfmt.save(score, a.out)
+    elif ext in ("musicxml", "xml"):
+        from .formats import musicxml as mxfmt
+
+        mxfmt.save(score, a.out)
     elif ext == "json":
         with open(a.out, "w", encoding="utf-8") as f:
             _json.dump(score.to_json(), f, ensure_ascii=False, indent=1)
@@ -276,6 +287,163 @@ def cmd_phonemizers(a):
     from .phonemizer_catalog import catalog
 
     return catalog(a.dirs)
+
+
+TUNE_ACTIONS = ["show", "op", "apply", "auto", "undo", "redo", "snapshot", "restore", "diff", "history", "ops",
+                "preset-save", "preset-apply", "presets", "import-pitch"]
+
+
+def _params(pairs):
+    out = {}
+    for p in pairs or []:
+        if "=" not in p:
+            from .errors import WarbleError
+
+            raise WarbleError("bad_param", f"-p expects key=value, got '{p}'")
+        k, v = p.split("=", 1)
+        out[k.strip()] = v
+    return out
+
+
+@command(
+    "tune",
+    "edit tuning in a project (a score text file) with versioned history. actions: show, op <name>, apply <ops.json>, "
+    "auto <tuner>, undo, redo, snapshot <name>, restore <name>, diff [a] [b], history, ops, preset-save <name> <ops.json>, "
+    "preset-apply <name>, presets, import-pitch <wav>",
+    [
+        arg("action", choices=TUNE_ACTIONS),
+        arg("project", nargs="?", help="the project file (score text)"),
+        arg("args", nargs="*", help="op name / tuner / ops json (file or inline) / snapshot name / versions / wav"),
+        arg("-p", "--param", action="append", help="op parameter key=value (repeatable)"),
+        arg("--notes", help="selection: note numbers, e.g. 3-7,12"),
+        arg("--lyric"), arg("--phrase", help="phrase numbers"), arg("--interval", help="e.g. '>=3' or 'abs>=4'"),
+        arg("--min-beats", type=float), arg("--max-beats", type=float), arg("--track"),
+        arg("--steps", type=int, help="undo/redo steps"),
+    ],
+)
+def cmd_tune(a):
+    import json as _json
+    import os as _os
+
+    from .errors import WarbleError
+    from .tuning import auto, ops
+    from .tuning.project import Project
+    from .tuning.show import show
+
+    if a.action == "ops":
+        return {"ops": ops.describe(), "tuners": sorted(auto.TUNERS)}
+    if a.action == "presets":
+        return {"presets": _list_presets(a.project)}
+    if not a.project:
+        raise WarbleError("no_project", "give the project file")
+    proj = Project(a.project)
+    sel = {k: v for k, v in {"notes": a.notes, "lyric": a.lyric, "phrase": a.phrase, "interval": a.interval,
+                             "min_beats": a.min_beats, "max_beats": a.max_beats, "track": a.track}.items() if v is not None}
+    if a.action == "show":
+        return show(proj.score(), track=a.track, notes=a.notes)
+    if a.action == "history":
+        return proj.history()
+    if a.action == "undo":
+        return proj.undo(a.steps or 1)
+    if a.action == "redo":
+        return proj.redo(a.steps or 1)
+    if a.action == "snapshot":
+        return proj.snapshot(a.args[0] if a.args else "snap")
+    if a.action == "restore":
+        return proj.restore(a.args[0])
+    if a.action == "diff":
+        return proj.diff(*(a.args[:2] or ["prev", "current"]))
+    score = proj.score()
+    if a.action == "op":
+        if not a.args:
+            raise WarbleError("no_op", "name the op", hint=f"ops: {sorted(ops.OPS)}")
+        batch = [{"op": a.args[0], **sel, **_params(a.param)}]
+    elif a.action in ("apply", "preset-apply"):
+        if not a.args:
+            raise WarbleError("no_ops", "give a json op list (file or inline) or a preset name")
+        if a.action == "preset-apply":
+            batch = _load_preset(a.project, a.args[0])
+        else:
+            src = a.args[0]
+            batch = _json.load(open(src, encoding="utf-8")) if _os.path.isfile(src) else _json.loads(src)
+        if sel:
+            batch = [{**b, **{k: v for k, v in sel.items() if k not in b}} for b in batch]
+    elif a.action == "preset-save":
+        if len(a.args) < 2:
+            raise WarbleError("bad_args", "preset-save <name> <ops.json or inline json>")
+        src = a.args[1]
+        batch = _json.load(open(src, encoding="utf-8")) if _os.path.isfile(src) else _json.loads(src)
+        return {"saved": _save_preset(a.project, a.args[0], batch)}
+    elif a.action == "auto":
+        if not a.args:
+            raise WarbleError("no_tuner", "name the tuner", hint=f"tuners: {sorted(auto.TUNERS)}")
+        notes = auto.run(score, a.args[0], track=a.track, notes=a.notes, **_params(a.param))
+        res = proj.save_score(score, f"auto {a.args[0]}", {"notes": a.notes, **_params(a.param)})
+        return {**res, "tuner": a.args[0], "notes": notes, "show": show(score, track=a.track, notes=a.notes)["table"]}
+    elif a.action == "import-pitch":
+        from .tuning.refpitch import import_pitch
+
+        if not a.args:
+            raise WarbleError("no_wav", "give the reference wav")
+        p = _params(a.param)
+        info = import_pitch(score, a.args[0], track=a.track, notes=a.notes,
+                            offset_ms=float(p["offset_ms"]) if "offset_ms" in p else None)
+        res = proj.save_score(score, "import-pitch", {"wav": a.args[0], **p})
+        return {**res, **info}
+    log = ops.apply(score, batch)
+    res = proj.save_score(score, ", ".join(b["op"] for b in batch), {"batch": batch})
+    touched = sorted({n for e in log for n in e["notes"]})
+    return {**res, "log": log, "show": show(score, track=a.track, notes=",".join(map(str, touched)) if touched else None)["table"]}
+
+
+def _preset_dirs(project):
+    import os as _os
+
+    dirs = []
+    if project and _os.path.exists(project):
+        dirs.append(_os.path.join(_os.path.dirname(_os.path.abspath(project)), ".warble", "presets"))
+    dirs.append(_os.path.join(_os.path.expanduser("~"), ".config", "warble", "presets"))
+    return dirs
+
+
+def _save_preset(project, name, batch):
+    import json as _json
+    import os as _os
+
+    d = _preset_dirs(project)[0]
+    _os.makedirs(d, exist_ok=True)
+    p = _os.path.join(d, f"{name}.json")
+    with open(p, "w", encoding="utf-8") as f:
+        _json.dump(batch, f, ensure_ascii=False, indent=1)
+    return p
+
+
+def _load_preset(project, name):
+    import json as _json
+    import os as _os
+
+    from .errors import WarbleError
+    from .tuning.presets import BUILTIN
+
+    for d in _preset_dirs(project):
+        p = _os.path.join(d, f"{name}.json")
+        if _os.path.isfile(p):
+            return _json.load(open(p, encoding="utf-8"))
+    if name in BUILTIN:
+        return BUILTIN[name]
+    raise WarbleError("preset_missing", f"no preset '{name}'", hint=f"presets: {_list_presets(project)}")
+
+
+def _list_presets(project):
+    import os as _os
+
+    from .tuning.presets import BUILTIN
+
+    names = set(BUILTIN)
+    for d in _preset_dirs(project):
+        if _os.path.isdir(d):
+            names |= {f[:-5] for f in _os.listdir(d) if f.endswith(".json")}
+    return sorted(names)
 
 
 def build_parser():

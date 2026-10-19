@@ -159,6 +159,23 @@ class Phonemizer:
             frames = self._rule_frames(groups, pos, frame_ms)
             how = "rule"
 
+        # user timing overrides before alignment: cons scales a word's consonants, phdur sets
+        # explicit lengths in ms (0 keeps the prediction)
+        frames = list(frames)
+        for wi, w in enumerate(words):
+            c = w[0].controls
+            lo, hi = note_ph_index[wi], note_ph_index[wi + 1]
+            if c.get("cons") not in (None, ""):
+                m = float(c["cons"])
+                for k in range(lo, hi):
+                    if not self.is_vowel(flat[k][0]):
+                        frames[k] *= m
+            if c.get("phdur"):
+                vals = [float(v) for v in str(c["phdur"]).replace(";", ",").split(",") if v.strip() != ""]
+                for k, ms in zip(range(lo, hi), vals):
+                    if ms > 0:
+                        frames[k] = ms / frame_ms
+
         # alignment: leading consonants keep their length and end at the first note; each later
         # group is stretched to exactly fill its span
         counts = [len(g[2]) for g in groups]

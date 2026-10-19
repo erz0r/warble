@@ -113,7 +113,7 @@ class UtauEngine:
     # ---- audio ----------------------------------------------------------------------------
 
     def render_phrase(self, words, tm, lang, voice_of, steps=None, depth=None, seed=None, timings=None, prev_end_ms=None, allow_unknown=False,
-                      phonemizer=None, **_):
+                      phonemizer=None, track=None, **_):
         timings = timings if timings is not None else {}
         t0 = time.time()
         res = self.phonemize_phrase(words, tm, lang, voice_of, prev_end_ms=prev_end_ms, phonemizer=phonemizer)
@@ -133,7 +133,7 @@ class UtauEngine:
         grid = start_ms + np.arange(T) * fm
         spans = dspitch.note_spans(notes, tm)
         midi = dspitch.rule_pitch(notes, tm, start_ms, fm, T)
-        midi = pitchctl.apply_note_controls(midi, grid, notes, spans, tm)
+        midi = pitchctl.apply_note_controls(midi, grid, notes, spans, tm, track)
 
         def cents_at(ms):
             return float(np.interp(ms, grid, midi)) * 100.0
