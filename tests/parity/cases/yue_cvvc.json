@@ -1,0 +1,466 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.CantoneseCVVCPhonemizer",
+ "bank": "yue_cvvc",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "hanzi_basic",
+   "notes": [
+    {
+     "lyric": "我",
+     "tone": "C4"
+    },
+    {
+     "lyric": "係",
+     "tone": "C4"
+    },
+    {
+     "lyric": "香",
+     "tone": "C4"
+    },
+    {
+     "lyric": "港",
+     "tone": "C4"
+    },
+    {
+     "lyric": "人",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "polyphonic_hong",
+   "notes": [
+    {
+     "lyric": "银",
+     "tone": "C4"
+    },
+    {
+     "lyric": "行",
+     "tone": "C4"
+    },
+    {
+     "lyric": "行",
+     "tone": "C4"
+    },
+    {
+     "lyric": "人",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "traditional",
+   "notes": [
+    {
+     "lyric": "銀",
+     "tone": "C4"
+    },
+    {
+     "lyric": "行",
+     "tone": "C4"
+    },
+    {
+     "lyric": "很",
+     "tone": "C4"
+    },
+    {
+     "lyric": "長",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "hanzi_rest",
+   "notes": [
+    {
+     "lyric": "你",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "好",
+     "tone": "C4"
+    },
+    {
+     "lyric": "大",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 480
+    },
+    {
+     "lyric": "家",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "hanzi_more",
+   "notes": [
+    {
+     "lyric": "食",
+     "tone": "C4"
+    },
+    {
+     "lyric": "饭",
+     "tone": "C4"
+    },
+    {
+     "lyric": "喝",
+     "tone": "C4"
+    },
+    {
+     "lyric": "水",
+     "tone": "C4"
+    },
+    {
+     "lyric": "唱",
+     "tone": "C4"
+    },
+    {
+     "lyric": "歌",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "mixed",
+   "notes": [
+    {
+     "lyric": "ngo",
+     "tone": "C4"
+    },
+    {
+     "lyric": "係",
+     "tone": "C4"
+    },
+    {
+     "lyric": "xyz",
+     "tone": "C4"
+    },
+    {
+     "lyric": "maa",
+     "tone": "C4"
+    },
+    {
+     "lyric": "港",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "multichar",
+   "notes": [
+    {
+     "lyric": "香港",
+     "tone": "C4"
+    },
+    {
+     "lyric": "ngo",
+     "tone": "C4"
+    },
+    {
+     "lyric": "hai",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "plus",
+   "notes": [
+    {
+     "lyric": "我",
+     "tone": "C4"
+    },
+    {
+     "lyric": "+",
+     "tone": "C4"
+    },
+    {
+     "lyric": "係",
+     "tone": "C4"
+    },
+    {
+     "lyric": "+~",
+     "tone": "C4"
+    },
+    {
+     "lyric": "人",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "jyutping",
+   "notes": [
+    {
+     "lyric": "ngo",
+     "tone": "C4"
+    },
+    {
+     "lyric": "hai",
+     "tone": "C4"
+    },
+    {
+     "lyric": "hoeng",
+     "tone": "C4"
+    },
+    {
+     "lyric": "gong",
+     "tone": "C4"
+    },
+    {
+     "lyric": "jan",
+     "tone": "C4"
+    },
+    {
+     "lyric": "R",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "replace",
+   "notes": [
+    {
+     "lyric": "ngoh",
+     "tone": "C4"
+    },
+    {
+     "lyric": "ho",
+     "tone": "C4"
+    },
+    {
+     "lyric": "late",
+     "tone": "C4"
+    },
+    {
+     "lyric": "R",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "vcv_hit",
+   "notes": [
+    {
+     "lyric": "ngo",
+     "tone": "C4"
+    },
+    {
+     "lyric": "hai",
+     "tone": "C4"
+    },
+    {
+     "lyric": "maa",
+     "tone": "C4"
+    },
+    {
+     "lyric": "maa",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "dash_end",
+   "notes": [
+    {
+     "lyric": "gaa",
+     "tone": "C4"
+    },
+    {
+     "lyric": "-",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "sik",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "single_initial",
+   "notes": [
+    {
+     "lyric": "ngo",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "short",
+   "notes": [
+    {
+     "lyric": "gong",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "daai",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "sam",
+     "tone": "C4",
+     "duration": 30
+    },
+    {
+     "lyric": "hot",
+     "tone": "C4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "rest_vc",
+   "notes": [
+    {
+     "lyric": "gaa",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "hou",
+     "tone": "C4"
+    },
+    {
+     "lyric": "faan",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 60
+    },
+    {
+     "lyric": "sik",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "high",
+   "notes": [
+    {
+     "lyric": "ngo",
+     "tone": "C5"
+    },
+    {
+     "lyric": "hai",
+     "tone": "C5"
+    },
+    {
+     "lyric": "hoeng",
+     "tone": "C5"
+    },
+    {
+     "lyric": "R",
+     "tone": "C5"
+    }
+   ]
+  },
+  {
+   "id": "cross",
+   "notes": [
+    {
+     "lyric": "ngo",
+     "tone": "C5"
+    },
+    {
+     "lyric": "hai",
+     "tone": "C4"
+    },
+    {
+     "lyric": "hoeng",
+     "tone": "D5"
+    },
+    {
+     "lyric": "maa",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "shift",
+   "notes": [
+    {
+     "tone": "C4",
+     "lyric": "ngo",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 12,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "tone": "C5",
+     "lyric": "hai",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": -12,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "tone": "C4",
+     "lyric": "maa",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      },
+      {
+       "index": 1,
+       "shift": 12,
+       "alt": 0,
+       "color": ""
+      },
+      {
+       "index": 2,
+       "shift": 12,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vowel_only",
+   "notes": [
+    {
+     "lyric": "aa",
+     "tone": "C4"
+    },
+    {
+     "lyric": "o",
+     "tone": "C4"
+    },
+    {
+     "lyric": "m",
+     "tone": "C4"
+    },
+    {
+     "lyric": "aa",
+     "tone": "C4"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1312 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.CantoneseCVVCPhonemizer",
+ "bank": "yue_cvvc",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "hanzi_basic",
+   "notes": [
+    {
+     "lyric": "我",
+     "tone": "C4"
+    },
+    {
+     "lyric": "係",
+     "tone": "C4"
+    },
+    {
+     "lyric": "香",
+     "tone": "C4"
+    },
+    {
+     "lyric": "港",
+     "tone": "C4"
+    },
+    {
+     "lyric": "人",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "polyphonic_hong",
+   "notes": [
+    {
+     "lyric": "银",
+     "tone": "C4"
+    },
+    {
+     "lyric": "行",
+     "tone": "C4"
+    },
+    {
+     "lyric": "行",
+     "tone": "C4"
+    },
+    {
+     "lyric": "人",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "traditional",
+   "notes": [
+    {
+     "lyric": "銀",
+     "tone": "C4"
+    },
+    {
+     "lyric": "行",
+     "tone": "C4"
+    },
+    {
+     "lyric": "很",
+     "tone": "C4"
+    },
+    {
+     "lyric": "長",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "hanzi_rest",
+   "notes": [
+    {
+     "lyric": "你",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "好",
+     "tone": "C4"
+    },
+    {
+     "lyric": "大",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 480
+    },
+    {
+     "lyric": "家",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "hanzi_more",
+   "notes": [
+    {
+     "lyric": "食",
+     "tone": "C4"
+    },
+    {
+     "lyric": "饭",
+     "tone": "C4"
+    },
+    {
+     "lyric": "喝",
+     "tone": "C4"
+    },
+    {
+     "lyric": "水",
+     "tone": "C4"
+    },
+    {
+     "lyric": "唱",
+     "tone": "C4"
+    },
+    {
+     "lyric": "歌",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "mixed",
+   "notes": [
+    {
+     "lyric": "ngo",
+     "tone": "C4"
+    },
+    {
+     "lyric": "係",
+     "tone": "C4"
+    },
+    {
+     "lyric": "xyz",
+     "tone": "C4"
+    },
+    {
+     "lyric": "maa",
+     "tone": "C4"
+    },
+    {
+     "lyric": "港",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "multichar",
+   "notes": [
+    {
+     "lyric": "香港",
+     "tone": "C4"
+    },
+    {
+     "lyric": "ngo",
+     "tone": "C4"
+    },
+    {
+     "lyric": "hai",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "plus",
+   "notes": [
+    {
+     "lyric": "我",
+     "tone": "C4"
+    },
+    {
+     "lyric": "+",
+     "tone": "C4"
+    },
+    {
+     "lyric": "係",
+     "tone": "C4"
+    },
+    {
+     "lyric": "+~",
+     "tone": "C4"
+    },
+    {
+     "lyric": "人",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "jyutping",
+   "notes": [
+    {
+     "lyric": "ngo",
+     "tone": "C4"
+    },
+    {
+     "lyric": "hai",
+     "tone": "C4"
+    },
+    {
+     "lyric": "hoeng",
+     "tone": "C4"
+    },
+    {
+     "lyric": "gong",
+     "tone": "C4"
+    },
+    {
+     "lyric": "jan",
+     "tone": "C4"
+    },
+    {
+     "lyric": "R",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "replace",
+   "notes": [
+    {
+     "lyric": "ngoh",
+     "tone": "C4"
+    },
+    {
+     "lyric": "ho",
+     "tone": "C4"
+    },
+    {
+     "lyric": "late",
+     "tone": "C4"
+    },
+    {
+     "lyric": "R",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "vcv_hit",
+   "notes": [
+    {
+     "lyric": "ngo",
+     "tone": "C4"
+    },
+    {
+     "lyric": "hai",
+     "tone": "C4"
+    },
+    {
+     "lyric": "maa",
+     "tone": "C4"
+    },
+    {
+     "lyric": "maa",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "dash_end",
+   "notes": [
+    {
+     "lyric": "gaa",
+     "tone": "C4"
+    },
+    {
+     "lyric": "-",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "sik",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "single_initial",
+   "notes": [
+    {
+     "lyric": "ngo",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "short",
+   "notes": [
+    {
+     "lyric": "gong",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "daai",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "sam",
+     "tone": "C4",
+     "duration": 30
+    },
+    {
+     "lyric": "hot",
+     "tone": "C4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "rest_vc",
+   "notes": [
+    {
+     "lyric": "gaa",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "hou",
+     "tone": "C4"
+    },
+    {
+     "lyric": "faan",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 60
+    },
+    {
+     "lyric": "sik",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "high",
+   "notes": [
+    {
+     "lyric": "ngo",
+     "tone": "C5"
+    },
+    {
+     "lyric": "hai",
+     "tone": "C5"
+    },
+    {
+     "lyric": "hoeng",
+     "tone": "C5"
+    },
+    {
+     "lyric": "R",
+     "tone": "C5"
+    }
+   ]
+  },
+  {
+   "id": "cross",
+   "notes": [
+    {
+     "lyric": "ngo",
+     "tone": "C5"
+    },
+    {
+     "lyric": "hai",
+     "tone": "C4"
+    },
+    {
+     "lyric": "hoeng",
+     "tone": "D5"
+    },
+    {
+     "lyric": "maa",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "shift",
+   "notes": [
+    {
+     "tone": "C4",
+     "lyric": "ngo",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 12,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "tone": "C5",
+     "lyric": "hai",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": -12,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "tone": "C4",
+     "lyric": "maa",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      },
+      {
+       "index": 1,
+       "shift": 12,
+       "alt": 0,
+       "color": ""
+      },
+      {
+       "index": 2,
+       "shift": 12,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vowel_only",
+   "notes": [
+    {
+     "lyric": "aa",
+     "tone": "C4"
+    },
+    {
+     "lyric": "o",
+     "tone": "C4"
+    },
+    {
+     "lyric": "m",
+     "tone": "C4"
+    },
+    {
+     "lyric": "aa",
+     "tone": "C4"
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "hanzi_basic",
+   "phonemes": [
+    {
+     "phoneme": "- ngo",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o hai",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ai h",
+     "position": -173,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "hoeng",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "oeng g",
+     "position": -76,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "gong",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ong j",
+     "position": -86,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "jan",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "an R",
+     "position": 420,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "polyphonic_hong",
+   "phonemes": [
+    {
+     "phoneme": "- ngan",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "an h",
+     "position": -173,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "hong",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ong h",
+     "position": -173,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "hang",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ang j",
+     "position": -86,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "jan",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "an R",
+     "position": 420,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "traditional",
+   "phonemes": [
+    {
+     "phoneme": "- ngan",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "an h",
+     "position": -173,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "hong",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ong h",
+     "position": -173,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "han",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "an c",
+     "position": -173,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "coeng",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "oeng R",
+     "position": 420,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hanzi_rest",
+   "phonemes": [
+    {
+     "phoneme": "- nei",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ei R",
+     "position": 420,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- hou",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ou d",
+     "position": -76,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "daai",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "aai R",
+     "position": 420,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- gaa",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "aa R",
+     "position": 420,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hanzi_more",
+   "phonemes": [
+    {
+     "phoneme": "- sik",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ik f",
+     "position": -173,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "faan",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "aan h",
+     "position": -173,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "hot",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ot s",
+     "position": -173,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "seoi",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "eoi c",
+     "position": -173,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "coeng",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "oeng g",
+     "position": -76,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "go",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "o R",
+     "position": 420,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "mixed",
+   "phonemes": [
+    {
+     "phoneme": "- ngo",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o hai",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "xyz",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- maa",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "aa g",
+     "position": -76,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "gong",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ong R",
+     "position": 420,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "multichar",
+   "phonemes": [
+    {
+     "phoneme": "香港",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- ngo",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o hai",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ai R",
+     "position": 420,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "plus",
+   "phonemes": [
+    {
+     "phoneme": "- ngo",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o hai",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ai j",
+     "position": -86,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "jan",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "an R",
+     "position": 420,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "jyutping",
+   "phonemes": [
+    {
+     "phoneme": "- ngo",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o hai",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ai h",
+     "position": -173,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "hoeng",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "oeng g",
+     "position": -76,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "gong",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ong j",
+     "position": -86,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "jan",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "an R",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "replace",
+   "phonemes": [
+    {
+     "phoneme": "- ngo",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- hou",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "late",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- R",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "vcv_hit",
+   "phonemes": [
+    {
+     "phoneme": "- ngo",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o hai",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ai m",
+     "position": -86,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "maa",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "aa maa",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "aa R",
+     "position": 420,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "dash_end",
+   "phonemes": [
+    {
+     "phoneme": "- gaa",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "aa R",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "phonemes": [
+    {
+     "phoneme": "- sik",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ik R",
+     "position": 420,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "single_initial",
+   "phonemes": [
+    {
+     "phoneme": "- ngo",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o R",
+     "position": 420,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "short",
+   "phonemes": [
+    {
+     "phoneme": "gong",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ong d",
+     "position": -40,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "daai",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "aai s",
+     "position": -40,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "sam",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "am h",
+     "position": -20,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "hot",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ot R",
+     "position": 100,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "rest_vc",
+   "phonemes": [
+    {
+     "phoneme": "- gaa",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "aa R",
+     "position": 420,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- hou",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ou f",
+     "position": -173,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "faan",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "aan R",
+     "position": 420,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- sik",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ik R",
+     "position": 420,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "high",
+   "phonemes": [
+    {
+     "phoneme": "- ngoH",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o hai",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ai hH",
+     "position": -67,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "hoengH",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "oeng RH",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "cross",
+   "phonemes": [
+    {
+     "phoneme": "- ngoH",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o hai",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ai h",
+     "position": -67,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "hoengH",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "oeng m",
+     "position": -86,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "maa",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "aa R",
+     "position": 420,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "shift",
+   "phonemes": [
+    {
+     "phoneme": "- ngoH",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o hai",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ai m",
+     "position": -67,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "maaH",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "aa RH",
+     "position": 420,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "vowel_only",
+   "phonemes": [
+    {
+     "phoneme": "- aa",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "aa o",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o m",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "m aa",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "aa R",
+     "position": 420,
+     "group": 3,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

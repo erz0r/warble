@@ -1,0 +1,1179 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.ChineseCVVMonophonePhonemizer",
+ "bank": "zh_cvv",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "run_0",
+   "notes": [
+    {
+     "lyric": "duang",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ma",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zhong",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "guo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ren",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "run_5",
+   "notes": [
+    {
+     "lyric": "ni",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "hao",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "shuai",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "kuai",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "lun",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "run_10",
+   "notes": [
+    {
+     "lyric": "jun",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "quan",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "xuan",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "yuan",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "yan",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "run_15",
+   "notes": [
+    {
+     "lyric": "yun",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "chuang",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "qiong",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "xiu",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "dui",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "run_20",
+   "notes": [
+    {
+     "lyric": "gui",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "wen",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "weng",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "er",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "run_25",
+   "notes": [
+    {
+     "lyric": "o",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "e",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ai",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ang",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ying",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "run_30",
+   "notes": [
+    {
+     "lyric": "lve",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "nve",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "kei",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "zhi",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "si",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "run_35",
+   "notes": [
+    {
+     "lyric": "ri",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "jvn",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "qvan",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "xxx",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "bian",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "run_40",
+   "notes": [
+    {
+     "lyric": "tian",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "xian",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "dun",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "sun",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "shuan",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "run_45",
+   "notes": [
+    {
+     "lyric": "zuan",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "uai",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "un",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "an",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ong",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_duang",
+   "notes": [
+    {
+     "lyric": "duang",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_ma",
+   "notes": [
+    {
+     "lyric": "ma",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_zhong",
+   "notes": [
+    {
+     "lyric": "zhong",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_guo",
+   "notes": [
+    {
+     "lyric": "guo",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_ren",
+   "notes": [
+    {
+     "lyric": "ren",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_ni",
+   "notes": [
+    {
+     "lyric": "ni",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_hao",
+   "notes": [
+    {
+     "lyric": "hao",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_shuai",
+   "notes": [
+    {
+     "lyric": "shuai",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_kuai",
+   "notes": [
+    {
+     "lyric": "kuai",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_lun",
+   "notes": [
+    {
+     "lyric": "lun",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_jun",
+   "notes": [
+    {
+     "lyric": "jun",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_quan",
+   "notes": [
+    {
+     "lyric": "quan",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_xuan",
+   "notes": [
+    {
+     "lyric": "xuan",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_yuan",
+   "notes": [
+    {
+     "lyric": "yuan",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_yan",
+   "notes": [
+    {
+     "lyric": "yan",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_yun",
+   "notes": [
+    {
+     "lyric": "yun",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_chuang",
+   "notes": [
+    {
+     "lyric": "chuang",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_qiong",
+   "notes": [
+    {
+     "lyric": "qiong",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_xiu",
+   "notes": [
+    {
+     "lyric": "xiu",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_dui",
+   "notes": [
+    {
+     "lyric": "dui",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_gui",
+   "notes": [
+    {
+     "lyric": "gui",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_wen",
+   "notes": [
+    {
+     "lyric": "wen",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_weng",
+   "notes": [
+    {
+     "lyric": "weng",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_er",
+   "notes": [
+    {
+     "lyric": "er",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_a",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_o",
+   "notes": [
+    {
+     "lyric": "o",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_e",
+   "notes": [
+    {
+     "lyric": "e",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_ai",
+   "notes": [
+    {
+     "lyric": "ai",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_ang",
+   "notes": [
+    {
+     "lyric": "ang",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_ying",
+   "notes": [
+    {
+     "lyric": "ying",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_lve",
+   "notes": [
+    {
+     "lyric": "lve",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_nve",
+   "notes": [
+    {
+     "lyric": "nve",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_kei",
+   "notes": [
+    {
+     "lyric": "kei",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_zhi",
+   "notes": [
+    {
+     "lyric": "zhi",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_si",
+   "notes": [
+    {
+     "lyric": "si",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_ri",
+   "notes": [
+    {
+     "lyric": "ri",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_jvn",
+   "notes": [
+    {
+     "lyric": "jvn",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_qvan",
+   "notes": [
+    {
+     "lyric": "qvan",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_xxx",
+   "notes": [
+    {
+     "lyric": "xxx",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_bian",
+   "notes": [
+    {
+     "lyric": "bian",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_tian",
+   "notes": [
+    {
+     "lyric": "tian",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_xian",
+   "notes": [
+    {
+     "lyric": "xian",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_dun",
+   "notes": [
+    {
+     "lyric": "dun",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_sun",
+   "notes": [
+    {
+     "lyric": "sun",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_shuan",
+   "notes": [
+    {
+     "lyric": "shuan",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_zuan",
+   "notes": [
+    {
+     "lyric": "zuan",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_uai",
+   "notes": [
+    {
+     "lyric": "uai",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_un",
+   "notes": [
+    {
+     "lyric": "un",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_an",
+   "notes": [
+    {
+     "lyric": "an",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "solo_ong",
+   "notes": [
+    {
+     "lyric": "ong",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "upper",
+   "notes": [
+    {
+     "lyric": "DUANG",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "Ma",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ZHONG",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext",
+   "notes": [
+    {
+     "lyric": "duang",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "ma",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "F4",
+     "duration": 480
+    },
+    {
+     "lyric": "shuai",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_num",
+   "notes": [
+    {
+     "lyric": "zhong",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+1",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "+2",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "guo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_tilde",
+   "notes": [
+    {
+     "lyric": "kuai",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "+*",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest",
+   "notes": [
+    {
+     "lyric": "ni",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 480
+    },
+    {
+     "lyric": "hao",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ma",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "duang",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "duang _ang"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ma"
+    },
+    {
+     "lyric": "z",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "lun _un"
+    }
+   ]
+  },
+  {
+   "id": "alt",
+   "notes": [
+    {
+     "lyric": "ma",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "alt": 2
+      }
+     ]
+    },
+    {
+     "lyric": "duang",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "alt": 2
+      },
+      {
+       "index": 1,
+       "alt": 2
+      }
+     ]
+    },
+    {
+     "lyric": "bang",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "alt": 2
+      },
+      {
+       "index": 1,
+       "alt": 5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "high",
+   "notes": [
+    {
+     "lyric": "duang",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "ma",
+     "tone": "E5",
+     "duration": 480
+    },
+    {
+     "lyric": "lun",
+     "tone": "G5",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "high_shift",
+   "notes": [
+    {
+     "lyric": "duang",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 12
+      },
+      {
+       "index": 1,
+       "shift": 0
+      }
+     ]
+    },
+    {
+     "lyric": "hao",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 1,
+       "shift": 24
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tone_cross",
+   "notes": [
+    {
+     "lyric": "duang",
+     "tone": "B4",
+     "duration": 480
+    },
+    {
+     "lyric": "zhong",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "guo",
+     "tone": "B4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dash",
+   "notes": [
+    {
+     "lyric": "ma",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "duang",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "forced",
+   "notes": [
+    {
+     "lyric": "?_ang",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ma",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short",
+   "notes": [
+    {
+     "lyric": "duang",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "shuai",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "zhong",
+     "tone": "C4",
+     "duration": 60
+    }
+   ]
+  },
+  {
+   "id": "tiny",
+   "notes": [
+    {
+     "lyric": "duang",
+     "tone": "C4",
+     "duration": 10
+    },
+    {
+     "lyric": "ma",
+     "tone": "C4",
+     "duration": 10
+    }
+   ]
+  },
+  {
+   "id": "long",
+   "notes": [
+    {
+     "lyric": "duang",
+     "tone": "C4",
+     "duration": 4000
+    }
+   ]
+  },
+  {
+   "id": "punct",
+   "notes": [
+    {
+     "lyric": "ma",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "!",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "hao",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

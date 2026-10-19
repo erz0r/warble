@@ -1,0 +1,11 @@
+subbanks:
+- color: ''
+  prefix: ''
+  suffix: ''
+  tone_ranges:
+  - C1-B7
+- color: soft
+  prefix: ''
+  suffix: _S
+  tone_ranges:
+  - C1-B7

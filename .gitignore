@@ -1,5 +1,6 @@
 ref/
-banks/
+banks/*
+!banks/README.md
 vocoders/
 resamplers/
 .venv/

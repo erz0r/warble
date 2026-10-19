@@ -1,0 +1,131 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.ChineseCVVCPhonemizer",
+ "bank": "zh_vcv",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "hanzi_basic",
+   "notes": [
+    {
+     "lyric": "我",
+     "tone": "C4"
+    },
+    {
+     "lyric": "爱",
+     "tone": "C4"
+    },
+    {
+     "lyric": "你",
+     "tone": "C4"
+    },
+    {
+     "lyric": "中",
+     "tone": "C4"
+    },
+    {
+     "lyric": "国",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "polyphonic_yinhang",
+   "notes": [
+    {
+     "lyric": "银",
+     "tone": "C4"
+    },
+    {
+     "lyric": "行",
+     "tone": "C4"
+    },
+    {
+     "lyric": "很",
+     "tone": "C4"
+    },
+    {
+     "lyric": "长",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "polyphonic_zhangda",
+   "notes": [
+    {
+     "lyric": "长",
+     "tone": "C4"
+    },
+    {
+     "lyric": "大",
+     "tone": "C4"
+    },
+    {
+     "lyric": "了",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "polyphonic_zhongyao",
+   "notes": [
+    {
+     "lyric": "重",
+     "tone": "C4"
+    },
+    {
+     "lyric": "要",
+     "tone": "C4"
+    },
+    {
+     "lyric": "的",
+     "tone": "C4"
+    },
+    {
+     "lyric": "事",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "pinyin",
+   "notes": [
+    {
+     "lyric": "ma",
+     "tone": "C4"
+    },
+    {
+     "lyric": "ba",
+     "tone": "C4"
+    },
+    {
+     "lyric": "ai",
+     "tone": "C4"
+    },
+    {
+     "lyric": "R",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "rest",
+   "notes": [
+    {
+     "lyric": "ma",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "ni",
+     "tone": "C4"
+    },
+    {
+     "lyric": "-",
+     "tone": "C4"
+    }
+   ]
+  }
+ ]
+}

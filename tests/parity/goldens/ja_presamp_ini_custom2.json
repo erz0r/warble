@@ -1,0 +1,6958 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.JapanesePresampPhonemizer",
+ "bank": "ja_presamp_custom2",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "kana0",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "い",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "う",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "え",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "お",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "き",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "く",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "け",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "こ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "し",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kana12",
+   "notes": [
+    {
+     "lyric": "す",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "せ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "そ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ち",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "つ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "て",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "と",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "な",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "に",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぬ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ね",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kana24",
+   "notes": [
+    {
+     "lyric": "の",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "は",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ひ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ふ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "へ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ほ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ま",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "み",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "む",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "め",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "も",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "や",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kana36",
+   "notes": [
+    {
+     "lyric": "ゆ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "よ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ら",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "り",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "る",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "れ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ろ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "わ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "を",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ん",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "が",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぎ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kana48",
+   "notes": [
+    {
+     "lyric": "ぐ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "げ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ご",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ざ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "じ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ず",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぜ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぞ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "だ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "で",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ど",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ば",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kana60",
+   "notes": [
+    {
+     "lyric": "び",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぶ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "べ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぼ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぱ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぴ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぷ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぺ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぽ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "youon0",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "きゃ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "きゅ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "きょ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "しゃ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "しゅ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "しょ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ちゃ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ちゅ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ちょ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "にゃ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "youon10",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "にゅ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "にょ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ひゃ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ひゅ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ひょ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "みゃ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "みゅ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "みょ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "りゃ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "りゅ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "youon20",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "りょ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぎゃ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぎゅ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぎょ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "じゃ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "じゅ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "じょ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "びゃ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "びゅ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "びょ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "youon30",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぴゃ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぴゅ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぴょ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ふぁ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "てぃ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "でぃ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "とぅ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ヴ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "つぁ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "うぇ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "youon40",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "いぇ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "すぃ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "romaji",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ki",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ku",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ke",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ko",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "sha",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "chi",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "tsu",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "n",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "N",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ryu",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "replace_wo_dji",
+   "notes": [
+    {
+     "lyric": "を",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぢ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "づ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "を",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sokuon",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "っ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "っ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "っ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぱ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sokuon_end",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "っ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sokuon_then_vowel",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "っ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "い",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sokuon_start",
+   "notes": [
+    {
+     "lyric": "っ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hatsuon",
+   "notes": [
+    {
+     "lyric": "ん",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ん",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ん",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ん",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ン",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "long_vowel",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ー",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "い",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "い",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "plus",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "+~",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "plus_star",
+   "notes": [
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "+*",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た",
+     "tone": "C4",
+     "duration": 120,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 120,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "な",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rests",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "な",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 10,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rest_dash",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "息",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "吸",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "な",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 60,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 60,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た",
+     "tone": "C4",
+     "duration": 90,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "な",
+     "tone": "C4",
+     "duration": 30,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "は",
+     "tone": "C4",
+     "duration": 15,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ま",
+     "tone": "C4",
+     "duration": 240,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "short_ms_boundary",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 190,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 191,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た",
+     "tone": "C4",
+     "duration": 192,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "な",
+     "tone": "C4",
+     "duration": 200,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hints",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "か",
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a た",
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "な",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "- な",
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "は",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hint_next",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "さ",
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "な",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "xyz",
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "R",
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hint_empty_lyric",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "か",
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "glottal",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "あ・",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "・",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "・あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "い・",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "glottal2",
+   "notes": [
+    {
+     "lyric": "・",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "a ・",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "い",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "・い",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "う・",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "・",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ん・",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "glottal_start",
+   "notes": [
+    {
+     "lyric": "あ・",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "glottal_start2",
+   "notes": [
+    {
+     "lyric": "・あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "・",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "direct",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "a k",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "n s",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "i か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "- た",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "u R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "a ・",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "unknown",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "xyz",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "しぁ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぬぃ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "な",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "%",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nfd",
+   "notes": [
+    {
+     "lyric": "が",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ヴ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぐ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぱ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "katakana",
+   "notes": [
+    {
+     "lyric": "ア",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "カ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "サ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ガ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "パ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ン",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ヴ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ー",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "suffix_in_lyric",
+   "notes": [
+    {
+     "lyric": "あ強",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "か2",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さC4",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た_x",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "な↑",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "は元気",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "priority",
+   "notes": [
+    {
+     "lyric": "ri",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "p",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "re",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "i",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "s",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "k",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "t",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "tones",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C3",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "F4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た",
+     "tone": "G4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "な",
+     "tone": "C5",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "は",
+     "tone": "B7",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ま",
+     "tone": "C1",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nostretch_attrs",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "た",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "な",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "gap_prev",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 30,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 5,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 1000,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "な",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "long_note",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 1920,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 1920,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "replace_chain",
+   "notes": [
+    {
+     "lyric": "zz",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "yy",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ka2",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ka3",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ko",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "N",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "suffix_strip",
+   "notes": [
+    {
+     "lyric": "か1",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ2",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た強",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "な↑",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "は_x",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "かL",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "あー",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "あ・",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "vc_pad",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "a_k",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "a_・",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "・あ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "い",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "i_R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "short_mustvc",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 60,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 60,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た",
+     "tone": "C4",
+     "duration": 60,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "な",
+     "tone": "C4",
+     "duration": 60,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "priority_mix",
+   "notes": [
+    {
+     "lyric": "か",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ら",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ぱ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "た",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "さ",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "な",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "kana0",
+   "phonemes": [
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a い",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "i う",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "u え",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "e お",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "o か",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "a き",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "i く",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "u け",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "e こ",
+     "position": 0,
+     "group": 9,
+     "error": null
+    },
+    {
+     "phoneme": "o さ",
+     "position": 0,
+     "group": 10,
+     "error": null
+    },
+    {
+     "phoneme": "a し",
+     "position": 0,
+     "group": 11,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "kana12",
+   "phonemes": [
+    {
+     "phoneme": "- す",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "u せ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e そ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "o た",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a ち",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "i つ",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "u て",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "e と",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "o な",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "a に",
+     "position": 0,
+     "group": 9,
+     "error": null
+    },
+    {
+     "phoneme": "i ぬ",
+     "position": 0,
+     "group": 10,
+     "error": null
+    },
+    {
+     "phoneme": "u ね",
+     "position": 0,
+     "group": 11,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "kana24",
+   "phonemes": [
+    {
+     "phoneme": "- の",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o は",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- ひ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- ふ",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "- へ",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "- ほ",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "- ま",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "- み",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "- む",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "- め",
+     "position": 0,
+     "group": 9,
+     "error": null
+    },
+    {
+     "phoneme": "- も",
+     "position": 0,
+     "group": 10,
+     "error": null
+    },
+    {
+     "phoneme": "- や",
+     "position": 0,
+     "group": 11,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "kana36",
+   "phonemes": [
+    {
+     "phoneme": "- ゆ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- よ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- ら",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- り",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "- る",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "- れ",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "- ろ",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "- わ",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "を",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "- ん",
+     "position": 0,
+     "group": 9,
+     "error": null
+    },
+    {
+     "phoneme": "n が",
+     "position": 0,
+     "group": 10,
+     "error": null
+    },
+    {
+     "phoneme": "- ぎ",
+     "position": 0,
+     "group": 11,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "kana48",
+   "phonemes": [
+    {
+     "phoneme": "- ぐ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- げ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- ご",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- ざ",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "- じ",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "- ず",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "- ぜ",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "- ぞ",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "- だ",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "- で",
+     "position": 0,
+     "group": 9,
+     "error": null
+    },
+    {
+     "phoneme": "- ど",
+     "position": 0,
+     "group": 10,
+     "error": null
+    },
+    {
+     "phoneme": "- ば",
+     "position": 0,
+     "group": 11,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "kana60",
+   "phonemes": [
+    {
+     "phoneme": "- び",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- ぶ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- べ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- ぼ",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "- ぱ",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "- ぴ",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "- ぷ",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "- ぺ",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "- ぽ",
+     "position": 0,
+     "group": 8,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "youon0",
+   "phonemes": [
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a きゃ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- きゅ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- きょ",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "- しゃ",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "- しゅ",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "- しょ",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "- ちゃ",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "- ちゅ",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "- ちょ",
+     "position": 0,
+     "group": 9,
+     "error": null
+    },
+    {
+     "phoneme": "- にゃ",
+     "position": 0,
+     "group": 10,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 11,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "youon10",
+   "phonemes": [
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a にゅ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- にょ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- ひゃ",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "- ひゅ",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "- ひょ",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "- みゃ",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "- みゅ",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "- みょ",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "- りゃ",
+     "position": 0,
+     "group": 9,
+     "error": null
+    },
+    {
+     "phoneme": "- りゅ",
+     "position": 0,
+     "group": 10,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 11,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "youon20",
+   "phonemes": [
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a りょ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- ぎゃ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- ぎゅ",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "- ぎょ",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "- じゃ",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "- じゅ",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "- じょ",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "- びゃ",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "- びゅ",
+     "position": 0,
+     "group": 9,
+     "error": null
+    },
+    {
+     "phoneme": "- びょ",
+     "position": 0,
+     "group": 10,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 11,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "youon30",
+   "phonemes": [
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a ぴゃ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- ぴゅ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- ぴょ",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "- ふぁ",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "- てぃ",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "- でぃ",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "- とぅ",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "- ヴ",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "- つぁ",
+     "position": 0,
+     "group": 9,
+     "error": null
+    },
+    {
+     "phoneme": "- うぇ",
+     "position": 0,
+     "group": 10,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 11,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "youon40",
+   "phonemes": [
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a いぇ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- すぃ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "romaji",
+   "phonemes": [
+    {
+     "phoneme": "ka",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ki",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ku",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ke",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ko",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "sha",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "chi",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "tsu",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "n",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "a",
+     "position": 0,
+     "group": 9,
+     "error": null
+    },
+    {
+     "phoneme": "N",
+     "position": 0,
+     "group": 10,
+     "error": null
+    },
+    {
+     "phoneme": "ryu",
+     "position": 0,
+     "group": 11,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 12,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "replace_wo_dji",
+   "phonemes": [
+    {
+     "phoneme": "を",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ぢ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "づ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "を",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "sokuon",
+   "phonemes": [
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "っ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a さ",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "っ",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "- た",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "っ",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "- ぱ",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 8,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "sokuon_end",
+   "phonemes": [
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "っ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "sokuon_then_vowel",
+   "phonemes": [
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "っ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a い",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "sokuon_start",
+   "phonemes": [
+    {
+     "phoneme": "っ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hatsuon",
+   "phonemes": [
+    {
+     "phoneme": "- ん",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "n か",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a ん",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "n あ",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a ん",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "n ん",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "ン",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 7,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "long_vowel",
+   "phonemes": [
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ー",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a あ",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a い",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "i い",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "i R",
+     "position": 0,
+     "group": 6,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "plus",
+   "phonemes": [
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a か",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 0,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "plus_star",
+   "phonemes": [
+    {
+     "phoneme": "- さ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a た",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a な",
+     "position": 0,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "rests",
+   "phonemes": [
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- さ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a た",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- な",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "rest_dash",
+   "phonemes": [
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "-",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- さ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "息",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "- た",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "吸",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "- な",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 8,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "short_notes",
+   "phonemes": [
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a さ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a た",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a な",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a は",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "- ま",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "short_ms_boundary",
+   "phonemes": [
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a さ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a た",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a な",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hints",
+   "phonemes": [
+    {
+     "phoneme": "か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a さ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a た",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- な",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a は",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_next",
+   "phonemes": [
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "さ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a た",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "xyz",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_empty_lyric",
+   "phonemes": [
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "か",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a さ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "glottal",
+   "phonemes": [
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a あ・",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a あ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "・",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "- あ・",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a か",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "a あ・",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "a い・",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "i R",
+     "position": 0,
+     "group": 8,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "glottal2",
+   "phonemes": [
+    {
+     "phoneme": "・",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- あ・",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a ・",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- い・",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "i い・",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "i う・",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "・",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "- ん・",
+     "position": 0,
+     "group": 7,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "glottal_start",
+   "phonemes": [
+    {
+     "phoneme": "- あ・",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a か",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "glottal_start2",
+   "phonemes": [
+    {
+     "phoneme": "- あ・",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "・",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "direct",
+   "phonemes": [
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a k",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "n s",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "- さ",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "i か",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "- た",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "u R",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "a ・",
+     "position": 0,
+     "group": 8,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "unknown",
+   "phonemes": [
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "xyz",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "- さ",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "しぁ",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "ぬぃ",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "- な",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "%",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 9,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "nfd",
+   "phonemes": [
+    {
+     "phoneme": "- が",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- ヴ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- ぐ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- ぱ",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "katakana",
+   "phonemes": [
+    {
+     "phoneme": "ア",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "カ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "サ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ガ",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "パ",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ン",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "- ヴ",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "ー",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 8,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "suffix_in_lyric",
+   "phonemes": [
+    {
+     "phoneme": "あ強",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "か2",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "さC4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "た_x",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "な↑",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "は元気",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 6,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "priority",
+   "phonemes": [
+    {
+     "phoneme": "ri",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "p",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "re",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "i",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "s",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "k",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "t",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "- た",
+     "position": 0,
+     "group": 8,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "tones",
+   "phonemes": [
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a さ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a た",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a な",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a は",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "- ま",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "nostretch_attrs",
+   "phonemes": [
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a さ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a た",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a な",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "gap_prev",
+   "phonemes": [
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- さ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- た",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- な",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "long_note",
+   "phonemes": [
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a さ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 0,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "replace_chain",
+   "phonemes": [
+    {
+     "phoneme": "zz",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "yy",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ka2",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ka3",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ko",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "N",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 7,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "suffix_strip",
+   "phonemes": [
+    {
+     "phoneme": "か1",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "さ2",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "た強",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "な↑",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "は_x",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "かL",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "あー",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "- あ・",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 0,
+     "group": 8,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "vc_pad",
+   "phonemes": [
+    {
+     "phoneme": "- あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a_k",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a_・",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "・あ",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a い",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "i_R",
+     "position": 0,
+     "group": 6,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "short_mustvc",
+   "phonemes": [
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a さ",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a た",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a な",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "priority_mix",
+   "phonemes": [
+    {
+     "phoneme": "- か",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a ら",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- ぱ",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- た",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a さ",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a な",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 0,
+     "group": 6,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

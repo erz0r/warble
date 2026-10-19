@@ -23,3 +23,9 @@ DiffSinger — https://github.com/openvpi/DiffSinger
 Licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0).
 Copyright (c) openvpi and contributors. warble does not include DiffSinger code; it implements
 the inference interface of DiffSinger's exported onnx models as documented and as used by OpenUtau.
+
+csharp-pinyin — https://github.com/wolfgitpr/csharp-pinyin
+Apache License 2.0, Copyright (c) wolfgitpr. warble/utau/pz/_pinyin.py ports its logic (the
+library openutau uses to romanize hanzi), and warble/utau/pz/data/chinese/ holds its dictionaries.
+those dictionaries derive from CC-CEDICT and CC-Canto, licensed CC BY-SA; their own license files
+are kept next to them.

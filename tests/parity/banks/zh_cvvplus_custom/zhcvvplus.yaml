@@ -1,0 +1,10 @@
+VowelTailPrefix: '*'
+UseSingleNasalVowel: true
+UseSingleMultipleVowel: true
+UseRetan: true
+SupportedTailBreath: ['-', R]
+FastTailVowelTimingTick: 60
+SingleVowelsReferenceTimimgTick: 240
+FastTailVowelDict: {ia: ia, uo: uo}
+SlowTailVowelDict: {ang: ang, iang: ang, ao: ao, iao: ao, ian: ian, ai: ai}
+ConsonantDict: [zh, ch, sh, b, p, m, d, t, n, l, z, s, j, q, x, g, h]
