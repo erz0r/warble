@@ -352,7 +352,7 @@ def parse_text(text, base_dir=".", source="<score>"):
                 raise WarbleError("bad_directive", f"'{head}' needs a value{where}")
             value = line.split(None, 1)[1].strip()
             if head == "bank":
-                value = value if os.path.isabs(value) else os.path.normpath(os.path.join(base_dir, value))
+                value = resolve_bank(value, base_dir)
             state[head] = value
             t = current or ensure_track()
             # a directive before any note on the track sets the track default; later it's a per-note change
@@ -457,6 +457,69 @@ def _check_overlaps(track):
             )
 
 
+def bank_roots():
+    """installed bank folders: ./banks and $WARBLE_BANKS (os.pathsep separated)."""
+    from .bank import common
+
+    dirs = [os.path.abspath("banks")] + [os.path.abspath(d) for d in os.environ.get("WARBLE_BANKS", "").split(os.pathsep) if d]
+    out = []
+    for d in dirs:
+        if os.path.isdir(d):
+            out += common.scan(d)
+    return out
+
+
+def _bank_display_name(root):
+    try:
+        from .bank import common
+
+        _, cy = common.load_character_yaml(root)
+        if cy and cy.get("name"):
+            return str(cy["name"])
+        info = common.parse_character_txt(root)
+        return (info or {}).get("name", "")
+    except Exception:  # noqa: BLE001
+        return ""
+
+
+def resolve_bank(value, base_dir="."):
+    """a bank path relative to the score, else to the working directory, else a bank whose folder
+    name matches (case-insensitive, substring ok). unresolved values are returned as given."""
+    if os.path.isabs(value) and os.path.isdir(value):
+        return value
+    for base in (base_dir, os.getcwd()):
+        cand = os.path.normpath(os.path.join(base, value))
+        if os.path.isdir(cand):
+            return cand
+    import unicodedata
+
+    def key(x):
+        return unicodedata.normalize("NFC", x).lower().replace(" ", "").replace("_", "")
+
+    want = key(os.path.basename(value.rstrip("/")))
+    roots = bank_roots()
+    exact = [r for r in roots if key(os.path.basename(r)) == want]
+    if exact:
+        return exact[0]
+    partial = [r for r in roots if want and want in key(os.path.basename(r))]
+    if len(partial) == 1:
+        return partial[0]
+    if not partial:
+        # every word of the request somewhere in "<character folder>/<bank folder> <display name>"
+        toks = [key(t) for t in re.split(r"[\s_/\-]+", value) if t]
+
+        def hay(r):
+            return key(os.path.relpath(r, os.path.dirname(os.path.dirname(r))) + " " + _bank_display_name(r))
+
+        partial = [r for r in roots if toks and all(t in hay(r) for t in toks)]
+        if len(partial) == 1:
+            return partial[0]
+    if len(partial) > 1:
+        raise WarbleError("bank_ambiguous", f"bank '{value}' matches several installed banks", hint="be more specific",
+                          matches=[os.path.relpath(r) for r in partial])
+    return os.path.normpath(os.path.join(base_dir, value))
+
+
 def parse_inline(expr, defaults=None):
     """'ら:C4:1 ら:D4:1/2 r:1 +:E4:1/2' -> score. defaults can carry bank/lang/bpm."""
     lines = []
@@ -555,7 +618,7 @@ def load(path_or_text, inline=False, defaults=None):
 def apply_defaults(score, bank=None, lang=None, voice=None):
     for t in score.tracks:
         if bank and not t.bank:
-            t.bank = os.path.abspath(bank)
+            t.bank = resolve_bank(bank, os.getcwd())
         if lang and not t.lang:
             t.lang = lang
         if voice and not t.voice:

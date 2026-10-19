@@ -23,16 +23,19 @@ def log(msg):
     print(f"warble: {msg}", file=sys.stderr)
 
 
-def engine_for(bank_path, engine=None, vocoder_dirs=None, resampler=None):
+def engine_for(bank_path, engine=None, vocoder_dirs=None, resampler=None, wavtool=None):
     kind, ev = common.detect(bank_path)
     if kind not in ("diffsinger", "utau"):
-        raise WarbleError("bank_unsupported", f"{bank_path} is not a diffsinger or utau bank", hint="; ".join(ev))
+        from .score import bank_roots
+
+        raise WarbleError("bank_unsupported", f"{bank_path} is not a diffsinger or utau bank", hint="; ".join(ev),
+                          installed_banks=[os.path.relpath(r) for r in bank_roots()])
     want = engine or ("ds" if kind == "diffsinger" else "utau")
     if want == "ds" and kind != "diffsinger":
         raise WarbleError("engine_mismatch", f"--engine ds but {bank_path} is a {kind} bank")
     if want == "utau" and kind != "utau":
         raise WarbleError("engine_mismatch", f"--engine utau but {bank_path} is a {kind} bank")
-    key = (os.path.abspath(bank_path), want, resampler)
+    key = (os.path.abspath(bank_path), want, resampler, wavtool)
     if key not in _ENGINES:
         t0 = time.time()
         if want == "ds":
@@ -44,7 +47,7 @@ def engine_for(bank_path, engine=None, vocoder_dirs=None, resampler=None):
             from .bank.utau import UtauBank
             from .utau.render import UtauEngine
 
-            _ENGINES[key] = UtauEngine(UtauBank(bank_path), resampler=resampler)
+            _ENGINES[key] = UtauEngine(UtauBank(bank_path), resampler=resampler, wavtool=wavtool)
         log(f"loaded {want} bank {bank_path} in {time.time() - t0:.2f}s")
     return _ENGINES[key]
 
@@ -70,7 +73,7 @@ def split_phrases(track):
 
 
 def sing(score, out_path, steps=None, depth=None, seed=None, sample_rate=44100, engine=None, phrase_filter=None,
-         note_range=None, vocoder_dirs=None, allow_unknown=False, resampler=None, normalize_db=None):
+         note_range=None, vocoder_dirs=None, allow_unknown=False, resampler=None, normalize_db=None, wavtool=None):
     t_start = time.time()
     onnxrun.reset_stats()
     tm = score.tempo_map
@@ -101,12 +104,14 @@ def sing(score, out_path, steps=None, depth=None, seed=None, sample_rate=44100, 
             if not bank:
                 raise WarbleError("no_bank", f"track '{track.name}' has no bank", hint="add 'bank <path>' to the score or pass --bank")
             lang = _note_attr(first, track, "lang")
-            eng = engine_for(bank, engine or track.engine, vocoder_dirs, resampler)
+            eng = engine_for(bank, engine or track.engine, vocoder_dirs, first.controls.get("resampler") or resampler,
+                             first.controls.get("wavtool") or wavtool)
 
             def voice_of(n, track=track):
                 return n.controls.get("voice") or track.voice
 
             res = eng.render_phrase(words, tm, lang, voice_of, steps=steps, depth=depth, seed=seed, timings=timings, prev_end_ms=prev_end_ms,
+                                    phonemizer=_note_attr(first, track, "phonemizer"),
                                     allow_unknown=allow_unknown)
             prev_end_ms = tm.tick_to_ms(notes[-1].end)
             ph = res["phonemes"]

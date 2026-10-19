@@ -22,12 +22,14 @@ SR = resampler.SR
 
 
 class UtauEngine:
-    def __init__(self, bank, resampler=None, phonemizer=None):
+    def __init__(self, bank, resampler=None, phonemizer=None, wavtool=None):
         self.bank = bank
         self.voice = Voice(bank)
         self.style, _, _ = utaubank.bank_reclist(bank)
         self.resampler_name = resampler or "builtin"
         self.resampler_exe = None if self.resampler_name == "builtin" else resampler_find(self.resampler_name)
+        self.wavtool_name = wavtool or "builtin"
+        self.wavtool_exe = None if self.wavtool_name == "builtin" else resampler_find(self.wavtool_name)
         self._requested_phonemizer = phonemizer
 
     def phonemizer(self, name=None):
@@ -36,7 +38,7 @@ class UtauEngine:
 
     # ---- phones ---------------------------------------------------------------------------
 
-    def phonemize_phrase(self, words, tm, lang, voice_of, seed=None, prev_end_ms=None, phonemizer=None):
+    def phonemize_phrase(self, words, tm, lang, voice_of, seed=None, prev_end_ms=None, phonemizer=None, **_):
         cls, pname, how, warn = self.phonemizer(phonemizer)
         def color_of(n):
             v = n.controls.get("color") or voice_of(n)
@@ -79,6 +81,7 @@ class UtauEngine:
                 "tone": note.tone + c.get("shift", 0),
                 "position_ms": tm.tick_to_ms(r["tick"]),
                 "end_ms": tm.tick_to_ms(nxt_tick),
+                "duration_ticks": nxt_tick - r["tick"],
                 "tempo": tm.bpm_at(r["tick"]),
                 "oto": r["oto"],
                 "wav_path": r["wav_path"],
@@ -109,10 +112,11 @@ class UtauEngine:
 
     # ---- audio ----------------------------------------------------------------------------
 
-    def render_phrase(self, words, tm, lang, voice_of, steps=None, depth=None, seed=None, timings=None, prev_end_ms=None, allow_unknown=False, **_):
+    def render_phrase(self, words, tm, lang, voice_of, steps=None, depth=None, seed=None, timings=None, prev_end_ms=None, allow_unknown=False,
+                      phonemizer=None, **_):
         timings = timings if timings is not None else {}
         t0 = time.time()
-        res = self.phonemize_phrase(words, tm, lang, voice_of, prev_end_ms=prev_end_ms)
+        res = self.phonemize_phrase(words, tm, lang, voice_of, prev_end_ms=prev_end_ms, phonemizer=phonemizer)
         timings["phonemize"] = timings.get("phonemize", 0) + time.time() - t0
         if res["unknown"] and not allow_unknown:
             return {"phonemes": res, "error": "unknown_aliases"}
@@ -162,8 +166,25 @@ class UtauEngine:
         timings["resample"] = timings.get("resample", 0) + time.time() - t0
 
         t0 = time.time()
-        # wavtool: place each sample at position - preutterance (minus skipped audio), apply envelope, sum
         origin = min(p["position_ms"] - p["preutter"] for p in phones)
+        if self.wavtool_exe:
+            import soundfile as sf
+
+            from . import wavtool
+
+            paths = []
+            for it, y in zip(items, outputs):
+                path = os.path.join(resampler.CACHE_DIR, f"note-{it.key()}.wav")
+                if not os.path.exists(path):
+                    os.makedirs(resampler.CACHE_DIR, exist_ok=True)
+                    sf.write(path, y, SR, subtype="PCM_16")
+                paths.append(path)
+            out, calls = wavtool.concatenate(items, paths, self.wavtool_exe, resampler.CACHE_DIR, origin)
+            for p, c in zip(phones, calls):
+                p["wavtool_args"] = c
+            timings["wavtool"] = timings.get("wavtool", 0) + time.time() - t0
+            return self._result(out, origin, res, grid, midi, warn)
+        # built-in wavtool: place each sample at position - preutterance (minus skipped audio), apply envelope, sum
         segs = []
         for it, y in zip(items, outputs):
             y = it.apply_envelope(y.copy())
@@ -178,20 +199,22 @@ class UtauEngine:
             chunk = y[s + lo:] if s >= 0 else y
             out[p + lo:p + lo + len(chunk)] += chunk[: max(0, len(out) - (p + lo))]
         timings["wavtool"] = timings.get("wavtool", 0) + time.time() - t0
-        for p in phones:
-            p["joins"] = True
+        return self._result(out, origin, res, grid, midi, warn)
+
+    def _result(self, out, origin, res, grid, midi, warn):
         return {
             "samples": out,
             "sample_rate": SR,
             "start_ms": origin,
             "phonemes": _jsonable(res),
-            "frame_ms": fm,
+            "frame_ms": float(grid[1] - grid[0]),
             "frame_times_ms": grid,
             "pitch_start_ms": float(grid[0]),
             "pitch_midi": midi,
             "pitch_source": "rule",
             "warnings": sorted(warn) + res["warnings"],
             "resampler": self.resampler_name,
+            "wavtool": self.wavtool_name,
         }
 
 

@@ -198,7 +198,9 @@ def _analyze(path, start_ms, end_ms):
             seg = np.pad(seg, (0, int(SR * 0.02) - len(seg)))
         f0, t = pw.harvest(seg, SR, frame_period=5.0, f0_floor=60, f0_ceil=1100)
         sp = pw.cheaptrick(seg, f0, t, SR)
-        ap = pw.d4c(seg, f0, t, SR)
+        # threshold=0 turns off d4c's own voicing gate (lovetrain), which can mark a whole voiced
+        # sample aperiodic and turn it into noise; voicing comes from f0 instead
+        ap = pw.d4c(seg, f0, t, SR, threshold=0.0)
         _ANALYSIS[key] = (f0, sp, ap, len(seg) * 1000.0 / SR)
     return _ANALYSIS[key]
 
@@ -278,6 +280,43 @@ def resampler_dirs():
         dirs += env.split(os.pathsep)
     dirs.append(os.path.abspath("resamplers"))
     return [d for d in dirs if os.path.isdir(d)]
+
+
+KNOWN_FLAGS = {
+    "builtin": BUILTIN_FLAGS,
+}
+
+
+def list_tools():
+    """every executable under the resampler dirs, with how it would run and its flags."""
+    out = [{"name": "builtin", "kind": "resampler+wavtool", "runs": "in-process (pyworld)", "flags": BUILTIN_FLAGS}]
+    for d in resampler_dirs():
+        for root, _, files in os.walk(d):
+            for f in sorted(files):
+                p = os.path.join(root, f)
+                stem, ext = os.path.splitext(f)
+                if ext.lower() in (".yaml", ".yml", ".txt", ".md", ".ini", ".dll", ".dylib", ".so") or f.startswith("."):
+                    continue
+                if not (os.access(p, os.X_OK) or ext.lower() in (".exe", ".bat", ".py")):
+                    continue
+                entry = {"name": stem, "path": p, "kind": "wavtool" if "wavtool" in stem.lower() else "resampler"}
+                try:
+                    entry["runs"] = " ".join(os.path.basename(c) for c in command_for(p)[:-1]) or "native"
+                except WarbleError as e:
+                    entry["runs"] = f"unavailable: {e.message}"
+                manifest = os.path.join(root, stem + ".yaml")
+                if os.path.isfile(manifest):
+                    import yaml
+
+                    m = yaml.safe_load(open(manifest, encoding="utf-8")) or {}
+                    entry["flags"] = {k: (v or {}).get("name", "") if isinstance(v, dict) else str(v) for k, v in (m.get("expressions") or {}).items()}
+                    entry["flags_source"] = "openutau resampler manifest"
+                else:
+                    entry["flags"] = KNOWN_FLAGS.get(stem, None)
+                    if entry["flags"] is None:
+                        entry["flags_note"] = "no manifest; flags are passed through unchanged"
+                out.append(entry)
+    return out
 
 
 def find_resampler(name):

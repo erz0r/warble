@@ -19,7 +19,8 @@ def phonemize(score, engine=None, seed=None, vocoder_dirs=None):
             def voice_of(n, track=track):
                 return n.controls.get("voice") or track.voice
 
-            res = eng.phonemize_phrase(words, tm, lang, voice_of, seed=seed, prev_end_ms=prev_end)
+            res = eng.phonemize_phrase(words, tm, lang, voice_of, seed=seed, prev_end_ms=prev_end,
+                                       phonemizer=_note_attr(first, track, "phonemizer"))
             prev_end = tm.tick_to_ms(words[-1][-1].end)
             if hasattr(eng, "voice"):
                 from .utau.render import _jsonable

@@ -105,6 +105,7 @@ def _ranges(text):
         arg("--sample-rate", type=int, default=44100),
         arg("--allow-unknown", action="store_true", help="render what it can and list unknown lyrics instead of failing"),
         arg("--resampler", help="utau: resampler name from resamplers/ (default: built-in)"),
+        arg("--wavtool", help="utau: wavtool name from resamplers/ (default: built-in)"),
         arg("--provider", choices=["cpu", "coreml", "cuda"], help="onnxruntime execution provider"),
         VOCODER_ARG,
     ],
@@ -122,7 +123,7 @@ def cmd_sing(a):
         rng = (r[0], r[-1])
     report = sing(score, a.out, steps=a.steps, depth=a.depth, seed=a.seed, sample_rate=a.sample_rate, engine=a.engine,
                   phrase_filter=_ranges(a.phrase) if a.phrase else None, note_range=rng, vocoder_dirs=a.vocoders,
-                  allow_unknown=a.allow_unknown, resampler=a.resampler)
+                  allow_unknown=a.allow_unknown, resampler=a.resampler, wavtool=a.wavtool)
     if getattr(score, "import_report", None):
         report["import"] = score.import_report
     return report
@@ -169,7 +170,7 @@ def cmd_lyrics(a):
 
 @command(
     "export",
-    "convert a score to another format: .txt (score text), .json, .mid.",
+    "convert a score to another format: .txt (score text), .json, .mid, .ust.",
     SCORE_ARGS + [arg("-o", "--out", required=True)],
 )
 def cmd_export(a):
@@ -181,6 +182,10 @@ def cmd_export(a):
         from .formats import midi as midifmt
 
         midifmt.save(score, a.out)
+    elif ext == "ust":
+        from .formats import ust as ustfmt
+
+        ustfmt.save(score, a.out)
     elif ext == "json":
         with open(a.out, "w", encoding="utf-8") as f:
             _json.dump(score.to_json(), f, ensure_ascii=False, indent=1)
@@ -257,6 +262,20 @@ def cmd_pitch(a):
     from .perception.inspect import pitch_extract
 
     return pitch_extract(a.wav, a.extractors.split(",") if a.extractors else None, a.out)
+
+
+@command("resamplers", "utau resamplers and wavtools found in ./resamplers (or $WARBLE_RESAMPLERS), how they run, and their flags.", [])
+def cmd_resamplers(a):
+    from .utau.resampler import list_tools
+
+    return {"tools": list_tools()}
+
+
+@command("phonemizers", "available phonemizers with language and which detected banks they fit.", [arg("dirs", nargs="*", default=["banks"])])
+def cmd_phonemizers(a):
+    from .phonemizer_catalog import catalog
+
+    return catalog(a.dirs)
 
 
 def build_parser():

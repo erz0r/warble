@@ -106,7 +106,7 @@ def world_features(x, sr, f0, t):
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
         sp = pw.cheaptrick(x, f0c, tc, sr)
-        ap = pw.d4c(x, f0c, tc, sr)
+        ap = pw.d4c(x, f0c, tc, sr, threshold=0.0)
     return sp, ap
 
 
