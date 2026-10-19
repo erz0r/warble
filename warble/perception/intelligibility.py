@@ -30,6 +30,20 @@ def _load():
         return None
 
 
+def _asr_lang(code, kind, m):
+    """the recognizer's language code for a score language (en-plus -> en, fil -> tl), or None to let
+    it detect. detection misfires on accented synthetic voices: rei's english comes back as katakana."""
+    if not code:
+        return None
+    base = str(code).lower().replace("_", "-").split("-")[0]
+    base = {"fil": "tl", "cmn": "zh"}.get(base, base)
+    if kind == "faster":
+        supported = m.supported_languages
+    else:
+        from whisper.tokenizer import LANGUAGES as supported
+    return base if base in supported else None
+
+
 FOLD = str.maketrans({"を": "お", "づ": "ず", "ぢ": "じ", "ゐ": "い", "ゑ": "え"})
 
 
@@ -109,16 +123,18 @@ def check(a, intent, note_filter=None):
         # kana/hanzi/hangul lyrics are syllables to join; anything else is words to keep apart
         lyric = "".join(words) if cjk else " ".join(words)
         lang = "ja" if any("぀" <= c <= "ヿ" for c in lyric) else None
+        # the score's language when it names one, so the recognizer doesn't guess from the accent
+        asr_lang = _asr_lang(ns[0].get("lang"), kind, m) or lang
         if kind == "faster":
-            segs, _ = m.transcribe(y, language=lang, beam_size=1)
+            segs, _ = m.transcribe(y, language=asr_lang, beam_size=1)
             text = "".join(x.text for x in segs)
         else:
-            text = m.transcribe(y, language=lang)["text"]
+            text = m.transcribe(y, language=asr_lang)["text"]
         ref = _syllables(lyric, lang)
         hyp = _syllables(text, lang)
         ok, wrong = _align_score(ref, hyp)
         total += len(ref)
         good += ok
         misheard += wrong
-        out.append({"phrase": key[1], "lyrics": lyric, "heard": text.strip(), "syllables": len(ref), "recognized": ok, "wrong": wrong})
+        out.append({"phrase": key[1], "lyrics": lyric, "language": asr_lang, "heard": text.strip(), "syllables": len(ref), "recognized": ok, "wrong": wrong})
     return {"available": True, "engine": kind, "syllable_accuracy_pct": round(100 * good / max(1, total), 1), "phrases": out, "misheard": misheard}

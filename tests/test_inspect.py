@@ -123,3 +123,20 @@ def test_compare_and_pitch_extract(clean):
     assert all(os.path.isfile(p) for p in rep["images"])
     pe = pitch_extract(clean["wav"])
     assert set(pe["per_extractor"]) >= {"harvest", "dio"} and os.path.isfile(pe["curves_file"])
+
+
+def test_intent_carries_lang_for_the_recognizer(clean):
+    from warble.perception import intelligibility
+    from warble.perception.intent import from_sidecar
+
+    it = from_sidecar(clean["wav"])
+    assert {n["lang"] for n in it.notes} == {"ja"}
+
+    class Model:
+        supported_languages = ["en", "ja", "tl", "zh"]
+
+    m = Model()
+    assert intelligibility._asr_lang("en-plus", "faster", m) == "en"
+    assert intelligibility._asr_lang("fil", "faster", m) == "tl"
+    assert intelligibility._asr_lang("th", "faster", m) is None
+    assert intelligibility._asr_lang(None, "faster", m) is None

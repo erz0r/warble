@@ -87,12 +87,14 @@ def from_sidecar(wav_path, side_path=None):
     off = float(side.get("score_offset_ms", 0.0))
     notes, phones, joins = [], [], []
     pts, pms, spans = [], [], []
+    track_lang = {t.get("name"): t.get("lang") for t in side.get("score", {}).get("tracks", [])}
     for ph in side["phrases"]:
         for n in ph["notes"]:
             notes.append({
                 "index": n["index"], "lyric": n["lyric"], "pitch": n["pitch"], "tone": n["tone"],
                 "start_ms": n["start_ms"] + off, "end_ms": n["end_ms"] + off, "controls": n.get("controls", {}),
                 "phrase": ph["index"], "track": ph.get("track"),
+                "lang": n.get("controls", {}).get("lang") or track_lang.get(ph.get("track")),
             })
         prev = None
         for p in ph["phones"]:
@@ -144,7 +146,8 @@ def from_score(score_path, offset_ms=0.0):
         for i, n in enumerate(tr.notes, start=1):
             notes.append({"index": i, "lyric": n.lyric, "pitch": pitch_name(n.tone), "tone": n.tone,
                           "start_ms": tm.tick_to_ms(n.position) + offset_ms, "end_ms": tm.tick_to_ms(n.end) + offset_ms,
-                          "controls": n.controls, "phrase": None, "track": tr.name})
+                          "controls": n.controls, "phrase": None, "track": tr.name,
+                          "lang": n.controls.get("lang") or tr.lang})
     if not notes:
         raise WarbleError("score_empty", f"{score_path} has no notes")
     t = np.arange(0, max(n["end_ms"] for n in notes) + 50, 5.0)
