@@ -562,6 +562,22 @@ class JsonArgParser(argparse.ArgumentParser):
         raise WarbleError("bad_arguments", f"{self.prog}: {message}", hint=hint, usage=self.format_usage().strip())
 
 
+@command("mcp", "run as an mcp server on stdio: every command here is a tool, inspect/analyze/compare return images.", [])
+def cmd_mcp(a):
+    from .mcp_server import serve_mcp
+
+    serve_mcp()
+    return None
+
+
+@command("serve", "json-lines server on stdin/stdout: {\"command\": \"sing\", \"args\": {...}} per line; models stay loaded.", [])
+def cmd_serve(a):
+    from .mcp_server import serve_lines
+
+    serve_lines()
+    return None
+
+
 def build_parser():
     p = JsonArgParser(prog="warble", description=__doc__.splitlines()[0])
     p.add_argument("--pretty", action="store_true", help="indent json output")
@@ -600,7 +616,8 @@ def main(argv=None):
         emit({"error": "internal_error", "message": f"{type(e).__name__}: {e}", "hint": "this is a warble bug; the traceback tail says where",
               "details": {"traceback": tb[-8:]}}, a.pretty)
         return 3
-    emit(result, a.pretty)
+    if result is not None:
+        emit(result, a.pretty)
     return 0
 
 
