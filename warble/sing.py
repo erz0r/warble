@@ -74,7 +74,7 @@ def split_phrases(track):
 
 def sing(score, out_path, steps=None, depth=None, seed=None, sample_rate=44100, engine=None, phrase_filter=None,
          note_range=None, vocoder_dirs=None, allow_unknown=False, resampler=None, normalize_db=None, wavtool=None,
-         use_cache=True):
+         use_cache=True, stems_dir=None, mix_preset=None, lufs=None, no_master=False):
     t_start = time.time()
     onnxrun.reset_stats()
     cached_phrases = 0
@@ -165,28 +165,40 @@ def sing(score, out_path, steps=None, depth=None, seed=None, sample_rate=44100, 
     if not rendered:
         raise WarbleError("nothing_rendered", "no phrases were rendered", hint="check --phrase / --range against the score")
 
-    mix, channels, offset_ms = _mix(rendered, score.tracks, sample_rate)
-    if normalize_db is not None:
-        peak = float(np.max(np.abs(mix))) or 1.0
-        mix = mix * (10 ** (normalize_db / 20) / peak)
+    t_mix = time.time()
+    mix, channels, offset_ms, stems, mix_info = _mix(rendered, score, sample_rate, mix_preset, lufs, no_master, normalize_db)
     peak = float(np.max(np.abs(mix)))
     if peak > 1.0:
-        warnings.append(f"mix peaked at {20 * np.log10(peak):.1f} dBFS and was clipped; lower track volume")
+        warnings.append(f"mix peaked at {20 * np.log10(peak):.1f} dBFS and was clipped; lower track volume or set master ceiling")
         mix = np.clip(mix, -1, 1)
     import soundfile as sf
 
     out_path = os.path.abspath(out_path)
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    sf.write(out_path, mix, sample_rate, subtype="PCM_16" if out_path.endswith(".wav") else None)
+    subtype = "PCM_24" if out_path.lower().endswith(".flac") else "PCM_16"
+    sf.write(out_path, mix, sample_rate, subtype=subtype)
     sidecar = out_path + ".render.json"
     with open(sidecar, "w", encoding="utf-8") as f:
         json.dump({"sample_rate": sample_rate, "score_offset_ms": offset_ms, "phrases": render_phrases, "score": score.to_json(), "tpq": TPQ}, f, ensure_ascii=False)
+    stem_files = []
+    if stems_dir:
+        os.makedirs(stems_dir, exist_ok=True)
+        for name, audio in stems.items():
+            sp = os.path.join(os.path.abspath(stems_dir), f"{name}.wav")
+            sf.write(sp, audio, sample_rate, subtype="PCM_16")
+            with open(sp + ".render.json", "w", encoding="utf-8") as f:
+                json.dump({"sample_rate": sample_rate, "score_offset_ms": offset_ms, "stem": name,
+                           "phrases": [ph for ph in render_phrases if ph["track"] == name], "tpq": TPQ}, f, ensure_ascii=False)
+            stem_files.append(sp)
+    timings["mix"] = time.time() - t_mix
     stage = {k: round(v, 3) for k, v in timings.items()}
     stage["total"] = round(time.time() - t_start, 3)
     rms = float(np.sqrt(np.mean(mix ** 2))) if mix.size else 0.0
     report = {
         "output": out_path,
         "render_data": sidecar,
+        "mix": mix_info,
+        **({"stems": stem_files} if stem_files else {}),
         "duration_s": round(len(mix) / sample_rate, 3),
         "sample_rate": sample_rate,
         "channels": channels,
@@ -285,25 +297,89 @@ def _resample(x, sr_in, sr_out):
     return resample_poly(x, sr_out // g, sr_in // g).astype(np.float32)
 
 
-def _mix(rendered, tracks, sr):
-    end = max(int(round((s / 1000.0) * sr)) + len(x) for _, s, x in rendered)
-    start = min(int(round((s / 1000.0) * sr)) for _, s, _ in rendered)
-    offset = -start if start < 0 else 0
-    stereo = any(abs(t.pan) > 1e-6 for t in tracks)
-    buf = np.zeros((end + offset, 2 if stereo else 1), np.float32)
-    for track, s_ms, x in rendered:
-        i = int(round((s_ms / 1000.0) * sr)) + offset
-        g = 10 ** (track.volume_db / 20)
+def _mix(rendered, score, sr, preset=None, lufs=None, no_master=False, normalize_db=None):
+    """per-track buffers -> effects -> bus + shared reverb + backing -> loudness -> limiter.
+    returns (mix, channels, score_offset_ms, stems {name: audio}, info)."""
+    from scipy.signal import fftconvolve
+
+    from . import mix as mx
+
+    tm = score.tempo_map
+    master = mx.master_settings(score, preset)
+    if lufs is not None:
+        master["lufs"] = lufs
+    starts = [int(round(s_ms / 1000.0 * sr)) for _, s_ms, _ in rendered]
+    first = min(starts)
+    offset = -first if first < 0 else 0
+    end = max(st + len(x) for st, (_, _, x) in zip(starts, rendered)) + offset
+    backings = []
+    for b in score.backings:
+        audio = mx.load_backing(b["path"], sr) * 10 ** (b.get("gain_db", 0) / 20)
+        at_ms = b.get("at_ms") if b.get("at_ms") is not None else tm.tick_to_ms(b.get("at_tick", 0))
+        st = int(round(at_ms / 1000 * sr)) + offset
+        backings.append((b["path"], st, audio))
+        end = max(end, st + len(audio))
+    tracks = []
+    for tr in score.tracks:
+        if any(t is tr for t, _, _ in rendered):
+            tracks.append(tr)
+    fx_used = any(mx.track_fx(t, master) for t in tracks)
+    stereo = bool(backings) or len(tracks) > 1 or any(abs(t.pan) > 1e-6 for t in tracks) or fx_used
+    reverb_tail = int(sr * min(6.0, float(master.get("room", 1.6)) * 1.2)) if any(float(mx.track_fx(t, master).get("reverb", 0) or 0) > 0 for t in tracks) else 0
+    n = end + reverb_tail
+    stems = {}
+    bus = np.zeros((n, 2)) if stereo else np.zeros(n)
+    send_bus = np.zeros(n)
+    for tr in tracks:
+        mono = np.zeros(n)
+        for (t, s_ms, x) in rendered:
+            if t is tr:
+                mx.place(mono, x.astype(np.float64), int(round(s_ms / 1000.0 * sr)) + offset)
         if stereo:
-            # constant-power pan
-            ang = (track.pan + 1) * np.pi / 4
-            buf[i:i + len(x), 0] += x * g * np.cos(ang)
-            buf[i:i + len(x), 1] += x * g * np.sin(ang)
+            dry, send = mx.process_track(mono, sr, tr, master)
+            send_bus += send
         else:
-            buf[i:i + len(x), 0] += x * g
-    # audio that would start before 0 (lead-in consonants on a note at time 0) is kept by shifting
-    # everything later; the shift is reported so timing comparisons can account for it
-    return (buf if stereo else buf[:, 0]), (2 if stereo else 1), round(offset / sr * 1000.0, 3)
+            dry = mono * 10 ** (tr.volume_db / 20)
+        bus += dry
+        stems[tr.name] = dry
+    info = {"preset": master.get("preset"), "stereo": stereo, "tracks": [t.name for t in tracks]}
+    if reverb_tail and stereo and np.any(send_bus):
+        ir = mx.reverb_ir(sr, float(master.get("room", 1.6)))
+        wet = np.stack([fftconvolve(send_bus, ir[:, c])[:n] for c in range(2)], axis=1)
+        bus += wet
+        stems["reverb"] = wet
+        info["reverb_room_s"] = float(master.get("room", 1.6))
+    for path, st, audio in backings:
+        mx.place(bus, audio if stereo else audio.mean(axis=1), st)
+        stems["backing"] = stems.get("backing", np.zeros_like(bus))
+        mx.place(stems["backing"], audio if stereo else audio.mean(axis=1), st)
+        info.setdefault("backing", []).append(path)
+    # trim silent tail beyond the reverb
+    peak_env = np.abs(bus).max(axis=1) if bus.ndim == 2 else np.abs(bus)
+    nz = np.nonzero(peak_env > 1e-5)[0]
+    if len(nz):
+        cut = min(len(bus), nz[-1] + int(0.05 * sr))
+        bus = bus[:cut]
+        stems = {k: v[:cut] for k, v in stems.items()}
+    if master.get("chain") and stereo:
+        from .plugins import run_chain
+
+        bus = run_chain(bus, sr, master["chain"])
+        info["master_chain"] = master["chain"]
+    if not no_master:
+        if master.get("lufs") is not None:
+            bus, before = mx.normalize_lufs(bus, sr, float(master["lufs"]))
+            info["lufs_before"] = round(float(before), 2)
+            info["lufs_target"] = float(master["lufs"])
+        if normalize_db is not None:
+            pk = float(np.max(np.abs(bus))) or 1.0
+            bus = bus * (10 ** (normalize_db / 20) / pk)
+        if master.get("ceiling") is not None or np.max(np.abs(bus)) > 1.0:
+            ceiling = float(master.get("ceiling", -0.3))
+            bus = mx.limiter(bus, sr, ceiling)
+            info["limiter_ceiling_db"] = ceiling
+        info["lufs"] = round(float(mx.loudness(bus, sr)), 2)
+    return bus.astype(np.float32), (2 if stereo else 1), round(offset / sr * 1000.0, 3), stems, info
 
 
 def _sidecar_phrase(pidx, track, words, res, tm):

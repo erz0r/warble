@@ -108,6 +108,10 @@ def _ranges(text):
         arg("--wavtool", help="utau: wavtool name from resamplers/ (default: built-in)"),
         arg("--provider", choices=["cpu", "coreml", "cuda"], help="onnxruntime execution provider"),
         arg("--no-cache", action="store_true", help="re-render everything (phrase and tensor caches off)"),
+        arg("--stems", help="also write one wav per track (plus reverb and backing) into this folder"),
+        arg("--mix", choices=["dry", "pop", "ballad", "choir"], help="mix preset (overrides the score's master preset)"),
+        arg("--lufs", type=float, help="normalize the mix to this integrated loudness"),
+        arg("--no-master", action="store_true", help="skip loudness normalization and the limiter"),
         VOCODER_ARG,
     ],
 )
@@ -126,7 +130,8 @@ def cmd_sing(a):
         rng = (r[0], r[-1])
     report = sing(score, a.out, steps=a.steps, depth=a.depth, seed=a.seed, sample_rate=a.sample_rate, engine=a.engine,
                   phrase_filter=_ranges(a.phrase) if a.phrase else None, note_range=rng, vocoder_dirs=a.vocoders,
-                  allow_unknown=a.allow_unknown, resampler=a.resampler, wavtool=a.wavtool, use_cache=not a.no_cache)
+                  allow_unknown=a.allow_unknown, resampler=a.resampler, wavtool=a.wavtool, use_cache=not a.no_cache,
+                  stems_dir=a.stems, mix_preset=a.mix, lufs=a.lufs, no_master=a.no_master)
     if getattr(score, "import_report", None):
         report["import"] = score.import_report
     return report
@@ -289,6 +294,105 @@ def cmd_phonemizers(a):
     return catalog(a.dirs)
 
 
+@command(
+    "harmony",
+    "add a harmony track to a project, following another track at a diatonic or fixed interval (undoable via tune undo).",
+    [
+        arg("project"), arg("--from", dest="source", default=None, help="source track (default: the first)"),
+        arg("--interval", default="3", help="3, 6, 4, 5 (diatonic above), 3below / --interval=-3, +4st / -4st (semitones), oct, octbelow"),
+        arg("--key", help="key for diatonic intervals, e.g. C, Am, F#m (default: score key or a guess)"),
+        arg("--name", help="new track name"), arg("--bank"), arg("--voice"), arg("--lang"),
+        arg("--volume", type=float, default=-4.0, help="dB"), arg("--pan", type=float),
+        arg("--notes", help="only harmonize these source notes, e.g. 5-12"),
+        arg("--keep-tuning", action="store_true", help="copy pitch bends, vibrato and drift too"),
+    ],
+)
+def cmd_harmony(a):
+    from .harmony import harmonize
+    from .score import resolve_bank
+    from .tuning.project import Project
+
+    proj = Project(a.project)
+    score = proj.score()
+    source = a.source or score.tracks[0].name
+    tr, info = harmonize(score, source, a.interval, name=a.name, key=a.key, bank=resolve_bank(a.bank) if a.bank else None,
+                         voice=a.voice, lang=a.lang, volume_db=a.volume, pan=a.pan, notes=a.notes, keep_tuning=a.keep_tuning)
+    res = proj.save_score(score, f"harmony {info['track']}", info)
+    return {**res, **info}
+
+
+@command(
+    "new",
+    "write a starter project (score text) with every directive commented, ready to edit.",
+    [arg("path"), arg("--bank"), arg("--lang", default="ja"), arg("--bpm", type=float, default=120)],
+)
+def cmd_new(a):
+    import os as _os
+
+    from .errors import WarbleError
+    from .score import resolve_bank
+
+    if _os.path.exists(a.path):
+        raise WarbleError("exists", f"{a.path} already exists")
+    bank = resolve_bank(a.bank) if a.bank else "./banks/<character>/<bank>"
+    text = TEMPLATE.format(bank=bank, lang=a.lang, bpm=f"{a.bpm:g}")
+    _os.makedirs(_os.path.dirname(_os.path.abspath(a.path)), exist_ok=True)
+    with open(a.path, "w", encoding="utf-8") as f:
+        f.write(text)
+    return {"written": a.path}
+
+
+TEMPLATE = """# warble project. one note per line: lyric pitch length [key=value ...]
+# lengths in beats (1, 1/2, 1.5) or ms (350ms); '+' continues the previous syllable; 'r 1' is a rest
+bpm {bpm}
+time 4/4
+key C
+# master lufs=-14 ceiling=-1 preset=pop
+# backing ./instrumental.wav @ bar 1 gain=-6
+
+track lead
+bank {bank}
+lang {lang}
+# voice default
+# fx eq=low:-1,high:2 comp=-20:3 reverb=0.2
+ら C4 1
+ら D4 1
+ら E4 2 vib=pop
+r 1
+ら G4 1
+ら E4 1
+ら C4 2
+
+# track harmony
+# volume -4
+# pan 0.3
+# harmonize lead 3
+"""
+
+
+@command("check", "validate a score without rendering: banks, unknown lyrics, notes outside a bank's range, overlaps, backing files.",
+         SCORE_ARGS + [arg("--engine", choices=["ds", "utau"]), VOCODER_ARG])
+def cmd_check(a):
+    from .check import check
+
+    return check(load_score(a), engine=a.engine, vocoder_dirs=a.vocoders)
+
+
+@command("plugins", "installed vst3 / audio unit effects usable in `fx chain=` and `master chain=`. `plugins info <name>` lists a plugin's parameters.",
+         [arg("action", nargs="?", choices=["list", "info"], default="list"), arg("name", nargs="?")])
+def cmd_plugins(a):
+    from . import plugins
+
+    if a.action == "info":
+        from .errors import WarbleError
+
+        if not a.name:
+            raise WarbleError("no_plugin", "name the plugin")
+        return plugins.info(a.name)
+    return {"search_dirs": plugins.plugin_dirs(), "plugins": plugins.scan(),
+            "note": "instruments are listed too but only effects can be used; `plugins info <name>` checks"}
+
+
 TUNE_ACTIONS = ["show", "op", "apply", "auto", "undo", "redo", "snapshot", "restore", "diff", "history", "ops",
                 "preset-save", "preset-apply", "presets", "import-pitch"]
 
@@ -446,10 +550,22 @@ def _list_presets(project):
     return sorted(names)
 
 
+class JsonArgParser(argparse.ArgumentParser):
+    """argument errors come out as the same json error document as everything else."""
+
+    def error(self, message):
+        from .errors import WarbleError
+
+        hint = None
+        if "expected one argument" in message:
+            hint = "a value starting with '-' needs '=': e.g. --interval=-3"
+        raise WarbleError("bad_arguments", f"{self.prog}: {message}", hint=hint, usage=self.format_usage().strip())
+
+
 def build_parser():
-    p = argparse.ArgumentParser(prog="warble", description=__doc__.splitlines()[0])
+    p = JsonArgParser(prog="warble", description=__doc__.splitlines()[0])
     p.add_argument("--pretty", action="store_true", help="indent json output")
-    sub = p.add_subparsers(dest="command", required=True)
+    sub = p.add_subparsers(dest="command", required=True, parser_class=JsonArgParser)
     for name, spec in COMMANDS.items():
         sp = sub.add_parser(name, help=spec["help"], description=spec["help"])
         sp.add_argument("--pretty", action="store_true", default=argparse.SUPPRESS, help="indent json output")
@@ -465,12 +581,25 @@ def emit(obj, pretty=False):
 
 def main(argv=None):
     parser = build_parser()
-    a = parser.parse_args(argv)
+    try:
+        a = parser.parse_args(argv)
+    except WarbleError as e:
+        emit(e.to_json())
+        return 2
     try:
         result = COMMANDS[a.command]["fn"](a)
     except WarbleError as e:
         emit(e.to_json(), a.pretty)
         return 2
+    except KeyboardInterrupt:
+        raise
+    except Exception as e:  # noqa: BLE001 - every failure leaves a json document on stdout
+        import traceback
+
+        tb = traceback.format_exc().strip().splitlines()
+        emit({"error": "internal_error", "message": f"{type(e).__name__}: {e}", "hint": "this is a warble bug; the traceback tail says where",
+              "details": {"traceback": tb[-8:]}}, a.pretty)
+        return 3
     emit(result, a.pretty)
     return 0
 

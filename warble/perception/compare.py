@@ -56,8 +56,25 @@ def global_diff(a, b):
                              "p95_abs": round(float(np.percentile(np.abs(cents), 95)), 1)} if cents.size else None,
         "timing_shift_ms": {"median": round(float(np.median(timing)), 1), "max_abs": round(float(np.max(np.abs(timing))), 1)},
         "lufs": {"a": round(a.lufs, 2), "b": round(b.lufs, 2), "diff": round(b.lufs - a.lufs, 2)},
+        "dynamics": {k: {"a": f(a), "b": f(b)} for k, f in (("crest_db", _crest), ("loudness_range_lu", _lra), ("centroid_hz", _centroid))},
         "duration_ms": {"a": round(a.duration_ms, 1), "b": round(b.duration_ms, 1)},
     }
+
+
+def _crest(x):
+    pk = float(np.max(np.abs(x.x))) + 1e-12
+    rms = float(np.sqrt(np.mean(x.x ** 2))) + 1e-12
+    return round(20 * np.log10(pk / rms), 2)
+
+
+def _lra(x):
+    v = x.st_lufs[x.st_lufs > -60]
+    return round(float(np.percentile(v, 95) - np.percentile(v, 10)), 2) if v.size > 4 else None
+
+
+def _centroid(x):
+    m = x.rms_db > -40
+    return round(float(np.median(x.centroid[m])), 0) if m.any() else None
 
 
 METRIC_KEYS = ["median_cents_error", "within_20c_pct", "voiced_ratio", "onset_offset_ms", "rms_db", "breathiness_db", "hnr_db"]

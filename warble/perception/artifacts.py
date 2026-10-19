@@ -37,6 +37,16 @@ def clicks(a, intent=None):
     base = uniform_filter1d(d, size=int(a.sr * 0.01)) + 1e-6
     ratio = d / base
     cand = np.where((ratio > 14) & (d > 0.03))[0]
+    # a glottal pulse in a low, buzzy voice also spikes, but it has a twin one pitch period away;
+    # a click stands alone. compare against the largest spike within ±25 ms outside ±1 ms.
+    near, far = int(a.sr * 0.001), int(a.sr * 0.025)
+    keep = []
+    for i in cand:
+        lo, hi = max(0, i - far), min(len(d), i + far)
+        ctx = np.concatenate([d[lo:max(lo, i - near)], d[min(hi, i + near):hi]])
+        if ctx.size == 0 or d[i] > 3.0 * ctx.max():
+            keep.append(i)
+    cand = keep
     out = []
     last = -1e9
     joins = [j["t_ms"] for j in intent.joins] if intent else []

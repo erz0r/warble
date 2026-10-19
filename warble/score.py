@@ -101,6 +101,8 @@ class Track:
     notes: list = field(default_factory=list)
     # track curves in openutau abbreviations: {"pitd": [(tick, cents), ...], "dyn": [(tick, db)], ...}
     curves: dict = field(default_factory=dict)
+    fx: dict = field(default_factory=dict)  # see warble.mix
+    harmonize: dict = None  # {"source", "interval", "key"}: notes are generated from another track
 
     def curve_at(self, abbr, ticks, default=0.0):
         import numpy as np
@@ -168,6 +170,8 @@ class Score:
     time_signatures: list = field(default_factory=lambda: [(0, 4, 4)])  # (tick, num, den)
     key: str = None
     base_dir: str = "."
+    master: dict = field(default_factory=dict)  # see warble.mix
+    backings: list = field(default_factory=list)  # [{"path", "at_ms" | "at_tick", "gain_db"}]
 
     @property
     def tempo_map(self):
@@ -225,6 +229,11 @@ class Score:
             lines.append(f"time {n}/{d}" + (f" @ tick {t}" if t else ""))
         if self.key:
             lines.append(f"key {self.key}")
+        if self.master:
+            lines.append("master " + " ".join(f"{k}={v}" for k, v in self.master.items()))
+        for b in self.backings:
+            where = f" @ {fmt_num(b['at_ms'] / 1000)}s" if b.get("at_ms") else (f" @ tick {b['at_tick']}" if b.get("at_tick") else "")
+            lines.append(f"backing {b['path']}{where}" + (f" gain={fmt_num(b['gain_db'])}" if b.get("gain_db") else ""))
         for tr in self.tracks:
             lines.append(f"track {tr.name}")
             for k in ("bank", "lang", "voice", "phonemizer", "engine"):
@@ -236,6 +245,12 @@ class Score:
                 lines.append(f"pan {fmt_num(tr.pan)}")
             for abbr, pts in sorted(tr.curves.items()):
                 lines.append(f"curve {abbr} " + ",".join(f"{int(t)}:{fmt_num(v)}" for t, v in pts))
+            if tr.fx:
+                lines.append("fx " + " ".join(f"{k}={v}" for k, v in tr.fx.items()))
+            if tr.harmonize:
+                h = tr.harmonize
+                lines.append(f"harmonize {h['source']} {h['interval']}" + (f" key={h['key']}" if h.get("key") else ""))
+                continue
             pos = 0
             for n in tr.notes:
                 if n.position > pos:
@@ -402,6 +417,48 @@ def parse_text(text, base_dir=".", source="<score>"):
         if head == "key":
             score.key = parts[1] if len(parts) > 1 else None
             continue
+        if head == "fx":
+            t = current or ensure_track()
+            for kv in parts[1:]:
+                if "=" not in kv:
+                    raise WarbleError("bad_directive", f"'fx' takes key=value pairs{where}", hint="fx eq=low:2,high:3 comp=-18:3 reverb=0.25")
+                k, v = kv.split("=", 1)
+                t.fx[k.lower()] = v
+            continue
+        if head == "master":
+            for kv in parts[1:]:
+                if "=" not in kv:
+                    raise WarbleError("bad_directive", f"'master' takes key=value pairs{where}", hint="master lufs=-14 ceiling=-1 room=1.6 preset=pop")
+                k, v = kv.split("=", 1)
+                score.master[k.lower()] = v if k.lower() in ("preset", "chain") else float(v)
+            continue
+        if head == "backing":
+            if len(parts) < 2:
+                raise WarbleError("bad_directive", f"'backing' needs a file{where}")
+            path = parts[1] if os.path.isabs(parts[1]) else os.path.normpath(os.path.join(base_dir, parts[1]))
+            b = {"path": path, "gain_db": 0.0}
+            rest = parts[2:]
+            if rest and rest[0] == "@":
+                if len(rest) > 1 and rest[1].endswith("s") and re.fullmatch(r"-?\d+(\.\d+)?s", rest[1]):
+                    b["at_ms"] = float(rest[1][:-1]) * 1000
+                    rest = rest[2:]
+                else:
+                    b["at_tick"] = _parse_at(rest, score, 0, where)
+                    rest = rest[3:] if len(rest) > 1 and rest[1] in ("bar", "beat", "tick") else rest[2:]
+            for kv in rest:
+                if kv.startswith("gain="):
+                    b["gain_db"] = float(kv[5:])
+            score.backings.append(b)
+            continue
+        if head == "harmonize":
+            if len(parts) < 3:
+                raise WarbleError("bad_directive", f"'harmonize' needs a source track and an interval{where}", hint="harmonize lead 3 key=C")
+            t = current or ensure_track()
+            t.harmonize = {"source": parts[1], "interval": parts[2]}
+            for kv in parts[3:]:
+                if kv.startswith("key="):
+                    t.harmonize["key"] = kv[4:]
+            continue
         if head == "curve":
             if len(parts) < 3:
                 raise WarbleError("bad_directive", f"'curve' needs a name and tick:value points{where}", hint="curve pitd 0:0,480:-20,960:0")
@@ -447,7 +504,33 @@ def parse_text(text, base_dir=".", source="<score>"):
     for t in score.tracks:
         t.notes.sort(key=lambda n: n.position)
         _check_overlaps(t)
+    _materialize_harmonies(score)
     return score
+
+
+def _materialize_harmonies(score):
+    """tracks declared with `harmonize <source> <interval>` get their notes generated now."""
+    import copy as _copy
+
+    from .harmony import interval_fn, parse_key, guess_key
+
+    for t in score.tracks:
+        h = t.harmonize
+        if not h or t.notes:
+            continue
+        src = score.track(h["source"])
+        if src is None:
+            raise WarbleError("track_missing", f"track '{t.name}' harmonizes '{h['source']}', which doesn't exist")
+        key = h.get("key") or score.key or guess_key(src.notes)
+        _, scale, _ = parse_key(key)
+        fn = interval_fn(h["interval"], scale)
+        for n in src.notes:
+            m = _copy.deepcopy(n)
+            m.tone = float(fn(n.tone))
+            m.controls = {k: v for k, v in n.controls.items() if k in ("vol", "vel", "flags", "brec", "gender", "tenc", "voic", "ene", "expr")}
+            t.notes.append(m)
+        t.bank = t.bank or src.bank
+        t.lang = t.lang or src.lang
 
 
 def _parse_at(parts, score, default, where):
