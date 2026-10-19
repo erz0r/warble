@@ -1174,6 +1174,73 @@
      "duration": 480
     }
    ]
+  },
+  {
+   "id": "hanzi_phrase",
+   "notes": [
+    {
+     "lyric": "我",
+     "tone": "C4"
+    },
+    {
+     "lyric": "爱",
+     "tone": "D4"
+    },
+    {
+     "lyric": "唱",
+     "tone": "E4"
+    },
+    {
+     "lyric": "歌",
+     "tone": "G4"
+    },
+    {
+     "lyric": "长",
+     "tone": "A4"
+    },
+    {
+     "lyric": "大",
+     "tone": "G4"
+    },
+    {
+     "lyric": "银",
+     "tone": "E4"
+    },
+    {
+     "lyric": "行",
+     "tone": "D4"
+    },
+    {
+     "lyric": "好",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "hanzi_mixed",
+   "notes": [
+    {
+     "lyric": "你",
+     "tone": "E4"
+    },
+    {
+     "lyric": "hao",
+     "tone": "D4"
+    },
+    {
+     "lyric": "+",
+     "tone": "C4"
+    },
+    {
+     "lyric": "重",
+     "tone": "E4",
+     "gap_after": 240
+    },
+    {
+     "lyric": "要",
+     "tone": "G4"
+    }
+   ]
   }
  ],
  "results": [
@@ -2999,6 +3066,148 @@
      "phoneme": "_ao",
      "position": 360,
      "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hanzi_phrase",
+   "phonemes": [
+    {
+     "phoneme": "wo",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ai",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "_ai",
+     "position": 360,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "chang",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "_ang",
+     "position": 360,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ge",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "zhang",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "_ang",
+     "position": 360,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "da",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "yin",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "_in",
+     "position": 360,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "hang",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "_ang",
+     "position": 360,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "hao",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "_ao",
+     "position": 360,
+     "group": 8,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hanzi_mixed",
+   "phonemes": [
+    {
+     "phoneme": "ni",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "hao",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "_ao",
+     "position": 840,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "zhong",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "_ong",
+     "position": 360,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "yao",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "_ao",
+     "position": 360,
+     "group": 3,
      "error": null
     }
    ]

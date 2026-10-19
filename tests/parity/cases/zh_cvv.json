@@ -1174,6 +1174,73 @@
      "duration": 480
     }
    ]
+  },
+  {
+   "id": "hanzi_phrase",
+   "notes": [
+    {
+     "lyric": "我",
+     "tone": "C4"
+    },
+    {
+     "lyric": "爱",
+     "tone": "D4"
+    },
+    {
+     "lyric": "唱",
+     "tone": "E4"
+    },
+    {
+     "lyric": "歌",
+     "tone": "G4"
+    },
+    {
+     "lyric": "长",
+     "tone": "A4"
+    },
+    {
+     "lyric": "大",
+     "tone": "G4"
+    },
+    {
+     "lyric": "银",
+     "tone": "E4"
+    },
+    {
+     "lyric": "行",
+     "tone": "D4"
+    },
+    {
+     "lyric": "好",
+     "tone": "C4"
+    }
+   ]
+  },
+  {
+   "id": "hanzi_mixed",
+   "notes": [
+    {
+     "lyric": "你",
+     "tone": "E4"
+    },
+    {
+     "lyric": "hao",
+     "tone": "D4"
+    },
+    {
+     "lyric": "+",
+     "tone": "C4"
+    },
+    {
+     "lyric": "重",
+     "tone": "E4",
+     "gap_after": 240
+    },
+    {
+     "lyric": "要",
+     "tone": "G4"
+    }
+   ]
   }
  ]
 }

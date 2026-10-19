@@ -2,10 +2,7 @@
 
 chinese 十月式整音扩张 cvv phonemizer: splits "duang" into "duang" + "_ang" to produce the proper tail sound.
 
-not ported: openutau's SetUp romanizes hanzi lyrics with BaseChinesePhonemizer.RomanizeNotes, which calls the
-csharp-pinyin library (a .net package with its own embedded phrase dictionaries and polyphone rules). pinyin
-lyrics are untouched by that step in openutau too and work exactly; a hanzi lyric makes process() raise
-(openutau would sing its pinyin)."""
+SetUp romanizes hanzi lyrics with BaseChinesePhonemizer.RomanizeNotes (the csharp-pinyin port in _pinyin.py)."""
 
 from ...g2p import G2pDictionary, G2pFallbacks, IG2p
 from .api import phonemizer
@@ -18,10 +15,6 @@ TAILS = "_vn,_ing,_ong,_an,_ou,_er,_ao,_eng,_ang,_en,_en2,_ai,_iong,_in,_ei"
 
 PINYIN_LIST = PINYINS.split(",")
 TAIL_LIST = TAILS.split(",")
-
-
-def _is_hanzi(s):
-    return any(0x4E00 <= ord(c) <= 0x9FFF or 0x3400 <= ord(c) <= 0x4DBF or 0x20000 <= ord(c) <= 0x2FA1F or 0xF900 <= ord(c) <= 0xFAFF for c in s)
 
 
 @phonemizer("Chinese CVV (十月式整音扩张) Phonemizer", "ZH CVV", language="ZH", openutau_class="OpenUtau.Plugin.Builtin.ChineseCVVMonophonePhonemizer")
@@ -51,12 +44,9 @@ class ChineseCVVMonophonePhonemizer(MonophonePhonemizer):
 
     def set_up(self, groups):
         super().set_up(groups)
-        # BaseChinesePhonemizer.RomanizeNotes(groups): needs csharp-pinyin, see the module docstring.
+        from .base_chinese import romanize_notes
 
-    def process(self, notes, prev, next, prev_neighbour, next_neighbour, prev_neighbours):
-        if len(notes[0].lyric) == 1 and _is_hanzi(notes[0].lyric):
-            raise NotImplementedError("hanzi lyrics need openutau's csharp-pinyin romanizer, which is not ported; write pinyin")
-        return super().process(notes, prev, next, prev_neighbour, next_neighbour, prev_neighbours)
+        romanize_notes(groups)
 
 
 class ChineseCVVG2p(IG2p):

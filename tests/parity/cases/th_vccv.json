@@ -1,0 +1,459 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.ThaiVCCVPhonemizer",
+ "bank": "th_vccv",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "latin_basic",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ra",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "latin_cluster",
+   "notes": [
+    {
+     "lyric": "kra",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "pla",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ma",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "latin_vv",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "I",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "latin_ending",
+   "notes": [
+    {
+     "lyric": "an",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "rak",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "thai_basic",
+   "notes": [
+    {
+     "lyric": "กา",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ไก่",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "เรือ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "กา",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "thai_cluster",
+   "notes": [
+    {
+     "lyric": "ขวัญ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ปลา",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "กลม",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "thai_misc",
+   "notes": [
+    {
+     "lyric": "น้ำ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "รัก",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ใจ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "แมว",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "สวย",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "เลย",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "หมา",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "thai_single",
+   "notes": [
+    {
+     "lyric": "ก",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "กา",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "อ",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "thai_final_ending",
+   "notes": [
+    {
+     "lyric": "กา",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "รัก",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "thai_markers",
+   "notes": [
+    {
+     "lyric": "การ์",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "กา",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "เกียะ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "เกีย",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "ra",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 120
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "extend",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ra",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "ra",
+     "tone": "C4",
+     "duration": 30
+    },
+    {
+     "lyric": "kra",
+     "tone": "C4",
+     "duration": 90
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 45
+    }
+   ]
+  },
+  {
+   "id": "pitch",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 12,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "zz",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ka"
+    },
+    {
+     "lyric": "ra",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ma"
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown",
+   "notes": [
+    {
+     "lyric": "xyz",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "qq",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "overlap_vc",
+   "notes": [
+    {
+     "lyric": "ta",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ta",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "spaces",
+   "notes": [
+    {
+     "lyric": "k a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "next_null",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

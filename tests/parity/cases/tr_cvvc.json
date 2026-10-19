@@ -1,0 +1,561 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.TurkishCVVCPhonemizer",
+ "bank": "tr_cvvc",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "basic",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "se",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ma",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "la",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "special_letters",
+   "notes": [
+    {
+     "lyric": "çok",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "güzel",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "şa",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ağa",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ılık",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ölü",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "cc_endings",
+   "notes": [
+    {
+     "lyric": "türk",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "kırk",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "rt",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "cc_end_phrase_end",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "türk",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "vv",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "e",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "o",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "sustained",
+   "notes": [
+    {
+     "lyric": "an",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "em",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "e",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "al",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "e",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "nk_ng",
+   "notes": [
+    {
+     "lyric": "sen",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "an",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ga",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ön",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ke",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "glottal",
+   "notes": [
+    {
+     "lyric": "a?",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "aq",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "same_consonant",
+   "notes": [
+    {
+     "lyric": "el",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "le",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ek",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ke",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "yalt",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ke",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ki",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "le",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "nine_before_vow",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ğa",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "e",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ğe",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "upper_E",
+   "notes": [
+    {
+     "lyric": "kE",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "sE",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dot_raw",
+   "notes": [
+    {
+     "lyric": ".raw",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": ".x",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "se",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 120
+    },
+    {
+     "lyric": "ma",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "extend",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "se",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+e",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ma",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "se",
+     "tone": "C4",
+     "duration": 30
+    },
+    {
+     "lyric": "türk",
+     "tone": "C4",
+     "duration": 90
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 45
+    }
+   ]
+  },
+  {
+   "id": "pitch",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 12,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "stretch_attr",
+   "notes": [
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      },
+      {
+       "index": 1,
+       "shift": 0,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "se",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "unknown",
+   "notes": [
+    {
+     "lyric": "xyz",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "qwx",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "sustained_upper",
+   "notes": [
+    {
+     "lyric": "aN",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "aM",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "aL",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "e",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "decomposed",
+   "notes": [
+    {
+     "lyric": "güzel",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "çok",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}
