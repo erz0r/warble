@@ -71,6 +71,10 @@ class Phonemizer:
                 good = [p for p in phs if p in self.tokens and p in self.dict.symbols]
                 bad = [p for p in phs if p not in good]
                 return good, bad, f"dict:{cand}"
+        for guess in langs.phoneme_guesses(self.lang, note.lyric):
+            ok = [self._valid(s) for s in guess]
+            if ok and all(ok):
+                return ok, [], "romaji-split"
         raw = note.lyric.split()
         ok = [self._valid(s) for s in raw]
         if any(ok):

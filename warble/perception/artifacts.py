@@ -204,6 +204,8 @@ def signal_checks(a):
     if np.max(np.abs(dc)) > 0.005:
         out.append(_ev("dc_offset", 0, "warning", f"dc offset {np.max(np.abs(dc)):.4f}"))
     # energy in the top band, a sign of aliasing or imaging above the samples' real bandwidth
+    if np.sqrt(np.mean(a.x ** 2)) < 10 ** (-70 / 20):
+        return out  # silence: the noise floor's spectrum says nothing
     f = a.spec_f
     p = 10 ** (a.spec_db / 10)
     total = p.sum()

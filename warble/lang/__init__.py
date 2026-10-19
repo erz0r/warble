@@ -20,3 +20,12 @@ def candidates(lang, lyric):
         if c not in out:
             out.append(c)
     return out
+
+
+PHONEME_GUESSES = {"ja": ja.phoneme_guesses}
+
+
+def phoneme_guesses(lang, lyric):
+    """front-end guesses at raw phonemes for lyrics a dictionary doesn't cover."""
+    fn = PHONEME_GUESSES.get(lang or "")
+    return fn(lyric) if fn else []

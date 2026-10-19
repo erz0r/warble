@@ -127,3 +127,34 @@ def normalize_lyric(lyric):
         if r not in cands:
             cands.append(r)
     return cands
+
+
+def phoneme_guesses(lyric):
+    """when a dictionary lacks a kana, romanize it and split each mora into consonant + vowel
+    ('ゔぃ' -> ['v', 'i'], 'きゃっ' -> ['ky', 'a', 'cl']). the caller keeps a guess only if the bank
+    has every symbol."""
+    h = to_hiragana(lyric)
+    if not is_kana(h):
+        return []
+    out = []
+    for mora in split_mora(h):
+        if mora in SOKUON:
+            out.append("cl")
+            continue
+        if mora in CHOON:
+            if out and out[-1] in "aiueo":
+                out.append(out[-1])
+            continue
+        r = kana_to_romaji(mora)
+        if r == "N":
+            out.append("N")
+            continue
+        k = len(r)
+        while k > 0 and r[k - 1] in "aiueo":
+            k -= 1
+        cons, vow = r[:k], r[k:]
+        if cons:
+            out.append(cons)
+        if vow:
+            out.append(vow)
+    return [out] if out else []

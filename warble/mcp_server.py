@@ -198,3 +198,28 @@ def serve_lines(inp=None, out=None):
         res = run(req.get("command"), req.get("args") or {})
         out.write(json.dumps({"id": req.get("id"), "result": res}, ensure_ascii=False, default=_json_default) + "\n")
         out.flush()
+
+
+def serve_socket(path):
+    """the json-lines protocol over a unix socket; each connection is served in turn, models stay warm."""
+    import socketserver
+
+    if len(os.fsencode(path)) > 100:
+        raise WarbleError("socket_path_too_long", f"unix socket paths are limited to about 100 bytes; this one is {len(os.fsencode(path))}",
+                          hint="use a short path such as /tmp/warble.sock or a relative one")
+    if os.path.exists(path):
+        os.remove(path)
+
+    class Handler(socketserver.StreamRequestHandler):
+        def handle(self):
+            rf = io.TextIOWrapper(self.rfile, encoding="utf-8")
+            wf = io.TextIOWrapper(self.wfile, encoding="utf-8", write_through=True)
+            serve_lines(rf, wf)
+
+    with socketserver.UnixStreamServer(path, Handler) as srv:
+        print(f"warble: serving on {path}", file=sys.stderr)
+        try:
+            srv.serve_forever()
+        finally:
+            if os.path.exists(path):
+                os.remove(path)

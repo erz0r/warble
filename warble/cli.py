@@ -121,8 +121,19 @@ def cmd_sing(a):
 
     if a.provider:
         onnxrun.set_provider(a.provider)
+    cache_before = onnxrun.CACHE_ENABLED
     if a.no_cache:
         onnxrun.CACHE_ENABLED = False
+    try:
+        return _sing(a)
+    finally:
+        # serve mode keeps the process alive; --no-cache must not leak into later requests
+        onnxrun.CACHE_ENABLED = cache_before
+
+
+def _sing(a):
+    from .sing import sing
+
     score = load_score(a)
     rng = None
     if a.range:
@@ -570,11 +581,15 @@ def cmd_mcp(a):
     return None
 
 
-@command("serve", "json-lines server on stdin/stdout: {\"command\": \"sing\", \"args\": {...}} per line; models stay loaded.", [])
+@command("serve", "json-lines server on stdin/stdout (or --socket): {\"command\": \"sing\", \"args\": {...}} per line; models stay loaded.",
+         [arg("--socket", help="listen on this unix socket path instead of stdin/stdout")])
 def cmd_serve(a):
-    from .mcp_server import serve_lines
+    from .mcp_server import serve_lines, serve_socket
 
-    serve_lines()
+    if a.socket:
+        serve_socket(a.socket)
+    else:
+        serve_lines()
     return None
 
 

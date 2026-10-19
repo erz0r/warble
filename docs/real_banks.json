@@ -1,0 +1,176 @@
+[
+ {
+  "bank": "banks/adachi_rei/足立レイ_DS_v111.1",
+  "type": "diffsinger",
+  "name": "足立レイ DS v111.1",
+  "issues": {
+   "error": 0,
+   "warning": 5,
+   "info": 2
+  },
+  "renders": [
+   {
+    "lang": "ja",
+    "phrase": "scale",
+    "phonemes": "ja/a ja/a ja/a ja/a ja/a ja/a ja/a ja/a",
+    "unknown": [],
+    "median_abs_cents": 0.1,
+    "within_20c_pct": 100.0,
+    "artifacts": {},
+    "lufs": -14.87,
+    "intelligibility": 100.0,
+    "heard": "ああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ"
+   },
+   {
+    "lang": "ja",
+    "phrase": "tricky",
+    "phonemes": "ja/ky ja/a cl ja/t ja/o ja/sh ja/u ja/N ja/gy ja/o ja/u ja/f ja/a SP",
+    "unknown": [
+     "ゔぃ"
+    ],
+    "median_abs_cents": 0.2,
+    "within_20c_pct": 100.0,
+    "artifacts": {},
+    "lufs": -14.16,
+    "intelligibility": 22.2,
+    "heard": "さあ、とすんこいは"
+   },
+   {
+    "lang": "ja",
+    "phrase": "melisma",
+    "phonemes": "ja/a ja/i",
+    "unknown": [],
+    "median_abs_cents": 0.2,
+    "within_20c_pct": 99.5,
+    "artifacts": {},
+    "lufs": -15.93,
+    "intelligibility": 100.0,
+    "heard": "ああああああああいい"
+   },
+   {
+    "lang": "ja",
+    "phrase": "rests",
+    "phonemes": "ja/s ja/a ja/k ja/u | ja/r ja/a | ja/s ja/a ja/k ja/u ja/r ja/a",
+    "unknown": [],
+    "median_abs_cents": 0.3,
+    "within_20c_pct": 100.0,
+    "artifacts": {
+     "spectral_jump": 1
+    },
+    "lufs": -15.5,
+    "intelligibility": 66.7,
+    "heard": "さぁく / なぁー / さくら"
+   },
+   {
+    "lang": "de",
+    "phrase": "tricky",
+    "phonemes": "SP SP SP SP SP SP",
+    "unknown": [
+     "ich",
+     "lie",
+     "be",
+     "dich",
+     "schön",
+     "sein"
+    ],
+    "median_abs_cents": null,
+    "within_20c_pct": null,
+    "artifacts": {
+     "silent": 1,
+     "hf_energy": 1
+    },
+    "lufs": -Infinity,
+    "intelligibility": 0.0,
+    "heard": null
+   },
+   {
+    "lang": "en",
+    "phrase": "tricky",
+    "phonemes": "SP SP SP SP SP SP",
+    "unknown": [
+     "strength",
+     "through",
+     "the",
+     "rhythm",
+     "of",
+     "twelfths"
+    ],
+    "median_abs_cents": null,
+    "within_20c_pct": null,
+    "artifacts": {
+     "silent": 1,
+     "hf_energy": 1
+    },
+    "lufs": -Infinity,
+    "intelligibility": 0.0,
+    "heard": null
+   },
+   {
+    "lang": "es",
+    "phrase": "tricky",
+    "phonemes": "SP SP SP SP SP SP",
+    "unknown": [
+     "ca",
+     "ri",
+     "ño",
+     "can",
+     "tar",
+     "mar"
+    ],
+    "median_abs_cents": null,
+    "within_20c_pct": null,
+    "artifacts": {
+     "silent": 1,
+     "hf_energy": 1
+    },
+    "lufs": -Infinity,
+    "intelligibility": 0.0,
+    "heard": null
+   },
+   {
+    "lang": "ko",
+    "phrase": "tricky",
+    "phonemes": "SP SP SP SP SP SP",
+    "unknown": [
+     "사",
+     "랑",
+     "해",
+     "요",
+     "노",
+     "래"
+    ],
+    "median_abs_cents": null,
+    "within_20c_pct": null,
+    "artifacts": {
+     "silent": 1,
+     "hf_energy": 1
+    },
+    "lufs": -Infinity,
+    "intelligibility": 0.0,
+    "heard": null
+   },
+   {
+    "lang": "zh",
+    "phrase": "tricky",
+    "phonemes": "SP SP SP SP SP SP",
+    "unknown": [
+     "我",
+     "爱",
+     "唱",
+     "歌",
+     "你",
+     "好"
+    ],
+    "median_abs_cents": null,
+    "within_20c_pct": null,
+    "artifacts": {
+     "silent": 1,
+     "hf_energy": 1
+    },
+    "lufs": -Infinity,
+    "intelligibility": 0.0,
+    "heard": null
+   }
+  ]
+ }
+]
