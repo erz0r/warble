@@ -1,0 +1,966 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.KoreanCVPhonemizer",
+ "bank": "ko_cv_alt",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "plain",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "나",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "라",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "마",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "vowels",
+   "notes": [
+    {
+     "lyric": "아",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "이",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "우",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "에",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "오",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "어",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "으",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "diphthongs",
+   "notes": [
+    {
+     "lyric": "야",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "여",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "요",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "유",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "예",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "와",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "웨",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "위",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "워",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "의",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "eui_alone",
+   "notes": [
+    {
+     "lyric": "의",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "eui_cons",
+   "notes": [
+    {
+     "lyric": "희",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "늬",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "의",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "batchim_soft",
+   "notes": [
+    {
+     "lyric": "안",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "알",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "앙",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "암",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "아",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "batchim_hard",
+   "notes": [
+    {
+     "lyric": "악",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "앗",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "압",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "아",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "batchim_last",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "난",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "batchim_end_hard",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "각",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ax_forms",
+   "notes": [
+    {
+     "lyric": "온",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "올",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "옹",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "옴",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "capital",
+   "notes": [
+    {
+     "lyric": "운",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "울",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "웅",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "움",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "욱",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "eo_missing",
+   "notes": [
+    {
+     "lyric": "언",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "얼",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "어",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "e_n",
+   "notes": [
+    {
+     "lyric": "엔",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "엔",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "liaison",
+   "notes": [
+    {
+     "lyric": "먹",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "어",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "요",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "aspiration",
+   "notes": [
+    {
+     "lyric": "착",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "하",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "nasal",
+   "notes": [
+    {
+     "lyric": "밥",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "먹",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "자",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "liquid",
+   "notes": [
+    {
+     "lyric": "신",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "라",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "면",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rr",
+   "notes": [
+    {
+     "lyric": "달",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "라",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ngng",
+   "notes": [
+    {
+     "lyric": "상",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "아",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "double",
+   "notes": [
+    {
+     "lyric": "까",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "따",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "빠",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "싸",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "짜",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "complex_batchim",
+   "notes": [
+    {
+     "lyric": "닭",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "장",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "값",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "이",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "앉",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "아",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dot_bang",
+   "notes": [
+    {
+     "lyric": "무",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "릎.",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "위",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "!가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "나",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "end_R",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "end_R_batchim",
+   "notes": [
+    {
+     "lyric": "안",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "end_R_o",
+   "notes": [
+    {
+     "lyric": "고",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "end_dash",
+   "notes": [
+    {
+     "lyric": "나",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "end_dash_e",
+   "notes": [
+    {
+     "lyric": "네",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "end_missing",
+   "notes": [
+    {
+     "lyric": "서",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "end_first",
+   "notes": [
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_between",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "나",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 480
+    },
+    {
+     "lyric": "앙",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "extension",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "난",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint_single",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ga"
+    },
+    {
+     "lyric": "나",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint_two",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ga,a n"
+    }
+   ]
+  },
+  {
+   "id": "hint_three_end",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ga, a n, a R"
+    }
+   ]
+  },
+  {
+   "id": "hint_vv",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ga,a a"
+    }
+   ]
+  },
+  {
+   "id": "hint_vv3",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ga,eu,zz,a -"
+    }
+   ]
+  },
+  {
+   "id": "hint_missing",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "xx,yy,zz"
+    }
+   ]
+  },
+  {
+   "id": "romaji",
+   "notes": [
+    {
+     "lyric": "ga",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "na",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "dan",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "romaji_mixed",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "na",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "romaji_first",
+   "notes": [
+    {
+     "lyric": "rin",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ga",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short",
+   "notes": [
+    {
+     "lyric": "간",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "날",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "밤",
+     "tone": "C4",
+     "duration": 60
+    }
+   ]
+  },
+  {
+   "id": "long",
+   "notes": [
+    {
+     "lyric": "간",
+     "tone": "C4",
+     "duration": 1920
+    },
+    {
+     "lyric": "날",
+     "tone": "C4",
+     "duration": 1920
+    },
+    {
+     "lyric": "밤",
+     "tone": "C4",
+     "duration": 1920
+    }
+   ]
+  },
+  {
+   "id": "non_hangul",
+   "notes": [
+    {
+     "lyric": "xyz",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "abc",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "shi",
+   "notes": [
+    {
+     "lyric": "시",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "씨",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hieut",
+   "notes": [
+    {
+     "lyric": "놓",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "아",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "좋",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "alt_attrs",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 1,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "난",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 2,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,2923 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.KoreanCBNNPhonemizer",
+ "bank": "ko_cbnn",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "plain",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "나",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "라",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "마",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "vowels",
+   "notes": [
+    {
+     "lyric": "아",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "이",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "우",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "에",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "오",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "어",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "으",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "diphthongs",
+   "notes": [
+    {
+     "lyric": "야",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "여",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "요",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "유",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "와",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "위",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "워",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "웨",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "의",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "batchim_end",
+   "notes": [
+    {
+     "lyric": "강",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "산",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "말",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "밤",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hard_batchim",
+   "notes": [
+    {
+     "lyric": "각",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "닫",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "밥",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "숲",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "낮",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "liaison",
+   "notes": [
+    {
+     "lyric": "음",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "악",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "이",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "에",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "옷",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "을",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "aspiration",
+   "notes": [
+    {
+     "lyric": "착",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "하",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "좋",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "고",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "nasal",
+   "notes": [
+    {
+     "lyric": "밥",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "먹",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "자",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "국",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "물",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "lateral",
+   "notes": [
+    {
+     "lyric": "신",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "라",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "칼",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "날",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "double_batchim",
+   "notes": [
+    {
+     "lyric": "닭",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "장",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "값",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "이",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "많",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "읽",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "어",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "tense",
+   "notes": [
+    {
+     "lyric": "까",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "따",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "빠",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "싸",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "짜",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "aspirated",
+   "notes": [
+    {
+     "lyric": "카",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "타",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "파",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "차",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "하",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "end_R",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "end_batchim_R",
+   "notes": [
+    {
+     "lyric": "간",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "end_dash",
+   "notes": [
+    {
+     "lyric": "나",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "end_hard_R",
+   "notes": [
+    {
+     "lyric": "각",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rest_gap",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 480
+    },
+    {
+     "lyric": "나",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "E4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "강",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "extend",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "나",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "강",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short",
+   "notes": [
+    {
+     "lyric": "강",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "닭",
+     "tone": "D4",
+     "duration": 90
+    },
+    {
+     "lyric": "마",
+     "tone": "E4",
+     "duration": 30
+    },
+    {
+     "lyric": "R",
+     "tone": "G4",
+     "duration": 60
+    }
+   ]
+  },
+  {
+   "id": "romaji",
+   "notes": [
+    {
+     "lyric": "ga",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "na",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "rin",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "geu",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "romaji_mixed",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "nyang",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "eo",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "bang_dot",
+   "notes": [
+    {
+     "lyric": "!닭",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "이",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "무",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "릎.",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "위",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint_single",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a ga"
+    },
+    {
+     "lyric": "나",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "non_korean",
+   "notes": [
+    {
+     "lyric": "la",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "x",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "가",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "alt",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "alt": 2
+      }
+     ]
+    },
+    {
+     "lyric": "가",
+     "tone": "D4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "alt": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shift",
+   "notes": [
+    {
+     "lyric": "강",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 2
+      },
+      {
+       "index": 1,
+       "shift": -1
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "밤",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "lots",
+   "notes": [
+    {
+     "lyric": "사",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "랑",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "해",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "요",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "정",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "말",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "로",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint_multi",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ga, a n"
+    },
+    {
+     "lyric": "나",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "na,a,a R"
+    },
+    {
+     "lyric": "R",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint_vv",
+   "notes": [
+    {
+     "lyric": "아",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "a, eu a"
+    },
+    {
+     "lyric": "오",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "ga, u o, ng -"
+    },
+    {
+     "lyric": "이",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "zz, i"
+    }
+   ]
+  },
+  {
+   "id": "hint_vvdict_2",
+   "notes": [
+    {
+     "lyric": "어",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "ga, eo"
+    },
+    {
+     "lyric": "아",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "o, x eu"
+    }
+   ]
+  },
+  {
+   "id": "vsv",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "야",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "오",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "와",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "어",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "요",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "vv",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "아",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "이",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "우",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "어",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "으",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "vc_missing",
+   "notes": [
+    {
+     "lyric": "어",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "하",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "우",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "짜",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "relaxed",
+   "notes": [
+    {
+     "lyric": "안",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "녕",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "감",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "마",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "물",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "론",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "end_eu",
+   "notes": [
+    {
+     "lyric": "그",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "으",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "end_batchim_dash",
+   "notes": [
+    {
+     "lyric": "반",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "gyeo",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "겨",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "녀",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "plain",
+   "phonemes": [
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "na",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a d",
+     "position": 360,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "da",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a r",
+     "position": 360,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ra",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a m",
+     "position": 360,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ma",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 420,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "vowels",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "i u",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "u e",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "e o",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "o eo",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "eo eu",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "eu -",
+     "position": 420,
+     "group": 6,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "diphthongs",
+   "phonemes": [
+    {
+     "phoneme": "- ya",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a y",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "yeo",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "eo y",
+     "position": 360,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "yo",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "o y",
+     "position": 360,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "yu",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "wa",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a w",
+     "position": 360,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "wi",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "i w",
+     "position": 360,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "weo",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "we",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "e i",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "i -",
+     "position": 420,
+     "group": 8,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "batchim_end",
+   "phonemes": [
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ang",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ng -",
+     "position": 320,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "sa",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "an",
+     "position": 360,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "n -",
+     "position": 320,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ma",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "al",
+     "position": 360,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "l -",
+     "position": 320,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ba",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "am",
+     "position": 420,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hard_batchim",
+   "phonemes": [
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ak",
+     "position": 384,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "dda",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "at",
+     "position": 384,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "bba",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ap",
+     "position": 384,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ssu",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "um",
+     "position": 360,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "m -",
+     "position": 320,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "na",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "at",
+     "position": 420,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "liaison",
+   "phonemes": [
+    {
+     "phoneme": "- eu",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "eu m",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ma",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a g",
+     "position": 360,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "gi",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "i e",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "e o",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "o s",
+     "position": 360,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "seu",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "eul",
+     "position": 420,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "aspiration",
+   "phonemes": [
+    {
+     "phoneme": "cha",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a k",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ka",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a d",
+     "position": 360,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "da",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a j",
+     "position": 360,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "jo",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "o k",
+     "position": 360,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ko",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 420,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "nasal",
+   "phonemes": [
+    {
+     "phoneme": "-ba",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "am",
+     "position": 420,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "meo",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "eok",
+     "position": 384,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "jja",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a g",
+     "position": 360,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "gu",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ung",
+     "position": 360,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ng -",
+     "position": 320,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "mu",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ul",
+     "position": 420,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "lateral",
+   "phonemes": [
+    {
+     "phoneme": "- si",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "il",
+     "position": 420,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ra",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a k",
+     "position": 360,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ka",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "al",
+     "position": 420,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ra",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "al",
+     "position": 420,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "double_batchim",
+   "phonemes": [
+    {
+     "phoneme": "-da",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ak",
+     "position": 384,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "jja",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ang",
+     "position": 360,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ng -",
+     "position": 320,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ga",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ap",
+     "position": 384,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ssi",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "i m",
+     "position": 360,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ma",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "an",
+     "position": 360,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "n -",
+     "position": 320,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ta",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "a i",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "il",
+     "position": 360,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "l -",
+     "position": 320,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "geo",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "eo -",
+     "position": 420,
+     "group": 7,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "tense",
+   "phonemes": [
+    {
+     "phoneme": "gga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a dd",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "dda",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a bb",
+     "position": 360,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "bba",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a ss",
+     "position": 360,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ssa",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a jj",
+     "position": 360,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "jja",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 420,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "aspirated",
+   "phonemes": [
+    {
+     "phoneme": "ka",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a t",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ta",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a p",
+     "position": 360,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "pa",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a ch",
+     "position": 360,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "cha",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a a",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 420,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "end_R",
+   "phonemes": [
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "end_batchim_R",
+   "phonemes": [
+    {
+     "phoneme": "ga2",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "an",
+     "position": 420,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "end_dash",
+   "phonemes": [
+    {
+     "phoneme": "- na",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "end_hard_R",
+   "phonemes": [
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ak",
+     "position": 420,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "rest_gap",
+   "phonemes": [
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 420,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- na",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a d",
+     "position": 360,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "da",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 420,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ang",
+     "position": 420,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "extend",
+   "phonemes": [
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 840,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "na",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a g",
+     "position": 840,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ga",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ang",
+     "position": 840,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "short",
+   "phonemes": [
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ang",
+     "position": 30,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ng -",
+     "position": 40,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "da",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ang",
+     "position": 45,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ng -",
+     "position": 60,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ma",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "romaji",
+   "phonemes": [
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "na",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ri",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "in",
+     "position": 420,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "na",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "geu",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "eu -",
+     "position": 420,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "romaji_mixed",
+   "phonemes": [
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- nya",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ang",
+     "position": 420,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "-da",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "- eo",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "eo -",
+     "position": 420,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "bang_dot",
+   "phonemes": [
+    {
+     "phoneme": "-da",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ak",
+     "position": 420,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "- i",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "i m",
+     "position": 360,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "mu",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "u r",
+     "position": 360,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "reu",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "eu b",
+     "position": 360,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "bwi",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "i -",
+     "position": 420,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_single",
+   "phonemes": [
+    {
+     "phoneme": "a ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "na",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 420,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "non_korean",
+   "phonemes": [
+    {
+     "phoneme": "ra",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "error",
+     "position": 0,
+     "group": 1,
+     "error": "Index was outside the bounds of the array."
+    },
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 420,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "alt",
+   "phonemes": [
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a g",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ga2",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 420,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "shift",
+   "phonemes": [
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ang",
+     "position": 420,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ngR",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "phonemes": [
+    {
+     "phoneme": "-ba",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "am",
+     "position": 420,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "lots",
+   "phonemes": [
+    {
+     "phoneme": "- sa",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a r",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ra",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ang",
+     "position": 420,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "e",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "yo",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "o j",
+     "position": 360,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "jeo",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "eong",
+     "position": 360,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ng -",
+     "position": 320,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ma",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "al",
+     "position": 420,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "ro",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "o R",
+     "position": 0,
+     "group": 7,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_multi",
+   "phonemes": [
+    {
+     "phoneme": "ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n",
+     "position": 320,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "na",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a",
+     "position": 160,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 420,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 0,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_vv",
+   "phonemes": [
+    {
+     "phoneme": "a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "eu a",
+     "position": 320,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ga",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "u o",
+     "position": 160,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ng -",
+     "position": 420,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "zz",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "i",
+     "position": 320,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_vvdict_2",
+   "phonemes": [
+    {
+     "phoneme": "ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "eo",
+     "position": 320,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "x eu",
+     "position": 240,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "vsv",
+   "phonemes": [
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a y",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ya",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a o",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "wa",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a eo",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "eo y",
+     "position": 360,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "yo",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "o -",
+     "position": 420,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "vv",
+   "phonemes": [
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a i",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "i u",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "u eo",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "eo eu",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "eu -",
+     "position": 420,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "vc_missing",
+   "phonemes": [
+    {
+     "phoneme": "- eo",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "eo a",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a u",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "jja",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a -",
+     "position": 420,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "relaxed",
+   "phonemes": [
+    {
+     "phoneme": "- a",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "an",
+     "position": 420,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "nyeo",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "eong",
+     "position": 360,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ng -",
+     "position": 320,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ga",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "am",
+     "position": 420,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ma",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a m",
+     "position": 360,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "mu",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ul",
+     "position": 420,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ro",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "on",
+     "position": 420,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "end_eu",
+   "phonemes": [
+    {
+     "phoneme": "- geu",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "-",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "- eu",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "eu R",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "end_batchim_dash",
+   "phonemes": [
+    {
+     "phoneme": "-ba",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "an",
+     "position": 420,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "n -",
+     "position": 0,
+     "group": 1,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "gyeo",
+   "phonemes": [
+    {
+     "phoneme": "- ga",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a g",
+     "position": 360,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "gyeo",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "eo n",
+     "position": 360,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "nyeo",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "eo R",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  }
+ ]
+}

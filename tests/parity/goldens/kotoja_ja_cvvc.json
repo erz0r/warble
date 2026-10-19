@@ -1,0 +1,3535 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.KOtoJAPhonemizer",
+ "bank": "ja_cvvc",
+ "bpm": 120,
+ "cases": [
+  {
+   "id": "annyeong",
+   "notes": [
+    {
+     "lyric": "안",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "녕",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "하",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "세",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "요",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "saranghae",
+   "notes": [
+    {
+     "lyric": "사",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "랑",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "해",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "nasal",
+   "notes": [
+    {
+     "lyric": "밥",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "먹",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "자",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "국",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "물",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "vowels",
+   "notes": [
+    {
+     "lyric": "아",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "이",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "우",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "에",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "오",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "어",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "으",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "liaison",
+   "notes": [
+    {
+     "lyric": "음",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "악",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "할",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "아",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "버",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "지",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "aspirate",
+   "notes": [
+    {
+     "lyric": "착",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "하",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "좋",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "많",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "E4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "tense",
+   "notes": [
+    {
+     "lyric": "까",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "따",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "빠",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "싸",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "짜",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "꽃",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "diphthong",
+   "notes": [
+    {
+     "lyric": "와",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "워",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "위",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "웨",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "의",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "얘",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "예",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "외",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_alts",
+   "notes": [
+    {
+     "lyric": "뭐",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "둬",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "튀",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "뒤",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "줘",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "쥐",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "취",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "쉬",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "놔",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "봐",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "퉈",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "훠",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "y_alts",
+   "notes": [
+    {
+     "lyric": "뎌",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "져",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "쳐",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "텨",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "샤",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "랴",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "며",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "혀",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "endsounds",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "산",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "강",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "밥",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "마",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "H",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "솔",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "B",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "first_r",
+   "notes": [
+    {
+     "lyric": "R",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "가",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "bre",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "나",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "息",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "rests",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "나",
+     "tone": "D4",
+     "duration": 480,
+     "gap_after": 480
+    },
+    {
+     "lyric": "산",
+     "tone": "E4",
+     "duration": 480,
+     "gap_after": 120
+    },
+    {
+     "lyric": "밤",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "plus",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "강",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "나",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "romaji",
+   "notes": [
+    {
+     "lyric": "sa",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "rang",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "hae",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "nyang",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "kka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "romaji_mix",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "na",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "ral",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "마",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hints",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "k a"
+    },
+    {
+     "lyric": "나",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "sh i n"
+    },
+    {
+     "lyric": "다",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "ts u"
+    },
+    {
+     "lyric": "라",
+     "tone": "G4",
+     "duration": 480,
+     "hint": "a n"
+    },
+    {
+     "lyric": "마",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "f a"
+    },
+    {
+     "lyric": "바",
+     "tone": "D4",
+     "duration": 480,
+     "hint": "v e"
+    }
+   ]
+  },
+  {
+   "id": "hint_prev",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "k a n"
+    },
+    {
+     "lyric": "나",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "E4",
+     "duration": 480,
+     "hint": "o"
+    },
+    {
+     "lyric": "R",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "short",
+   "notes": [
+    {
+     "lyric": "안",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "녕",
+     "tone": "D4",
+     "duration": 60
+    },
+    {
+     "lyric": "밥",
+     "tone": "E4",
+     "duration": 60
+    },
+    {
+     "lyric": "먹",
+     "tone": "G4",
+     "duration": 60
+    },
+    {
+     "lyric": "자",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "R",
+     "tone": "D4",
+     "duration": 60
+    }
+   ]
+  },
+  {
+   "id": "medium",
+   "notes": [
+    {
+     "lyric": "하",
+     "tone": "C4",
+     "duration": 240
+    },
+    {
+     "lyric": "늘",
+     "tone": "D4",
+     "duration": 240
+    },
+    {
+     "lyric": "에",
+     "tone": "E4",
+     "duration": 240
+    },
+    {
+     "lyric": "별",
+     "tone": "G4",
+     "duration": 240
+    },
+    {
+     "lyric": "빛",
+     "tone": "C4",
+     "duration": 240
+    },
+    {
+     "lyric": "이",
+     "tone": "D4",
+     "duration": 240
+    }
+   ]
+  },
+  {
+   "id": "complex_final",
+   "notes": [
+    {
+     "lyric": "넋",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "닭",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "값",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "앉",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "읽",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "젊",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "밟",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "핥",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "읊",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "싫",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "palatal",
+   "notes": [
+    {
+     "lyric": "굳",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "이",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "같",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "이",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "맏",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "이",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "lateral",
+   "notes": [
+    {
+     "lyric": "달",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "라",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "신",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "라",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "칼",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "날",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "별",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "로",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "bang_dot",
+   "notes": [
+    {
+     "lyric": "!가",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "나",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "무.",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "위",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "밥.",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "아",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ja_prev",
+   "notes": [
+    {
+     "lyric": "あ",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "가",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "か",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "나",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "nonhangul",
+   "notes": [
+    {
+     "lyric": "la",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "가",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "xyz",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "나",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "notes": [
+    {
+     "lyric": "강",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "single_v",
+   "notes": [
+    {
+     "lyric": "아",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "n_chain",
+   "notes": [
+    {
+     "lyric": "산",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "안",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "눈",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "논",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "인",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "한",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ng_chain",
+   "notes": [
+    {
+     "lyric": "강",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "앙",
+     "tone": "D4",
+     "duration": 480
+    },
+    {
+     "lyric": "응",
+     "tone": "E4",
+     "duration": 480
+    },
+    {
+     "lyric": "엉",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "용",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "R",
+     "tone": "D4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "tones_wide",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "A3",
+     "duration": 480
+    },
+    {
+     "lyric": "나",
+     "tone": "C5",
+     "duration": 480
+    },
+    {
+     "lyric": "다",
+     "tone": "F#4",
+     "duration": 480
+    },
+    {
+     "lyric": "라",
+     "tone": "B3",
+     "duration": 480
+    },
+    {
+     "lyric": "마",
+     "tone": "E5",
+     "duration": 480
+    },
+    {
+     "lyric": "바",
+     "tone": "G3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "color_weak",
+   "notes": [
+    {
+     "lyric": "안",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": "弱"
+      }
+     ]
+    },
+    {
+     "lyric": "녕",
+     "tone": "E4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": "弱"
+      }
+     ]
+    },
+    {
+     "lyric": "하",
+     "tone": "B4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": "弱"
+      }
+     ]
+    },
+    {
+     "lyric": "밥",
+     "tone": "A3",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": "弱"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "color_strong",
+   "notes": [
+    {
+     "lyric": "사",
+     "tone": "B4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": "強"
+      }
+     ]
+    },
+    {
+     "lyric": "랑",
+     "tone": "F4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": "強"
+      }
+     ]
+    },
+    {
+     "lyric": "R",
+     "tone": "B3",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 0,
+       "alt": 0,
+       "color": "強"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "shift",
+   "notes": [
+    {
+     "lyric": "가",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 12,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "나",
+     "tone": "D4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": -5,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    },
+    {
+     "lyric": "강",
+     "tone": "E4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0,
+       "shift": 3,
+       "alt": 0,
+       "color": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "results": [
+  {
+   "id": "annyeong",
+   "phonemes": [
+    {
+     "phoneme": "- あ_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_C4",
+     "position": 234,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "n ny_C4",
+     "position": -66,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "にょ_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o ん_C4",
+     "position": 300,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "n あ_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a s_F4",
+     "position": -99,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "せ_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "e y_F4",
+     "position": -88,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "よ_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "saranghae",
+   "phonemes": [
+    {
+     "phoneme": "さ_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a r_C4",
+     "position": -27,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ら_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_C4",
+     "position": 300,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "n え_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "e R",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "nasal",
+   "phonemes": [
+    {
+     "phoneme": "ば_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a m_C4",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "も_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o k_C4",
+     "position": 300,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ちゃ_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a g_F4",
+     "position": -52,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ぐ_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "u ん_F4",
+     "position": 245,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "n m_F4",
+     "position": -55,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "む_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "u r_C4",
+     "position": 360,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "vowels",
+   "phonemes": [
+    {
+     "phoneme": "- あ_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a い_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "i う_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "u え_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "e お_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "o お_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "o う_F4",
+     "position": 0,
+     "group": 6,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "liaison",
+   "phonemes": [
+    {
+     "phoneme": "- う_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "u m_C4",
+     "position": -60,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ま_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a k_C4",
+     "position": -53,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "か_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a r_F4",
+     "position": -23,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ら_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a b_F4",
+     "position": -45,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ぼ_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "o j_C4",
+     "position": -112,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "じ_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "aspirate",
+   "phonemes": [
+    {
+     "phoneme": "ちゃ_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a k_C4",
+     "position": -53,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "か_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a d_C4",
+     "position": -40,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "だ_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a j_F4",
+     "position": -48,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "じょ_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "o t_F4",
+     "position": -50,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "た_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a m_C4",
+     "position": -60,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "ま_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_C4",
+     "position": 250,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "n t_C4",
+     "position": -50,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "た_F4",
+     "position": 0,
+     "group": 6,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "tense",
+   "phonemes": [
+    {
+     "phoneme": "か_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a t_C4",
+     "position": -50,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "た_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a p_C4",
+     "position": -47,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ぱ_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a s_F4",
+     "position": -92,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "さ_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a ch_F4",
+     "position": -84,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ちゃ_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a k_C4",
+     "position": -58,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "こ_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "o t_C4",
+     "position": 360,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "diphthong",
+   "phonemes": [
+    {
+     "phoneme": "わ_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a w_C4",
+     "position": -50,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "うぉ_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o w_C4",
+     "position": -61,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "うぃ_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "i w_F4",
+     "position": -62,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "うぇ_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "e w_F4",
+     "position": -51,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "うぃ_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "i y_C4",
+     "position": -71,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "いぇ_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "e y_C4",
+     "position": -71,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "いぇ_F4",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "e w_F4",
+     "position": -62,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "うぇ_F4",
+     "position": 0,
+     "group": 7,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "w_alts",
+   "phonemes": [
+    {
+     "phoneme": "も_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o d_C4",
+     "position": -55,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ど_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o t_C4",
+     "position": -72,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "てぃ_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "i d_F4",
+     "position": -55,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "でぃ_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "i j_F4",
+     "position": -74,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "じょ_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "o j_C4",
+     "position": -112,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "じ_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "i ts_C4",
+     "position": -88,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "つぃ_F4",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "i sh_F4",
+     "position": -130,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "し_F4",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "i n_F4",
+     "position": -62,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "な_C4",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "a b_C4",
+     "position": -52,
+     "group": 9,
+     "error": null
+    },
+    {
+     "phoneme": "ば_C4",
+     "position": 0,
+     "group": 9,
+     "error": null
+    },
+    {
+     "phoneme": "a t_C4",
+     "position": -65,
+     "group": 10,
+     "error": null
+    },
+    {
+     "phoneme": "と_F4",
+     "position": 0,
+     "group": 10,
+     "error": null
+    },
+    {
+     "phoneme": "o w_F4",
+     "position": -50,
+     "group": 11,
+     "error": null
+    },
+    {
+     "phoneme": "うぉ_F4",
+     "position": 0,
+     "group": 11,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "y_alts",
+   "phonemes": [
+    {
+     "phoneme": "じょ_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o j_C4",
+     "position": -74,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "じょ_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o ch_C4",
+     "position": -99,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ちょ_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "o t_F4",
+     "position": -49,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "てょ_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "o sh_F4",
+     "position": -98,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "しゃ_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a ry_C4",
+     "position": -26,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "りゃ_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "a my_C4",
+     "position": -132,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "みょ_F4",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "o y_F4",
+     "position": -59,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "よ_F4",
+     "position": 0,
+     "group": 7,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "endsounds",
+   "phonemes": [
+    {
+     "phoneme": "が_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "さ_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_F4",
+     "position": 300,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "が_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_C4",
+     "position": 300,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "-",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "ば_F4",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "a p_F4",
+     "position": 300,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "ま_C4",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "a H",
+     "position": 0,
+     "group": 9,
+     "error": null
+    },
+    {
+     "phoneme": "そ_F4",
+     "position": 0,
+     "group": 10,
+     "error": null
+    },
+    {
+     "phoneme": "o r_F4",
+     "position": 300,
+     "group": 10,
+     "error": null
+    },
+    {
+     "phoneme": "B",
+     "position": 0,
+     "group": 11,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "first_r",
+   "phonemes": [
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "が_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a bre",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "な_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a 息",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "だ_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "rests",
+   "phonemes": [
+    {
+     "phoneme": "が_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "な_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "さ_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_F4",
+     "position": 360,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ば_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a m_F4",
+     "position": 360,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "plus",
+   "phonemes": [
+    {
+     "phoneme": "が_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a g_C4",
+     "position": -47,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "が_F4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_F4",
+     "position": 1198,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "n n_F4",
+     "position": -62,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "な_C4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "romaji",
+   "phonemes": [
+    {
+     "phoneme": "さ_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a r_C4",
+     "position": -27,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ら_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_C4",
+     "position": 230,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "n h_C4",
+     "position": -70,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "へ_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "e ny_F4",
+     "position": -69,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "にゃ_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_F4",
+     "position": 247,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "n k_F4",
+     "position": -53,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "か_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "romaji_mix",
+   "phonemes": [
+    {
+     "phoneme": "が_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n_C4",
+     "position": -62,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "な_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a d_C4",
+     "position": -40,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "だ_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a r_F4",
+     "position": -23,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ら_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a r_F4",
+     "position": 300,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ま_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hints",
+   "phonemes": [
+    {
+     "phoneme": "か_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a sh_C4",
+     "position": -146,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "し_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "i ん_C4",
+     "position": 197,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "n ts_C4",
+     "position": -103,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "つ_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "u あ_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_F4",
+     "position": 218,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "n f_F4",
+     "position": -82,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ふぁ_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a v_C4",
+     "position": -56,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "ヴぇ_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "hint_prev",
+   "phonemes": [
+    {
+     "phoneme": "か_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_C4",
+     "position": 238,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "n n_C4",
+     "position": -62,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "な_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a お_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "o R",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "short",
+   "phonemes": [
+    {
+     "phoneme": "- あ_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_C4",
+     "position": 15,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "n ny_C4",
+     "position": -30,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "にょ_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o ん_C4",
+     "position": 15,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "n b_C4",
+     "position": -30,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ば_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a m_F4",
+     "position": 30,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "も_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "o k_F4",
+     "position": 30,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ちゃ_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a R",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "medium",
+   "phonemes": [
+    {
+     "phoneme": "は_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n_C4",
+     "position": -60,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ぬ_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "u r_C4",
+     "position": -40,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "れ_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "e by_F4",
+     "position": -55,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "びょ_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "o r_F4",
+     "position": 120,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "び_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "i ch_C4",
+     "position": -120,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "ち_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "complex_final",
+   "phonemes": [
+    {
+     "phoneme": "の_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "o k_C4",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "た_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a k_C4",
+     "position": 300,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "か_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a p_F4",
+     "position": 300,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "さ_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_F4",
+     "position": 188,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "n j_F4",
+     "position": -112,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "じ_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "i k_C4",
+     "position": 300,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ちょ_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "o m_C4",
+     "position": 300,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "ば_F4",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "a r_F4",
+     "position": 300,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "ば_F4",
+     "position": 0,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "a r_F4",
+     "position": 300,
+     "group": 7,
+     "error": null
+    },
+    {
+     "phoneme": "とぅ_C4",
+     "position": 0,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "u p_C4",
+     "position": 300,
+     "group": 8,
+     "error": null
+    },
+    {
+     "phoneme": "し_C4",
+     "position": 0,
+     "group": 9,
+     "error": null
+    },
+    {
+     "phoneme": "i r_C4",
+     "position": 360,
+     "group": 9,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "palatal",
+   "phonemes": [
+    {
+     "phoneme": "ぐ_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "u d_C4",
+     "position": -55,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "でぃ_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "i g_C4",
+     "position": -47,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "が_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a t_F4",
+     "position": -72,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "てぃ_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "i m_F4",
+     "position": -60,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ま_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a d_C4",
+     "position": -55,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "でぃ_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "lateral",
+   "phonemes": [
+    {
+     "phoneme": "だ_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a r_C4",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "ら_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a sh_C4",
+     "position": -130,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "し_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "i r_F4",
+     "position": 300,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ら_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a k_F4",
+     "position": -53,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "か_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a r_C4",
+     "position": 300,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ら_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "a r_C4",
+     "position": 300,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "びょ_F4",
+     "position": 0,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "o r_F4",
+     "position": 300,
+     "group": 6,
+     "error": null
+    },
+    {
+     "phoneme": "ろ_F4",
+     "position": 0,
+     "group": 7,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "bang_dot",
+   "phonemes": [
+    {
+     "phoneme": "が_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n_C4",
+     "position": -62,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "な_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a m_C4",
+     "position": -55,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "む_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "u w_F4",
+     "position": -61,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "うぃ_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "i b_F4",
+     "position": -52,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ば_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a b_C4",
+     "position": -52,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "ば_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "ja_prev",
+   "phonemes": [
+    {
+     "phoneme": "あ",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "가",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "か",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "な_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a あ_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a d_C4",
+     "position": -40,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "だ_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "nonhangul",
+   "phonemes": [
+    {
+     "phoneme": "ら_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a g_C4",
+     "position": -47,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "が_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "xyz",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "나",
+     "position": 0,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "single",
+   "phonemes": [
+    {
+     "phoneme": "が_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_C4",
+     "position": 360,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "single_v",
+   "phonemes": [
+    {
+     "phoneme": "- あ_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "n_chain",
+   "phonemes": [
+    {
+     "phoneme": "さ_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n_C4",
+     "position": -62,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "な_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_C4",
+     "position": 240,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "n n_C4",
+     "position": -60,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "ぬ_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "u ん_F4",
+     "position": 267,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "n n_F4",
+     "position": -33,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "の_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "o ny_F4",
+     "position": -60,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "に_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "i n_C4",
+     "position": -62,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "な_C4",
+     "position": 0,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_C4",
+     "position": 360,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "ng_chain",
+   "phonemes": [
+    {
+     "phoneme": "が_C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_C4",
+     "position": 300,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "n あ_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_C4",
+     "position": 300,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "n う_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "u ん_F4",
+     "position": 300,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "n お_F4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "o ん_F4",
+     "position": 212,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "n y_F4",
+     "position": -88,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "よ_C4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "o ん_C4",
+     "position": 300,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "tones_wide",
+   "phonemes": [
+    {
+     "phoneme": "が_A3",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n_A3",
+     "position": -55,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "な_B4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a d_B4",
+     "position": -40,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "だ_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a r_F4",
+     "position": -27,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ら_C4",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a m_C4",
+     "position": -60,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "ま_B4",
+     "position": 0,
+     "group": 4,
+     "error": null
+    },
+    {
+     "phoneme": "a b_B4",
+     "position": -52,
+     "group": 5,
+     "error": null
+    },
+    {
+     "phoneme": "ば_A3",
+     "position": 0,
+     "group": 5,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "color_weak",
+   "phonemes": [
+    {
+     "phoneme": "- あ_弱C4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_C4",
+     "position": 219,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "n ny_弱C4",
+     "position": -81,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "にょ_F4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "o ん_F4",
+     "position": 300,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "n あ_弱B4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a b_弱B4",
+     "position": -52,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "ば_A3",
+     "position": 0,
+     "group": 3,
+     "error": null
+    },
+    {
+     "phoneme": "a p_A3",
+     "position": 360,
+     "group": 3,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "color_strong",
+   "phonemes": [
+    {
+     "phoneme": "さ_強B4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a r_強B4",
+     "position": -23,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "ら_F4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_F4",
+     "position": 300,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "R",
+     "position": 0,
+     "group": 2,
+     "error": null
+    }
+   ]
+  },
+  {
+   "id": "shift",
+   "phonemes": [
+    {
+     "phoneme": "が_B4",
+     "position": 0,
+     "group": 0,
+     "error": null
+    },
+    {
+     "phoneme": "a n_A3",
+     "position": -62,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "な_C4",
+     "position": 0,
+     "group": 1,
+     "error": null
+    },
+    {
+     "phoneme": "a g_F4",
+     "position": -47,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "が_F4",
+     "position": 0,
+     "group": 2,
+     "error": null
+    },
+    {
+     "phoneme": "a ん_F4",
+     "position": 360,
+     "group": 2,
+     "error": null
+    }
+   ]
+  }
+ ]
+}
