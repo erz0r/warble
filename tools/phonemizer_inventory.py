@@ -1,0 +1,128 @@
+"""inventory of every openutau phonemizer and its port status -> docs/phonemizers.md (+ .json).
+
+reads [Phonemizer(...)] attributes and class declarations from the openutau checkout in ref/,
+marks each class ported / mismatch / not ported from the python registry and the parity goldens,
+and lists the bank files each one reads. NOT_PORTED_REASONS records why a port is impossible or
+deferred.
+
+usage: python tools/phonemizer_inventory.py
+"""
+
+import glob
+import json
+import os
+import re
+import sys
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, ROOT)
+REF = os.path.join(ROOT, "ref", "OpenUtau")
+
+# why a phonemizer can't be (or isn't yet) ported, by openutau class name
+NOT_PORTED_REASONS = {
+    "OpenUtau.Plugin.Builtin.EnunuPhonemizer": "enunu/nnsvs renderer is out of scope (spec section 9)",
+    "OpenUtau.Plugin.Builtin.EnunuEnglishPhonemizer": "enunu/nnsvs renderer is out of scope (spec section 9)",
+    "OpenUtau.Plugin.Builtin.EnunuKoreanPhonemizer": "enunu/nnsvs renderer is out of scope (spec section 9)",
+    "OpenUtau.Plugin.Builtin.EnunuOnnx.EnunuOnnxPhonemizer": "enunu/nnsvs renderer is out of scope (spec section 9)",
+    "OpenUtau.Core.Vogen.VogenMandarinPhonemizer": "vogen renderer is out of scope (spec section 9)",
+    "OpenUtau.Core.Vogen.VogenYuePhonemizer": "vogen renderer is out of scope (spec section 9)",
+}
+
+
+def scan():
+    rows = []
+    files = glob.glob(os.path.join(REF, "OpenUtau.Plugin.Builtin", "**", "*.cs"), recursive=True) + \
+        glob.glob(os.path.join(REF, "OpenUtau.Core", "**", "*.cs"), recursive=True)
+    for f in files:
+        if not os.path.isfile(f):
+            continue
+        src = open(f, encoding="utf-8-sig").read()
+        ns = re.search(r"namespace\s+([\w.]+)", src)
+        for m in re.finditer(r"(\[Phonemizer\(([^\]]*)\)\]\s*)?public\s+(?:abstract\s+)?class\s+(\w+Phonemizer)\s*:\s*(\w+)", src):
+            attr, args, cls, base = m.group(1), m.group(2), m.group(3), m.group(4)
+            strings = re.findall(r'"([^"]*)"', args or "")
+            lang = re.search(r'language\s*:\s*"([^"]*)"', args or "")
+            body = src[m.end():]
+            needs = sorted(set(re.findall(r'"([\w\-.]+\.(?:yaml|ini|txt|onnx|zip|json))"', body)))
+            rows.append({
+                "class": f"{ns.group(1)}.{cls}" if ns else cls, "name": strings[0] if strings else cls, "tag": strings[1] if len(strings) > 1 else "",
+                "language": (lang.group(1) if lang else (strings[3] if len(strings) > 3 else None)), "base": base, "abstract": attr is None,
+                "file": os.path.relpath(f, REF), "engine": "diffsinger" if "DiffSinger" in f else ("enunu" if "Enunu" in f else ("vogen" if "Vogen" in f else "utau")),
+                "reads": needs,
+            })
+    return rows
+
+
+def status(rows):
+    from warble.utau.pz import load_all, LOAD_ERRORS
+    from warble.utau.pz.parity import compare
+
+    reg = load_all()
+    ported = {c.openutau_class for c in reg.values()}
+    try:
+        from warble.ds import g2p_phonemizers  # noqa: F401
+        ported |= set(getattr(g2p_phonemizers, "PORTED", []))
+    except Exception:  # noqa: BLE001
+        pass
+    goldens = {}
+    for g in glob.glob(os.path.join(ROOT, "tests", "parity", "goldens", "*.json")):
+        r = compare(g, os.path.join(ROOT, "tests", "parity", "banks"))
+        goldens.setdefault(r["phonemizer"], []).append(r)
+    for r in rows:
+        gs = goldens.get(r["class"], [])
+        r["goldens"] = [g["golden"] for g in gs]
+        if r["class"] in NOT_PORTED_REASONS:
+            r["status"], r["note"] = "not ported", NOT_PORTED_REASONS[r["class"]]
+        elif r["abstract"]:
+            r["status"] = "base class" + (" (ported)" if any(c.__name__ == r["class"].split(".")[-1] for c in _all_classes()) else "")
+        elif r["class"] in ported:
+            if gs and all(g["passed"] for g in gs):
+                r["status"] = "ported (parity)"
+            elif gs:
+                r["status"] = "mismatch"
+                r["note"] = f"{sum(len(g['mismatches']) for g in gs)} mismatching cases"
+            else:
+                r["status"] = "ported (no goldens)"
+        else:
+            r["status"] = "not ported"
+    return rows, LOAD_ERRORS
+
+
+def _all_classes():
+    import inspect
+
+    from warble.utau import pz
+
+    out = []
+    for mod in list(sys.modules.values()):
+        if getattr(mod, "__name__", "").startswith(pz.__name__):
+            out += [c for _, c in inspect.getmembers(mod, inspect.isclass)]
+    return out
+
+
+def main():
+    rows = sorted(scan(), key=lambda r: (r["engine"], r["abstract"], r["class"]))
+    rows, errs = status(rows)
+    os.makedirs(os.path.join(ROOT, "docs"), exist_ok=True)
+    with open(os.path.join(ROOT, "docs", "phonemizers.json"), "w", encoding="utf-8") as f:
+        json.dump(rows, f, ensure_ascii=False, indent=1)
+    lines = ["# phonemizer inventory", "", "every phonemizer class in openutau, with warble's port status. generated by "
+             "`python tools/phonemizer_inventory.py`; parity means the port matches openutau's own output on the goldens in "
+             "`tests/parity/goldens`.", ""]
+    counts = {}
+    for r in rows:
+        counts[r["status"]] = counts.get(r["status"], 0) + 1
+    lines.append("status counts: " + ", ".join(f"{k}: {v}" for k, v in sorted(counts.items())))
+    lines += ["", "| class | engine | language | base | status | reads | notes |", "|---|---|---|---|---|---|---|"]
+    for r in rows:
+        cls = r["class"].split(".")[-1]
+        lines.append(f"| {cls} | {r['engine']} | {r['language'] or ''} | {r['base']} | {r['status']} | {', '.join(r['reads'][:4])} | {r.get('note', '')} |")
+    if errs:
+        lines += ["", "port modules that failed to load:", ""] + [f"- {k}: {v}" for k, v in errs.items()]
+    with open(os.path.join(ROOT, "docs", "phonemizers.md"), "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+    print(json.dumps(counts))
+
+
+if __name__ == "__main__":
+    main()

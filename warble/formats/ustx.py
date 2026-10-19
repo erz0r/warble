@@ -116,18 +116,20 @@ def load(path):
 def _phonemizer_name(full):
     if not full:
         return None
-    from ..utau.phonemizers import OPENUTAU_NAMES
+    from ..utau.phonemizers import _short, resolve
 
-    return OPENUTAU_NAMES.get(full, None)
+    cls = resolve(full)
+    return _short(cls) if cls else None
 
 
 def save(score, path):
-    from ..utau.phonemizers import REGISTRY
+    from ..utau.phonemizers import resolve
 
     tracks, parts = [], []
     for i, tr in enumerate(score.tracks):
         singer = getattr(tr, "singer_name", None) or (os.path.basename(tr.bank) if tr.bank else "")
-        ph = REGISTRY[tr.phonemizer].openutau_class if tr.phonemizer in REGISTRY else None
+        cls = resolve(tr.phonemizer) if tr.phonemizer else None
+        ph = cls.openutau_class if cls else None
         tracks.append({"singer": singer, "phonemizer": ph, "renderer_settings": {"renderer": "DIFFSINGER" if tr.engine == "ds" else None},
                        "track_name": tr.name, "mute": False, "solo": False, "volume": tr.volume_db, "pan": tr.pan * 100,
                        "voice_color_names": getattr(tr, "voice_colors", []) or []})

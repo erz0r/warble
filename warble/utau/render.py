@@ -28,44 +28,68 @@ class UtauEngine:
         self.style, _, _ = utaubank.bank_reclist(bank)
         self.resampler_name = resampler or "builtin"
         self.resampler_exe = None if self.resampler_name == "builtin" else resampler_find(self.resampler_name)
+        self._pz_singer = None
         self.wavtool_name = wavtool or "builtin"
         self.wavtool_exe = None if self.wavtool_name == "builtin" else resampler_find(self.wavtool_name)
         self._requested_phonemizer = phonemizer
 
     def phonemizer(self, name=None):
         pname, how, warn = phonemizers.choose(self.bank, self.style, name or self._requested_phonemizer)
-        return phonemizers.REGISTRY[pname], pname, how, warn
+        return phonemizers.resolve(pname), pname, how, warn
 
     # ---- phones ---------------------------------------------------------------------------
 
     def phonemize_phrase(self, words, tm, lang, voice_of, seed=None, prev_end_ms=None, phonemizer=None, **_):
+        from .pz.api import Note as PNote
+        from .pz.api import PhonemeAttributes, TimeAxis
+        from .pz.runner import run as pz_run
+        from .pz.singer import Singer
+
         cls, pname, how, warn = self.phonemizer(phonemizer)
+        if self._pz_singer is None:
+            self._pz_singer = Singer(self.bank)
+        singer = self._pz_singer
+        notes = [n for w in words for n in w]
+
         def color_of(n):
             v = n.controls.get("color") or voice_of(n)
             return None if v in (None, "default") else v
 
-        ph = cls(self.voice, tm, color_of)
-        notes = [n for w in words for n in w]
-        raw = []
-        unknown = []
-        for wi, w in enumerate(words):
+        # score notes -> openutau phonemizer notes (absolute ticks); attributes from controls
+        groups = []
+        for w in words:
+            g = []
+            for n in w:
+                attrs = [PhonemeAttributes(index=0, consonant_stretch_ratio=2 ** (1 - float(n.controls.get("vel", 100)) / 100),
+                                           tone_shift=int(n.controls.get("shift", 0)), alternate=int(n.controls["alt"]) if n.controls.get("alt") else None,
+                                           voice_color=color_of(n) or "")]
+                attrs.append(PhonemeAttributes(index=1, consonant_stretch_ratio=attrs[0].consonant_stretch_ratio, tone_shift=attrs[0].tone_shift,
+                                               alternate=attrs[0].alternate, voice_color=attrs[0].voice_color))
+                lyric = n.lyric if not (n.hint and n.lyric == n.hint) else n.hint
+                g.append(PNote(lyric=lyric, tone=int(round(n.tone)), position=n.position, duration=n.duration,
+                               phonetic_hint=n.hint if n.hint and n.hint != n.lyric else None, phoneme_attributes=attrs))
+            groups.append(g)
+        pz = cls()
+        pz.set_singer(singer)
+        pz.set_timing(TimeAxis(list(tm.changes)))
+        per_group = pz_run(pz, groups)
+        raw, unknown = [], []
+        for wi, (w, res) in enumerate(zip(words, per_group)):
             head = w[0]
-            prev_nb = words[wi - 1][-1] if wi > 0 else None
-            next_nb = words[wi + 1][0] if wi + 1 < len(words) else None
-            out = ph.process(w, prev_nb, next_nb, prev_nb, next_nb)
-            for k, p in enumerate(out):
-                tick = head.position + p["position"]
-                note = next((n for n in w if n.position <= tick < n.end), w[0])
-                hit = self.voice.lookup(p["alias"], note.tone + note.controls.get("shift", 0), color_of(note))
-                if hit is None:
-                    unknown.append({
-                        "lyric": head.lyric, "alias": p["alias"], "position": head.position, "line": head.line,
-                        "closest": _closest_aliases(p["alias"], self.voice.alias_map),
-                    })
+            for p in res:
+                note = next((n for n in w if n.position <= p.position < n.end), w[0] if p.position < w[0].position else w[-1])
+                oto = singer.try_get_oto(p.phoneme)
+                if oto is None:
+                    # openutau needs the exact alias; as a convenience try the mapped lookup too
+                    oto = singer.try_get_mapped_oto(p.phoneme, note.tone + note.controls.get("shift", 0), color_of(note))
+                if oto is None or p.phoneme == "error":
+                    unknown.append({"lyric": head.lyric, "alias": p.phoneme, "position": head.position, "line": head.line,
+                                    "closest": _closest_aliases(p.phoneme, self.voice.alias_map), **({"error": p.error} if p.error else {})})
                     continue
-                oset, oto, mapped = hit
-                raw.append({"alias": mapped, "requested": p["alias"], "tick": tick, "word": wi, "note": note, "oto": oto,
-                            "wav_path": os.path.join(oset.dir, oto.wav), "oto_set": oset.name or "."})
+                hit = self.voice.alias_map.get(oto.alias)
+                oset, o = hit
+                raw.append({"alias": oto.alias, "requested": p.phoneme, "tick": p.position, "word": wi, "note": note, "oto": o,
+                            "wav_path": os.path.join(oset.dir, o.wav), "oto_set": oset.name or "."})
         raw.sort(key=lambda r: r["tick"])
         end_tick = notes[-1].end
         phones = []
