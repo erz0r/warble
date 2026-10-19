@@ -349,6 +349,8 @@ def external(item, exe, workdir):
     os.makedirs(workdir, exist_ok=True)
     out = os.path.join(workdir, f"res-{item.key()}.wav")
     args = item.args(item.input_file, out)
+    if os.path.isfile(out) and os.path.getsize(out) > 44 and os.path.getmtime(out) >= os.path.getmtime(exe):
+        return _read_out(out), args  # same arguments, same resampler: reuse
     try:
         proc = subprocess.run(cmd + args, capture_output=True, timeout=120)
     except subprocess.TimeoutExpired:
@@ -361,6 +363,10 @@ def external(item, exe, workdir):
             stderr=proc.stderr.decode(errors="replace")[-800:],
             args=args,
         )
+    return _read_out(out), args
+
+
+def _read_out(out):
     import soundfile as sf
 
     y, sr = sf.read(out, dtype="float32", always_2d=True)
@@ -372,4 +378,4 @@ def external(item, exe, workdir):
 
         g = gcd(sr, SR)
         y = resample_poly(y, SR // g, sr // g).astype(np.float32)
-    return y, args
+    return y

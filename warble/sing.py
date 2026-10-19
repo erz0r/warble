@@ -106,8 +106,9 @@ def sing(score, out_path, steps=None, depth=None, seed=None, sample_rate=44100, 
             if not bank:
                 raise WarbleError("no_bank", f"track '{track.name}' has no bank", hint="add 'bank <path>' to the score or pass --bank")
             lang = _note_attr(first, track, "lang")
-            eng = engine_for(bank, engine or track.engine, vocoder_dirs, first.controls.get("resampler") or resampler,
-                             first.controls.get("wavtool") or wavtool)
+            # resampler / wavtool: per note (first note of the phrase), then per track, then the command line
+            eng = engine_for(bank, engine or track.engine, vocoder_dirs, first.controls.get("resampler") or track.resampler or resampler,
+                             first.controls.get("wavtool") or track.wavtool or wavtool)
 
             def voice_of(n, track=track):
                 return n.controls.get("voice") or track.voice

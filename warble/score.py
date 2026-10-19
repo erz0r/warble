@@ -96,6 +96,8 @@ class Track:
     voice: str = None
     phonemizer: str = None
     engine: str = None
+    resampler: str = None
+    wavtool: str = None
     volume_db: float = 0.0
     pan: float = 0.0
     notes: list = field(default_factory=list)
@@ -117,7 +119,8 @@ class Track:
     def to_json(self):
         return {
             "name": self.name, "bank": self.bank, "lang": self.lang, "voice": self.voice,
-            "phonemizer": self.phonemizer, "engine": self.engine, "volume_db": self.volume_db, "pan": self.pan,
+            "phonemizer": self.phonemizer, "engine": self.engine, "resampler": self.resampler, "wavtool": self.wavtool,
+            "volume_db": self.volume_db, "pan": self.pan,
             "notes": [n.to_json() for n in self.notes],
             **({"curves": {k: [list(p) for p in v] for k, v in self.curves.items()}} if self.curves else {}),
         }
@@ -236,7 +239,7 @@ class Score:
             lines.append(f"backing {b['path']}{where}" + (f" gain={fmt_num(b['gain_db'])}" if b.get("gain_db") else ""))
         for tr in self.tracks:
             lines.append(f"track {tr.name}")
-            for k in ("bank", "lang", "voice", "phonemizer", "engine"):
+            for k in ("bank", "lang", "voice", "phonemizer", "engine", "resampler", "wavtool"):
                 if getattr(tr, k):
                     lines.append(f"{k} {getattr(tr, k)}")
             if tr.volume_db:
@@ -350,7 +353,7 @@ def parse_text(text, base_dir=".", source="<score>"):
     pending_tempos = []
     # first pass for tempo/time so ms lengths and '@ bar' resolve against the final map
     lines = text.splitlines()
-    state = {"bank": None, "lang": None, "voice": None, "phonemizer": None, "engine": None}
+    state = {"bank": None, "lang": None, "voice": None, "phonemizer": None, "engine": None, "resampler": None, "wavtool": None}
     cursor = {}  # track name -> tick
     current = None
 
@@ -377,7 +380,7 @@ def parse_text(text, base_dir=".", source="<score>"):
                 raise WarbleError("bad_directive", f"'track' needs a name{where}")
             ensure_track(parts[1])
             continue
-        if head in ("bank", "lang", "voice", "phonemizer", "engine"):
+        if head in ("bank", "lang", "voice", "phonemizer", "engine", "resampler", "wavtool"):
             if len(parts) < 2:
                 raise WarbleError("bad_directive", f"'{head}' needs a value{where}")
             value = line.split(None, 1)[1].strip()

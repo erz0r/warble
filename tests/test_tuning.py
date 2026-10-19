@@ -166,3 +166,14 @@ def test_import_pitch_from_reference(fixtures, tmp_path):
     off = side["score_offset_ms"]
     m = (a.t_ms - off > 1200) & (a.t_ms - off < 1900) & a.voiced
     assert abs(np.median(a.midi[m]) - 61.7) < 0.1
+
+
+def test_dspitch_tuner_borrows_a_pitch_model(fixtures):
+    s = parse_text(f"bank {fixtures['banks']['utau_cv_sjis']}\nlang ja\nbpm 120\nか C4 1\nら E4 1\nさ D4 2\n")
+    notes = auto.run(s, "dspitch", ds_bank=fixtures["banks"]["ds_full"])
+    assert notes == [1, 2, 3]
+    raw = curve.note_raw(s.tracks[0].notes[1])
+    assert raw and len(raw["cents"]) > 50
+    # the mock pitch model follows the note grid, so the borrowed curve sits on the notes
+    c = _curve(s, np.arange(650, 950, 5.0))  # inside note 2 (500-1000 ms at 120 bpm)
+    assert np.allclose(c, 64, atol=0.05)
