@@ -155,8 +155,15 @@ def build_vcv(root):
     return root
 
 
+KANA_OF = {"": {"a": "あ", "i": "い", "u": "う", "e": "え", "o": "お"},
+           "k": {"a": "か", "i": "き", "u": "く", "e": "け", "o": "こ"},
+           "s": {"a": "さ", "i": "し", "u": "す", "e": "せ", "o": "そ"},
+           "r": {"a": "ら", "i": "り", "u": "る", "e": "れ", "o": "ろ"},
+           "n": {"a": "な"}, "m": {"a": "ま"}}
+
+
 def build_cvvc(root):
-    """cvvc bank with romaji aliases: '- ka', 'ka', 'a k', 'a R'."""
+    """japanese cvvc bank the usual way: kana cv aliases ('- か', 'か') and romaji vc ('a k', 'a R')."""
     rng = np.random.default_rng(5)
     lines = []
     vowels = ["a", "i", "u", "e", "o"]
@@ -168,12 +175,13 @@ def build_cvvc(root):
             parts = ([("c", c)] if c else []) + [("v", v, 600)]
             y, marks, end = sample(parts, 261.63, rng)
             cv = c + v
+            kana = KANA_OF[c][v]
             write_wav(os.path.join(root, f"{cv}.wav"), y)
             vstart = marks[-1]
             offset = max(0.0, marks[0] - 20)
             pre = vstart - offset
-            lines.append(oto_line(f"{cv}.wav", f"- {cv}", offset, pre + 60, -(end - 30 - offset), pre, 5))
-            lines.append(oto_line(f"{cv}.wav", cv, offset, pre + 60, -(end - 30 - offset), pre, min(pre, 20)))
+            lines.append(oto_line(f"{cv}.wav", f"- {kana}", offset, pre + 60, -(end - 30 - offset), pre, 5))
+            lines.append(oto_line(f"{cv}.wav", kana, offset, pre + 60, -(end - 30 - offset), pre, min(pre, 20)))
     for v in vowels:
         for c in cons + ["R"]:
             parts = [("v", v, 300)] + ([("c", c)] if c != "R" else [])
@@ -185,8 +193,8 @@ def build_cvvc(root):
             offset = cstart - 120
             pre = 120
             lines.append(oto_line(fn, f"{v} {c}", offset, pre + 30, -(cstart + 100 - offset), pre, 40))
-    with open(os.path.join(root, "oto.ini"), "w", encoding="ascii") as f:
-        f.write("\n".join(lines) + "\n")
+    with open(os.path.join(root, "oto.ini"), "w", encoding="utf-8") as f:
+        f.write("#Charset:utf-8\n" + "\n".join(lines) + "\n")
     with open(os.path.join(root, "character.txt"), "w", encoding="ascii") as f:
         f.write("name=Mock CVVC\n")
     return root

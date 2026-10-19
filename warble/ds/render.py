@@ -48,7 +48,7 @@ class DsEngine:
             self._phonemizers[lang] = Phonemizer(self.bank, self.models, lang)
         return self._phonemizers[lang]
 
-    def phonemize_phrase(self, words, tm, lang, voice_of, seed=None):
+    def phonemize_phrase(self, words, tm, lang, voice_of, seed=None, **_):
         return self.phonemizer(lang).phonemize_phrase(words, tm, voice_of, seed=seed)
 
     def depth(self, depth=None):
@@ -60,13 +60,14 @@ class DsEngine:
             raise WarbleError("max_depth_unset", f"{self.bank.name}: variable depth is on but max_depth is unset or negative")
         return min(1.0 if depth is None else float(depth), md)
 
-    def render_phrase(self, words, tm, lang, voice_of, steps=None, depth=None, seed=None, pitch_steps=None, timings=None):
+    def render_phrase(self, words, tm, lang, voice_of, steps=None, depth=None, seed=None, pitch_steps=None, timings=None, allow_unknown=False, **_):
         timings = timings if timings is not None else {}
         t0 = time.time()
         ph = self.phonemizer(lang)
         res = ph.phonemize_phrase(words, tm, voice_of, seed=seed)
         timings["phonemize"] = timings.get("phonemize", 0) + time.time() - t0
-        if res["unknown"]:
+        if res["unknown"] and not allow_unknown:
+            # unknown words were replaced by SP; rendering them silent is only done on request
             return {"phonemes": res, "error": "unknown_lyrics"}
         phones = res["phones"]
         notes = [n for w in words for n in w]
@@ -105,7 +106,7 @@ class DsEngine:
             midi = dspitch.rule_pitch(notes, tm, start_ms, fm, T)
             pitch_source = "rule"
         base_midi = midi.copy()
-        midi = pitchctl.apply_note_controls(midi, frame_t, notes, spans)
+        midi = pitchctl.apply_note_controls(midi, frame_t, notes, spans, tm)
         timings["pitch"] = timings.get("pitch", 0) + time.time() - t0
         f0 = util.tone_to_freq(midi).astype(np.float32)
 

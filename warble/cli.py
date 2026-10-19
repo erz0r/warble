@@ -60,6 +60,8 @@ SCORE_ARGS = [
     arg("--voice", help="voice mode for tracks that don't name one"),
     arg("--bpm", type=float, help="tempo for inline scores"),
     arg("--lyrics", help="lyrics to assign to an imported midi (see `lyrics`)"),
+    arg("--midi-track", help="midi import: track index or name (default: the one with most notes)"),
+    arg("--quantize", type=int, help="midi import: snap to this many ticks (480 = a beat, 120 = a 16th)"),
 ]
 
 
@@ -70,7 +72,8 @@ def load_score(a):
     if a.expr:
         s = load(a.expr, inline=True, defaults={"bank": a.bank, "lang": a.lang, "voice": a.voice, "bpm": a.bpm})
     elif a.score:
-        s = load(a.score, defaults={"lyrics": a.lyrics, "lang": a.lang} if a.score.lower().endswith((".mid", ".midi")) else None)
+        midi = a.score.lower().endswith((".mid", ".midi"))
+        s = load(a.score, defaults={"lyrics": a.lyrics, "lang": a.lang, "track": a.midi_track, "quantize": a.quantize} if midi else None)
     else:
         raise WarbleError("no_score", "give a score file or -e \"notes\"")
     return apply_defaults(s, bank=a.bank, lang=a.lang, voice=a.voice)
@@ -117,9 +120,74 @@ def cmd_sing(a):
     if a.range:
         r = sorted(_ranges(a.range))
         rng = (r[0], r[-1])
-    return sing(score, a.out, steps=a.steps, depth=a.depth, seed=a.seed, sample_rate=a.sample_rate, engine=a.engine,
-                phrase_filter=_ranges(a.phrase) if a.phrase else None, note_range=rng, vocoder_dirs=a.vocoders,
-                allow_unknown=a.allow_unknown, resampler=a.resampler)
+    report = sing(score, a.out, steps=a.steps, depth=a.depth, seed=a.seed, sample_rate=a.sample_rate, engine=a.engine,
+                  phrase_filter=_ranges(a.phrase) if a.phrase else None, note_range=rng, vocoder_dirs=a.vocoders,
+                  allow_unknown=a.allow_unknown, resampler=a.resampler)
+    if getattr(score, "import_report", None):
+        report["import"] = score.import_report
+    return report
+
+
+@command(
+    "lyrics",
+    "split text into syllables/mora for a language; with a score, assign them to its notes and write the result.",
+    [
+        arg("text", help="lyric text (japanese may include kanji; readings are reported)"),
+        arg("--lang", required=True, help="ja, en, zh, or other (whitespace tokens)"),
+        arg("--score", help="score to assign onto (.txt, .json, .ust, .mid, ...)"),
+        arg("-o", "--out", help="write the assigned score here (.txt score format, or .mid)"),
+        arg("--sokuon", choices=["separate", "attach"], default="separate", help="japanese っ: its own note, or attached to the previous mora"),
+        arg("--midi-track"),
+        arg("--quantize", type=int),
+    ],
+)
+def cmd_lyrics(a):
+    from .lyrics import assign, split
+    from .score import load
+
+    units, readings = split(a.text, a.lang, a.sokuon)
+    out = {"units": [u["lyric"] if u["notes"] == 1 else f"{u['lyric']}x{u['notes']}" for u in units], "kanji_readings": readings}
+    if a.score:
+        midi = a.score.lower().endswith((".mid", ".midi"))
+        s = load(a.score, defaults={"track": a.midi_track, "quantize": a.quantize, "lang": a.lang} if midi else None)
+        notes = s.tracks[0].notes
+        out["assignment"] = assign(notes, units)
+        out["notes"] = [f"{n.lyric}" for n in notes]
+        if a.out:
+            if a.out.lower().endswith((".mid", ".midi")):
+                from .formats import midi as midifmt
+
+                midifmt.save(s, a.out)
+            else:
+                for t in s.tracks:
+                    t.lang = t.lang or a.lang
+                with open(a.out, "w", encoding="utf-8") as f:
+                    f.write(s.to_text())
+            out["written"] = a.out
+    return out
+
+
+@command(
+    "export",
+    "convert a score to another format: .txt (score text), .json, .mid.",
+    SCORE_ARGS + [arg("-o", "--out", required=True)],
+)
+def cmd_export(a):
+    import json as _json
+
+    score = load_score(a)
+    ext = a.out.lower().rsplit(".", 1)[-1]
+    if ext in ("mid", "midi"):
+        from .formats import midi as midifmt
+
+        midifmt.save(score, a.out)
+    elif ext == "json":
+        with open(a.out, "w", encoding="utf-8") as f:
+            _json.dump(score.to_json(), f, ensure_ascii=False, indent=1)
+    else:
+        with open(a.out, "w", encoding="utf-8") as f:
+            f.write(score.to_text())
+    return {"written": a.out, "tracks": len(score.tracks), "notes": sum(len(t.notes) for t in score.tracks)}
 
 
 @command(

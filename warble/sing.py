@@ -84,15 +84,18 @@ def sing(score, out_path, steps=None, depth=None, seed=None, sample_rate=44100, 
     for track in score.tracks:
         if not track.notes:
             continue
+        prev_end_ms = None
         for words in split_phrases(track):
             notes = [n for w in words for n in w]
             first = notes[0]
             pidx += 1
             if phrase_filter and pidx not in phrase_filter:
+                prev_end_ms = tm.tick_to_ms(notes[-1].end)
                 continue
             if note_range:
                 gi = [track.notes.index(n) + 1 for n in notes]
                 if max(gi) < note_range[0] or min(gi) > note_range[1]:
+                    prev_end_ms = tm.tick_to_ms(notes[-1].end)
                     continue
             bank = _note_attr(first, track, "bank")
             if not bank:
@@ -103,7 +106,9 @@ def sing(score, out_path, steps=None, depth=None, seed=None, sample_rate=44100, 
             def voice_of(n, track=track):
                 return n.controls.get("voice") or track.voice
 
-            res = eng.render_phrase(words, tm, lang, voice_of, steps=steps, depth=depth, seed=seed, timings=timings)
+            res = eng.render_phrase(words, tm, lang, voice_of, steps=steps, depth=depth, seed=seed, timings=timings, prev_end_ms=prev_end_ms,
+                                    allow_unknown=allow_unknown)
+            prev_end_ms = tm.tick_to_ms(notes[-1].end)
             ph = res["phonemes"]
             if ph.get("unknown"):
                 for u in ph["unknown"]:
@@ -241,5 +246,5 @@ def _sidecar_phrase(pidx, track, words, res, tm):
         "pitch_source": res.get("pitch_source"),
     }
     if "pitch_midi" in res:
-        out["pitch"] = {"start_ms": res["start_ms"], "frame_ms": fm, "midi": [round(float(v), 4) for v in res["pitch_midi"]]}
+        out["pitch"] = {"start_ms": res.get("pitch_start_ms", res["start_ms"]), "frame_ms": fm, "midi": [round(float(v), 4) for v in res["pitch_midi"]]}
     return out

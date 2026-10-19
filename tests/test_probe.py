@@ -76,7 +76,7 @@ def test_planted_oto_faults(fixtures, tmp_path):
     bank = tmp_path / "cv"
     shutil.copytree(fixtures["banks"]["utau_cvvc"], bank)
     with open(bank / "oto.ini", "a") as f:
-        f.write("ka.wav=ka,0,50,-99999,30,10\n")  # duplicate alias, cutoff far past the end
+        f.write("ka.wav=か,0,50,-99999,30,10\n")  # duplicate alias, cutoff far past the end
         f.write("nothere.wav=zz,0,50,-100,30,10\n")  # missing wav
         f.write("ka.wav=kb,99999,50,-100,30,10\n")  # offset past the end
         f.write("garbage line\n")

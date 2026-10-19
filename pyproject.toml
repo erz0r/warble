@@ -5,6 +5,10 @@ description = "a small singing engine for diffsinger and classic utau voicebanks
 requires-python = ">=3.10"
 license = { text = "MIT" }
 dependencies = [
+    "mido",
+    "pykakasi",
+    "pyphen",
+    "setuptools<81",  # pyworld still imports pkg_resources
     "numpy",
     "pyyaml",
     "onnx",

@@ -40,8 +40,28 @@ def vibrato_params(controls):
     return rate, depth, delay, fade
 
 
-def apply_note_controls(midi, frame_t, notes, spans):
+def apply_pitchbends(out, frame_t, notes, spans, tm=None):
+    """utau mode1 PitchBend: cents relative to the note's own pitch every 5 ticks from PBStart ms.
+    over its span it replaces whatever transition the base curve had, as in utau."""
+    for n, (s, e) in zip(notes, spans):
+        pb = n.extra.get("pitchbend") if n.extra else None
+        if not pb or not pb.get("cents"):
+            continue
+        step = pb.get("interval_ms")
+        if step is None:
+            bpm = tm.bpm_at(n.position) if tm else 120.0
+            step = 60000.0 / (bpm * 480) * 5
+        t0 = s + float(pb.get("start_ms", 0.0))
+        xs = t0 + np.arange(len(pb["cents"])) * step
+        m = (frame_t >= xs[0]) & (frame_t <= min(xs[-1], e))
+        if m.any():
+            out[m] = n.tone + np.interp(frame_t[m], xs, np.asarray(pb["cents"], float)) / 100.0
+    return out
+
+
+def apply_note_controls(midi, frame_t, notes, spans, tm=None):
     out = np.array(midi, dtype=np.float64)
+    out = apply_pitchbends(out, frame_t, notes, spans, tm)
     for n, (s, e) in zip(notes, spans):
         c = n.controls
         m = (frame_t >= s) & (frame_t < e)

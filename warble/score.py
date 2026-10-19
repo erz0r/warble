@@ -66,6 +66,8 @@ class Note:
     hint: str = None  # explicit phonemes / alias from [ ... ]
     controls: dict = field(default_factory=dict)
     line: int = None  # source line for error messages
+    # imported tuning that isn't a scalar control: {"pitchbend": {"start_ms", "cents": [...]}, "ust": {raw fields}}
+    extra: dict = field(default_factory=dict)
 
     @property
     def end(self):
@@ -81,6 +83,8 @@ class Note:
             out["hint"] = self.hint
         if self.controls:
             out["controls"] = self.controls
+        if self.extra:
+            out["extra"] = self.extra
         return out
 
 
@@ -199,6 +203,34 @@ class Score:
     def end_tick(self):
         return max((n.end for t in self.tracks for n in t.notes), default=0)
 
+    def to_text(self):
+        """write the score back in the text format (positions explicit only where needed)."""
+        lines = []
+        for t, b in self.tempos:
+            lines.append(f"bpm {fmt_num(b)}" + (f" @ tick {t}" if t else ""))
+        for t, n, d in self.time_signatures:
+            lines.append(f"time {n}/{d}" + (f" @ tick {t}" if t else ""))
+        if self.key:
+            lines.append(f"key {self.key}")
+        for tr in self.tracks:
+            lines.append(f"track {tr.name}")
+            for k in ("bank", "lang", "voice", "phonemizer", "engine"):
+                if getattr(tr, k):
+                    lines.append(f"{k} {getattr(tr, k)}")
+            if tr.volume_db:
+                lines.append(f"volume {fmt_num(tr.volume_db)}")
+            if tr.pan:
+                lines.append(f"pan {fmt_num(tr.pan)}")
+            pos = 0
+            for n in tr.notes:
+                if n.position > pos:
+                    lines.append(f"r {fmt_beats(n.position - pos)}")
+                lyr = f"[{n.hint}]" if n.hint else n.lyric
+                ctl = " ".join(f"{k}={v if isinstance(v, str) else fmt_num(v)}" for k, v in n.controls.items() if k not in ("bank",))
+                lines.append(f"{lyr} {pitch_name(n.tone)} {fmt_beats(n.duration)}" + (f" {ctl}" if ctl else ""))
+                pos = n.end
+        return "\n".join(lines) + "\n"
+
     def to_json(self):
         return {
             "tempos": [{"tick": t, "bpm": b} for t, b in self.tempos],
@@ -206,6 +238,23 @@ class Score:
             "key": self.key,
             "tracks": [t.to_json() for t in self.tracks],
         }
+
+
+def fmt_num(x):
+    x = float(x)
+    return str(int(x)) if x == int(x) else f"{x:g}"
+
+
+def fmt_beats(ticks):
+    """ticks -> '1', '1/2', '3/4', '1.25' or exact '123/480' when nothing simpler fits."""
+    from fractions import Fraction
+
+    f = Fraction(int(ticks), TPQ)
+    if f.denominator == 1:
+        return str(f.numerator)
+    if f.denominator <= 16:
+        return f"{f.numerator}/{f.denominator}"
+    return f"{int(ticks)}/{TPQ}"
 
 
 # ---- parsing --------------------------------------------------------------------------
