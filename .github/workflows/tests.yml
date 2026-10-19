@@ -1,0 +1,26 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+      - name: install
+        run: |
+          uv venv
+          uv pip install -e ".[dev,mcp]"
+      - name: test
+        # real voicebanks aren't in the repo, so the tests that need them skip
+        run: uv run pytest -q -W ignore tests

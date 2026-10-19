@@ -1,7 +1,49 @@
 # warble
 
-a singing engine for **diffsinger** and **classic utau** voicebanks, built to be driven by an llm
-agent from a terminal or over mcp: text in, json out, and images plus numbers instead of ears.
+```
+  C5 ┤                       ╭── b ──╮
+  A4 ┤               ╭── r ──╯       ╰── l ──╮
+  G4 ┤       ╭── a ──╯                       ╰── e ∿∿∿∿∿∿∿∿
+  E4 ┤   w ──╯
+     └──────────────────────────────────────────────────────▸
+```
+
+[![tests](https://github.com/erz0r/warble/actions/workflows/tests.yml/badge.svg)](https://github.com/erz0r/warble/actions/workflows/tests.yml)
+![python](https://img.shields.io/badge/python-3.10%2B-blue)
+![license](https://img.shields.io/badge/license-MIT-green)
+
+**a singing voice synthesizer that an ai agent can drive and judge on its own.** warble renders
+[diffsinger](https://github.com/openvpi/DiffSinger) and classic [utau](http://utau2008.web.fc2.com/)
+voicebanks from a plain-text score, a midi file, musicxml, ust or openutau projects, and then
+*listens back* for you: every render comes with a report of how it actually sounds, measured.
+
+- **two engines, one score.** diffsinger (duration, pitch, variance, acoustic and vocoder models
+  over onnx) and utau (oto timing, a built-in world resampler, or your own resampler and wavtool).
+- **ears for agents.** `inspect` measures pitch against intent per note, transitions, vibrato,
+  timing, loudness, breathiness, formants and artifacts (clicks, octave slips, dropouts, noise in
+  rests), runs a speech recognizer to check the words, and writes plots plus a plain-text summary.
+- **tuning tools.** bend points, vibrato, drift, dynamics and timing as small, versioned edits with
+  undo, presets and auto-tuners, and only the changed phrases re-render.
+- **faithful to openutau.** 60+ of openutau's phonemizers are ported and checked against openutau
+  itself, case by case (see [phonemizer status](docs/phonemizers.md)).
+- **finishing.** harmonies, multi-track mixing, effects (including your installed vst3 / au
+  plugins), backing tracks, loudness targets and stems.
+- **cli and mcp.** every command prints json; the same commands are tools on an mcp server.
+
+no voicebanks are included. bring your own: see [banks/README.md](banks/README.md).
+
+```sh
+$ warble sing -e "さ:A4:1 く:A4:1 ら:B4:2:vib=pop" --bank "rei ds" --lang ja -o take1.wav
+$ warble inspect take1.wav
+```
+
+![piano roll from `warble inspect`: notes with lyrics, intended pitch dashed, measured pitch solid](docs/images/inspect_pianoroll.png)
+
+> pitch: notes sit a median 2.4 cents from intent; 99.2% of sung frames within 20 cents.
+> vibrato on 3 note(s), around 5.3 Hz. no artifacts detected.
+> intelligibility: 76.9% of syllables recognized.
+
+*an excerpt of `inspect`'s listening notes from [a real tuning session](docs/tuning_session.md).*
 
 everything warble knows about a bank comes from the bank's own files at load time. when a bank
 does something warble doesn't support, it says what and why instead of guessing.
@@ -166,7 +208,7 @@ and replays the phonemizer goldens. real banks under `./banks` get probed too wh
 
 - `--provider coreml` works on apple silicon but was about 2× slower than cpu on rei ds in our
   test (compilation per session); cpu is the default.
-- known limits: no gui, no enunu/vogen/voicevox renderers, no learned tuner yet (see `SPEC.md`
+- known limits: no gui, no enunu/vogen/voicevox renderers, no learned tuner yet (see `docs/SPEC.md`
   section 7; per-note stats from `inspect` and the tuning representation are meant to feed it),
   no realtime playback.
 
