@@ -170,13 +170,23 @@ class DsDict:
                 if p not in self.symbols:
                     self.dropped.append((g, p))
             self.entries[g] = phs
-        self.other_keys = sorted(k for k in data if k not in ("symbols", "entries"))
+        # DiffSingerG2pDictionaryData: maps a built-in g2p's phonemes onto this bank's symbols
+        self.replacements = {}
+        for r in data.get("replacements") or []:
+            if isinstance(r, dict) and "from" in r and "to" in r:
+                self.replacements[str(r["from"])] = str(r["to"])
+        self.other_keys = sorted(k for k in data if k not in ("symbols", "entries", "replacements"))
         # SP and AP are always vowels (DiffSingerBasePhonemizer.LoadG2p)
         self.symbols.setdefault("SP", "vowel")
         self.symbols.setdefault("AP", "vowel")
 
     def is_vowel(self, sym):
         return self.symbols.get(sym) == "vowel"
+
+    def is_consonant(self, sym):
+        """openutau only distinguishes vowels and glides; every other type (consonant, stop,
+        nasal, fricative...) is a consonant."""
+        return sym in self.symbols and not self.is_vowel(sym)
 
     def is_glide(self, sym):
         return self.symbols.get(sym) in ("semivowel", "liquid")

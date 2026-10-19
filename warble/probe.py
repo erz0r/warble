@@ -80,6 +80,7 @@ def probe_ds(root, check, vocoder_dirs=None):
                 continue
             dicts[rel] = _probe_dict(root, p, cfg, issues)
     out["dictionaries"] = dicts
+    _report_dict_symbols(dicts, issues)
     if not dicts:
         issues.add("warning", "no_dictionary", "no dsdict*.yaml found; lyrics must be given as explicit phonemes", file=root)
 
@@ -266,22 +267,42 @@ def _probe_dict(root, path, cfg, issues):
     if d.dropped:
         sample = d.dropped[:10]
         issues.add("warning", "dict_unknown_symbol", f"{len(d.dropped)} entry phonemes are not declared in symbols and openutau would silently drop them, e.g. {sample}", file=rel)
+    if d.replacements:
+        info["replacements"] = len(d.replacements)
     table = getattr(cfg, "_phoneme_table", None)
     if table:
         lang = ds.dict_language(path)
         not_in_model = []
-        for s in d.symbols:
-            if s in ("SP", "AP"):
+        for sym in d.symbols:
+            if sym in ("SP", "AP"):
                 continue
-            if s not in table and not (lang and f"{lang}/{s}" in table):
-                not_in_model.append(s)
-        if not_in_model:
-            issues.add("warning", "dict_symbol_not_in_model", f"{len(not_in_model)} dictionary symbols are not in the phoneme list: {not_in_model[:20]}", file=rel)
-        info["symbols_not_in_model"] = len(not_in_model)
-    bad_types = sorted({t for t in d.symbols.values() if t not in ("vowel", "consonant", "semivowel", "liquid", "")})
-    if bad_types:
-        issues.add("warning", "dict_symbol_type", f"unknown symbol types {bad_types} (expected vowel/consonant/semivowel/liquid)", file=rel)
+            if sym not in table and not (lang and f"{lang}/{sym}" in table):
+                not_in_model.append(sym)
+        info["symbols_not_in_model"] = not_in_model
+    info["_types"] = sorted({t for t in d.symbols.values() if t not in ("vowel", "semivowel", "liquid")})
     return info
+
+
+def _report_dict_symbols(dicts, issues):
+    """report symbol problems once per distinct problem, listing the dicts that share it,
+    instead of repeating the same list for every per-language dict."""
+    groups = {}
+    types = set()
+    for rel, info in dicts.items():
+        missing = tuple(info.pop("symbols_not_in_model", []) or [])
+        types |= set(info.pop("_types", []))
+        info["symbols_not_in_model"] = len(missing)
+        if missing:
+            groups.setdefault(missing, []).append(rel)
+    for missing, files in groups.items():
+        issues.add(
+            "warning",
+            "dict_symbol_not_in_model",
+            f"{len(missing)} declared symbols are not in the model's phoneme list, so lyrics using them cannot render: {list(missing)[:24]}",
+            files=files,
+        )
+    if types - {"consonant"}:
+        issues.add("info", "dict_symbol_types", f"symbol types {sorted(types - {'consonant'})} are treated as consonants (openutau only distinguishes vowel and semivowel/liquid glides)")
 
 
 def _voice_modes(bank, issues):
@@ -636,7 +657,7 @@ def list_banks(dirs, vocoder_dirs=None):
                     entry["missing_dependencies"] = [voc["error"]] if voc["source"] == "missing" else []
                     entry["submodels"] = sorted(b.submodels)
                 elif kind == "utau":
-                    b = utau.UtauBank(r, check_wavs=False)
+                    b = utau.UtauBank(r)
                     entry["name"] = b.name
                     entry["reclist"], _, _ = utau.bank_reclist(b)
                     entry["voice_modes"] = sorted({s["color"] for s in b.subbanks if s["color"]}) or ["default"]
