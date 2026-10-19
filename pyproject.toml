@@ -1,0 +1,29 @@
+[project]
+name = "warble"
+version = "0.1.0"
+description = "a small singing engine for diffsinger and classic utau voicebanks, built to be driven by an llm agent"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "numpy",
+    "pyyaml",
+    "onnx",
+    "onnxruntime",
+    "soundfile",
+    "scipy",
+    "pyworld",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+warble = "warble.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["warble*"]

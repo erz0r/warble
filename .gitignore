@@ -1,0 +1,12 @@
+ref/
+banks/
+vocoders/
+resamplers/
+.venv/
+__pycache__/
+*.egg-info/
+.cache/
+out/
+.DS_Store
+downloads/
+*.zip
