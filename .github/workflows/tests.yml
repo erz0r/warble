@@ -18,9 +18,8 @@ jobs:
         with:
           python-version: "3.12"
       - name: install
-        run: |
-          uv venv
-          uv pip install -e ".[dev,mcp]"
+        # setup-uv with python-version creates and activates a virtual environment
+        run: uv pip install -e ".[dev,mcp]"
       - name: test
         # real voicebanks aren't in the repo, so the tests that need them skip
-        run: uv run pytest -q -W ignore tests
+        run: python -m pytest -q -W ignore tests
