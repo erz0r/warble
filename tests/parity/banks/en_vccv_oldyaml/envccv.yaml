@@ -1,0 +1,21 @@
+version: 1.0
+symbols:
+  - {symbol: E, type: vowel}
+  - {symbol: zz, type: fricative}
+replacements:
+  - {from: [s, t], to: [st]}
+  - {from: [9, r], to: [0, r]}
+fallbacks:
+  - {from: h, to: hh}
+  - {from: Q, to: O}
+timings:
+  - {symbol: st-, value: 1.5}
+  - {symbol: I t, value: 0.5}
+vcvowels:
+  Ang: ng
+  9l: l
+entries:
+  - grapheme: warble
+    phonemes: [w, O, r, b, u, l]
+  - grapheme: test
+    phonemes: [t, E, s, t]

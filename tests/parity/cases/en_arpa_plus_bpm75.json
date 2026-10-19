@@ -1,0 +1,607 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.ArpasingPlusPhonemizer",
+ "bank": "en_arpa-plus",
+ "bpm": 75,
+ "cases": [
+  {
+   "id": "w_hi",
+   "notes": [
+    {
+     "lyric": "hi",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_good",
+   "notes": [
+    {
+     "lyric": "good",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_morning",
+   "notes": [
+    {
+     "lyric": "morning",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_read",
+   "notes": [
+    {
+     "lyric": "read",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_test",
+   "notes": [
+    {
+     "lyric": "test",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_strength",
+   "notes": [
+    {
+     "lyric": "strength",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_trusting",
+   "notes": [
+    {
+     "lyric": "trusting",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_drive",
+   "notes": [
+    {
+     "lyric": "drive",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_world",
+   "notes": [
+    {
+     "lyric": "world",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_the",
+   "notes": [
+    {
+     "lyric": "the",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_music",
+   "notes": [
+    {
+     "lyric": "music",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_sing",
+   "notes": [
+    {
+     "lyric": "sing",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_apple",
+   "notes": [
+    {
+     "lyric": "apple",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_street",
+   "notes": [
+    {
+     "lyric": "street",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_texts",
+   "notes": [
+    {
+     "lyric": "texts",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_asks",
+   "notes": [
+    {
+     "lyric": "asks",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_rhythm",
+   "notes": [
+    {
+     "lyric": "rhythm",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_openutau",
+   "notes": [
+    {
+     "lyric": "openutau",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_a",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_I",
+   "notes": [
+    {
+     "lyric": "I",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_oh",
+   "notes": [
+    {
+     "lyric": "oh",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_eye",
+   "notes": [
+    {
+     "lyric": "eye",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_away",
+   "notes": [
+    {
+     "lyric": "away",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_fire",
+   "notes": [
+    {
+     "lyric": "fire",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_squirrel",
+   "notes": [
+    {
+     "lyric": "squirrel",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_splendid",
+   "notes": [
+    {
+     "lyric": "splendid",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_thinks",
+   "notes": [
+    {
+     "lyric": "thinks",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_months",
+   "notes": [
+    {
+     "lyric": "months",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_boy",
+   "notes": [
+    {
+     "lyric": "boy",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_cow",
+   "notes": [
+    {
+     "lyric": "cow",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_go",
+   "notes": [
+    {
+     "lyric": "go",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_her",
+   "notes": [
+    {
+     "lyric": "her",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_earth",
+   "notes": [
+    {
+     "lyric": "earth",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_year",
+   "notes": [
+    {
+     "lyric": "year",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_you",
+   "notes": [
+    {
+     "lyric": "you",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_we",
+   "notes": [
+    {
+     "lyric": "we",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_wire",
+   "notes": [
+    {
+     "lyric": "wire",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_help",
+   "notes": [
+    {
+     "lyric": "help",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_milk",
+   "notes": [
+    {
+     "lyric": "milk",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_angry",
+   "notes": [
+    {
+     "lyric": "angry",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_bring",
+   "notes": [
+    {
+     "lyric": "bring",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_class",
+   "notes": [
+    {
+     "lyric": "class",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_dream",
+   "notes": [
+    {
+     "lyric": "dream",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_three",
+   "notes": [
+    {
+     "lyric": "three",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_shrimp",
+   "notes": [
+    {
+     "lyric": "shrimp",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_twelfths",
+   "notes": [
+    {
+     "lyric": "twelfths",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_judge",
+   "notes": [
+    {
+     "lyric": "judge",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_church",
+   "notes": [
+    {
+     "lyric": "church",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_vision",
+   "notes": [
+    {
+     "lyric": "vision",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_yellow",
+   "notes": [
+    {
+     "lyric": "yellow",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_hello",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_beautiful",
+   "notes": [
+    {
+     "lyric": "beautiful",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_everything",
+   "notes": [
+    {
+     "lyric": "everything",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_orange",
+   "notes": [
+    {
+     "lyric": "orange",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_really",
+   "notes": [
+    {
+     "lyric": "really",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_player",
+   "notes": [
+    {
+     "lyric": "player",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_flower",
+   "notes": [
+    {
+     "lyric": "flower",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_power",
+   "notes": [
+    {
+     "lyric": "power",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_ending",
+   "notes": [
+    {
+     "lyric": "ending",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_string",
+   "notes": [
+    {
+     "lyric": "string",
+     "tone": "A#3",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

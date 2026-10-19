@@ -1,0 +1,1037 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.EnXSampaPhonemizer",
+ "bank": "en_delta0",
+ "bpm": 160,
+ "cases": [
+  {
+   "id": "w_hi",
+   "notes": [
+    {
+     "lyric": "hi",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_good",
+   "notes": [
+    {
+     "lyric": "good",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_morning",
+   "notes": [
+    {
+     "lyric": "morning",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_read",
+   "notes": [
+    {
+     "lyric": "read",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_test",
+   "notes": [
+    {
+     "lyric": "test",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_strength",
+   "notes": [
+    {
+     "lyric": "strength",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_trusting",
+   "notes": [
+    {
+     "lyric": "trusting",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_drive",
+   "notes": [
+    {
+     "lyric": "drive",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_world",
+   "notes": [
+    {
+     "lyric": "world",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_the",
+   "notes": [
+    {
+     "lyric": "the",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_music",
+   "notes": [
+    {
+     "lyric": "music",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_sing",
+   "notes": [
+    {
+     "lyric": "sing",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_apple",
+   "notes": [
+    {
+     "lyric": "apple",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_street",
+   "notes": [
+    {
+     "lyric": "street",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_texts",
+   "notes": [
+    {
+     "lyric": "texts",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_asks",
+   "notes": [
+    {
+     "lyric": "asks",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_rhythm",
+   "notes": [
+    {
+     "lyric": "rhythm",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_openutau",
+   "notes": [
+    {
+     "lyric": "openutau",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_a",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_I",
+   "notes": [
+    {
+     "lyric": "I",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_oh",
+   "notes": [
+    {
+     "lyric": "oh",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_eye",
+   "notes": [
+    {
+     "lyric": "eye",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_away",
+   "notes": [
+    {
+     "lyric": "away",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_fire",
+   "notes": [
+    {
+     "lyric": "fire",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_squirrel",
+   "notes": [
+    {
+     "lyric": "squirrel",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_splendid",
+   "notes": [
+    {
+     "lyric": "splendid",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_thinks",
+   "notes": [
+    {
+     "lyric": "thinks",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_months",
+   "notes": [
+    {
+     "lyric": "months",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_boy",
+   "notes": [
+    {
+     "lyric": "boy",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_cow",
+   "notes": [
+    {
+     "lyric": "cow",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_go",
+   "notes": [
+    {
+     "lyric": "go",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_her",
+   "notes": [
+    {
+     "lyric": "her",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_earth",
+   "notes": [
+    {
+     "lyric": "earth",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_year",
+   "notes": [
+    {
+     "lyric": "year",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_you",
+   "notes": [
+    {
+     "lyric": "you",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_we",
+   "notes": [
+    {
+     "lyric": "we",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_wire",
+   "notes": [
+    {
+     "lyric": "wire",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_help",
+   "notes": [
+    {
+     "lyric": "help",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_milk",
+   "notes": [
+    {
+     "lyric": "milk",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_angry",
+   "notes": [
+    {
+     "lyric": "angry",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_bring",
+   "notes": [
+    {
+     "lyric": "bring",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_class",
+   "notes": [
+    {
+     "lyric": "class",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_dream",
+   "notes": [
+    {
+     "lyric": "dream",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_three",
+   "notes": [
+    {
+     "lyric": "three",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_shrimp",
+   "notes": [
+    {
+     "lyric": "shrimp",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_twelfths",
+   "notes": [
+    {
+     "lyric": "twelfths",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_judge",
+   "notes": [
+    {
+     "lyric": "judge",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_church",
+   "notes": [
+    {
+     "lyric": "church",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_vision",
+   "notes": [
+    {
+     "lyric": "vision",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_yellow",
+   "notes": [
+    {
+     "lyric": "yellow",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_hello",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_beautiful",
+   "notes": [
+    {
+     "lyric": "beautiful",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_everything",
+   "notes": [
+    {
+     "lyric": "everything",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_orange",
+   "notes": [
+    {
+     "lyric": "orange",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_really",
+   "notes": [
+    {
+     "lyric": "really",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_player",
+   "notes": [
+    {
+     "lyric": "player",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_flower",
+   "notes": [
+    {
+     "lyric": "flower",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_power",
+   "notes": [
+    {
+     "lyric": "power",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_ending",
+   "notes": [
+    {
+     "lyric": "ending",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_string",
+   "notes": [
+    {
+     "lyric": "string",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_skate",
+   "notes": [
+    {
+     "lyric": "skate",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_spring",
+   "notes": [
+    {
+     "lyric": "spring",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_sprite",
+   "notes": [
+    {
+     "lyric": "sprite",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_scream",
+   "notes": [
+    {
+     "lyric": "scream",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_smile",
+   "notes": [
+    {
+     "lyric": "smile",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_snow",
+   "notes": [
+    {
+     "lyric": "snow",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_school",
+   "notes": [
+    {
+     "lyric": "school",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_question",
+   "notes": [
+    {
+     "lyric": "question",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_language",
+   "notes": [
+    {
+     "lyric": "language",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_people",
+   "notes": [
+    {
+     "lyric": "people",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_good_morning",
+   "notes": [
+    {
+     "lyric": "good",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "morning",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_my_test",
+   "notes": [
+    {
+     "lyric": "my",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "test",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_hello_world",
+   "notes": [
+    {
+     "lyric": "hello",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "world",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_I_am",
+   "notes": [
+    {
+     "lyric": "I",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "am",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_go_away",
+   "notes": [
+    {
+     "lyric": "go",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "away",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_the_end",
+   "notes": [
+    {
+     "lyric": "the",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "end",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_sky_is_blue",
+   "notes": [
+    {
+     "lyric": "sky",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "is",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "blue",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_it_is_a_test",
+   "notes": [
+    {
+     "lyric": "it",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "is",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "test",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_what_a_day",
+   "notes": [
+    {
+     "lyric": "what",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "day",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_stop_it",
+   "notes": [
+    {
+     "lyric": "stop",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "it",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_first_step",
+   "notes": [
+    {
+     "lyric": "first",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "step",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_big_dog_runs",
+   "notes": [
+    {
+     "lyric": "big",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "dog",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "runs",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_sing_along",
+   "notes": [
+    {
+     "lyric": "sing",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "along",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_true_love",
+   "notes": [
+    {
+     "lyric": "true",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "love",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_all_of_us",
+   "notes": [
+    {
+     "lyric": "all",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "of",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "us",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_oh_oh",
+   "notes": [
+    {
+     "lyric": "oh",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "oh",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_a_a",
+   "notes": [
+    {
+     "lyric": "a",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "a",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_eye_of",
+   "notes": [
+    {
+     "lyric": "eye",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "of",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_cold_street",
+   "notes": [
+    {
+     "lyric": "cold",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "street",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_best_friends",
+   "notes": [
+    {
+     "lyric": "best",
+     "tone": "A4",
+     "duration": 480
+    },
+    {
+     "lyric": "friends",
+     "tone": "A4",
+     "duration": 480
+    }
+   ]
+  }
+ ]
+}

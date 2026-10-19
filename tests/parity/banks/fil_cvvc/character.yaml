@@ -1,0 +1,16 @@
+subbanks:
+- color: ''
+  prefix: ''
+  suffix: ''
+  tone_ranges:
+  - C1-F#5
+- color: ''
+  prefix: ''
+  suffix: '_H'
+  tone_ranges:
+  - G5-B7
+- color: 'Soft'
+  prefix: ''
+  suffix: '_S'
+  tone_ranges:
+  - C1-B7

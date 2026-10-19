@@ -1,0 +1,877 @@
+{
+ "phonemizer": "OpenUtau.Plugin.Builtin.FilipinoPhonemizer",
+ "bank": "fil_vcv",
+ "bpm": 150,
+ "cases": [
+  {
+   "id": "w_kain",
+   "notes": [
+    {
+     "lyric": "kain",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_mahal",
+   "notes": [
+    {
+     "lyric": "mahal",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_kita",
+   "notes": [
+    {
+     "lyric": "kita",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_salamat",
+   "notes": [
+    {
+     "lyric": "salamat",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_bahay",
+   "notes": [
+    {
+     "lyric": "bahay",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_ikaw",
+   "notes": [
+    {
+     "lyric": "ikaw",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_araw",
+   "notes": [
+    {
+     "lyric": "araw",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_kamusta",
+   "notes": [
+    {
+     "lyric": "kamusta",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_mga",
+   "notes": [
+    {
+     "lyric": "mga",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_ng",
+   "notes": [
+    {
+     "lyric": "ng",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_openutau",
+   "notes": [
+    {
+     "lyric": "openutau",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_aso",
+   "notes": [
+    {
+     "lyric": "aso",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_puso",
+   "notes": [
+    {
+     "lyric": "puso",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_sayaw",
+   "notes": [
+    {
+     "lyric": "sayaw",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_baboy",
+   "notes": [
+    {
+     "lyric": "baboy",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_aliw",
+   "notes": [
+    {
+     "lyric": "aliw",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_tayo",
+   "notes": [
+    {
+     "lyric": "tayo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_langit",
+   "notes": [
+    {
+     "lyric": "langit",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_bituin",
+   "notes": [
+    {
+     "lyric": "bituin",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_ulan",
+   "notes": [
+    {
+     "lyric": "ulan",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_bundok",
+   "notes": [
+    {
+     "lyric": "bundok",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_gabi",
+   "notes": [
+    {
+     "lyric": "gabi",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_trabaho",
+   "notes": [
+    {
+     "lyric": "trabaho",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_plato",
+   "notes": [
+    {
+     "lyric": "plato",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_isda",
+   "notes": [
+    {
+     "lyric": "isda",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_ngiti",
+   "notes": [
+    {
+     "lyric": "ngiti",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_dyan",
+   "notes": [
+    {
+     "lyric": "dyan",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_siya",
+   "notes": [
+    {
+     "lyric": "siya",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_'oo",
+   "notes": [
+    {
+     "lyric": "'oo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_hindi'",
+   "notes": [
+    {
+     "lyric": "hindi'",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_ewan",
+   "notes": [
+    {
+     "lyric": "ewan",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_kanta",
+   "notes": [
+    {
+     "lyric": "kanta",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_aalis",
+   "notes": [
+    {
+     "lyric": "aalis",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_kailangan",
+   "notes": [
+    {
+     "lyric": "kailangan",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_tsinelas",
+   "notes": [
+    {
+     "lyric": "tsinelas",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_sheet",
+   "notes": [
+    {
+     "lyric": "sheet",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "w_brrr",
+   "notes": [
+    {
+     "lyric": "brrr",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_mahal_kita",
+   "notes": [
+    {
+     "lyric": "mahal",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "kita",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_ikaw_at_ako",
+   "notes": [
+    {
+     "lyric": "ikaw",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "at",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ako",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_salamat_po",
+   "notes": [
+    {
+     "lyric": "salamat",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "po",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_sa_araw",
+   "notes": [
+    {
+     "lyric": "sa",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "araw",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_isa_dalawa",
+   "notes": [
+    {
+     "lyric": "isa",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "dalawa",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_ang_ganda",
+   "notes": [
+    {
+     "lyric": "ang",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ganda",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_mga_bata",
+   "notes": [
+    {
+     "lyric": "mga",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "bata",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_kain_na",
+   "notes": [
+    {
+     "lyric": "kain",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "na",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_ay_oo",
+   "notes": [
+    {
+     "lyric": "ay",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "oo",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_tayo_ay",
+   "notes": [
+    {
+     "lyric": "tayo",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ay",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "p_dito_sa_puso",
+   "notes": [
+    {
+     "lyric": "dito",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "sa",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "puso",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_salamat",
+   "notes": [
+    {
+     "lyric": "salamat",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_kita_short",
+   "notes": [
+    {
+     "lyric": "kita",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_tilde",
+   "notes": [
+    {
+     "lyric": "mahal",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+~",
+     "tone": "G4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "ext_star",
+   "notes": [
+    {
+     "lyric": "ikaw",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "+*",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "+",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "hint",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "k a i n"
+    }
+   ]
+  },
+  {
+   "id": "hint_cluster",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "t r a b a h o"
+    }
+   ]
+  },
+  {
+   "id": "hint_diph",
+   "notes": [
+    {
+     "lyric": "x",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "b a h ay"
+    },
+    {
+     "lyric": "y",
+     "tone": "C4",
+     "duration": 480,
+     "hint": "aw"
+    }
+   ]
+  },
+  {
+   "id": "rest",
+   "notes": [
+    {
+     "lyric": "kain",
+     "tone": "C4",
+     "duration": 480,
+     "gap_after": 240
+    },
+    {
+     "lyric": "na",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "tail_dash",
+   "notes": [
+    {
+     "lyric": "aso",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "-",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "forced",
+   "notes": [
+    {
+     "lyric": "?- ka",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "ka",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "dur_30",
+   "notes": [
+    {
+     "lyric": "bundok",
+     "tone": "C4",
+     "duration": 30
+    },
+    {
+     "lyric": "isda",
+     "tone": "C4",
+     "duration": 30
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 30
+    }
+   ]
+  },
+  {
+   "id": "dur_60",
+   "notes": [
+    {
+     "lyric": "bundok",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "isda",
+     "tone": "C4",
+     "duration": 60
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 60
+    }
+   ]
+  },
+  {
+   "id": "dur_120",
+   "notes": [
+    {
+     "lyric": "bundok",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "isda",
+     "tone": "C4",
+     "duration": 120
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 120
+    }
+   ]
+  },
+  {
+   "id": "dur_960",
+   "notes": [
+    {
+     "lyric": "bundok",
+     "tone": "C4",
+     "duration": 960
+    },
+    {
+     "lyric": "isda",
+     "tone": "C4",
+     "duration": 960
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 960
+    }
+   ]
+  },
+  {
+   "id": "dur_1920",
+   "notes": [
+    {
+     "lyric": "bundok",
+     "tone": "C4",
+     "duration": 1920
+    },
+    {
+     "lyric": "isda",
+     "tone": "C4",
+     "duration": 1920
+    },
+    {
+     "lyric": "a",
+     "tone": "C4",
+     "duration": 1920
+    }
+   ]
+  },
+  {
+   "id": "tone_change",
+   "notes": [
+    {
+     "lyric": "mahal",
+     "tone": "C4",
+     "duration": 480
+    },
+    {
+     "lyric": "kita",
+     "tone": "G4",
+     "duration": 480
+    },
+    {
+     "lyric": "ako",
+     "tone": "C4",
+     "duration": 480
+    }
+   ]
+  },
+  {
+   "id": "attr_shift",
+   "notes": [
+    {
+     "lyric": "kita",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0
+      },
+      {
+       "index": 1,
+       "shift": 24
+      },
+      {
+       "index": 2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "attr_alt",
+   "notes": [
+    {
+     "lyric": "kita",
+     "tone": "C4",
+     "duration": 480,
+     "attrs": [
+      {
+       "index": 0
+      },
+      {
+       "index": 1,
+       "alt": 2
+      },
+      {
+       "index": 2,
+       "alt": 2
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
